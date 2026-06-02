@@ -372,7 +372,7 @@
   }
 
   function loadContent() {
-    var pageId = document.body.getAttribute('data-page') || 'index';
+    var pageId = document.body.getAttribute('data-page') || 'home';
     var contentUrl = pageId + '.json';
 
     return fetch(contentUrl)
