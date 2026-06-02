@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate Mental Health and Wellness</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Lato', 'sans-serif'],
+            hero: ['"El Messiri"', 'sans-serif']
+          },
+          colors: {
+            elevate: {
+              50: '#f8f5fc',
+              100: '#f3f0f8',
+              200: '#e8dff5',
+              300: '#d4b5fb',
+              400: '#b989ee',
+              500: '#9b67d5',
+              600: '#7d64a8',
+              700: '#6b5494',
+              800: '#4a3a6e',
+              900: '#33204f'
+            },
+            ink: '#2d2640'
+          },
+          boxShadow: {
+            card: '0 8px 30px rgba(45, 38, 64, .08)',
+            soft: '0 20px 60px rgba(125, 100, 168, .14)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+</head>
+
+<body class="overflow-x-hidden antialiased" data-page="index">
+
+  <!-- NAV -->
+  <header class="nav-blur fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5 lg:px-8">
+      <a href="#home" class="flex shrink-0 items-center" aria-label="Elevate home">
+        <img data-logo src="assets/logo.png" alt="" class="brand-logo" width="240" height="60" decoding="async" />
+      </a>
+      <nav id="nav-links" class="hidden items-center gap-7 text-sm font-semibold text-slate-600 lg:flex"></nav>
+      <a id="nav-cta" href="#appointment" class="hidden shrink-0 rounded-full bg-elevate-600 px-5 py-2.5 text-sm font-bold text-white shadow-md transition hover:bg-elevate-700 sm:inline-flex"></a>
+      <button class="rounded-xl border border-elevate-100 bg-white p-2 text-elevate-800 lg:hidden" aria-label="Open menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="home" class="pt-[72px]">
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="dot-grid dot-grid--sm absolute left-6 top-24 z-10 opacity-90 lg:left-10 lg:top-28"></div>
+
+      <div class="hero-rings hero-rings--tr" aria-hidden="true">
+        <span class="hero-ring hero-ring--1"></span>
+        <span class="hero-ring hero-ring--2"></span>
+        <span class="hero-ring hero-ring--3"></span>
+      </div>
+      <div class="hero-rings hero-rings--bl" aria-hidden="true">
+        <span class="hero-ring hero-ring--1"></span>
+        <span class="hero-ring hero-ring--2"></span>
+        <span class="hero-ring hero-ring--3"></span>
+      </div>
+
+      <div class="hero-inner mx-auto max-w-7xl px-4 py-8 sm:px-5 sm:py-12 lg:px-8 lg:py-20">
+
+        <!-- Text content -->
+        <div class="hero-copy relative z-20 w-full max-w-xl lg:max-w-[40%]">
+          <div id="hero-badge" class="hero-animate hero-animate--1 mb-4 inline-flex max-w-full rounded-full border border-elevate-200 bg-white/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-500 sm:mb-6 sm:px-4"></div>
+
+          <h1 id="hero-headline" class="hero-animate hero-animate--2 serif text-3xl font-bold leading-[1.12] text-elevate-900 sm:text-4xl sm:leading-[1.08] lg:text-[3.35rem]"></h1>
+
+          <div class="hero-animate hero-animate--3 mt-4 h-1 w-16 rounded-full bg-elevate-500 sm:mt-5 sm:w-20"></div>
+
+          <p id="hero-description" class="hero-animate hero-animate--4 mt-4 max-w-lg text-[0.9375rem] leading-7 text-slate-600 sm:mt-6 sm:text-base"></p>
+
+          <div class="hero-cta-group hero-animate hero-animate--5 mt-6 flex w-full max-w-md flex-col gap-3 sm:mt-8 sm:max-w-none sm:flex-row sm:items-center">
+            <a id="hero-cta-primary" href="#appointment" class="hero-cta inline-flex min-h-[48px] items-center justify-center rounded-full bg-elevate-600 px-6 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-elevate-700">
+              <svg class="ml-2 h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M5.25 3A2.25 2.25 0 0 0 3 5.25v9.5A2.25 2.25 0 0 0 5.25 17h9.5A2.25 2.25 0 0 0 17 14.75v-9.5A2.25 2.25 0 0 0 14.75 3h-.25V2a.75.75 0 0 0-1.5 0v1H7V2a.75.75 0 0 0-1.5 0v1h-.25ZM4.5 8h11v6.75c0 .414-.336.75-.75.75h-9.5a.75.75 0 0 1-.75-.75V8Z"/>
+              </svg>
+            </a>
+            <a id="hero-cta-secondary" href="#services" class="hero-cta inline-flex min-h-[48px] items-center justify-center rounded-full border-2 border-elevate-400 bg-white/50 px-6 py-3.5 text-sm font-bold text-elevate-700 transition hover:bg-white">
+              <svg class="ml-1.5 h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual hidden lg:block">
+          <img
+            id="hero-image"
+            class="hero-photo hero-animate-img"
+            src=""
+            alt=""
+            width="1200"
+            height="1200"
+            decoding="async"
+          />
+        </div>
+
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#ffffff" d="M0,42 C280,78 520,18 760,48 C1000,78 1240,28 1440,58 L1440,100 L0,100 Z"/>
+      </svg>
+
+      <div class="dot-grid dot-grid--sm absolute bottom-[clamp(2.5rem,6vw,4.5rem)] right-6 z-10 opacity-75 sm:right-12 lg:right-20"></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-gradient-to-b from-white via-white to-elevate-50/50 py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <p id="services-kicker" class="section-kicker"></p>
+          <h2 id="services-heading" class="serif mt-3 text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
+          <p id="services-intro" class="mt-4 text-base leading-7 text-slate-600"></p>
+        </div>
+
+        <div
+          id="services-list"
+          class="reveal-stagger mt-12 grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6"
+          role="list"
+        ></div>
+
+        <p id="services-footnote" class="reveal mx-auto mt-12 max-w-2xl text-center text-base italic leading-relaxed text-slate-600 lg:mt-14"></p>
+      </div>
+    </section>
+
+    <!-- Service detail modal -->
+    <div id="service-modal" class="service-modal" aria-hidden="true">
+      <div class="service-modal__backdrop" data-modal-close tabindex="-1"></div>
+      <div
+        class="service-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="service-modal-title"
+      >
+        <button type="button" class="service-modal__close" data-modal-close aria-label="Close">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+        <div id="service-modal-icon" class="service-modal__icon" aria-hidden="true"></div>
+        <h3 id="service-modal-title" class="service-modal__title"></h3>
+        <p id="service-modal-text" class="service-modal__text"></p>
+        <a id="service-modal-cta" href="#appointment" class="service-modal__cta">
+          <span data-cta-label>Schedule an appointment</span>
+          <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-white py-20 lg:py-24">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
+        <img
+          id="about-image"
+          src=""
+          alt=""
+          class="reveal reveal-left provider-photo mx-auto h-[420px] w-full max-w-md rounded-3xl shadow-soft lg:mx-0 lg:h-[480px]"
+          width="767"
+          height="1024"
+          decoding="async"
+        />
+        <div class="reveal reveal-right">
+          <p id="about-kicker" class="section-kicker"></p>
+          <h2 id="about-heading" class="serif mt-3 text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
+          <div id="about-paragraphs"></div>
+          <div id="about-highlights" class="mt-8 grid gap-3 sm:grid-cols-2"></div>
+          <a id="about-cta" href="#about" class="mt-8 inline-flex items-center rounded-full border-2 border-elevate-300 px-6 py-3 text-sm font-bold text-elevate-700 transition hover:bg-elevate-50">
+            <span data-cta-label></span>
+            <svg class="ml-1.5 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-elevate-100 py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <p id="testimonials-kicker" class="section-kicker"></p>
+          <h2 id="testimonials-heading" class="serif mt-3 text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
+        </div>
+        <div class="mt-12 flex items-stretch gap-4 md:gap-6">
+          <button class="hidden h-10 w-10 shrink-0 self-center rounded-full border border-elevate-300 bg-white text-xl text-elevate-600 transition hover:bg-elevate-50 md:flex md:items-center md:justify-center" aria-label="Previous">‹</button>
+          <div id="testimonials-grid" class="reveal-stagger grid flex-1 gap-5 md:grid-cols-3"></div>
+          <button class="hidden h-10 w-10 shrink-0 self-center rounded-full border border-elevate-300 bg-white text-xl text-elevate-600 transition hover:bg-elevate-50 md:flex md:items-center md:justify-center" aria-label="Next">›</button>
+        </div>
+        <div class="reveal mt-8 flex justify-center gap-2">
+          <span class="h-2.5 w-2.5 rounded-full bg-elevate-600"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-elevate-300"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-elevate-300"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-elevate-300"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYMENT -->
+    <section id="payment" class="bg-white py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <p id="payment-kicker" class="section-kicker"></p>
+          <h2 id="payment-heading" class="serif mt-3 text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
+        </div>
+        <div class="reveal reveal-scale mx-auto mt-10 max-w-5xl rounded-2xl border border-slate-200 bg-slate-50 px-6 py-8 sm:px-10">
+          <div id="payment-insurers" class="flex flex-wrap items-center justify-center gap-8 sm:gap-10"></div>
+        </div>
+        <div class="reveal mt-8 flex justify-center">
+          <a id="payment-bill-pay" href="#" class="inline-flex items-center rounded-full bg-elevate-600 px-7 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-elevate-700">
+            <span data-cta-label></span>
+            <svg class="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2h7A2.5 2.5 0 0 1 16 4.5V17l-3-1.5L10 17l-3-1.5L4 17V4.5Zm3 2a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5H7Zm0 3a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5H7Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ + CTA -->
+    <section id="appointment" class="bg-white py-20 lg:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:gap-12 lg:px-8">
+        <div class="reveal reveal-left">
+          <h2 id="faq-heading" class="text-sm font-extrabold uppercase tracking-widest text-elevate-900"></h2>
+          <div id="faq-list" class="reveal-stagger mt-6 space-y-3"></div>
+        </div>
+
+        <div class="reveal reveal-right purple-panel relative overflow-hidden rounded-3xl p-8 text-white shadow-soft sm:p-10">
+          <div class="pointer-events-none absolute -right-8 -top-8 opacity-[0.12]">
+            <svg class="h-56 w-56" viewBox="0 0 200 200" fill="none" stroke="white" stroke-width="1.5">
+              <path d="M100 170C72 120 72 78 100 35c28 43 28 85 0 135Z"/>
+              <path d="M100 170C55 130 40 92 48 48c42 20 64 60 52 122Z"/>
+              <path d="M100 170c45-40 60-78 52-122-42 20-64 60-52 122Z"/>
+            </svg>
+          </div>
+          <div class="relative z-10">
+            <h2 id="cta-heading" class="serif text-3xl font-bold sm:text-4xl"></h2>
+            <p id="cta-description" class="mt-3 text-sm leading-7 text-white/85"></p>
+            <a id="cta-button" href="#contact" class="mt-6 inline-flex items-center rounded-full bg-white px-7 py-3.5 text-sm font-bold text-elevate-700 shadow-md transition hover:bg-elevate-50">
+              <span data-cta-label></span>
+              <svg class="ml-2 h-4 w-4 text-elevate-600" viewBox="0 0 20 20" fill="currentColor"><path d="M5.25 3A2.25 2.25 0 0 0 3 5.25v9.5A2.25 2.25 0 0 0 5.25 17h9.5A2.25 2.25 0 0 0 17 14.75v-9.5A2.25 2.25 0 0 0 14.75 3h-.25V2a.75.75 0 0 0-1.5 0v1H7V2a.75.75 0 0 0-1.5 0v1h-.25ZM4.5 8h11v6.75c0 .414-.336.75-.75.75h-9.5a.75.75 0 0 1-.75-.75V8Z"/></svg>
+            </a>
+          </div>
+          <div id="cta-features" class="relative z-10 mt-10 grid gap-5 border-t border-white/20 pt-8 sm:grid-cols-3"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-elevate-800 text-white">
+    <div class="reveal mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-[1.1fr_1.4fr_.9fr] lg:gap-12 lg:px-8">
+      <div>
+        <a href="#home" aria-label="Elevate home">
+          <img data-logo src="assets/logo.png" alt="" class="brand-logo brand-logo--footer" width="220" height="72" decoding="async"/>
+        </a>
+        <p id="footer-description" class="mt-5 max-w-xs text-sm leading-7 text-white/75"></p>
+      </div>
+      <div class="grid gap-8 sm:grid-cols-2">
+        <div>
+          <h4 id="footer-address1-title" class="text-xs font-extrabold uppercase tracking-widest"></h4>
+          <ul id="footer-address1-list" class="mt-4 space-y-4 text-sm leading-6 text-white/80"></ul>
+        </div>
+        <div>
+          <h4 id="footer-address2-title" class="text-xs font-extrabold uppercase tracking-widest"></h4>
+          <ul id="footer-address2-list" class="mt-4 space-y-4 text-sm leading-6 text-white/80"></ul>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-xs font-extrabold uppercase tracking-widest">Quick Links</h4>
+        <nav id="footer-quick-links" class="mt-4 space-y-2.5 text-sm font-medium text-white/80"></nav>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-5 text-center text-xs text-white/60">
+      <span id="footer-copyright"></span>
+    </div>
+  </footer>
+
+  <script src="assets/render-content.js"></script>
+  <script src="assets/animations.js"></script>
+
+</body>
+</html>

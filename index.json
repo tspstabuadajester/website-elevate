@@ -1,0 +1,271 @@
+{
+  "site": {
+    "title": "Elevate Mental Health and Wellness",
+    "brandName": "Elevate Mental Health and Wellness",
+    "logo": "assets/logo.png",
+    "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+  },
+  "nav": {
+    "ctaLabel": "Request Appointment",
+    "ctaHref": "#appointment",
+    "links": [
+      {
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "label": "About Us",
+        "href": "#about"
+      },
+      {
+        "label": "Services",
+        "href": "#services",
+        "suffix": "▾"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      },
+      {
+        "label": "Payment Information",
+        "href": "#payment"
+      }
+    ]
+  },
+  "hero": {
+    "badge": "Psychiatric care serving California and Nevada",
+    "headline": "Elevate your mental wellness with compassionate psychiatric care",
+    "description": "We provide individualized psychiatric care and brief psychotherapy designed to help you feel better and live better. Virtual consultation is available for your convenience.",
+    "primaryCta": {
+      "label": "Request an Appointment",
+      "href": "#appointment"
+    },
+    "secondaryCta": {
+      "label": "Learn More",
+      "href": "#services"
+    },
+    "image": {
+      "src": "assets/hero.png",
+      "alt": "Family spending time together outdoors",
+      "width": 1200,
+      "height": 900
+    }
+  },
+  "services": {
+    "kicker": "Our services",
+    "heading": "Compassionate care for a wide range of mental health needs",
+    "detailPlaceholder": "Tap any service below to read more about how we can support you.",
+    "viewDetailsLabel": "View details",
+    "modalCta": {
+      "label": "Schedule an appointment",
+      "href": "#appointment"
+    },
+    "footnote": "At Elevate, we individualize your psychiatric care and prioritize your privacy.<br />We use a HIPAA compliant telehealth platform to ensure your utmost confidentiality.",
+    "items": [
+      {
+        "id": "adhd",
+        "title": "ADHD",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "icon": "star"
+      },
+      {
+        "id": "panic",
+        "title": "Panic Disorder",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "icon": "panic"
+      },
+      {
+        "id": "anxiety",
+        "title": "Anxiety Disorders",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "icon": "anxiety"
+      },
+      {
+        "id": "bipolar",
+        "title": "Bipolar Disorders",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "icon": "bipolar"
+      },
+      {
+        "id": "depression",
+        "title": "Depression",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "icon": "depression"
+      },
+      {
+        "id": "ocd",
+        "title": "OCD",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "icon": "ocd"
+      },
+      {
+        "id": "ptsd",
+        "title": "PTSD",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "icon": "ptsd"
+      },
+      {
+        "id": "psychosis",
+        "title": "Psychosis",
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "icon": "psychosis"
+      }
+    ]
+  },
+  "about": {
+    "image": {
+      "src": "assets/about-main.png",
+      "alt": "Rohzan G. Altre, PMHNP",
+      "width": 767,
+      "height": 1024
+    },
+    "kicker": "About the provider",
+    "heading": "Rohzan G. Altre, PMHNP",
+    "paragraphs": [
+      "Rohzan is a Board-Certified Psychiatric Nurse Practitioner specializing in ages across the life span. She is licensed to practice in the state of California and Nevada. She specializes in ADHD, autism related behavioral problems, Anxiety Disorder, Depression, Bipolar Disorder, and PTSD.",
+      "Rohzan utilizes her extensive experience as a psychiatric nurse to provide individualized care to every patient. She understands that mental health care requires careful examination of all aspects in every patient's life to support healing and stability."
+    ],
+    "highlights": [
+      "Certified Company",
+      "Satisfied Guaranteed",
+      "Happy Clients",
+      "Excellent Employees"
+    ],
+    "cta": {
+      "label": "Learn More About Rohzan",
+      "href": "#about"
+    }
+  },
+  "testimonials": {
+    "kicker": "Patients share their experiences",
+    "heading": "Trusted care. Real stories.",
+    "items": [
+      {
+        "quote": "Any psychiatrist can write a prescription and you're done. Rohzan goes the extra mile and that is how she has been helping me and she has saved my life with proper diagnoses, treatment, and advice.",
+        "author": "Alfred"
+      },
+      {
+        "quote": "I can't say enough about my great experience with Rohzan. She helped me through the hardest time in my life. I highly recommend her to anyone facing a challenging situation — JUST TAKE ONE DAY AT A TIME.",
+        "author": "Denise"
+      },
+      {
+        "quote": "She's a psych NP who shows genuine empathy and professionalism which helped me to open up to her so comfortably. She's awesome!",
+        "author": "Calvin"
+      }
+    ]
+  },
+  "payment": {
+    "kicker": "Insurance & payment",
+    "heading": "We accept most major insurance plans",
+    "insurers": [
+      {
+        "name": "Optum",
+        "className": "text-xl font-black tracking-tight text-slate-600"
+      },
+      {
+        "name": "Anthem",
+        "className": "text-xl font-black text-blue-600"
+      },
+      {
+        "name": "Medicare",
+        "className": "text-xl font-black text-blue-900"
+      },
+      {
+        "name": "aetna",
+        "className": "text-xl font-black lowercase text-purple-700"
+      },
+      {
+        "name": "Magellan",
+        "className": "text-center text-lg font-black leading-tight text-slate-700",
+        "html": "Magellan<br><span class=\"text-sm font-bold text-sky-600\">Health</span>"
+      },
+      {
+        "name": "Cigna",
+        "className": "text-xl font-black text-sky-600"
+      }
+    ],
+    "billPay": {
+      "label": "Bill Pay",
+      "href": "#"
+    }
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Do you accept insurance?",
+        "answer": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment.",
+        "open": true
+      },
+      {
+        "question": "What are your fees?",
+        "answer": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
+      },
+      {
+        "question": "What forms of payment do you accept?",
+        "answer": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
+      },
+      {
+        "question": "Do you offer virtual appointments?",
+        "answer": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
+      }
+    ]
+  },
+  "ctaPanel": {
+    "heading": "Ready to take the next step?",
+    "description": "We're here to support you on your path to better mental health.",
+    "button": {
+      "label": "Request an Appointment",
+      "href": "#contact"
+    },
+    "features": [
+      "Virtual Consultations Available",
+      "Confidential & Compassionate Care",
+      "Serving California & Nevada"
+    ]
+  },
+  "footer": {
+    "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
+    "locations": {
+      "address1": {
+        "title": "Address 1",
+        "addresses": [
+          "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
+          "1302 Madera Rd<br>Simi Valley, CA 93065"
+        ]
+      },
+      "address2": {
+        "title": "Address 2",
+        "addresses": [
+          "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+        ],
+        "email": {
+          "label": "elevatepatientcare@gmail.com",
+          "href": "mailto:elevatepatientcare@gmail.com"
+        }
+      }
+    },
+    "quickLinks": [
+      {
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "label": "About Us",
+        "href": "#about"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      },
+      {
+        "label": "Payment Information",
+        "href": "#payment"
+      }
+    ]
+  }
+}
