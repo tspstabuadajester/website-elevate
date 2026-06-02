@@ -350,13 +350,73 @@
     }
   }
 
+  function setMetaContent(selector, value) {
+    var el = document.querySelector(selector);
+    if (!el || value == null || value === '') return;
+    el.setAttribute('content', value);
+  }
+
+  function setCanonicalUrl(href) {
+    var el = document.querySelector('link[rel="canonical"]');
+    if (!el) return;
+    if (href) {
+      el.setAttribute('href', href);
+    } else {
+      el.removeAttribute('href');
+    }
+  }
+
+  function renderSeo(seo, site) {
+    var siteTitle = site && site.title ? site.title : '';
+    if (!seo) {
+      if (siteTitle) {
+        document.title = siteTitle;
+        var fallbackTitle = document.querySelector('title');
+        if (fallbackTitle) fallbackTitle.textContent = siteTitle;
+      }
+      return;
+    }
+
+    var title = seo.title || siteTitle;
+    var description = seo.description || '';
+    var robots = seo.robots || 'index,follow';
+    var canonical = seo.canonicalUrl || '';
+
+    var ogTitle = seo.ogTitle || title;
+    var ogDescription = seo.ogDescription || description;
+    var ogImage = seo.ogImage || '';
+
+    var twitterTitle = seo.twitterTitle || ogTitle || title;
+    var twitterDescription = seo.twitterDescription || ogDescription || description;
+    var twitterImage = seo.twitterImage || ogImage || '';
+
+    if (title) {
+      document.title = title;
+      var titleEl = document.querySelector('title');
+      if (titleEl) titleEl.textContent = title;
+    }
+
+    setMetaContent('meta[name="description"]', description);
+    setMetaContent('meta[name="robots"]', robots);
+    setCanonicalUrl(canonical);
+
+    setMetaContent('meta[property="og:title"]', ogTitle);
+    setMetaContent('meta[property="og:description"]', ogDescription);
+    if (ogImage) setMetaContent('meta[property="og:image"]', ogImage);
+    if (canonical) setMetaContent('meta[property="og:url"]', canonical);
+
+    setMetaContent('meta[name="twitter:title"]', twitterTitle);
+    setMetaContent('meta[name="twitter:description"]', twitterDescription);
+    if (twitterImage) setMetaContent('meta[name="twitter:image"]', twitterImage);
+  }
+
   function renderPage(data) {
     if (!data.hero) {
       console.error('[Elevate] Page content not found in page JSON');
       return;
     }
 
-    document.title = data.site.title;
+    renderSeo(data.seo, data.site);
     renderLogos(data.site);
     renderNav(data.nav);
     renderHero(data.hero);

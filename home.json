@@ -1,4 +1,16 @@
 {
+  "seo": {
+    "title": "Elevate Mental Wellness | Psychiatric Care",
+    "description": "Compassionate psychiatric care serving California and Nevada.",
+    "canonicalUrl": "",
+    "robots": "index,follow",
+    "ogTitle": "Elevate Mental Wellness",
+    "ogDescription": "Compassionate psychiatric care and brief psychotherapy support.",
+    "ogImage": "assets/og-image.jpg",
+    "twitterTitle": "Elevate Mental Wellness",
+    "twitterDescription": "Compassionate psychiatric care serving California and Nevada.",
+    "twitterImage": "assets/og-image.jpg"
+  },
   "site": {
     "title": "Elevate Mental Health and Wellness",
     "brandName": "Elevate Mental Health and Wellness",
