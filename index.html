@@ -78,11 +78,25 @@
       </a>
       <nav id="nav-links" class="hidden items-center gap-7 text-sm font-semibold text-slate-600 lg:flex"></nav>
       <a id="nav-cta" href="#appointment" class="hidden shrink-0 rounded-full bg-elevate-600 px-5 py-2.5 text-sm font-bold text-white shadow-md transition hover:bg-elevate-700 sm:inline-flex"></a>
-      <button class="rounded-xl border border-elevate-100 bg-white p-2 text-elevate-800 lg:hidden" aria-label="Open menu">
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button
+        id="nav-toggle"
+        type="button"
+        class="nav-toggle rounded-xl border border-elevate-100 bg-white p-2 text-elevate-800 lg:hidden"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="nav-mobile"
+      >
+        <svg class="nav-toggle__icon nav-toggle__icon--open h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
+        <svg class="nav-toggle__icon nav-toggle__icon--close h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12M18 6L6 18"/>
+        </svg>
       </button>
+    </div>
+    <div id="nav-mobile" class="nav-mobile lg:hidden" aria-hidden="true">
+      <nav id="nav-mobile-links" class="nav-mobile__links"></nav>
+      <a id="nav-mobile-cta" class="nav-mobile__cta" href="#appointment"></a>
     </div>
   </header>
 

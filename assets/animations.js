@@ -87,6 +87,48 @@
     document.dispatchEvent(new CustomEvent('elevate:animations-ready'));
   }
 
+  function initMobileNav() {
+    var toggle = document.getElementById('nav-toggle');
+    var panel = document.getElementById('nav-mobile');
+    if (!toggle || !panel) return;
+
+    function setOpen(open) {
+      panel.classList.toggle('is-open', open);
+      panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.body.classList.toggle('nav-mobile-open', open);
+    }
+
+    toggle.addEventListener('click', function () {
+      setOpen(!panel.classList.contains('is-open'));
+    });
+
+    panel.addEventListener('click', function (e) {
+      if (e.target.closest('a')) {
+        setOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && panel.classList.contains('is-open')) {
+        setOpen(false);
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.matchMedia('(min-width: 1024px)').matches) {
+        setOpen(false);
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileNav);
+  } else {
+    initMobileNav();
+  }
+
   document.addEventListener('elevate:content-rendered', function () {
     initRevealAnimations();
 

@@ -22,20 +22,40 @@
     if (el && value != null) el.innerHTML = value;
   }
 
-  function renderNav(nav) {
-    var container = document.getElementById('nav-links');
-    if (!container || !nav.links) return;
-    container.innerHTML = nav.links.map(function (link) {
+  function buildNavLinksHtml(links, linkClass) {
+    if (!links) return '';
+    return links.map(function (link) {
       var suffix = link.suffix
         ? ' <span class="ml-0.5 text-xs">' + link.suffix + '</span>'
         : '';
-      return '<a class="transition hover:text-elevate-700" href="' + link.href + '">' + link.label + suffix + '</a>';
+      return '<a class="' + linkClass + '" href="' + link.href + '">' + link.label + suffix + '</a>';
     }).join('');
+  }
 
+  function renderNav(nav) {
+    if (!nav.links) return;
+
+    var container = document.getElementById('nav-links');
+    if (container) {
+      container.innerHTML = buildNavLinksHtml(nav.links, 'transition hover:text-elevate-700');
+    }
+
+    var mobileLinks = document.getElementById('nav-mobile-links');
+    if (mobileLinks) {
+      mobileLinks.innerHTML = buildNavLinksHtml(nav.links, 'nav-mobile__link');
+    }
+
+    var ctaHref = nav.ctaHref || '#appointment';
     var cta = document.getElementById('nav-cta');
     if (cta && nav.ctaLabel) {
       cta.textContent = nav.ctaLabel;
-      cta.href = nav.ctaHref || '#appointment';
+      cta.href = ctaHref;
+    }
+
+    var mobileCta = document.getElementById('nav-mobile-cta');
+    if (mobileCta && nav.ctaLabel) {
+      mobileCta.textContent = nav.ctaLabel;
+      mobileCta.href = ctaHref;
     }
   }
 
