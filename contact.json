@@ -1,130 +1,130 @@
 {
-  "seo": {
-    "title": "Contact | Elevate Mental Health and Wellness",
-    "description": "Reach Elevate Mental Health and Wellness by email or visit our California and Nevada office locations.",
-    "canonicalUrl": "",
-    "robots": "index,follow",
-    "ogTitle": "Contact Elevate Mental Health and Wellness",
-    "ogDescription": "Get in touch with Elevate for psychiatric care in California and Nevada.",
-    "ogImage": "assets/og-image.jpg",
-    "twitterTitle": "Contact Elevate Mental Health and Wellness",
-    "twitterDescription": "Email us or find our office locations in California and Nevada.",
-    "twitterImage": "assets/og-image.jpg"
-  },
-  "site": {
-    "title": "Elevate Mental Health and Wellness",
-    "brandName": "Elevate Mental Health and Wellness",
-    "logo": "assets/logo.png",
-    "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
-  },
-  "nav": {
-    "ctaLabel": "Request Appointment",
-    "ctaHref": "index.html#appointment",
-    "links": [
-      {
-        "label": "Home",
-        "href": "index.html"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  },
-  "pageHero": {
-    "heading": "Contact us",
-    "intro": "Have a question about care, insurance, or scheduling? Reach out by email. We respond as soon as we can."
-  },
-  "contactInfo": {
-    "kicker": "Get in touch",
-    "heading": "We are here to help",
-    "intro": "Elevate serves patients in California and Nevada. Virtual appointments are available through a secure telehealth platform.",
-    "email": {
-      "label": "elevatepatientcare@gmail.com",
-      "href": "mailto:elevatepatientcare@gmail.com"
+    "seo": {
+        "title": "Contact | Elevate Mental Health and Wellness",
+        "description": "Reach Elevate Mental Health and Wellness by email or visit our California and Nevada office locations.",
+        "canonicalUrl": "https://elevate-staging.pages.dev/contact.html",
+        "robots": "index,follow",
+        "ogTitle": "Contact Elevate Mental Health and Wellness",
+        "ogDescription": "Get in touch with Elevate for psychiatric care in California and Nevada.",
+        "ogImage": "assets/og-image.jpg",
+        "twitterTitle": "Contact Elevate Mental Health and Wellness",
+        "twitterDescription": "Email us or find our office locations in California and Nevada.",
+        "twitterImage": "assets/og-image.jpg"
     },
-    "locations": [
-      {
-        "title": "Woodland Hills, CA",
-        "address": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
-      },
-      {
-        "title": "Simi Valley, CA",
-        "address": "1302 Madera Rd<br>Simi Valley, CA 93065"
-      },
-      {
-        "title": "Henderson, NV",
-        "address": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-      }
-    ]
-  },
-  "ctaPanel": {
-    "heading": "Ready to schedule?",
-    "description": "Request an appointment to start care with Elevate. Virtual visits are available for your convenience.",
-    "button": {
-      "label": "Request an Appointment",
-      "href": "index.html#appointment"
+    "site": {
+        "title": "Elevate Mental Health and Wellness",
+        "brandName": "Elevate Mental Health and Wellness",
+        "logo": "assets/logo.png",
+        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
     },
-    "features": [
-      "Virtual Consultations Available",
-      "Confidential & Compassionate Care",
-      "Serving California & Nevada"
-    ]
-  },
-  "footer": {
-    "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
-    "locations": {
-      "address1": {
-        "title": "Address 1",
-        "addresses": [
-          "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-          "1302 Madera Rd<br>Simi Valley, CA 93065"
+    "nav": {
+        "ctaLabel": "Request Appointment",
+        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
+        "links": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
         ]
-      },
-      "address2": {
-        "title": "Address 2",
-        "addresses": [
-          "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-        ],
-        "email": {
-          "label": "elevatepatientcare@gmail.com",
-          "href": "mailto:elevatepatientcare@gmail.com"
-        }
-      }
     },
-    "quickLinks": [
-      {
-        "label": "Home",
-        "href": "index.html"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  }
+    "pageHero": {
+        "heading": "Contact us",
+        "intro": "Have a question about care, insurance, or scheduling? Reach out by email. We respond as soon as we can."
+    },
+    "contactInfo": {
+        "kicker": "Get in touch",
+        "heading": "We are here to help",
+        "intro": "Elevate serves patients in California and Nevada. Virtual appointments are available through a secure telehealth platform.",
+        "email": {
+            "label": "elevatepatientcare@gmail.com",
+            "href": "mailto:elevatepatientcare@gmail.com"
+        },
+        "locations": [
+            {
+                "title": "Woodland Hills, CA",
+                "address": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
+            },
+            {
+                "title": "Simi Valley, CA",
+                "address": "1302 Madera Rd<br>Simi Valley, CA 93065"
+            },
+            {
+                "title": "Henderson, NV",
+                "address": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+            }
+        ]
+    },
+    "ctaPanel": {
+        "heading": "Ready to schedule?",
+        "description": "Request an appointment to start care with Elevate. Virtual visits are available for your convenience.",
+        "button": {
+            "label": "Request an Appointment",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "features": [
+            "Virtual Consultations Available",
+            "Confidential & Compassionate Care",
+            "Serving California & Nevada"
+        ]
+    },
+    "footer": {
+        "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
+        "locations": {
+            "address1": {
+                "title": "Address 1",
+                "addresses": [
+                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
+                    "1302 Madera Rd<br>Simi Valley, CA 93065"
+                ]
+            },
+            "address2": {
+                "title": "Address 2",
+                "addresses": [
+                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                ],
+                "email": {
+                    "label": "elevatepatientcare@gmail.com",
+                    "href": "mailto:elevatepatientcare@gmail.com"
+                }
+            }
+        },
+        "quickLinks": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
+        ]
+    }
 }

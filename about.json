@@ -1,199 +1,199 @@
 {
-  "seo": {
-    "title": "About Us | Elevate Mental Health and Wellness",
-    "description": "Meet the team behind Elevate and learn how we approach psychiatric care in California and Nevada.",
-    "canonicalUrl": "",
-    "robots": "index,follow",
-    "ogTitle": "About Elevate Mental Health and Wellness",
-    "ogDescription": "Get to know Elevate Mental Health and Wellness and the care we provide.",
-    "ogImage": "assets/og-image.jpg",
-    "twitterTitle": "About Elevate Mental Health and Wellness",
-    "twitterDescription": "Compassionate psychiatric care serving California and Nevada.",
-    "twitterImage": "assets/og-image.jpg"
-  },
-  "site": {
-    "title": "Elevate Mental Health and Wellness",
-    "brandName": "Elevate Mental Health and Wellness",
-    "logo": "assets/logo.png",
-    "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
-  },
-  "nav": {
-    "ctaLabel": "Request Appointment",
-    "ctaHref": "index.html#appointment",
-    "links": [
-      {
-        "label": "Home",
-        "href": "index.html"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  },
-  "pageHero": {
-    "heading": "About Us",
-    "intro": "Elevate is a psychiatric practice focused on real support, not rushed appointments. We offer individualized care and brief psychotherapy for patients in California and Nevada who want to feel better and stay steady in their daily lives.",
-    "gallery": [
-      {
-        "src": "assets/hero.png",
-        "alt": "Family connecting outdoors"
-      },
-      {
-        "src": "assets/about-main.png",
-        "alt": "Rohzan G. Altre, PMHNP"
-      },
-      {
-        "src": "assets/og-image.jpg",
-        "alt": "Compassionate mental health support"
-      },
-      {
-        "src": "assets/hero.png",
-        "alt": "Wellness and connection"
-      }
-    ]
-  },
-  "mission": {
-    "heading": "Your care should feel clear, respectful, and truly personal.",
-    "columns": [
-      "Good mental health care starts with being heard. We learn about your history, what you are dealing with now, and what you want life to look like. Treatment should fit you, not the other way around.",
-      "Whether you meet with us virtually or in person, you can expect thoughtful follow-up and honest conversation. We are here to help you feel more grounded, more supported, and more like yourself again."
-    ]
-  },
-  "founder": {
-    "image": {
-      "src": "assets/about-main.png",
-      "alt": "Rohzan G. Altre, PMHNP",
-      "width": 767,
-      "height": 1024
+    "seo": {
+        "title": "About Us | Elevate Mental Health and Wellness",
+        "description": "Meet the team behind Elevate and learn how we approach psychiatric care in California and Nevada.",
+        "canonicalUrl": "https://elevate-staging.pages.dev/about.html",
+        "robots": "index,follow",
+        "ogTitle": "About Elevate Mental Health and Wellness",
+        "ogDescription": "Get to know Elevate Mental Health and Wellness and the care we provide.",
+        "ogImage": "assets/og-image.jpg",
+        "twitterTitle": "About Elevate Mental Health and Wellness",
+        "twitterDescription": "Compassionate psychiatric care serving California and Nevada.",
+        "twitterImage": "assets/og-image.jpg"
     },
-    "quoteCard": {
-      "text": "Making an impact, together",
-      "attribution": "Rohzan G. Altre, PMHNP"
+    "site": {
+        "title": "Elevate Mental Health and Wellness",
+        "brandName": "Elevate Mental Health and Wellness",
+        "logo": "assets/logo.png",
+        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
     },
-    "heading": "Care that meets you where you are.",
-    "paragraph": "Rohzan G. Altre is a board-certified psychiatric nurse practitioner licensed in California and Nevada. She works with children, teens, and adults facing ADHD, anxiety, depression, bipolar disorder, PTSD, and autism-related behavioral challenges.",
-    "blockquote": "I believe people do best when they feel safe enough to be honest about what they are going through. My job is to listen closely, explain your options clearly, and help you find a path that actually works for your life."
-  },
-  "features": {
-    "heading": "What you can expect when you work with us.",
-    "intro": "We keep things simple: skilled psychiatric care, honest communication, and support that respects your time, your privacy, and your goals.",
-    "items": [
-      {
-        "icon": "team",
-        "title": "A provider who listens",
-        "description": "You will work directly with Rohzan, an experienced PMHNP who takes time to understand your concerns and answer your questions without making you feel rushed."
-      },
-      {
-        "icon": "target",
-        "title": "Care built around you",
-        "description": "Your treatment plan may include medication management, brief psychotherapy, or both. We adjust as your needs change and keep the focus on what helps you function and feel better day to day."
-      },
-      {
-        "icon": "shield",
-        "title": "Private, convenient visits",
-        "description": "Virtual appointments are available through a secure telehealth platform, so you can get quality psychiatric care from home with less stress and more flexibility."
-      }
-    ]
-  },
-  "testimonials": {
-    "heading": "What patients are saying about Elevate",
-    "items": [
-      {
-        "quote": "Any psychiatrist can write a prescription and you're done. Rohzan goes the extra mile. That is how she has been helping me, and she has saved my life with proper diagnoses, treatment, and advice.",
-        "author": "Alfred"
-      },
-      {
-        "quote": "I can't say enough about my great experience with Rohzan. She helped me through the hardest time in my life. I highly recommend her to anyone facing a challenging situation. Just take one day at a time.",
-        "author": "Denise"
-      },
-      {
-        "quote": "She's a psych NP who shows genuine empathy and professionalism, which helped me open up to her comfortably. She's awesome!",
-        "author": "Calvin"
-      },
-      {
-        "quote": "Rohzan listens without judgment and explains every step of treatment clearly. I finally feel understood and supported in my mental health journey.",
-        "author": "Darren",
-        "detail": "Age 40"
-      },
-      {
-        "quote": "Virtual appointments made it easy to stay consistent with care. The whole experience felt personal, professional, and genuinely caring.",
-        "author": "Maria",
-        "detail": "Age 34"
-      },
-      {
-        "quote": "After years of struggling, I found a provider who took time to understand my full story. Elevate has been life-changing for our family.",
-        "author": "James"
-      },
-      {
-        "quote": "Compassionate, knowledgeable, and responsive. Rohzan helped me build a plan that actually works for my day to day life.",
-        "author": "Priya"
-      },
-      {
-        "quote": "I appreciate how thorough and patient she is. Every session leaves me feeling heard and hopeful about the path forward.",
-        "author": "Michael",
-        "detail": "Age 52"
-      },
-      {
-        "quote": "Elevate Mental Health and Wellness truly lives up to its name. The care is thoughtful, warm, and effective.",
-        "author": "Sandra"
-      }
-    ]
-  },
-  "footer": {
-    "description": "Individualized psychiatric care and brief psychotherapy for patients in California and Nevada.",
-    "locations": {
-      "address1": {
-        "title": "Address 1",
-        "addresses": [
-          "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-          "1302 Madera Rd<br>Simi Valley, CA 93065"
+    "nav": {
+        "ctaLabel": "Request Appointment",
+        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
+        "links": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
         ]
-      },
-      "address2": {
-        "title": "Address 2",
-        "addresses": [
-          "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-        ],
-        "email": {
-          "label": "elevatepatientcare@gmail.com",
-          "href": "mailto:elevatepatientcare@gmail.com"
-        }
-      }
     },
-    "quickLinks": [
-      {
-        "label": "Home",
-        "href": "index.html"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  }
+    "pageHero": {
+        "heading": "About Us",
+        "intro": "Elevate is a psychiatric practice focused on real support, not rushed appointments. We offer individualized care and brief psychotherapy for patients in California and Nevada who want to feel better and stay steady in their daily lives.",
+        "gallery": [
+            {
+                "src": "assets/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation-lutguyc3.jpg",
+                "alt": "Family connecting outdoors"
+            },
+            {
+                "src": "assets/about-main.png",
+                "alt": "Rohzan G. Altre, PMHNP"
+            },
+            {
+                "src": "assets/portrait-happy-asian-woman-smiling-posing-confident-cross-arms-chest-standing-against-studio-background-sqim5icd.jpg",
+                "alt": "Compassionate mental health support"
+            },
+            {
+                "src": "assets/portrait-laughing-young-man-jqhyg71p.jpg",
+                "alt": "Wellness and connection"
+            }
+        ]
+    },
+    "mission": {
+        "heading": "Your care should feel clear, respectful, and truly personal.",
+        "columns": [
+            "Good mental health care starts with being heard. We learn about your history, what you are dealing with now, and what you want life to look like. Treatment should fit you, not the other way around.",
+            "Whether you meet with us virtually or in person, you can expect thoughtful follow-up and honest conversation. We are here to help you feel more grounded, more supported, and more like yourself again."
+        ]
+    },
+    "founder": {
+        "image": {
+            "src": "assets/about-main.png",
+            "alt": "Rohzan G. Altre, PMHNP",
+            "width": 767,
+            "height": 1024
+        },
+        "quoteCard": {
+            "text": "Making an impact, together",
+            "attribution": "Rohzan G. Altre, PMHNP"
+        },
+        "heading": "Care that meets you where you are.",
+        "paragraph": "Rohzan G. Altre is a board-certified psychiatric nurse practitioner licensed in California and Nevada. She works with children, teens, and adults facing ADHD, anxiety, depression, bipolar disorder, PTSD, and autism-related behavioral challenges.",
+        "blockquote": "I believe people do best when they feel safe enough to be honest about what they are going through. My job is to listen closely, explain your options clearly, and help you find a path that actually works for your life."
+    },
+    "features": {
+        "heading": "What you can expect when you work with us.",
+        "intro": "We keep things simple: skilled psychiatric care, honest communication, and support that respects your time, your privacy, and your goals.",
+        "items": [
+            {
+                "icon": "team",
+                "title": "A provider who listens",
+                "description": "You will work directly with Rohzan, an experienced PMHNP who takes time to understand your concerns and answer your questions without making you feel rushed."
+            },
+            {
+                "icon": "target",
+                "title": "Care built around you",
+                "description": "Your treatment plan may include medication management, brief psychotherapy, or both. We adjust as your needs change and keep the focus on what helps you function and feel better day to day."
+            },
+            {
+                "icon": "shield",
+                "title": "Private, convenient visits",
+                "description": "Virtual appointments are available through a secure telehealth platform, so you can get quality psychiatric care from home with less stress and more flexibility."
+            }
+        ]
+    },
+    "testimonials": {
+        "heading": "What patients are saying about Elevate",
+        "items": [
+            {
+                "quote": "Any psychiatrist can write a prescription and you're done. Rohzan goes the extra mile. That is how she has been helping me, and she has saved my life with proper diagnoses, treatment, and advice.",
+                "author": "Alfred"
+            },
+            {
+                "quote": "I can't say enough about my great experience with Rohzan. She helped me through the hardest time in my life. I highly recommend her to anyone facing a challenging situation. Just take one day at a time.",
+                "author": "Denise"
+            },
+            {
+                "quote": "She's a psych NP who shows genuine empathy and professionalism, which helped me open up to her comfortably. She's awesome!",
+                "author": "Calvin"
+            },
+            {
+                "quote": "Rohzan listens without judgment and explains every step of treatment clearly. I finally feel understood and supported in my mental health journey.",
+                "author": "Darren",
+                "detail": "Age 40"
+            },
+            {
+                "quote": "Virtual appointments made it easy to stay consistent with care. The whole experience felt personal, professional, and genuinely caring.",
+                "author": "Maria",
+                "detail": "Age 34"
+            },
+            {
+                "quote": "After years of struggling, I found a provider who took time to understand my full story. Elevate has been life-changing for our family.",
+                "author": "James"
+            },
+            {
+                "quote": "Compassionate, knowledgeable, and responsive. Rohzan helped me build a plan that actually works for my day to day life.",
+                "author": "Priya"
+            },
+            {
+                "quote": "I appreciate how thorough and patient she is. Every session leaves me feeling heard and hopeful about the path forward.",
+                "author": "Michael",
+                "detail": "Age 52"
+            },
+            {
+                "quote": "Elevate Mental Health and Wellness truly lives up to its name. The care is thoughtful, warm, and effective.",
+                "author": "Sandra"
+            }
+        ]
+    },
+    "footer": {
+        "description": "Individualized psychiatric care and brief psychotherapy for patients in California and Nevada.",
+        "locations": {
+            "address1": {
+                "title": "Address 1",
+                "addresses": [
+                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
+                    "1302 Madera Rd<br>Simi Valley, CA 93065"
+                ]
+            },
+            "address2": {
+                "title": "Address 2",
+                "addresses": [
+                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                ],
+                "email": {
+                    "label": "elevatepatientcare@gmail.com",
+                    "href": "mailto:elevatepatientcare@gmail.com"
+                }
+            }
+        },
+        "quickLinks": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
+        ]
+    }
 }

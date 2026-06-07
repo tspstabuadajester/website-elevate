@@ -1,262 +1,262 @@
 {
-  "seo": {
-    "title": "Elevate Mental Wellness | Psychiatric Care",
-    "description": "Compassionate psychiatric care serving California and Nevada.",
-    "canonicalUrl": "",
-    "robots": "index,follow",
-    "ogTitle": "Elevate Mental Wellness",
-    "ogDescription": "Compassionate psychiatric care and brief psychotherapy support.",
-    "ogImage": "assets/og-image.jpg",
-    "twitterTitle": "Elevate Mental Wellness",
-    "twitterDescription": "Compassionate psychiatric care serving California and Nevada.",
-    "twitterImage": "assets/og-image.jpg"
-  },
-  "site": {
-    "title": "Elevate Mental Health and Wellness",
-    "brandName": "Elevate Mental Health and Wellness",
-    "logo": "assets/logo.png",
-    "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
-  },
-  "nav": {
-    "ctaLabel": "Request Appointment",
-    "ctaHref": "#appointment",
-    "links": [
-      {
-        "label": "Home",
-        "href": "#home"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  },
-  "hero": {
-    "badge": "Psychiatric care serving California and Nevada",
-    "headline": "Elevate your mental wellness with compassionate psychiatric care",
-    "description": "We provide individualized psychiatric care and brief psychotherapy designed to help you feel better and live better. Virtual consultation is available for your convenience.",
-    "primaryCta": {
-      "label": "Request an Appointment",
-      "href": "#appointment"
+    "seo": {
+        "title": "Elevate Mental Wellness | Psychiatric Care",
+        "description": "Compassionate psychiatric care serving California and Nevada.",
+        "canonicalUrl": "https://elevate-staging.pages.dev/",
+        "robots": "index,follow",
+        "ogTitle": "Elevate Mental Wellness",
+        "ogDescription": "Compassionate psychiatric care and brief psychotherapy support.",
+        "ogImage": "assets/og-image.jpg",
+        "twitterTitle": "Elevate Mental Wellness",
+        "twitterDescription": "Compassionate psychiatric care serving California and Nevada.",
+        "twitterImage": "assets/og-image.jpg"
     },
-    "secondaryCta": {
-      "label": "Learn More",
-      "href": "services.html"
+    "site": {
+        "title": "Elevate Mental Health and Wellness",
+        "brandName": "Elevate Mental Health and Wellness",
+        "logo": "assets/logo.png",
+        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
     },
-    "video": {
-      "src": "assets/hero-vid.mp4",
-      "poster": "assets/hero.png",
-      "alt": "Calming moments of connection and wellness"
-    }
-  },
-  "services": {
-    "kicker": "Our services",
-    "heading": "Compassionate care for a wide range of mental health needs",
-    "detailPlaceholder": "Tap any service below to read more about how we can support you.",
-    "viewDetailsLabel": "View details",
-    "modalCta": {
-      "label": "Schedule an appointment",
-      "href": "#appointment"
-    },
-    "footnote": "At Elevate, we individualize your psychiatric care and prioritize your privacy.<br />We use a HIPAA compliant telehealth platform to ensure your utmost confidentiality.",
-    "items": [
-      {
-        "id": "adhd",
-        "title": "ADHD",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "icon": "star"
-      },
-      {
-        "id": "panic",
-        "title": "Panic Disorder",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "icon": "panic"
-      },
-      {
-        "id": "anxiety",
-        "title": "Anxiety Disorders",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "icon": "anxiety"
-      },
-      {
-        "id": "bipolar",
-        "title": "Bipolar Disorders",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "icon": "bipolar"
-      },
-      {
-        "id": "depression",
-        "title": "Depression",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "icon": "depression"
-      },
-      {
-        "id": "ocd",
-        "title": "OCD",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "icon": "ocd"
-      },
-      {
-        "id": "ptsd",
-        "title": "PTSD",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "icon": "ptsd"
-      },
-      {
-        "id": "psychosis",
-        "title": "Psychosis",
-        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "icon": "psychosis"
-      }
-    ]
-  },
-  "about": {
-    "image": {
-      "src": "assets/about-main.png",
-      "alt": "Rohzan G. Altre, PMHNP",
-      "width": 767,
-      "height": 1024
-    },
-    "kicker": "About the provider",
-    "heading": "Rohzan G. Altre, PMHNP",
-    "paragraphs": [
-      "Rohzan is a Board-Certified Psychiatric Nurse Practitioner specializing in ages across the life span. She is licensed to practice in the state of California and Nevada. She specializes in ADHD, autism related behavioral problems, Anxiety Disorder, Depression, Bipolar Disorder, and PTSD.",
-      "Rohzan utilizes her extensive experience as a psychiatric nurse to provide individualized care to every patient. She understands that mental health care requires careful examination of all aspects in every patient's life to support healing and stability."
-    ],
-    "highlights": [
-      "Certified Company",
-      "Satisfied Guaranteed",
-      "Happy Clients",
-      "Excellent Employees"
-    ],
-    "cta": {
-      "label": "Learn More About Rohzan",
-      "href": "#about"
-    }
-  },
-  "payment": {
-    "kicker": "Insurance & payment",
-    "heading": "We accept most major insurance plans",
-    "insurers": [
-      {
-        "name": "Optum",
-        "src": "assets/insurance_optum.jpg"
-      },
-      {
-        "name": "Anthem",
-        "src": "assets/insurance_anthem.png"
-      },
-      {
-        "name": "Medicare",
-        "src": "assets/insurance_medicare.png"
-      },
-      {
-        "name": "Aetna",
-        "src": "assets/insurance_aetna.jpg"
-      },
-      {
-        "name": "Magellan Health",
-        "src": "assets/insurance_magellan.png"
-      },
-      {
-        "name": "Cigna",
-        "src": "assets/insurance_cigna.jpg"
-      }
-    ],
-    "billPay": {
-      "label": "Bill Pay",
-      "href": "#"
-    }
-  },
-  "faq": {
-    "heading": "Frequently asked questions",
-    "items": [
-      {
-        "question": "Do you accept insurance?",
-        "answer": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment.",
-        "open": true
-      },
-      {
-        "question": "What are your fees?",
-        "answer": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
-      },
-      {
-        "question": "What forms of payment do you accept?",
-        "answer": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
-      },
-      {
-        "question": "Do you offer virtual appointments?",
-        "answer": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
-      }
-    ]
-  },
-  "ctaPanel": {
-    "heading": "Ready to take the next step?",
-    "description": "We're here to support you on your path to better mental health.",
-    "button": {
-      "label": "Request an Appointment",
-      "href": "#contact"
-    },
-    "features": [
-      "Virtual Consultations Available",
-      "Confidential & Compassionate Care",
-      "Serving California & Nevada"
-    ]
-  },
-  "footer": {
-    "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
-    "locations": {
-      "address1": {
-        "title": "Address 1",
-        "addresses": [
-          "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-          "1302 Madera Rd<br>Simi Valley, CA 93065"
+    "nav": {
+        "ctaLabel": "Request Appointment",
+        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
+        "links": [
+            {
+                "label": "Home",
+                "href": "#home"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
         ]
-      },
-      "address2": {
-        "title": "Address 2",
-        "addresses": [
-          "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-        ],
-        "email": {
-          "label": "elevatepatientcare@gmail.com",
-          "href": "mailto:elevatepatientcare@gmail.com"
-        }
-      }
     },
-    "quickLinks": [
-      {
-        "label": "Home",
-        "href": "#home"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  }
+    "hero": {
+        "badge": "Psychiatric care serving California and Nevada",
+        "headline": "Elevate your mental wellness with compassionate psychiatric care",
+        "description": "We provide individualized psychiatric care and brief psychotherapy designed to help you feel better and live better. Virtual consultation is available for your convenience.",
+        "primaryCta": {
+            "label": "Request an Appointment",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "secondaryCta": {
+            "label": "Learn More",
+            "href": "services.html"
+        },
+        "video": {
+            "src": "assets/hero-vid.mp4",
+            "poster": "assets/hero.png",
+            "alt": "Calming moments of connection and wellness"
+        }
+    },
+    "services": {
+        "kicker": "Our services",
+        "heading": "Compassionate care for a wide range of mental health needs",
+        "detailPlaceholder": "Tap any service below to read more about how we can support you.",
+        "viewDetailsLabel": "View details",
+        "modalCta": {
+            "label": "Schedule an appointment",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "footnote": "At Elevate, we individualize your psychiatric care and prioritize your privacy.<br />We use a HIPAA compliant telehealth platform to ensure your utmost confidentiality.",
+        "items": [
+            {
+                "id": "adhd",
+                "title": "ADHD",
+                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "icon": "star"
+            },
+            {
+                "id": "panic",
+                "title": "Panic Disorder",
+                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "icon": "panic"
+            },
+            {
+                "id": "anxiety",
+                "title": "Anxiety Disorders",
+                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "icon": "anxiety"
+            },
+            {
+                "id": "bipolar",
+                "title": "Bipolar Disorders",
+                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "icon": "bipolar"
+            },
+            {
+                "id": "depression",
+                "title": "Depression",
+                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "icon": "depression"
+            },
+            {
+                "id": "ocd",
+                "title": "OCD",
+                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "icon": "ocd"
+            },
+            {
+                "id": "ptsd",
+                "title": "PTSD",
+                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "icon": "ptsd"
+            },
+            {
+                "id": "psychosis",
+                "title": "Psychosis",
+                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "icon": "psychosis"
+            }
+        ]
+    },
+    "about": {
+        "image": {
+            "src": "assets/about-main.png",
+            "alt": "Rohzan G. Altre, PMHNP",
+            "width": 767,
+            "height": 1024
+        },
+        "kicker": "About the provider",
+        "heading": "Rohzan G. Altre, PMHNP",
+        "paragraphs": [
+            "Rohzan is a Board-Certified Psychiatric Nurse Practitioner specializing in ages across the life span. She is licensed to practice in the state of California and Nevada. She specializes in ADHD, autism related behavioral problems, Anxiety Disorder, Depression, Bipolar Disorder, and PTSD.",
+            "Rohzan utilizes her extensive experience as a psychiatric nurse to provide individualized care to every patient. She understands that mental health care requires careful examination of all aspects in every patient's life to support healing and stability."
+        ],
+        "highlights": [
+            "Certified Company",
+            "Satisfied Guaranteed",
+            "Happy Clients",
+            "Excellent Employees"
+        ],
+        "cta": {
+            "label": "Learn More About Rohzan",
+            "href": "about.html"
+        }
+    },
+    "payment": {
+        "kicker": "Insurance & payment",
+        "heading": "We accept most major insurance plans",
+        "insurers": [
+            {
+                "name": "Optum",
+                "src": "assets/insurance_optum.jpg"
+            },
+            {
+                "name": "Anthem",
+                "src": "assets/insurance_anthem.png"
+            },
+            {
+                "name": "Medicare",
+                "src": "assets/insurance_medicare.png"
+            },
+            {
+                "name": "Aetna",
+                "src": "assets/insurance_aetna.jpg"
+            },
+            {
+                "name": "Magellan Health",
+                "src": "assets/insurance_magellan.png"
+            },
+            {
+                "name": "Cigna",
+                "src": "assets/insurance_cigna.jpg"
+            }
+        ],
+        "billPay": {
+            "label": "Bill Pay",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        }
+    },
+    "faq": {
+        "heading": "Frequently asked questions",
+        "items": [
+            {
+                "question": "Do you accept insurance?",
+                "answer": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment.",
+                "open": true
+            },
+            {
+                "question": "What are your fees?",
+                "answer": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
+            },
+            {
+                "question": "What forms of payment do you accept?",
+                "answer": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
+            },
+            {
+                "question": "Do you offer virtual appointments?",
+                "answer": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
+            }
+        ]
+    },
+    "ctaPanel": {
+        "heading": "Ready to take the next step?",
+        "description": "We're here to support you on your path to better mental health.",
+        "button": {
+            "label": "Request an Appointment",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "features": [
+            "Virtual Consultations Available",
+            "Confidential & Compassionate Care",
+            "Serving California & Nevada"
+        ]
+    },
+    "footer": {
+        "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
+        "locations": {
+            "address1": {
+                "title": "Address 1",
+                "addresses": [
+                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
+                    "1302 Madera Rd<br>Simi Valley, CA 93065"
+                ]
+            },
+            "address2": {
+                "title": "Address 2",
+                "addresses": [
+                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                ],
+                "email": {
+                    "label": "elevatepatientcare@gmail.com",
+                    "href": "mailto:elevatepatientcare@gmail.com"
+                }
+            }
+        },
+        "quickLinks": [
+            {
+                "label": "Home",
+                "href": "#home"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
+        ]
+    }
 }

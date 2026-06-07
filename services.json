@@ -1,188 +1,188 @@
 {
-  "seo": {
-    "title": "Services | Elevate Mental Health and Wellness",
-    "description": "Psychiatric care for ADHD, anxiety, depression, bipolar disorder, PTSD, OCD, panic disorder, and psychosis in California and Nevada.",
-    "canonicalUrl": "",
-    "robots": "index,follow",
-    "ogTitle": "Mental Health Services | Elevate",
-    "ogDescription": "Explore the psychiatric services offered at Elevate Mental Health and Wellness.",
-    "ogImage": "assets/og-image.jpg",
-    "twitterTitle": "Mental Health Services | Elevate",
-    "twitterDescription": "Psychiatric care for a wide range of mental health needs in California and Nevada.",
-    "twitterImage": "assets/og-image.jpg"
-  },
-  "site": {
-    "title": "Elevate Mental Health and Wellness",
-    "brandName": "Elevate Mental Health and Wellness",
-    "logo": "assets/logo.png",
-    "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
-  },
-  "nav": {
-    "ctaLabel": "Request Appointment",
-    "ctaHref": "index.html#appointment",
-    "links": [
-      {
-        "label": "Home",
-        "href": "index.html"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  },
-  "pageHero": {
-    "heading": "Psychiatric care built around your needs",
-    "intro": "Elevate offers individualized psychiatric treatment and brief psychotherapy for children, teens, and adults. Whether you are starting care for the first time or looking for a fresh approach, we are here to help you feel more stable and supported.",
-    "cta": {
-      "label": "Request an Appointment",
-      "href": "index.html#appointment"
+    "seo": {
+        "title": "Services | Elevate Mental Health and Wellness",
+        "description": "Psychiatric care for ADHD, anxiety, depression, bipolar disorder, PTSD, OCD, panic disorder, and psychosis in California and Nevada.",
+        "canonicalUrl": "https://elevate-staging.pages.dev/services.html",
+        "robots": "index,follow",
+        "ogTitle": "Mental Health Services | Elevate",
+        "ogDescription": "Explore the psychiatric services offered at Elevate Mental Health and Wellness.",
+        "ogImage": "assets/og-image.jpg",
+        "twitterTitle": "Mental Health Services | Elevate",
+        "twitterDescription": "Psychiatric care for a wide range of mental health needs in California and Nevada.",
+        "twitterImage": "assets/og-image.jpg"
     },
-    "stats": [
-      {
-        "value": "Virtual",
-        "label": "Visits available"
-      },
-      {
-        "value": "CA & NV",
-        "label": "States served"
-      }
-    ],
-    "image": {
-      "src": "assets/hero.png",
-      "alt": "Family connecting outdoors"
-    }
-  },
-  "services": {
-    "kicker": "Our services",
-    "intro": "We treat a wide range of mental health conditions with thoughtful evaluation, medication management when appropriate, and brief psychotherapy tailored to your goals.",
-    "cta": {
-      "label": "Schedule a visit",
-      "href": "index.html#appointment"
+    "site": {
+        "title": "Elevate Mental Health and Wellness",
+        "brandName": "Elevate Mental Health and Wellness",
+        "logo": "assets/logo.png",
+        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
     },
-    "items": [
-      {
-        "id": "adhd",
-        "title": "ADHD",
-        "description": "Support for focus, impulsivity, and daily functioning with treatment plans designed for school, work, and home life.",
-        "icon": "star"
-      },
-      {
-        "id": "panic",
-        "title": "Panic Disorder",
-        "description": "Help reducing sudden panic symptoms and building practical tools to feel safer in everyday situations.",
-        "icon": "panic"
-      },
-      {
-        "id": "anxiety",
-        "title": "Anxiety Disorders",
-        "description": "Care for persistent worry, tension, and avoidance so you can regain confidence in daily activities.",
-        "icon": "anxiety"
-      },
-      {
-        "id": "bipolar",
-        "title": "Bipolar Disorders",
-        "description": "Stabilizing mood shifts with close monitoring, clear communication, and a plan that fits your routine.",
-        "icon": "bipolar"
-      },
-      {
-        "id": "depression",
-        "title": "Depression",
-        "description": "Treatment for low mood, low energy, and loss of interest with a focus on helping you feel like yourself again.",
-        "icon": "depression"
-      },
-      {
-        "id": "ocd",
-        "title": "OCD",
-        "description": "Support for intrusive thoughts and repetitive behaviors through structured, evidence-based psychiatric care.",
-        "icon": "ocd"
-      },
-      {
-        "id": "ptsd",
-        "title": "PTSD",
-        "description": "Trauma-informed care for flashbacks, hypervigilance, and emotional distress after difficult life experiences.",
-        "icon": "ptsd"
-      },
-      {
-        "id": "psychosis",
-        "title": "Psychosis",
-        "description": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability.",
-        "icon": "psychosis"
-      }
-    ]
-  },
-  "benefits": {
-    "heading": "What you gain from care at Elevate",
-    "intro": "Our approach is simple: listen first, explain your options clearly, and build a plan you can actually follow.",
-    "image": {
-      "src": "assets/about-main.png",
-      "alt": "Rohzan G. Altre, PMHNP",
-      "width": 767,
-      "height": 1024
-    },
-    "items": [
-      "One-on-one care with a board-certified psychiatric nurse practitioner",
-      "Treatment plans tailored to your symptoms, history, and daily life",
-      "Virtual appointments through a secure telehealth platform",
-      "Medication management combined with brief psychotherapy when needed",
-      "Clear follow-up and adjustments as your needs change",
-      "Compassionate support for patients across the life span"
-    ]
-  },
-  "footer": {
-    "description": "Individualized psychiatric care and brief psychotherapy for patients in California and Nevada.",
-    "locations": {
-      "address1": {
-        "title": "Address 1",
-        "addresses": [
-          "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-          "1302 Madera Rd<br>Simi Valley, CA 93065"
+    "nav": {
+        "ctaLabel": "Request Appointment",
+        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
+        "links": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
         ]
-      },
-      "address2": {
-        "title": "Address 2",
-        "addresses": [
-          "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-        ],
-        "email": {
-          "label": "elevatepatientcare@gmail.com",
-          "href": "mailto:elevatepatientcare@gmail.com"
-        }
-      }
     },
-    "quickLinks": [
-      {
-        "label": "Home",
-        "href": "index.html"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  }
+    "pageHero": {
+        "heading": "Psychiatric care built around your needs",
+        "intro": "Elevate offers individualized psychiatric treatment and brief psychotherapy for children, teens, and adults. Whether you are starting care for the first time or looking for a fresh approach, we are here to help you feel more stable and supported.",
+        "cta": {
+            "label": "Request an Appointment",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "stats": [
+            {
+                "value": "Virtual",
+                "label": "Visits available"
+            },
+            {
+                "value": "CA & NV",
+                "label": "States served"
+            }
+        ],
+        "image": {
+            "src": "assets/hero.png",
+            "alt": "Family connecting outdoors"
+        }
+    },
+    "services": {
+        "kicker": "Our services",
+        "intro": "We treat a wide range of mental health conditions with thoughtful evaluation, medication management when appropriate, and brief psychotherapy tailored to your goals.",
+        "cta": {
+            "label": "Schedule a visit",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "items": [
+            {
+                "id": "adhd",
+                "title": "ADHD",
+                "description": "Support for focus, impulsivity, and daily functioning with treatment plans designed for school, work, and home life.",
+                "icon": "star"
+            },
+            {
+                "id": "panic",
+                "title": "Panic Disorder",
+                "description": "Help reducing sudden panic symptoms and building practical tools to feel safer in everyday situations.",
+                "icon": "panic"
+            },
+            {
+                "id": "anxiety",
+                "title": "Anxiety Disorders",
+                "description": "Care for persistent worry, tension, and avoidance so you can regain confidence in daily activities.",
+                "icon": "anxiety"
+            },
+            {
+                "id": "bipolar",
+                "title": "Bipolar Disorders",
+                "description": "Stabilizing mood shifts with close monitoring, clear communication, and a plan that fits your routine.",
+                "icon": "bipolar"
+            },
+            {
+                "id": "depression",
+                "title": "Depression",
+                "description": "Treatment for low mood, low energy, and loss of interest with a focus on helping you feel like yourself again.",
+                "icon": "depression"
+            },
+            {
+                "id": "ocd",
+                "title": "OCD",
+                "description": "Support for intrusive thoughts and repetitive behaviors through structured, evidence-based psychiatric care.",
+                "icon": "ocd"
+            },
+            {
+                "id": "ptsd",
+                "title": "PTSD",
+                "description": "Trauma-informed care for flashbacks, hypervigilance, and emotional distress after difficult life experiences.",
+                "icon": "ptsd"
+            },
+            {
+                "id": "psychosis",
+                "title": "Psychosis",
+                "description": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability.",
+                "icon": "psychosis"
+            }
+        ]
+    },
+    "benefits": {
+        "heading": "What you gain from care at Elevate",
+        "intro": "Our approach is simple: listen first, explain your options clearly, and build a plan you can actually follow.",
+        "image": {
+            "src": "assets/about-main.png",
+            "alt": "Rohzan G. Altre, PMHNP",
+            "width": 767,
+            "height": 1024
+        },
+        "items": [
+            "One-on-one care with a board-certified psychiatric nurse practitioner",
+            "Treatment plans tailored to your symptoms, history, and daily life",
+            "Virtual appointments through a secure telehealth platform",
+            "Medication management combined with brief psychotherapy when needed",
+            "Clear follow-up and adjustments as your needs change",
+            "Compassionate support for patients across the life span"
+        ]
+    },
+    "footer": {
+        "description": "Individualized psychiatric care and brief psychotherapy for patients in California and Nevada.",
+        "locations": {
+            "address1": {
+                "title": "Address 1",
+                "addresses": [
+                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
+                    "1302 Madera Rd<br>Simi Valley, CA 93065"
+                ]
+            },
+            "address2": {
+                "title": "Address 2",
+                "addresses": [
+                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                ],
+                "email": {
+                    "label": "elevatepatientcare@gmail.com",
+                    "href": "mailto:elevatepatientcare@gmail.com"
+                }
+            }
+        },
+        "quickLinks": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
+        ]
+    }
 }

@@ -1,151 +1,151 @@
 {
-  "seo": {
-    "title": "Payment Information | Elevate Mental Health and Wellness",
-    "description": "Insurance and payment information for Elevate Mental Health and Wellness. We accept Optum, Anthem, Medicare, Aetna, Magellan, and Cigna.",
-    "canonicalUrl": "",
-    "robots": "index,follow",
-    "ogTitle": "Payment & Insurance | Elevate",
-    "ogDescription": "Learn which insurance plans Elevate accepts and find answers to common billing questions.",
-    "ogImage": "assets/og-image.jpg",
-    "twitterTitle": "Payment & Insurance | Elevate",
-    "twitterDescription": "Insurance and payment information for psychiatric care at Elevate.",
-    "twitterImage": "assets/og-image.jpg"
-  },
-  "site": {
-    "title": "Elevate Mental Health and Wellness",
-    "brandName": "Elevate Mental Health and Wellness",
-    "logo": "assets/logo.png",
-    "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
-  },
-  "nav": {
-    "ctaLabel": "Request Appointment",
-    "ctaHref": "index.html#appointment",
-    "links": [
-      {
-        "label": "Home",
-        "href": "index.html"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  },
-  "pageHero": {
-    "heading": "Our Clinic accepts the following Insurance Company",
-    "intro": "We work with several major insurance providers. Please contact the clinic to confirm your coverage before scheduling an appointment."
-  },
-  "payment": {
-    "kicker": "Insurance & payment",
-    "heading": "Accepted insurance plans",
-    "intro": "Coverage can vary by plan and location. Reach out if you have questions about your benefits or billing.",
-    "insurers": [
-      {
-        "name": "Optum",
-        "src": "assets/insurance_optum.jpg"
-      },
-      {
-        "name": "Anthem",
-        "src": "assets/insurance_anthem.png"
-      },
-      {
-        "name": "Medicare",
-        "src": "assets/insurance_medicare.png"
-      },
-      {
-        "name": "Aetna",
-        "src": "assets/insurance_aetna.jpg"
-      },
-      {
-        "name": "Magellan Health",
-        "src": "assets/insurance_magellan.png"
-      },
-      {
-        "name": "Cigna",
-        "src": "assets/insurance_cigna.jpg"
-      }
-    ],
-    "billPay": {
-      "label": "Bill Pay",
-      "href": "#"
-    }
-  },
-  "faq": {
-    "heading": "Frequently asked questions",
-    "items": [
-      {
-        "question": "Do you accept insurance?",
-        "answer": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment.",
-        "open": true
-      },
-      {
-        "question": "What are your fees?",
-        "answer": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
-      },
-      {
-        "question": "What forms of payment do you accept?",
-        "answer": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
-      },
-      {
-        "question": "Do you offer virtual appointments?",
-        "answer": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
-      }
-    ]
-  },
-  "footer": {
-    "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
-    "locations": {
-      "address1": {
-        "title": "Address 1",
-        "addresses": [
-          "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-          "1302 Madera Rd<br>Simi Valley, CA 93065"
-        ]
-      },
-      "address2": {
-        "title": "Address 2",
-        "addresses": [
-          "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-        ],
-        "email": {
-          "label": "elevatepatientcare@gmail.com",
-          "href": "mailto:elevatepatientcare@gmail.com"
-        }
-      }
+    "seo": {
+        "title": "Payment Information | Elevate Mental Health and Wellness",
+        "description": "Insurance and payment information for Elevate Mental Health and Wellness. We accept Optum, Anthem, Medicare, Aetna, Magellan, and Cigna.",
+        "canonicalUrl": "https://elevate-staging.pages.dev/payment.html",
+        "robots": "index,follow",
+        "ogTitle": "Payment & Insurance | Elevate",
+        "ogDescription": "Learn which insurance plans Elevate accepts and find answers to common billing questions.",
+        "ogImage": "assets/og-image.jpg",
+        "twitterTitle": "Payment & Insurance | Elevate",
+        "twitterDescription": "Insurance and payment information for psychiatric care at Elevate.",
+        "twitterImage": "assets/og-image.jpg"
     },
-    "quickLinks": [
-      {
-        "label": "Home",
-        "href": "index.html"
-      },
-      {
-        "label": "About Us",
-        "href": "about.html"
-      },
-      {
-        "label": "Services",
-        "href": "services.html"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html"
-      },
-      {
-        "label": "Payment Information",
-        "href": "payment.html"
-      }
-    ]
-  }
+    "site": {
+        "title": "Elevate Mental Health and Wellness",
+        "brandName": "Elevate Mental Health and Wellness",
+        "logo": "assets/logo.png",
+        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+    },
+    "nav": {
+        "ctaLabel": "Request Appointment",
+        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
+        "links": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
+        ]
+    },
+    "pageHero": {
+        "heading": "Our Clinic accepts the following Insurance Company",
+        "intro": "We work with several major insurance providers. Please contact the clinic to confirm your coverage before scheduling an appointment."
+    },
+    "payment": {
+        "kicker": "Insurance & payment",
+        "heading": "Accepted insurance plans",
+        "intro": "Coverage can vary by plan and location. Reach out if you have questions about your benefits or billing.",
+        "insurers": [
+            {
+                "name": "Optum",
+                "src": "assets/insurance_optum.jpg"
+            },
+            {
+                "name": "Anthem",
+                "src": "assets/insurance_anthem.png"
+            },
+            {
+                "name": "Medicare",
+                "src": "assets/insurance_medicare.png"
+            },
+            {
+                "name": "Aetna",
+                "src": "assets/insurance_aetna.jpg"
+            },
+            {
+                "name": "Magellan Health",
+                "src": "assets/insurance_magellan.png"
+            },
+            {
+                "name": "Cigna",
+                "src": "assets/insurance_cigna.jpg"
+            }
+        ],
+        "billPay": {
+            "label": "Bill Pay",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        }
+    },
+    "faq": {
+        "heading": "Frequently asked questions",
+        "items": [
+            {
+                "question": "Do you accept insurance?",
+                "answer": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment.",
+                "open": true
+            },
+            {
+                "question": "What are your fees?",
+                "answer": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
+            },
+            {
+                "question": "What forms of payment do you accept?",
+                "answer": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
+            },
+            {
+                "question": "Do you offer virtual appointments?",
+                "answer": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
+            }
+        ]
+    },
+    "footer": {
+        "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
+        "locations": {
+            "address1": {
+                "title": "Address 1",
+                "addresses": [
+                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
+                    "1302 Madera Rd<br>Simi Valley, CA 93065"
+                ]
+            },
+            "address2": {
+                "title": "Address 2",
+                "addresses": [
+                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                ],
+                "email": {
+                    "label": "elevatepatientcare@gmail.com",
+                    "href": "mailto:elevatepatientcare@gmail.com"
+                }
+            }
+        },
+        "quickLinks": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
+        ]
+    }
 }
