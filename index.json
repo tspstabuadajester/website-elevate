@@ -31,7 +31,7 @@
       },
       {
         "label": "Services",
-        "href": "#services"
+        "href": "service.html"
       },
       {
         "label": "Contact",
@@ -53,7 +53,7 @@
     },
     "secondaryCta": {
       "label": "Learn More",
-      "href": "#services"
+      "href": "service.html"
     },
     "image": {
       "src": "assets/hero.png",
@@ -272,7 +272,7 @@
       },
       {
         "label": "Services",
-        "href": "#services"
+        "href": "service.html"
       },
       {
         "label": "Contact",

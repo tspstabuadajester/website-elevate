@@ -517,7 +517,7 @@
     }).join('');
   }
 
-  function renderAboutTestimonials(section) {
+  function renderTestimonialsSection(section) {
     setText(document.getElementById('testimonials-heading'), section.heading);
 
     var grid = document.getElementById('testimonials-grid');
@@ -533,6 +533,84 @@
         '<p class="about-testimonial-card__text">' + item.quote + '</p>' +
         '<p class="about-testimonial-card__author">' + authorLine + '</p>' +
         '</article>'
+      );
+    }).join('');
+  }
+
+  function renderServiceHero(pageHero) {
+    setText(document.getElementById('service-hero-heading'), pageHero.heading);
+    setText(document.getElementById('service-hero-intro'), pageHero.intro);
+
+    var cta = document.getElementById('service-hero-cta');
+    if (cta && pageHero.cta) {
+      cta.textContent = pageHero.cta.label;
+      cta.href = pageHero.cta.href;
+    }
+
+    var stats = document.getElementById('service-hero-stats');
+    if (stats && pageHero.stats) {
+      stats.innerHTML = pageHero.stats.map(function (stat) {
+        return (
+          '<div class="service-hero__stat">' +
+          '<p class="service-hero__stat-value">' + stat.value + '</p>' +
+          '<p class="service-hero__stat-label">' + stat.label + '</p>' +
+          '</div>'
+        );
+      }).join('');
+    }
+
+    var img = document.getElementById('service-hero-image');
+    if (img && pageHero.image) {
+      img.src = pageHero.image.src;
+      img.alt = pageHero.image.alt || '';
+    }
+  }
+
+  function renderServiceList(services) {
+    setText(document.getElementById('services-kicker'), services.kicker);
+    setText(document.getElementById('services-intro'), services.intro);
+
+    var cta = document.getElementById('services-cta');
+    if (cta && services.cta) {
+      cta.textContent = services.cta.label;
+      cta.href = services.cta.href;
+    }
+
+    var grid = document.getElementById('services-grid');
+    if (!grid || !services.items) return;
+
+    grid.innerHTML = services.items.map(function (item) {
+      return (
+        '<article class="reveal service-page-card">' +
+        '<div class="service-page-card__icon" aria-hidden="true">' + getIconMarkup(item.icon) + '</div>' +
+        '<h3 class="service-page-card__title">' + item.title + '</h3>' +
+        '<p class="service-page-card__text">' + item.description + '</p>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  function renderServiceBenefits(benefits) {
+    var img = document.getElementById('benefits-image');
+    if (img && benefits.image) {
+      img.src = benefits.image.src;
+      img.alt = benefits.image.alt;
+      if (benefits.image.width) img.width = benefits.image.width;
+      if (benefits.image.height) img.height = benefits.image.height;
+    }
+
+    setText(document.getElementById('benefits-heading'), benefits.heading);
+    setText(document.getElementById('benefits-intro'), benefits.intro);
+
+    var list = document.getElementById('benefits-list');
+    if (!list || !benefits.items) return;
+
+    list.innerHTML = benefits.items.map(function (item) {
+      return (
+        '<li class="reveal flex items-start gap-3">' +
+        '<span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-elevate-100 text-xs font-bold text-elevate-600">✓</span>' +
+        '<span class="text-sm font-medium leading-6 text-slate-700">' + item + '</span>' +
+        '</li>'
       );
     }).join('');
   }
@@ -571,7 +649,24 @@
     renderAboutMission(data.mission);
     renderAboutFounder(data.founder);
     renderAboutFeatures(data.features);
-    renderAboutTestimonials(data.testimonials);
+    renderTestimonialsSection(data.testimonials);
+    renderFooter(data.footer, data.site);
+
+    document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
+  }
+
+  function renderServicePage(data) {
+    if (!data.pageHero) {
+      console.error('[Elevate] Service page content not found in page JSON');
+      return;
+    }
+
+    renderSeo(data.seo, data.site);
+    renderLogos(data.site);
+    renderNav(data.nav);
+    renderServiceHero(data.pageHero);
+    renderServiceList(data.services);
+    renderServiceBenefits(data.benefits);
     renderFooter(data.footer, data.site);
 
     document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
@@ -581,6 +676,10 @@
     var pageId = document.body.getAttribute('data-page') || 'index';
     if (pageId === 'about') {
       renderAboutPage(data);
+      return;
+    }
+    if (pageId === 'service') {
+      renderServicePage(data);
       return;
     }
     renderIndexPage(data);
