@@ -39,7 +39,7 @@
       },
       {
         "label": "Payment Information",
-        "href": "index.html#payment"
+        "href": "payment.html"
       }
     ]
   },
@@ -123,7 +123,7 @@
       },
       {
         "label": "Payment Information",
-        "href": "index.html#payment"
+        "href": "payment.html"
       }
     ]
   }

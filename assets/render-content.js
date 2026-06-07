@@ -278,15 +278,32 @@
   function renderPayment(payment) {
     setText(document.getElementById('payment-kicker'), payment.kicker);
     setText(document.getElementById('payment-heading'), payment.heading);
+    setText(document.getElementById('payment-intro'), payment.intro);
 
     var insurers = document.getElementById('payment-insurers');
     if (insurers && payment.insurers) {
-      insurers.innerHTML = payment.insurers.map(function (insurer) {
-        if (insurer.html) {
-          return '<span class="' + insurer.className + '">' + insurer.html + '</span>';
-        }
-        return '<span class="' + insurer.className + '">' + insurer.name + '</span>';
-      }).join('');
+      var useImageGrid = payment.insurers.some(function (item) {
+        return item.src;
+      });
+
+      if (useImageGrid) {
+        insurers.className = 'payment-insurers';
+        insurers.innerHTML = payment.insurers.map(function (insurer) {
+          return (
+            '<div class="payment-insurer">' +
+            '<img src="' + insurer.src + '" alt="' + insurer.name + '" class="payment-insurer__logo" loading="lazy" decoding="async" />' +
+            '</div>'
+          );
+        }).join('');
+      } else {
+        insurers.className = 'flex flex-wrap items-center justify-center gap-8 sm:gap-10';
+        insurers.innerHTML = payment.insurers.map(function (insurer) {
+          if (insurer.html) {
+            return '<span class="' + insurer.className + '">' + insurer.html + '</span>';
+          }
+          return '<span class="' + insurer.className + '">' + insurer.name + '</span>';
+        }).join('');
+      }
     }
 
     var billPay = document.getElementById('payment-bill-pay');
@@ -724,6 +741,28 @@
     document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
   }
 
+  function renderPaymentHero(pageHero) {
+    setText(document.getElementById('payment-hero-heading'), pageHero.heading);
+    setText(document.getElementById('payment-hero-intro'), pageHero.intro);
+  }
+
+  function renderPaymentPage(data) {
+    if (!data.pageHero) {
+      console.error('[Elevate] Payment page content not found in page JSON');
+      return;
+    }
+
+    renderSeo(data.seo, data.site);
+    renderLogos(data.site);
+    renderNav(data.nav);
+    renderPaymentHero(data.pageHero);
+    renderPayment(data.payment);
+    renderFaq(data.faq);
+    renderFooter(data.footer, data.site);
+
+    document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
+  }
+
   function renderPage(data) {
     var pageId = document.body.getAttribute('data-page') || 'index';
     if (pageId === 'about') {
@@ -736,6 +775,10 @@
     }
     if (pageId === 'contact') {
       renderContactPage(data);
+      return;
+    }
+    if (pageId === 'payment') {
+      renderPaymentPage(data);
       return;
     }
     renderIndexPage(data);
