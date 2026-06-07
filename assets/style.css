@@ -744,23 +744,24 @@ details summary::-webkit-details-marker { display: none; }
 .about-sparkle {
   position: absolute;
   z-index: 2;
-  color: rgba(125, 100, 168, 0.45);
+  color: #f5b82a;
+  text-shadow: 0 0 12px rgba(245, 184, 42, 0.45);
   pointer-events: none;
   animation: aboutSparkle 4s ease-in-out infinite;
 }
-.about-sparkle--1 { top: 18%; left: 12%; font-size: 1.25rem; }
-.about-sparkle--2 { top: 28%; right: 14%; font-size: 0.75rem; animation-delay: 0.8s; }
-.about-sparkle--3 { top: 42%; left: 20%; font-size: 1rem; animation-delay: 1.4s; }
+.about-sparkle--1 { top: 16%; left: 10%; font-size: 2.5rem; }
+.about-sparkle--2 { top: 26%; right: 12%; font-size: 1.75rem; animation-delay: 0.8s; }
+.about-sparkle--3 { top: 40%; left: 18%; font-size: 2.25rem; animation-delay: 1.4s; }
 .about-sparkle--4 {
-  top: -0.5rem;
-  right: 1rem;
-  font-size: 1.1rem;
+  top: -0.75rem;
+  right: 0.5rem;
+  font-size: 2rem;
   animation-delay: 0.5s;
 }
 
 @keyframes aboutSparkle {
-  0%, 100% { opacity: 0.35; transform: translateY(0) rotate(0deg); }
-  50% { opacity: 0.85; transform: translateY(-6px) rotate(12deg); }
+  0%, 100% { opacity: 0.5; transform: translateY(0) rotate(0deg) scale(1); }
+  50% { opacity: 1; transform: translateY(-10px) rotate(18deg) scale(1.08); }
 }
 
 .about-gallery {

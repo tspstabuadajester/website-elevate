@@ -31,8 +31,7 @@
       },
       {
         "label": "Services",
-        "href": "#services",
-        "suffix": "▾"
+        "href": "#services"
       },
       {
         "label": "Contact",
