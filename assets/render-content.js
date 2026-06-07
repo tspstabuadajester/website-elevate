@@ -644,7 +644,6 @@
     renderHero(data.hero);
     renderServices(data.services);
     renderAbout(data.about);
-    renderTestimonials(data.testimonials);
     renderPayment(data.payment);
     renderFaq(data.faq);
     renderCtaPanel(data.ctaPanel);

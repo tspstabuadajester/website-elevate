@@ -152,52 +152,33 @@
       "href": "#about"
     }
   },
-  "testimonials": {
-    "kicker": "Patients share their experiences",
-    "heading": "Trusted care. Real stories.",
-    "items": [
-      {
-        "quote": "Any psychiatrist can write a prescription and you're done. Rohzan goes the extra mile and that is how she has been helping me and she has saved my life with proper diagnoses, treatment, and advice.",
-        "author": "Alfred"
-      },
-      {
-        "quote": "I can't say enough about my great experience with Rohzan. She helped me through the hardest time in my life. I highly recommend her to anyone facing a challenging situation — JUST TAKE ONE DAY AT A TIME.",
-        "author": "Denise"
-      },
-      {
-        "quote": "She's a psych NP who shows genuine empathy and professionalism which helped me to open up to her so comfortably. She's awesome!",
-        "author": "Calvin"
-      }
-    ]
-  },
   "payment": {
     "kicker": "Insurance & payment",
     "heading": "We accept most major insurance plans",
     "insurers": [
       {
         "name": "Optum",
-        "className": "text-xl font-black tracking-tight text-slate-600"
+        "src": "assets/insurance_optum.jpg"
       },
       {
         "name": "Anthem",
-        "className": "text-xl font-black text-blue-600"
+        "src": "assets/insurance_anthem.png"
       },
       {
         "name": "Medicare",
-        "className": "text-xl font-black text-blue-900"
+        "src": "assets/insurance_medicare.png"
       },
       {
-        "name": "aetna",
-        "className": "text-xl font-black lowercase text-purple-700"
+        "name": "Aetna",
+        "src": "assets/insurance_aetna.jpg"
       },
       {
-        "name": "Magellan",
-        "className": "text-center text-lg font-black leading-tight text-slate-700",
-        "html": "Magellan<br><span class=\"text-sm font-bold text-sky-600\">Health</span>"
+        "name": "Magellan Health",
+        "src": "assets/insurance_magellan.png"
       },
       {
         "name": "Cigna",
-        "className": "text-xl font-black text-sky-600"
+        "src": "assets/insurance_cigna.jpg"
       }
     ],
     "billPay": {
