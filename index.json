@@ -27,7 +27,7 @@
       },
       {
         "label": "About Us",
-        "href": "#about"
+        "href": "about.html"
       },
       {
         "label": "Services",
@@ -269,7 +269,7 @@
       },
       {
         "label": "About Us",
-        "href": "#about"
+        "href": "about.html"
       },
       {
         "label": "Services",

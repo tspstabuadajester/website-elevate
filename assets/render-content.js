@@ -443,9 +443,103 @@
     if (twitterImage) setMetaContent('meta[name="twitter:image"]', twitterImage);
   }
 
-  function renderPage(data) {
+  var ABOUT_FEATURE_ICONS = {
+    team: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    target: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+    shield: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>'
+  };
+
+  function getAboutFeatureIcon(key) {
+    return ABOUT_FEATURE_ICONS[key] || ABOUT_FEATURE_ICONS.team;
+  }
+
+  function renderAboutHero(pageHero) {
+    setText(document.getElementById('page-hero-heading'), pageHero.heading);
+    setText(document.getElementById('page-hero-intro'), pageHero.intro);
+
+    var gallery = document.getElementById('about-gallery');
+    if (!gallery || !pageHero.gallery) return;
+
+    gallery.innerHTML = pageHero.gallery.map(function (item, i) {
+      return (
+        '<figure class="reveal about-gallery__item about-gallery__item--' + (i + 1) + '">' +
+        '<img src="' + item.src + '" alt="' + (item.alt || '') + '" loading="lazy" decoding="async" />' +
+        '</figure>'
+      );
+    }).join('');
+  }
+
+  function renderAboutMission(mission) {
+    setText(document.getElementById('mission-heading'), mission.heading);
+
+    var columns = document.getElementById('mission-columns');
+    if (!columns || !mission.columns) return;
+
+    columns.innerHTML = mission.columns.map(function (text) {
+      return '<p class="reveal text-sm leading-7 text-slate-600 sm:text-base">' + text + '</p>';
+    }).join('');
+  }
+
+  function renderAboutFounder(founder) {
+    var img = document.getElementById('founder-image');
+    if (img && founder.image) {
+      img.src = founder.image.src;
+      img.alt = founder.image.alt;
+      if (founder.image.width) img.width = founder.image.width;
+      if (founder.image.height) img.height = founder.image.height;
+    }
+
+    if (founder.quoteCard) {
+      setText(document.getElementById('founder-quote-text'), '"' + founder.quoteCard.text + '"');
+      setText(document.getElementById('founder-quote-attribution'), founder.quoteCard.attribution);
+    }
+
+    setText(document.getElementById('founder-heading'), founder.heading);
+    setText(document.getElementById('founder-paragraph'), founder.paragraph);
+    setText(document.getElementById('founder-blockquote'), founder.blockquote);
+  }
+
+  function renderAboutFeatures(features) {
+    setText(document.getElementById('features-heading'), features.heading);
+    setText(document.getElementById('features-intro'), features.intro);
+
+    var grid = document.getElementById('features-grid');
+    if (!grid || !features.items) return;
+
+    grid.innerHTML = features.items.map(function (item) {
+      return (
+        '<article class="reveal about-feature-card">' +
+        '<div class="about-feature-card__icon" aria-hidden="true">' + getAboutFeatureIcon(item.icon) + '</div>' +
+        '<h3 class="about-feature-card__title">' + item.title + '</h3>' +
+        '<p class="about-feature-card__text">' + item.description + '</p>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  function renderAboutTestimonials(section) {
+    setText(document.getElementById('testimonials-heading'), section.heading);
+
+    var grid = document.getElementById('testimonials-grid');
+    if (!grid || !section.items) return;
+
+    grid.innerHTML = section.items.map(function (item) {
+      var authorLine = item.author;
+      if (item.detail) authorLine += ', ' + item.detail;
+
+      return (
+        '<article class="reveal about-testimonial-card">' +
+        '<div class="about-testimonial-card__quote" aria-hidden="true">“</div>' +
+        '<p class="about-testimonial-card__text">' + item.quote + '</p>' +
+        '<p class="about-testimonial-card__author">' + authorLine + '</p>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  function renderIndexPage(data) {
     if (!data.hero) {
-      console.error('[Elevate] Page content not found in page JSON');
+      console.error('[Elevate] Index page content not found in page JSON');
       return;
     }
 
@@ -462,6 +556,34 @@
     renderFooter(data.footer, data.site);
 
     document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
+  }
+
+  function renderAboutPage(data) {
+    if (!data.pageHero) {
+      console.error('[Elevate] About page content not found in page JSON');
+      return;
+    }
+
+    renderSeo(data.seo, data.site);
+    renderLogos(data.site);
+    renderNav(data.nav);
+    renderAboutHero(data.pageHero);
+    renderAboutMission(data.mission);
+    renderAboutFounder(data.founder);
+    renderAboutFeatures(data.features);
+    renderAboutTestimonials(data.testimonials);
+    renderFooter(data.footer, data.site);
+
+    document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
+  }
+
+  function renderPage(data) {
+    var pageId = document.body.getAttribute('data-page') || 'index';
+    if (pageId === 'about') {
+      renderAboutPage(data);
+      return;
+    }
+    renderIndexPage(data);
   }
 
   function loadContent() {
