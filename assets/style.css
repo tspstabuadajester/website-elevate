@@ -1171,3 +1171,84 @@ body.assets-ready .service-hero .page-hero-animate--5 { animation-delay: 0.48s; 
     transform: none;
   }
 }
+
+/* ─── CONTACT PAGE ───────────────────────────────────────── */
+.contact-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f8f5fc 0%, #f3f0f8 100%);
+}
+
+.contact-hero .hero-rings {
+  z-index: 1;
+}
+
+.contact-hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-location-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid #e8dff5;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(45, 38, 64, 0.06);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+.contact-location-card:hover {
+  transform: translateY(-4px);
+  border-color: #d4b5fb;
+  box-shadow: 0 14px 36px rgba(125, 100, 168, 0.12);
+}
+
+.contact-location-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ebe4f5, #f8f5fc);
+  color: #7d64a8;
+}
+
+.contact-location-card__title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #33204f;
+}
+
+.contact-location-card__address {
+  margin-top: 0.35rem;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+
+body.assets-ready .contact-hero .hero-rings {
+  animation: heroRingsIn 1.4s ease 0.15s forwards;
+}
+body.assets-ready .contact-hero .hero-rings--bl {
+  animation-delay: 0.35s;
+}
+body.assets-ready .contact-hero .page-hero-animate {
+  animation: heroFadeUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+body.assets-ready .contact-hero .page-hero-animate--1 { animation-delay: 0.08s; }
+body.assets-ready .contact-hero .page-hero-animate--2 { animation-delay: 0.18s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-location-card {
+    transition: none;
+  }
+  .contact-location-card:hover {
+    transform: none;
+  }
+}

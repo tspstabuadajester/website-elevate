@@ -672,6 +672,58 @@
     document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
   }
 
+  function renderContactHero(pageHero) {
+    setText(document.getElementById('contact-hero-heading'), pageHero.heading);
+    setText(document.getElementById('contact-hero-intro'), pageHero.intro);
+  }
+
+  function renderContactInfo(info) {
+    setText(document.getElementById('contact-info-kicker'), info.kicker);
+    setText(document.getElementById('contact-info-heading'), info.heading);
+    setText(document.getElementById('contact-info-intro'), info.intro);
+
+    var emailLink = document.getElementById('contact-email');
+    var emailLabel = document.getElementById('contact-email-label');
+    if (emailLink && info.email) {
+      emailLink.href = info.email.href;
+      setText(emailLabel, info.email.label);
+    }
+
+    var locations = document.getElementById('contact-locations');
+    if (!locations || !info.locations) return;
+
+    locations.innerHTML = info.locations.map(function (loc) {
+      return (
+        '<article class="reveal contact-location-card">' +
+        '<div class="contact-location-card__icon" aria-hidden="true">' +
+        '<svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>' +
+        '</div>' +
+        '<div>' +
+        '<h3 class="contact-location-card__title">' + loc.title + '</h3>' +
+        '<p class="contact-location-card__address">' + loc.address + '</p>' +
+        '</div>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  function renderContactPage(data) {
+    if (!data.pageHero) {
+      console.error('[Elevate] Contact page content not found in page JSON');
+      return;
+    }
+
+    renderSeo(data.seo, data.site);
+    renderLogos(data.site);
+    renderNav(data.nav);
+    renderContactHero(data.pageHero);
+    renderContactInfo(data.contactInfo);
+    renderCtaPanel(data.ctaPanel);
+    renderFooter(data.footer, data.site);
+
+    document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
+  }
+
   function renderPage(data) {
     var pageId = document.body.getAttribute('data-page') || 'index';
     if (pageId === 'about') {
@@ -680,6 +732,10 @@
     }
     if (pageId === 'service') {
       renderServicePage(data);
+      return;
+    }
+    if (pageId === 'contact') {
+      renderContactPage(data);
       return;
     }
     renderIndexPage(data);
