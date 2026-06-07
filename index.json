@@ -61,6 +61,11 @@
       "alt": "Family spending time together outdoors",
       "width": 1200,
       "height": 900
+    },
+    "video": {
+      "src": "assets/hero-vid.mp4",
+      "poster": "assets/hero.png",
+      "alt": "Calming moments of connection and wellness"
     }
   },
   "services": {

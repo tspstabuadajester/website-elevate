@@ -63,12 +63,45 @@
       secondary.href = hero.secondaryCta.href;
     }
 
+    var video = document.getElementById('hero-video');
     var img = document.getElementById('hero-image');
-    if (img && hero.image) {
+    var posterSrc = (hero.video && hero.video.poster) || (hero.image && hero.image.src) || '';
+    var altText =
+      (hero.video && hero.video.alt) ||
+      (hero.image && hero.image.alt) ||
+      '';
+
+    if (img) {
+      if (posterSrc) img.src = posterSrc;
+      img.alt = altText;
+      if (hero.image && hero.image.width) img.width = hero.image.width;
+      if (hero.image && hero.image.height) img.height = hero.image.height;
+    }
+
+    if (video && hero.video && hero.video.src) {
+      video.src = hero.video.src;
+      if (posterSrc) video.poster = posterSrc;
+      video.setAttribute('aria-label', altText);
+
+      var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) {
+        video.removeAttribute('autoplay');
+        video.pause();
+        video.classList.add('hero-video--static');
+        if (img) img.classList.add('hero-poster--visible');
+      } else {
+        video.classList.remove('hero-video--static');
+        if (img) img.classList.remove('hero-poster--visible');
+        video.play().catch(function () {
+          if (img) img.classList.add('hero-poster--visible');
+        });
+      }
+    } else if (video) {
+      video.classList.add('hero-video--static');
+      if (img) img.classList.add('hero-poster--visible');
+    } else if (img && hero.image) {
       img.src = hero.image.src;
       img.alt = hero.image.alt;
-      if (hero.image.width) img.width = hero.image.width;
-      if (hero.image.height) img.height = hero.image.height;
     }
   }
 

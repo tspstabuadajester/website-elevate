@@ -84,7 +84,18 @@
 
     <!-- HERO -->
     <section class="hero-section">
-      <div class="dot-grid dot-grid--sm absolute left-6 top-24 z-10 opacity-90 lg:left-10 lg:top-28"></div>
+      <svg class="hero-clip-svg" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+          <clipPath id="hero-video-wave" clipPathUnits="objectBoundingBox">
+            <path d="M 0.055 0 C 0.055 0.083 0.025 0.167 0.025 0.25 C 0.025 0.333 0.055 0.417 0.055 0.5 C 0.055 0.583 0.025 0.667 0.025 0.75 C 0.025 0.833 0.055 0.917 0.055 1 L 1 1 L 1 0 Z" />
+          </clipPath>
+          <clipPath id="hero-video-wave-lg" clipPathUnits="objectBoundingBox">
+            <path d="M 0.08 0 C 0.08 0.083 0.035 0.167 0.035 0.25 C 0.035 0.333 0.08 0.417 0.08 0.5 C 0.08 0.583 0.035 0.667 0.035 0.75 C 0.035 0.833 0.08 0.917 0.08 1 L 1 1 L 1 0 Z" />
+          </clipPath>
+        </defs>
+      </svg>
+
+      <div class="dot-grid dot-grid--sm absolute left-6 top-24 z-[1] opacity-90 lg:left-10 lg:top-28"></div>
 
       <div class="hero-rings hero-rings--tr" aria-hidden="true">
         <span class="hero-ring hero-ring--1"></span>
@@ -97,51 +108,61 @@
         <span class="hero-ring hero-ring--3"></span>
       </div>
 
-      <div class="hero-inner mx-auto max-w-7xl px-4 py-8 sm:px-5 sm:py-12 lg:px-8 lg:py-20">
+      <div class="hero-inner">
+        <div class="hero-copy-panel">
+          <div class="hero-copy">
+            <div id="hero-badge" class="hero-animate hero-animate--1 mb-4 inline-flex max-w-full rounded-full border border-elevate-200 bg-white/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-500 sm:mb-6 sm:px-4"></div>
 
-        <!-- Text content -->
-        <div class="hero-copy relative z-20 w-full max-w-xl lg:max-w-[40%]">
-          <div id="hero-badge" class="hero-animate hero-animate--1 mb-4 inline-flex max-w-full rounded-full border border-elevate-200 bg-white/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-500 sm:mb-6 sm:px-4"></div>
+            <h1 id="hero-headline" class="hero-animate hero-animate--2 serif text-3xl font-bold leading-[1.12] text-elevate-900 sm:text-4xl sm:leading-[1.08] lg:text-[3.35rem]"></h1>
 
-          <h1 id="hero-headline" class="hero-animate hero-animate--2 serif text-3xl font-bold leading-[1.12] text-elevate-900 sm:text-4xl sm:leading-[1.08] lg:text-[3.35rem]"></h1>
+            <div class="hero-animate hero-animate--3 mt-4 h-1 w-16 rounded-full bg-elevate-500 sm:mt-5 sm:w-20"></div>
 
-          <div class="hero-animate hero-animate--3 mt-4 h-1 w-16 rounded-full bg-elevate-500 sm:mt-5 sm:w-20"></div>
+            <p id="hero-description" class="hero-animate hero-animate--4 mt-4 max-w-lg text-[0.9375rem] leading-7 text-slate-600 sm:mt-6 sm:text-base"></p>
 
-          <p id="hero-description" class="hero-animate hero-animate--4 mt-4 max-w-lg text-[0.9375rem] leading-7 text-slate-600 sm:mt-6 sm:text-base"></p>
-
-          <div class="hero-cta-group hero-animate hero-animate--5 mt-6 flex w-full max-w-md flex-col gap-3 sm:mt-8 sm:max-w-none sm:flex-row sm:items-center">
-            <a id="hero-cta-primary" href="#appointment" class="hero-cta inline-flex min-h-[48px] items-center justify-center rounded-full bg-elevate-600 px-6 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-elevate-700">
-              <svg class="ml-2 h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M5.25 3A2.25 2.25 0 0 0 3 5.25v9.5A2.25 2.25 0 0 0 5.25 17h9.5A2.25 2.25 0 0 0 17 14.75v-9.5A2.25 2.25 0 0 0 14.75 3h-.25V2a.75.75 0 0 0-1.5 0v1H7V2a.75.75 0 0 0-1.5 0v1h-.25ZM4.5 8h11v6.75c0 .414-.336.75-.75.75h-9.5a.75.75 0 0 1-.75-.75V8Z"/>
-              </svg>
-            </a>
-            <a id="hero-cta-secondary" href="#services" class="hero-cta inline-flex min-h-[48px] items-center justify-center rounded-full border-2 border-elevate-400 bg-white/50 px-6 py-3.5 text-sm font-bold text-elevate-700 transition hover:bg-white">
-              <svg class="ml-1.5 h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
-              </svg>
-            </a>
+            <div class="hero-cta-group hero-animate hero-animate--5 mt-6 flex w-full max-w-md flex-col gap-3 sm:mt-8 sm:max-w-none sm:flex-row sm:items-center">
+              <a id="hero-cta-primary" href="#appointment" class="hero-cta inline-flex min-h-[48px] items-center justify-center rounded-full bg-elevate-600 px-6 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-elevate-700">
+                <svg class="ml-2 h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.25 3A2.25 2.25 0 0 0 3 5.25v9.5A2.25 2.25 0 0 0 5.25 17h9.5A2.25 2.25 0 0 0 17 14.75v-9.5A2.25 2.25 0 0 0 14.75 3h-.25V2a.75.75 0 0 0-1.5 0v1H7V2a.75.75 0 0 0-1.5 0v1h-.25ZM4.5 8h11v6.75c0 .414-.336.75-.75.75h-9.5a.75.75 0 0 1-.75-.75V8Z"/>
+                </svg>
+              </a>
+              <a id="hero-cta-secondary" href="#services" class="hero-cta inline-flex min-h-[48px] items-center justify-center rounded-full border-2 border-elevate-400 bg-white/50 px-6 py-3.5 text-sm font-bold text-elevate-700 transition hover:bg-white">
+                <svg class="ml-1.5 h-4 w-4 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="hero-visual hidden lg:block">
-          <img
-            id="hero-image"
-            class="hero-photo hero-animate-img"
-            src=""
-            alt=""
-            width="1200"
-            height="1200"
-            decoding="async"
-          />
+        <div class="hero-media-panel hero-animate-img">
+          <div class="hero-media-inner">
+            <video
+              id="hero-video"
+              class="hero-video"
+              muted
+              loop
+              playsinline
+              autoplay
+              preload="metadata"
+            ></video>
+            <img
+              id="hero-image"
+              class="hero-poster"
+              src=""
+              alt=""
+              width="1200"
+              height="900"
+              decoding="async"
+            />
+          </div>
         </div>
-
       </div>
+
+      <div class="dot-grid dot-grid--sm absolute bottom-[clamp(2.5rem,6vw,4.5rem)] right-6 z-[1] opacity-75 sm:right-12 lg:right-20"></div>
 
       <svg class="hero-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path fill="#ffffff" d="M0,42 C280,78 520,18 760,48 C1000,78 1240,28 1440,58 L1440,100 L0,100 Z"/>
       </svg>
-
-      <div class="dot-grid dot-grid--sm absolute bottom-[clamp(2.5rem,6vw,4.5rem)] right-6 z-10 opacity-75 sm:right-12 lg:right-20"></div>
     </section>
 
     <!-- SERVICES -->

@@ -10,6 +10,25 @@
     return src && src.length > 0;
   }
 
+  function waitForVideo(video) {
+    if (!video || !video.getAttribute('src') || !isVisible(video)) {
+      return Promise.resolve();
+    }
+    if (video.readyState >= 3) {
+      return Promise.resolve();
+    }
+
+    return new Promise(function (resolve) {
+      function done() {
+        video.removeEventListener('canplay', done);
+        video.removeEventListener('error', done);
+        resolve();
+      }
+      video.addEventListener('canplay', done);
+      video.addEventListener('error', done);
+    });
+  }
+
   function waitForImage(img) {
     if (!hasSrc(img) || !isVisible(img)) {
       return Promise.resolve();
@@ -34,6 +53,11 @@
 
     if (document.fonts && document.fonts.ready) {
       promises.push(document.fonts.ready);
+    }
+
+    var heroVideo = document.getElementById('hero-video');
+    if (heroVideo) {
+      promises.push(waitForVideo(heroVideo));
     }
 
     document.querySelectorAll('img').forEach(function (img) {
