@@ -768,7 +768,7 @@
       renderAboutPage(data);
       return;
     }
-    if (pageId === 'service') {
+    if (pageId === 'services') {
       renderServicePage(data);
       return;
     }

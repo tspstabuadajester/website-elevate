@@ -31,7 +31,7 @@
       },
       {
         "label": "Services",
-        "href": "service.html"
+        "href": "services.html"
       },
       {
         "label": "Contact",
@@ -53,7 +53,7 @@
     },
     "secondaryCta": {
       "label": "Learn More",
-      "href": "service.html"
+      "href": "services.html"
     },
     "video": {
       "src": "assets/hero-vid.mp4",
@@ -247,7 +247,7 @@
       },
       {
         "label": "Services",
-        "href": "service.html"
+        "href": "services.html"
       },
       {
         "label": "Contact",
