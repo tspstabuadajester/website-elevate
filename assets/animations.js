@@ -1,5 +1,5 @@
 (function () {
-  var ASSET_TIMEOUT_MS = 8000;
+  var HERO_TIMEOUT_MS = 2500;
 
   function isVisible(el) {
     return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
@@ -8,25 +8,6 @@
   function hasSrc(img) {
     var src = img.getAttribute('src');
     return src && src.length > 0;
-  }
-
-  function waitForVideo(video) {
-    if (!video || !video.getAttribute('src') || !isVisible(video)) {
-      return Promise.resolve();
-    }
-    if (video.readyState >= 3) {
-      return Promise.resolve();
-    }
-
-    return new Promise(function (resolve) {
-      function done() {
-        video.removeEventListener('canplay', done);
-        video.removeEventListener('error', done);
-        resolve();
-      }
-      video.addEventListener('canplay', done);
-      video.addEventListener('error', done);
-    });
   }
 
   function waitForImage(img) {
@@ -48,21 +29,13 @@
     });
   }
 
-  function waitForPageAssets() {
+  function waitForHeroCritical() {
     var promises = [];
+    var heroPoster = document.getElementById('hero-image');
 
-    if (document.fonts && document.fonts.ready) {
-      promises.push(document.fonts.ready);
+    if (heroPoster) {
+      promises.push(waitForImage(heroPoster));
     }
-
-    var heroVideo = document.getElementById('hero-video');
-    if (heroVideo) {
-      promises.push(waitForVideo(heroVideo));
-    }
-
-    document.querySelectorAll('img').forEach(function (img) {
-      promises.push(waitForImage(img));
-    });
 
     if (!promises.length) {
       return Promise.resolve();
@@ -71,7 +44,7 @@
     return Promise.race([
       Promise.all(promises),
       new Promise(function (resolve) {
-        setTimeout(resolve, ASSET_TIMEOUT_MS);
+        setTimeout(resolve, HERO_TIMEOUT_MS);
       })
     ]);
   }
@@ -109,18 +82,19 @@
     });
   }
 
-  function startAnimations() {
+  function startHeroAnimations() {
     document.body.classList.add('assets-ready');
-    initRevealAnimations();
     document.dispatchEvent(new CustomEvent('elevate:animations-ready'));
   }
 
   document.addEventListener('elevate:content-rendered', function () {
+    initRevealAnimations();
+
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      startAnimations();
+      startHeroAnimations();
       return;
     }
 
-    waitForPageAssets().then(startAnimations);
+    waitForHeroCritical().then(startHeroAnimations);
   });
 })();

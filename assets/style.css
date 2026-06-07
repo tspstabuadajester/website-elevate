@@ -278,14 +278,14 @@ body {
 body.assets-ready .hero-animate {
   animation: heroFadeUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
-body.assets-ready .hero-animate--1 { animation-delay: 0.08s; }
-body.assets-ready .hero-animate--2 { animation-delay: 0.18s; }
-body.assets-ready .hero-animate--3 { animation-delay: 0.28s; }
-body.assets-ready .hero-animate--4 { animation-delay: 0.38s; }
-body.assets-ready .hero-animate--5 { animation-delay: 0.48s; }
+body.assets-ready .hero-animate--1 { animation-delay: 0.04s; }
+body.assets-ready .hero-animate--2 { animation-delay: 0.1s; }
+body.assets-ready .hero-animate--3 { animation-delay: 0.16s; }
+body.assets-ready .hero-animate--4 { animation-delay: 0.22s; }
+body.assets-ready .hero-animate--5 { animation-delay: 0.28s; }
 
 body.assets-ready .hero-media-panel.hero-animate-img {
-  animation: heroMediaIn 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
+  animation: heroMediaIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
 }
 
 body.assets-ready .hero-rings {
