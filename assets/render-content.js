@@ -1392,22 +1392,12 @@
   }
 
   function getBlogTeaser(body, max) {
-    var text = '';
-    if (Array.isArray(body)) {
-      text = body[0] || '';
-    } else if (typeof body === 'string') {
-      text = body.split(/\n\n+/)[0] || body;
-    }
+    if (!body) return '';
+    var text = body.split(/\n\n+/)[0] || body;
     return truncateText(text.trim(), max || 140);
   }
 
   function formatBlogBody(body) {
-    if (!body) return '';
-    if (Array.isArray(body)) {
-      return body.map(function (paragraph) {
-        return '<p>' + escapeHtml(paragraph) + '</p>';
-      }).join('');
-    }
     return formatServiceDetail(body);
   }
 
