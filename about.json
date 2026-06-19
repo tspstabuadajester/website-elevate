@@ -1,7 +1,7 @@
 {
     "seo": {
         "title": "About Us | Elevate Mental Health and Wellness",
-        "description": "Meet the team behind Elevate and learn how we approach psychiatric care in California and Nevada.",
+        "description": "Learn about Elevate Mental Health and Wellness, our mission, core values, and compassionate psychiatric care in California and Nevada.",
         "canonicalUrl": "https://elevate-staging.pages.dev/about.html",
         "robots": "index,follow",
         "ogTitle": "About Elevate Mental Health and Wellness",
@@ -45,14 +45,17 @@
     },
     "pageHero": {
         "heading": "About Us",
-        "intro": "Elevate is a psychiatric practice focused on real support, not rushed appointments. We offer individualized care and brief psychotherapy for patients in California and Nevada who want to feel better and stay steady in their daily lives.",
+        "intro": "Welcome to Elevate Mental Health and Wellness. We provide compassionate, evidence-based psychiatric care for children, adolescents, adults, and families.",
+        "paragraphs": [
+            "We understand that your mental health is a deeply personal, integral part of your overall well-being. Elevate was born out of a simple promise: to provide psychiatric care that is highly personalized, deeply collaborative, culturally sensitive, and entirely free of judgment. We honor your unique background, identity, and lived experiences. By combining clinical excellence with active behavioral management and tailored support, we walk alongside you to navigate life's challenges, unearth your innate resilience, and help your entire family truly thrive."
+        ],
         "gallery": []
     },
     "mission": {
-        "heading": "Your care should feel clear, respectful, and truly personal.",
+        "heading": "Our Mission",
         "columns": [
-            "Good mental health care starts with being heard. We learn about your history, what you are dealing with now, and what you want life to look like. Treatment should fit you, not the other way around.",
-            "Whether you meet with us virtually or in person, you can expect thoughtful follow-up and honest conversation. We are here to help you feel more grounded, more supported, and more like yourself again."
+            "Our mission is to provide comprehensive, high-quality, and evidence-based psychiatric care that empowers individuals and families on their journey toward mental wellness. While we safely and skillfully manage symptoms through thoughtful medication management, we are fierce advocates of behavioral therapy and hands-on guidance.",
+            "We believe that the best outcomes are achieved together. True, lasting success relies on a strong team approach, whether that means partnering with adults to take charge of their wellness, collaborating with loved ones and care systems for older adults, or equipping parents with the practical tools and guidance needed to support their child's growth."
         ]
     },
     "founder": {
@@ -71,25 +74,44 @@
         "blockquote": "I believe people do best when they feel safe enough to be honest about what they are going through. My job is to listen closely, explain your options clearly, and help you find a path that actually works for your life."
     },
     "features": {
-        "heading": "What you can expect when you work with us.",
-        "intro": "We keep things simple: skilled psychiatric care, honest communication, and support that respects your time, your privacy, and your goals.",
+        "heading": "Our Core Values",
+        "intro": "",
         "items": [
             {
-                "icon": "team",
-                "title": "A provider who listens",
-                "description": "You will work directly with Rohzan, an experienced PMHNP who takes time to understand your concerns and answer your questions without making you feel rushed."
+                "icon": "collaboration",
+                "title": "Compassionate Collaboration",
+                "description": "We view you and your loved ones as active, respected partners in the treatment process. Your goals always shape your care plan."
             },
             {
-                "icon": "target",
-                "title": "Care built around you",
-                "description": "Your treatment plan may include medication management, brief psychotherapy, or both. We adjust as your needs change and keep the focus on what helps you function and feel better day to day."
+                "icon": "culture",
+                "title": "Culturally Sensitive Care",
+                "description": "We approach your care with cultural humility, ensuring our treatment plans honor and respect your unique background and values."
             },
             {
-                "icon": "shield",
-                "title": "Private, convenient visits",
-                "description": "Virtual appointments are available through a secure telehealth platform, so you can get quality psychiatric care from home with less stress and more flexibility."
+                "icon": "balance",
+                "title": "Balanced Treatment",
+                "description": "Medication is a powerful tool to stabilize the mind, but we pair it with behavioral management to ensure therapeutic skills truly take root."
+            },
+            {
+                "icon": "coaching",
+                "title": "Behavioral Management and Parent Teaching",
+                "description": "We provide actionable behavioral strategies supporting parents to navigate childhood challenges and helping adults manage stress and life transitions."
+            },
+            {
+                "icon": "privacy",
+                "title": "Absolute Integrity and Privacy",
+                "description": "We maintain the highest ethical standards, utilizing a fully secure, HIPAA-compliant electronic medical records portal to protect your privacy."
+            },
+            {
+                "icon": "growth",
+                "title": "Empowerment and Growth",
+                "description": "Our ultimate goal is to give you the practical tools and clinical insights needed to navigate life with confidence and long-term resilience."
             }
         ]
+    },
+    "partner": {
+        "heading": "Partner With Us",
+        "text": "A compassionate space to heal, grow, and elevate your life."
     },
     "testimonials": {
         "heading": "What patients are saying about Elevate",

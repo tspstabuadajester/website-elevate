@@ -1,7 +1,7 @@
 {
     "seo": {
         "title": "Services | Elevate Mental Health and Wellness",
-        "description": "Psychiatric care for ADHD, depression, bipolar disorder, PTSD, and schizophrenia in California and Nevada.",
+        "description": "Comprehensive psychiatric evaluation, medication management, psychotherapy, and GeneSight testing for ADHD, depression, bipolar disorder, PTSD, and schizophrenia.",
         "canonicalUrl": "https://elevatemhw.com/services.html",
         "robots": "index,follow",
         "ogTitle": "Mental Health Services | Elevate",
@@ -44,8 +44,8 @@
         ]
     },
     "pageHero": {
-        "heading": "Psychiatric care built around your needs",
-        "intro": "Elevate offers individualized psychiatric treatment and brief psychotherapy for children, teens, and adults. Whether you are starting care for the first time or looking for a fresh approach, we are here to help you feel more stable and supported.",
+        "heading": "Our Services",
+        "intro": "At Elevate Mental Health and Wellness, we provide compassionate, evidence-based psychiatric care for children, adolescents, adults, and families. We understand that every mental health journey is unique. That is why we take the time to deeply listen, understand your concerns, and develop a personalized treatment plan aligned with your specific goals.",
         "cta": {
             "label": "Request an Appointment",
             "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
@@ -66,8 +66,8 @@
         }
     },
     "services": {
-        "kicker": "Our services",
-        "intro": "We treat a wide range of mental health conditions with thoughtful evaluation, medication management when appropriate, and brief psychotherapy tailored to your goals.",
+        "kicker": "Conditions we treat",
+        "intro": "Explore the mental health conditions we support. Tap any card to learn more about symptoms, causes, treatment options, and resources.",
         "viewDetailsLabel": "Learn more",
         "modalCta": {
             "label": "Schedule an appointment",
@@ -722,24 +722,6 @@
             }
         ]
     },
-    "benefits": {
-        "heading": "What you gain from care at Elevate",
-        "intro": "Our approach is simple: listen first, explain your options clearly, and build a plan you can actually follow.",
-        "image": {
-            "src": "assets/about-main.png",
-            "alt": "Rohzan G. Altre, PMHNP",
-            "width": 767,
-            "height": 1024
-        },
-        "items": [
-            "One-on-one care with a board-certified psychiatric nurse practitioner",
-            "Treatment plans tailored to your symptoms, history, and daily life",
-            "Virtual appointments through a secure telehealth platform",
-            "Medication management combined with brief psychotherapy when needed",
-            "Clear follow-up and adjustments as your needs change",
-            "Compassionate support for patients across the life span"
-        ]
-    },
     "footer": {
         "description": "Individualized psychiatric care and brief psychotherapy for patients in California and Nevada.",
         "locations": {
@@ -781,6 +763,58 @@
             {
                 "label": "Payment Information",
                 "href": "payment.html"
+            }
+        ]
+    },
+    "overview": {
+        "paragraphs": [
+            "Whether you are seeking support for anxiety, depression, ADHD, trauma, or behavioral concerns, our mission is to ensure you feel supported, informed, and empowered every step of the way."
+        ]
+    },
+    "coreServices": {
+        "heading": "Core Services",
+        "items": [
+            {
+                "id": "evaluation",
+                "icon": "evaluation",
+                "title": "Comprehensive Psychiatric Evaluation",
+                "paragraphs": [
+                    "A psychiatric evaluation is the essential first step toward understanding your mental health needs. During this thorough assessment, we gather information about your current symptoms, personal and family history, medical background, and life experiences.",
+                    "To ensure an accurate diagnosis, we utilize evidence-based screening tools for a variety of conditions. This collaborative process allows us to build an individualized treatment plan tailored strictly to your unique strengths and goals."
+                ]
+            },
+            {
+                "id": "medication",
+                "icon": "medication",
+                "title": "Thoughtful Medication Management",
+                "paragraphs": [
+                    "Medication can be a highly effective component of mental health treatment. When medication is recommended, we work closely with you to review all available options, discuss potential benefits and side effects, and answer your questions without rush.",
+                    "We provide ongoing, meticulous monitoring to ensure your medications remain safe and effective, and we make adjustments based on your response. When appropriate, we gladly coordinate care with your primary care provider, therapist, school team, or other specialists to ensure a seamless, comprehensive approach."
+                ]
+            },
+            {
+                "id": "therapy",
+                "icon": "therapy",
+                "title": "Integrated Psychotherapy and Psychoeducation",
+                "paragraphs": [
+                    "True mental health treatment goes beyond a prescription. We integrate supportive psychotherapy and psychoeducation into our appointments to help clients and families better understand their symptoms, develop healthy coping mechanisms, and navigate life challenges with confidence."
+                ],
+                "note": "Note: While we do not provide intensive, long-term psychotherapy, these supportive elements are woven into our care to complement medication management and foster resilience."
+            },
+            {
+                "id": "genesight",
+                "icon": "genesight",
+                "title": "GeneSight\u00ae Genetic Testing",
+                "paragraphs": [
+                    "As part of our commitment to personalized medicine, we offer optional GeneSight genetic testing to help guide clinical decisions. This simple test analyzes how your specific genes may influence your body response to certain psychiatric medications.",
+                    "This testing may be highly beneficial if you have experienced:"
+                ],
+                "bullets": [
+                    "Severe or unexpected medication side effects.",
+                    "Limited benefits from previous treatments.",
+                    "A history of multiple, unsuccessful medication trials."
+                ],
+                "note": "Please note: Genetic testing does not diagnose mental health conditions, but serves as a valuable tool to minimize trial-and-error. Insurance coverage varies by plan, and out-of-pocket options are available."
             }
         ]
     }

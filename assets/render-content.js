@@ -800,8 +800,25 @@
   var ABOUT_FEATURE_ICONS = {
     team: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     target: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
-    shield: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>'
+    shield: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>',
+    collaboration: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    culture: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>',
+    balance: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 3v18M3 9h18M7 15l5 6 5-6"/></svg>',
+    coaching: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>',
+    privacy: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>',
+    growth: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22V8M7 14l5-6 5 6"/></svg>'
   };
+
+  var CORE_SERVICE_ICONS = {
+    evaluation: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>',
+    medication: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>',
+    therapy: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>',
+    genesight: '<svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M2 12c2-4 6-7 10-7s8 3 10 7c-2 4-6 7-10 7s-8-3-10-7Z"/><path d="M12 9v6M9 12h6"/></svg>'
+  };
+
+  function getCoreServiceIcon(key) {
+    return CORE_SERVICE_ICONS[key] || CORE_SERVICE_ICONS.evaluation;
+  }
 
   function getAboutFeatureIcon(key) {
     return ABOUT_FEATURE_ICONS[key] || ABOUT_FEATURE_ICONS.team;
@@ -810,6 +827,15 @@
   function renderAboutHero(pageHero) {
     setText(document.getElementById('page-hero-heading'), pageHero.heading);
     setText(document.getElementById('page-hero-intro'), pageHero.intro);
+
+    var paragraphs = document.getElementById('page-hero-paragraphs');
+    if (paragraphs && pageHero.paragraphs && pageHero.paragraphs.length) {
+      paragraphs.innerHTML = pageHero.paragraphs.map(function (text) {
+        return '<p>' + text + '</p>';
+      }).join('');
+    } else if (paragraphs) {
+      paragraphs.innerHTML = '';
+    }
 
     var gallery = document.getElementById('about-gallery');
     if (!gallery || !pageHero.gallery) return;
@@ -869,6 +895,12 @@
         '</article>'
       );
     }).join('');
+  }
+
+  function renderAboutPartner(partner) {
+    if (!partner) return;
+    setText(document.getElementById('partner-heading'), partner.heading);
+    setText(document.getElementById('partner-text'), partner.text);
   }
 
   function renderTestimonialsSection(section) {
@@ -953,6 +985,52 @@
     initServiceDrawer(services, '.service-page-card[data-service-id]');
   }
 
+  function renderServiceOverview(overview) {
+    var container = document.getElementById('services-overview');
+    if (!container || !overview || !overview.paragraphs) return;
+
+    container.innerHTML = overview.paragraphs.map(function (text) {
+      return '<p>' + text + '</p>';
+    }).join('');
+  }
+
+  function renderCoreServices(coreServices) {
+    setText(document.getElementById('core-services-heading'), coreServices.heading);
+
+    var list = document.getElementById('core-services-list');
+    if (!list || !coreServices.items) return;
+
+    list.innerHTML = coreServices.items.map(function (item) {
+      var html =
+        '<article class="reveal core-service-card">' +
+        '<div class="core-service-card__icon" aria-hidden="true">' + getCoreServiceIcon(item.icon) + '</div>' +
+        '<h3 class="core-service-card__title">' + item.title + '</h3>';
+
+      if (item.paragraphs && item.paragraphs.length) {
+        html += '<div class="core-service-card__body">';
+        item.paragraphs.forEach(function (paragraph) {
+          html += '<p>' + paragraph + '</p>';
+        });
+        html += '</div>';
+      }
+
+      if (item.bullets && item.bullets.length) {
+        html += '<ul class="core-service-card__list">';
+        item.bullets.forEach(function (bullet) {
+          html += '<li>' + bullet + '</li>';
+        });
+        html += '</ul>';
+      }
+
+      if (item.note) {
+        html += '<p class="core-service-card__note">' + item.note + '</p>';
+      }
+
+      html += '</article>';
+      return html;
+    }).join('');
+  }
+
   function renderServiceBenefits(benefits) {
     var img = document.getElementById('benefits-image');
     if (img && benefits.image) {
@@ -1011,6 +1089,7 @@
     renderAboutMission(data.mission);
     renderAboutFounder(data.founder);
     renderAboutFeatures(data.features);
+    renderAboutPartner(data.partner);
     renderTestimonialsSection(data.testimonials);
     renderFooter(data.footer, data.site);
 
@@ -1027,8 +1106,9 @@
     renderLogos(data.site);
     renderNav(data.nav);
     renderServiceHero(data.pageHero);
+    renderServiceOverview(data.overview);
     renderServiceList(data.services);
-    renderServiceBenefits(data.benefits);
+    renderCoreServices(data.coreServices);
     renderFooter(data.footer, data.site);
 
     document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
