@@ -38,6 +38,10 @@
                 "href": "service-detail.html"
             },
             {
+                "label": "Blog",
+                "href": "blog.html"
+            },
+            {
                 "label": "Contact",
                 "href": "contact.html"
             },
@@ -151,11 +155,11 @@
             },
             {
                 "title": "Benzodiazepine Prescribing",
-                "text": "Elevate Mental Health and Wellness follows current evidence-based guidelines regarding benzodiazepine medications (such as Xanax\u00ae, Ativan\u00ae, Klonopin\u00ae, and Valium\u00ae). Due to the risks of dependence, tolerance, cognitive impairment, and withdrawal, benzodiazepines are generally prescribed only for short-term or limited use when clinically appropriate. Long-term benzodiazepine therapy is not routinely provided by this practice. Patients already on chronic benzodiazepines from another provider must agree to a formal tapering plan under our care."
+                "text": "Elevate Mental Health and Wellness follows current evidence-based guidelines regarding benzodiazepine medications (such as Xanax®, Ativan®, Klonopin®, and Valium®). Due to the risks of dependence, tolerance, cognitive impairment, and withdrawal, benzodiazepines are generally prescribed only for short-term or limited use when clinically appropriate. Long-term benzodiazepine therapy is not routinely provided by this practice. Patients already on chronic benzodiazepines from another provider must agree to a formal tapering plan under our care."
             },
             {
                 "title": "Stimulant Prescribing",
-                "text": "Stimulant medications used to treat ADHD (such as Adderall\u00ae, Vyvanse\u00ae, Concerta\u00ae, and Ritalin\u00ae) are prescribed only when clinically appropriate following a comprehensive evaluation. As controlled substances, they require strict monitoring, including regular follow-ups, vital sign checks, and possible random or scheduled urine drug screenings. Early refills, replacements for lost medications, or dose changes without an appointment may be declined. Our goal is to ensure the safe, effective, and responsible use of stimulant medications while providing individualized ADHD treatment."
+                "text": "Stimulant medications used to treat ADHD (such as Adderall®, Vyvanse®, Concerta®, and Ritalin®) are prescribed only when clinically appropriate following a comprehensive evaluation. As controlled substances, they require strict monitoring, including regular follow-ups, vital sign checks, and possible random or scheduled urine drug screenings. Early refills, replacements for lost medications, or dose changes without an appointment may be declined. Our goal is to ensure the safe, effective, and responsible use of stimulant medications while providing individualized ADHD treatment."
             },
             {
                 "title": "A Teaching and Learning Environment",
@@ -205,6 +209,10 @@
             {
                 "label": "New Patients",
                 "href": "service-detail.html"
+            },
+            {
+                "label": "Blog",
+                "href": "blog.html"
             },
             {
                 "label": "Contact",

@@ -38,6 +38,10 @@
                 "href": "service-detail.html"
             },
             {
+                "label": "Blog",
+                "href": "blog.html"
+            },
+            {
                 "label": "Contact",
                 "href": "contact.html"
             },
@@ -168,6 +172,10 @@
             {
                 "label": "New Patients",
                 "href": "service-detail.html"
+            },
+            {
+                "label": "Blog",
+                "href": "blog.html"
             },
             {
                 "label": "Contact",

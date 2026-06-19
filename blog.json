@@ -1,0 +1,180 @@
+{
+    "seo": {
+        "title": "Blog | Elevate Mental Health and Wellness",
+        "description": "Articles and insights on mental health, psychiatric care, and wellness from Elevate Mental Health and Wellness.",
+        "canonicalUrl": "https://elevatemhw.com/blog.html",
+        "robots": "index,follow",
+        "ogTitle": "Blog | Elevate Mental Health and Wellness",
+        "ogDescription": "Read the latest articles on mental health and psychiatric care from our clinical team.",
+        "ogImage": "assets/og-image.jpg",
+        "twitterTitle": "Blog | Elevate",
+        "twitterDescription": "Mental health articles and insights from Elevate Mental Health and Wellness.",
+        "twitterImage": "assets/og-image.jpg"
+    },
+    "site": {
+        "title": "Elevate Mental Health and Wellness",
+        "brandName": "Elevate Mental Health and Wellness",
+        "logo": "assets/logo.png",
+        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+    },
+    "nav": {
+        "ctaLabel": "Request Appointment",
+        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
+        "links": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "New Patients",
+                "href": "service-detail.html"
+            },
+            {
+                "label": "Blog",
+                "href": "blog.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
+        ]
+    },
+    "pageHero": {
+        "heading": "Blog",
+        "intro": "Insights on mental health, psychiatric care, and wellness from our clinical team."
+    },
+    "blog": {
+        "viewLabel": "View more",
+        "emptyMessage": "No current blog this time.",
+        "posts": [
+            {
+                "id": "understanding-anxiety",
+                "thumbnail": {
+                    "src": "assets/portrait-happy-asian-woman-smiling-posing-confident-cross-arms-chest-standing-against-studio-background-sqim5icd.jpg",
+                    "alt": "Person smiling with confidence"
+                },
+                "title": "Understanding Anxiety: When Worry Becomes More Than Everyday Stress",
+                "publishedDate": "March 12, 2026",
+                "body": [
+                    "Anxiety is one of the most common mental health concerns we see in practice. While occasional worry is a normal part of life, persistent anxiety can affect sleep, concentration, relationships, and daily functioning.",
+                    "At Elevate Mental Health and Wellness, we take a whole-person approach. That means looking at your symptoms in context: your history, your environment, and your goals for care. Treatment may include psychotherapy, medication management, lifestyle adjustments, or a combination tailored to you.",
+                    "If anxiety is interfering with your life, you do not have to manage it alone. Reaching out is the first step toward feeling more grounded and in control."
+                ],
+                "gallery": [
+                    {
+                        "src": "assets/about-main.png",
+                        "alt": "Calm therapy environment at Elevate"
+                    },
+                    {
+                        "src": "assets/hero.png",
+                        "alt": "Elevate Mental Health and Wellness team"
+                    }
+                ]
+            },
+            {
+                "id": "telehealth-tips",
+                "thumbnail": {
+                    "src": "assets/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation-lutguyc3.jpg",
+                    "alt": "Clinician ready to help during a telehealth visit"
+                },
+                "title": "Getting the Most Out of Your Telehealth Appointment",
+                "publishedDate": "February 28, 2026",
+                "body": [
+                    "Telehealth has made psychiatric care more accessible, but a few simple preparations can help your visit feel just as personal and productive as an in-office session.",
+                    "Find a private, quiet space with a stable internet connection. Use headphones if possible to improve audio clarity and protect your privacy. Have any current medications, recent lab results, or notes about symptoms ready to share.",
+                    "Treat your telehealth visit like any other medical appointment: arrive a few minutes early, minimize distractions, and be open about what is working and what is not. Your clinician is there to partner with you, whether you connect through a screen or face to face."
+                ],
+                "gallery": []
+            },
+            {
+                "id": "medication-management-basics",
+                "thumbnail": {
+                    "src": "assets/portrait-laughing-young-man-jqhyg71p.jpg",
+                    "alt": "Young adult smiling during a wellness conversation"
+                },
+                "title": "Medication Management: What New Patients Should Know",
+                "publishedDate": "January 15, 2026",
+                "body": [
+                    "Starting psychiatric medication can feel uncertain, especially if it is your first time. Our goal is to make the process clear, collaborative, and safe from your very first visit.",
+                    "During medication management appointments, we review how you are feeling, discuss benefits and side effects, and adjust your plan when needed. Follow-ups are scheduled regularly so we can monitor progress closely, especially in the early weeks of treatment.",
+                    "Medication is never one-size-fits-all. Your plan is built around your diagnosis, your preferences, and how your body responds over time. Questions are always welcome, and informed consent is part of every decision we make together."
+                ],
+                "gallery": [
+                    {
+                        "src": "assets/logo.png",
+                        "alt": "Elevate Mental Health and Wellness logo"
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
+        "locations": {
+            "address1": {
+                "title": "California Offices",
+                "addresses": [
+                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
+                    "1302 Madera Rd<br>Simi Valley, CA 93065",
+                    "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
+                ]
+            },
+            "address2": {
+                "title": "Nevada Office",
+                "addresses": [
+                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                ],
+                "email": {
+                    "label": "elevatepatientcare@gmail.com",
+                    "href": "mailto:elevatepatientcare@gmail.com"
+                },
+                "phone": {
+                    "label": "818-805-4290",
+                    "href": "tel:+18188054290"
+                }
+            }
+        },
+        "quickLinks": [
+            {
+                "label": "Home",
+                "href": "index.html"
+            },
+            {
+                "label": "About Us",
+                "href": "about.html"
+            },
+            {
+                "label": "Services",
+                "href": "services.html"
+            },
+            {
+                "label": "New Patients",
+                "href": "service-detail.html"
+            },
+            {
+                "label": "Blog",
+                "href": "blog.html"
+            },
+            {
+                "label": "Contact",
+                "href": "contact.html"
+            },
+            {
+                "label": "Payment Information",
+                "href": "payment.html"
+            }
+        ]
+    }
+}
