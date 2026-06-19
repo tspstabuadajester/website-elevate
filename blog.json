@@ -199,7 +199,7 @@
                             "value": {
                                 "src": {
                                     "type": "string",
-                                    "value": "assets/blog/ptsd-awareness-month.png"
+                                    "value": "assets/ptsd-awareness-month.png"
                                 },
                                 "alt": {
                                     "type": "string",
@@ -227,7 +227,7 @@
                                     "value": {
                                         "src": {
                                             "type": "string",
-                                            "value": "assets/blog/ptsd-soldier-illustration.png"
+                                            "value": "assets/ptsd-soldier-illustration.png"
                                         },
                                         "alt": {
                                             "type": "string",
@@ -240,7 +240,7 @@
                                     "value": {
                                         "src": {
                                             "type": "string",
-                                            "value": "assets/blog/ptsd-insomnia-illustration.png"
+                                            "value": "assets/ptsd-insomnia-illustration.png"
                                         },
                                         "alt": {
                                             "type": "string",
