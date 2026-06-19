@@ -128,7 +128,7 @@
   function renderHero(hero) {
     setText(document.getElementById('hero-badge'), hero.badge);
     setText(document.getElementById('hero-headline'), hero.headline);
-    setText(document.getElementById('hero-description'), hero.description);
+    setRichContent(document.getElementById('hero-description'), hero.description);
 
     var primary = document.getElementById('hero-cta-primary');
     if (primary && hero.primaryCta) {
@@ -263,13 +263,75 @@
       .join('');
   }
 
-  function getServiceTeaser(item) {
-    if (item.summary) return item.summary;
-    if (item.description) return item.description;
-    if (item.overview && item.overview.items && item.overview.items[0]) {
-      return item.overview.items[0];
+  function looksLikeHtml(text) {
+    if (!text || typeof text !== 'string') return false;
+    return /<\/?[a-z][\s\S]*>/i.test(text.trim());
+  }
+
+  function formatRichContent(text) {
+    if (!text) return '';
+    if (looksLikeHtml(text)) return text;
+    return formatServiceDetail(text);
+  }
+
+  function stripHtml(text) {
+    if (!text) return '';
+    if (!looksLikeHtml(text)) return String(text).replace(/\s+/g, ' ').trim();
+    var div = document.createElement('div');
+    div.innerHTML = text;
+    return (div.textContent || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function setRichContent(el, text) {
+    if (!el) return;
+    if (text == null || text === '') {
+      el.innerHTML = '';
+      el.classList.remove('rich-content');
+      return;
     }
-    return truncateText(item.detail || '', 100);
+    el.innerHTML = formatRichContent(text);
+    el.classList.add('rich-content');
+  }
+
+  function renderRichBlocks(items, extraClass) {
+    if (!items || !items.length) return '';
+    var blockClass = extraClass ? ' ' + extraClass : '';
+    return items
+      .map(function (item) {
+        return (
+          '<div class="rich-content rich-content__block' + blockClass + '">' +
+          formatRichContent(item) +
+          '</div>'
+        );
+      })
+      .join('');
+  }
+
+  function richInline(text) {
+    if (!text) return '';
+    if (looksLikeHtml(text)) return text;
+    return escapeHtml(text);
+  }
+
+  function richBlock(text, className) {
+    if (!text) return '';
+    return (
+      '<div class="' + (className || '') + ' rich-content">' +
+      formatRichContent(text) +
+      '</div>'
+    );
+  }
+
+  function getServiceTeaser(item) {
+    var text = '';
+    if (item.summary) text = item.summary;
+    else if (item.description) text = item.description;
+    else if (item.overview && item.overview.items && item.overview.items[0]) {
+      text = item.overview.items[0];
+    } else {
+      text = item.detail || '';
+    }
+    return truncateText(stripHtml(text), 100);
   }
 
   function hasStructuredService(item) {
@@ -283,12 +345,12 @@
     if (section.items && section.items.length) {
       html += '<ul class="service-drawer__list">';
       section.items.forEach(function (item) {
-        html += '<li>' + escapeHtml(item) + '</li>';
+        html += '<li class="rich-content">' + formatRichContent(item) + '</li>';
       });
       html += '</ul>';
     }
     if (section.note) {
-      html += '<p class="service-drawer__note">' + escapeHtml(section.note) + '</p>';
+      html += richBlock(section.note, 'service-drawer__note');
     }
     html += '</section>';
     return html;
@@ -299,7 +361,7 @@
     var html = '<section class="service-drawer__section service-drawer__section--brain">';
     html += renderDrawerSectionHeading(brain.heading, 'brain');
     if (brain.description) {
-      html += '<p class="service-drawer__lead">' + escapeHtml(brain.description) + '</p>';
+      html += richBlock(brain.description, 'service-drawer__lead');
     }
     if (brain.image && brain.image.src) {
       html +=
@@ -313,7 +375,7 @@
         html +=
           '<article class="service-drawer__region">' +
           '<h5 class="service-drawer__region-name">' + escapeHtml(region.name) + '</h5>' +
-          '<p class="service-drawer__region-text">' + escapeHtml(region.description) + '</p>' +
+          '<p class="service-drawer__region-text rich-content">' + formatRichContent(region.description) + '</p>' +
           '</article>';
       });
       html += '</div>';
@@ -329,7 +391,7 @@
     if (seekHelp.routine && seekHelp.routine.length) {
       html += '<ul class="service-drawer__list">';
       seekHelp.routine.forEach(function (item) {
-        html += '<li>' + escapeHtml(item) + '</li>';
+        html += '<li class="rich-content">' + formatRichContent(item) + '</li>';
       });
       html += '</ul>';
     }
@@ -339,7 +401,7 @@
     if (seekHelp.urgent && seekHelp.urgent.length) {
       html += '<ul class="service-drawer__list service-drawer__list--urgent">';
       seekHelp.urgent.forEach(function (item) {
-        html += '<li>' + escapeHtml(item) + '</li>';
+        html += '<li class="rich-content">' + formatRichContent(item) + '</li>';
       });
       html += '</ul>';
     }
@@ -352,7 +414,7 @@
     var html = '<section class="service-drawer__section">';
     html += renderDrawerSectionHeading(treatment.heading, 'treatment');
     if (treatment.description) {
-      html += '<p class="service-drawer__lead">' + escapeHtml(treatment.description) + '</p>';
+      html += richBlock(treatment.description, 'service-drawer__lead');
     }
     if (treatment.types && treatment.types.length) {
       html += '<div class="service-drawer__chips">';
@@ -377,7 +439,7 @@
         '<li class="service-drawer__resource">' +
         '<' + tag + ' class="service-drawer__resource-link"' + href + '>' +
         '<strong>' + escapeHtml(resource.label) + '</strong>' +
-        (resource.detail ? '<span>' + escapeHtml(resource.detail) + '</span>' : '') +
+        (resource.detail ? '<span class="rich-content">' + formatRichContent(resource.detail) + '</span>' : '') +
         '</' + tag + '>' +
         '</li>';
     });
@@ -391,7 +453,7 @@
     html += renderDrawerSectionHeading(keyFacts.heading, 'keyFacts', 'service-drawer__section-heading--callout');
     html += '<ul class="service-drawer__callout-list">';
     keyFacts.items.forEach(function (item) {
-      html += '<li>' + escapeHtml(item) + '</li>';
+      html += '<li class="rich-content">' + formatRichContent(item) + '</li>';
     });
     html += '</ul></section>';
     return html;
@@ -399,7 +461,7 @@
 
   function buildServiceDrawerHtml(service) {
     if (!hasStructuredService(service)) {
-      return '<div class="service-drawer__legacy">' + formatServiceDetail(service.detail || service.description || '') + '</div>';
+      return '<div class="service-drawer__legacy rich-content">' + formatRichContent(service.detail || service.description || '') + '</div>';
     }
 
     var html = '';
@@ -430,8 +492,12 @@
   function renderServices(services) {
     setText(document.getElementById('services-kicker'), services.kicker);
     setText(document.getElementById('services-heading'), services.heading);
-    setText(document.getElementById('services-intro'), services.detailPlaceholder);
-    setHtml(document.getElementById('services-footnote'), services.footnote);
+    setRichContent(document.getElementById('services-intro'), services.detailPlaceholder);
+    var footnote = document.getElementById('services-footnote');
+    if (footnote && services.footnote != null) {
+      footnote.innerHTML = formatRichContent(services.footnote);
+      footnote.classList.add('rich-content');
+    }
 
     var list = document.getElementById('services-list');
     if (!list || !services.items) return;
@@ -568,10 +634,8 @@
 
     var paragraphs = document.getElementById('about-paragraphs');
     if (paragraphs && about.paragraphs) {
-      paragraphs.innerHTML = about.paragraphs.map(function (p, i) {
-        var mt = i === 0 ? 'mt-5' : 'mt-4';
-        return '<p class="' + mt + ' leading-7 text-slate-600">' + p + '</p>';
-      }).join('');
+      paragraphs.innerHTML = renderRichBlocks(about.paragraphs);
+      paragraphs.classList.add('rich-content');
     }
 
     var highlights = document.getElementById('about-highlights');
@@ -605,7 +669,7 @@
       return (
         '<article class="reveal testimonial-card flex flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-card">' +
         '<div class="text-sm tracking-wide text-elevate-500">★★★★★</div>' +
-        '<p class="mt-4 flex-1 text-sm leading-7 text-slate-600">' + item.quote + '</p>' +
+        '<p class="mt-4 flex-1 text-sm leading-7 text-slate-600 rich-content">' + formatRichContent(item.quote) + '</p>' +
         '<p class="mt-5 font-bold text-elevate-700">' + item.author + '</p>' +
         '</article>'
       );
@@ -618,11 +682,11 @@
       var info = payment.insuranceInfo;
       insuranceInfo.innerHTML =
         '<h2 class="serif text-center text-3xl font-bold text-elevate-900 sm:text-4xl">' + info.heading + '</h2>' +
-        '<p class="mx-auto mt-4 text-center text-sm leading-7 text-slate-600 sm:text-base">' + info.intro + '</p>' +
+        '<div class="mx-auto mt-4 max-w-3xl text-center text-sm leading-7 text-slate-600 sm:text-base rich-content">' + formatRichContent(info.intro) + '</div>' +
         '<div class="mt-8 space-y-5 text-sm leading-7 text-slate-600 sm:text-base">' +
-        '<p><strong class="text-elevate-900">' + info.inNetwork.label + ':</strong> ' + info.inNetwork.text + '</p>' +
-        '<p><strong class="text-elevate-900">' + info.comingSoon.label + ':</strong> ' + info.comingSoon.text + '</p>' +
-        '<p><strong class="text-elevate-900">' + info.responsibility.label + ':</strong> ' + info.responsibility.text + '</p>' +
+        '<div class="rich-content"><p><strong class="text-elevate-900">' + info.inNetwork.label + ':</strong></p>' + formatRichContent(info.inNetwork.text) + '</div>' +
+        '<div class="rich-content"><p><strong class="text-elevate-900">' + info.comingSoon.label + ':</strong></p>' + formatRichContent(info.comingSoon.text) + '</div>' +
+        '<div class="rich-content"><p><strong class="text-elevate-900">' + info.responsibility.label + ':</strong></p>' + formatRichContent(info.responsibility.text) + '</div>' +
         '</div>';
     }
 
@@ -645,11 +709,11 @@
         '<h2 class="serif text-2xl font-bold text-elevate-900 sm:text-3xl">' + section.heading + '</h2>' +
         '<div class="mt-4 space-y-4 text-sm leading-7 text-slate-600 sm:text-base">';
       section.paragraphs.forEach(function (paragraph) {
-        html += '<p>' + paragraph + '</p>';
+        html += '<div class="rich-content">' + formatRichContent(paragraph) + '</div>';
       });
       html += '</div>';
       if (section.note) {
-        html += '<p class="mt-4 rounded-xl bg-elevate-50 p-4 text-sm leading-7 text-slate-600">' + section.note + '</p>';
+        html += '<div class="mt-4 rounded-xl bg-elevate-50 p-4 text-sm leading-7 text-slate-600 rich-content">' + formatRichContent(section.note) + '</div>';
       }
       outOfNetwork.innerHTML = html;
     }
@@ -699,7 +763,7 @@
         '<summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 font-bold text-elevate-900">' +
         item.question +
         '<span class="text-lg text-elevate-500 transition group-open:rotate-180">⌄</span></summary>' +
-        '<p class="border-t border-slate-100 px-5 pb-4 pt-0 leading-7 text-slate-600">' + item.answer + '</p>' +
+        '<div class="border-t border-slate-100 px-5 pb-4 pt-0 leading-7 text-slate-600 rich-content">' + formatRichContent(item.answer) + '</div>' +
         '</details>'
       );
     }).join('');
@@ -707,7 +771,7 @@
 
   function renderCtaPanel(panel) {
     setText(document.getElementById('cta-heading'), panel.heading);
-    setText(document.getElementById('cta-description'), panel.description);
+    setRichContent(document.getElementById('cta-description'), panel.description);
 
     var btn = document.getElementById('cta-button');
     if (btn && panel.button) {
@@ -734,7 +798,7 @@
   }
 
   function renderFooter(footer, site) {
-    setText(document.getElementById('footer-description'), footer.description);
+    setRichContent(document.getElementById('footer-description'), footer.description);
     setText(document.getElementById('footer-copyright'), site.copyright);
 
     function renderFooterLocation(key) {
@@ -866,13 +930,11 @@
 
   function renderAboutHero(pageHero) {
     setText(document.getElementById('page-hero-heading'), pageHero.heading);
-    setText(document.getElementById('page-hero-intro'), pageHero.intro);
+    setRichContent(document.getElementById('page-hero-intro'), pageHero.intro);
 
     var paragraphs = document.getElementById('page-hero-paragraphs');
     if (paragraphs && pageHero.paragraphs && pageHero.paragraphs.length) {
-      paragraphs.innerHTML = pageHero.paragraphs.map(function (text) {
-        return '<p>' + text + '</p>';
-      }).join('');
+      paragraphs.innerHTML = renderRichBlocks(pageHero.paragraphs);
     } else if (paragraphs) {
       paragraphs.innerHTML = '';
     }
@@ -896,7 +958,7 @@
     if (!columns || !mission.columns) return;
 
     columns.innerHTML = mission.columns.map(function (text) {
-      return '<p class="reveal text-sm leading-7 text-slate-600 sm:text-base">' + text + '</p>';
+      return '<div class="reveal text-sm leading-7 text-slate-600 sm:text-base rich-content">' + formatRichContent(text) + '</div>';
     }).join('');
   }
 
@@ -910,18 +972,18 @@
     }
 
     if (founder.quoteCard) {
-      setText(document.getElementById('founder-quote-text'), '"' + founder.quoteCard.text + '"');
+      setRichContent(document.getElementById('founder-quote-text'), '"' + founder.quoteCard.text + '"');
       setText(document.getElementById('founder-quote-attribution'), founder.quoteCard.attribution);
     }
 
     setText(document.getElementById('founder-heading'), founder.heading);
-    setText(document.getElementById('founder-paragraph'), founder.paragraph);
-    setText(document.getElementById('founder-blockquote'), founder.blockquote);
+    setRichContent(document.getElementById('founder-paragraph'), founder.paragraph);
+    setRichContent(document.getElementById('founder-blockquote'), founder.blockquote);
   }
 
   function renderAboutFeatures(features) {
     setText(document.getElementById('features-heading'), features.heading);
-    setText(document.getElementById('features-intro'), features.intro);
+    setRichContent(document.getElementById('features-intro'), features.intro);
 
     var grid = document.getElementById('features-grid');
     if (!grid || !features.items) return;
@@ -931,7 +993,7 @@
         '<article class="reveal about-feature-card">' +
         '<div class="about-feature-card__icon" aria-hidden="true">' + getAboutFeatureIcon(item.icon) + '</div>' +
         '<h3 class="about-feature-card__title">' + item.title + '</h3>' +
-        '<p class="about-feature-card__text">' + item.description + '</p>' +
+        '<div class="about-feature-card__text rich-content">' + formatRichContent(item.description) + '</div>' +
         '</article>'
       );
     }).join('');
@@ -940,7 +1002,7 @@
   function renderAboutPartner(partner) {
     if (!partner) return;
     setText(document.getElementById('partner-heading'), partner.heading);
-    setText(document.getElementById('partner-text'), partner.text);
+    setRichContent(document.getElementById('partner-text'), partner.text);
   }
 
   function renderTestimonialsSection(section) {
@@ -956,7 +1018,7 @@
       return (
         '<article class="reveal about-testimonial-card">' +
         '<div class="about-testimonial-card__quote" aria-hidden="true">“</div>' +
-        '<p class="about-testimonial-card__text">' + item.quote + '</p>' +
+        '<div class="about-testimonial-card__text rich-content">' + formatRichContent(item.quote) + '</div>' +
         '<p class="about-testimonial-card__author">' + authorLine + '</p>' +
         '</article>'
       );
@@ -965,7 +1027,7 @@
 
   function renderServiceHero(pageHero) {
     setText(document.getElementById('service-hero-heading'), pageHero.heading);
-    setText(document.getElementById('service-hero-intro'), pageHero.intro);
+    setRichContent(document.getElementById('service-hero-intro'), pageHero.intro);
 
     var cta = document.getElementById('service-hero-cta');
     if (cta && pageHero.cta) {
@@ -994,7 +1056,7 @@
 
   function renderServiceList(services) {
     setText(document.getElementById('services-kicker'), services.kicker);
-    setText(document.getElementById('services-intro'), services.intro);
+    setRichContent(document.getElementById('services-intro'), services.intro);
 
     var cta = document.getElementById('services-cta');
     if (cta && services.cta) {
@@ -1029,9 +1091,8 @@
     var container = document.getElementById('services-overview');
     if (!container || !overview || !overview.paragraphs) return;
 
-    container.innerHTML = overview.paragraphs.map(function (text) {
-      return '<p>' + text + '</p>';
-    }).join('');
+    container.innerHTML = renderRichBlocks(overview.paragraphs);
+    container.classList.add('rich-content');
   }
 
   function renderCoreServices(coreServices) {
@@ -1047,9 +1108,9 @@
         '<h3 class="core-service-card__title">' + item.title + '</h3>';
 
       if (item.paragraphs && item.paragraphs.length) {
-        html += '<div class="core-service-card__body">';
+        html += '<div class="core-service-card__body rich-content">';
         item.paragraphs.forEach(function (paragraph) {
-          html += '<p>' + paragraph + '</p>';
+          html += formatRichContent(paragraph);
         });
         html += '</div>';
       }
@@ -1057,13 +1118,13 @@
       if (item.bullets && item.bullets.length) {
         html += '<ul class="core-service-card__list">';
         item.bullets.forEach(function (bullet) {
-          html += '<li>' + bullet + '</li>';
+          html += '<li class="rich-content">' + formatRichContent(bullet) + '</li>';
         });
         html += '</ul>';
       }
 
       if (item.note) {
-        html += '<p class="core-service-card__note">' + item.note + '</p>';
+        html += '<div class="core-service-card__note rich-content">' + formatRichContent(item.note) + '</div>';
       }
 
       html += '</article>';
@@ -1081,7 +1142,7 @@
     }
 
     setText(document.getElementById('benefits-heading'), benefits.heading);
-    setText(document.getElementById('benefits-intro'), benefits.intro);
+    setRichContent(document.getElementById('benefits-intro'), benefits.intro);
 
     var list = document.getElementById('benefits-list');
     if (!list || !benefits.items) return;
@@ -1090,7 +1151,7 @@
       return (
         '<li class="reveal flex items-start gap-3">' +
         '<span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-elevate-100 text-xs font-bold text-elevate-600">✓</span>' +
-        '<span class="text-sm font-medium leading-6 text-slate-700">' + item + '</span>' +
+        '<span class="text-sm font-medium leading-6 text-slate-700 rich-content">' + formatRichContent(item) + '</span>' +
         '</li>'
       );
     }).join('');
@@ -1156,13 +1217,13 @@
 
   function renderContactHero(pageHero) {
     setText(document.getElementById('contact-hero-heading'), pageHero.heading);
-    setText(document.getElementById('contact-hero-intro'), pageHero.intro);
+    setRichContent(document.getElementById('contact-hero-intro'), pageHero.intro);
   }
 
   function renderContactInfo(info) {
     setText(document.getElementById('contact-info-kicker'), info.kicker);
     setText(document.getElementById('contact-info-heading'), info.heading);
-    setText(document.getElementById('contact-info-intro'), info.intro);
+    setRichContent(document.getElementById('contact-info-intro'), info.intro);
 
     var emailLink = document.getElementById('contact-email');
     var emailLabel = document.getElementById('contact-email-label');
@@ -1203,13 +1264,12 @@
 
     setText(document.getElementById('crisis-heading'), crisisPolicy.heading);
     setText(document.getElementById('crisis-resources-heading'), crisisPolicy.resourcesHeading);
-    setText(document.getElementById('crisis-patients-note'), crisisPolicy.patientsNote);
+    setRichContent(document.getElementById('crisis-patients-note'), crisisPolicy.patientsNote);
 
     var intro = document.getElementById('crisis-intro');
     if (intro && crisisPolicy.paragraphs) {
-      intro.innerHTML = crisisPolicy.paragraphs.map(function (text) {
-        return '<p>' + text + '</p>';
-      }).join('');
+      intro.innerHTML = renderRichBlocks(crisisPolicy.paragraphs);
+      intro.classList.add('rich-content');
     }
 
     var resources = document.getElementById('crisis-resources');
@@ -1218,7 +1278,7 @@
         return (
           '<li class="reveal crisis-resource">' +
           '<strong class="block text-sm font-bold text-elevate-900">' + item.label + '</strong>' +
-          '<span class="mt-1 block text-sm leading-7 text-slate-600">' + item.detail + '</span>' +
+          '<span class="mt-1 block text-sm leading-7 text-slate-600 rich-content">' + formatRichContent(item.detail) + '</span>' +
           '</li>'
         );
       }).join('');
@@ -1245,15 +1305,15 @@
 
   function renderServiceDetailHero(pageHero) {
     setText(document.getElementById('page-hero-heading'), pageHero.heading);
-    setText(document.getElementById('page-hero-intro'), pageHero.intro);
+    setRichContent(document.getElementById('page-hero-intro'), pageHero.intro);
   }
 
   function renderWhatToExpect(section) {
     if (!section) return;
 
     setText(document.getElementById('expect-heading'), section.heading);
-    setText(document.getElementById('expect-intro'), section.intro);
-    setText(document.getElementById('expect-privacy'), section.privacyNote);
+    setRichContent(document.getElementById('expect-intro'), section.intro);
+    setRichContent(document.getElementById('expect-privacy'), section.privacyNote);
 
     var steps = document.getElementById('expect-steps');
     if (!steps || !section.steps) return;
@@ -1264,14 +1324,14 @@
         '<span class="new-patient-step__number">' + step.number + '</span>' +
         '<div class="new-patient-step__body">' +
         '<h3 class="new-patient-step__title">' + step.title + '</h3>' +
-        '<p class="new-patient-step__lead">' + step.lead + '</p>' +
-        '<p><strong class="text-elevate-900">What we do:</strong> ' + step.whatWeDo + '</p>';
+        '<div class="new-patient-step__lead rich-content">' + formatRichContent(step.lead) + '</div>' +
+        '<div class="rich-content"><p><strong class="text-elevate-900">What we do:</strong></p>' + formatRichContent(step.whatWeDo) + '</div>';
 
       if (step.outcome) {
-        html += '<p><strong class="text-elevate-900">The outcome:</strong> ' + step.outcome + '</p>';
+        html += '<div class="rich-content"><p><strong class="text-elevate-900">The outcome:</strong></p>' + formatRichContent(step.outcome) + '</div>';
       }
       if (step.frequency) {
-        html += '<p><strong class="text-elevate-900">Frequency:</strong> ' + step.frequency + '</p>';
+        html += '<div class="rich-content"><p><strong class="text-elevate-900">Frequency:</strong></p>' + formatRichContent(step.frequency) + '</div>';
       }
 
       html += '</div></article>';
@@ -1283,21 +1343,20 @@
     if (!forms) return;
 
     setText(document.getElementById('forms-heading'), forms.heading);
-    setText(document.getElementById('forms-intro'), forms.intro);
+    setRichContent(document.getElementById('forms-intro'), forms.intro);
 
     if (forms.ehr) {
       setText(document.getElementById('forms-ehr-heading'), forms.ehr.heading);
       var ehrBody = document.getElementById('forms-ehr-body');
       if (ehrBody && forms.ehr.paragraphs) {
-        ehrBody.innerHTML = forms.ehr.paragraphs.map(function (p) {
-          return '<p>' + p + '</p>';
-        }).join('');
+        ehrBody.innerHTML = renderRichBlocks(forms.ehr.paragraphs);
+        ehrBody.classList.add('rich-content');
       }
     }
 
     if (forms.gettingForms) {
       setText(document.getElementById('forms-getting-heading'), forms.gettingForms.heading);
-      setText(document.getElementById('forms-getting-text'), forms.gettingForms.text);
+      setRichContent(document.getElementById('forms-getting-text'), forms.gettingForms.text);
     }
 
     if (forms.formsList) {
@@ -1308,7 +1367,7 @@
           return (
             '<li class="new-patient-forms-list__item">' +
             '<strong>' + item.label + '</strong>' +
-            '<span>' + item.detail + '</span>' +
+            '<span class="rich-content">' + formatRichContent(item.detail) + '</span>' +
             '</li>'
           );
         }).join('');
@@ -1317,7 +1376,7 @@
 
     if (forms.coordination) {
       setText(document.getElementById('forms-coordination-heading'), forms.coordination.heading);
-      setText(document.getElementById('forms-coordination-intro'), forms.coordination.intro);
+      setRichContent(document.getElementById('forms-coordination-intro'), forms.coordination.intro);
       var roiLink = document.getElementById('forms-roi-link');
       if (roiLink && forms.coordination.roiForm) {
         roiLink.href = forms.coordination.roiForm.href || '#';
@@ -1327,14 +1386,14 @@
 
     if (forms.completionPolicy) {
       setText(document.getElementById('forms-policy-heading'), forms.completionPolicy.heading);
-      setText(document.getElementById('forms-policy-intro'), forms.completionPolicy.intro);
+      setRichContent(document.getElementById('forms-policy-intro'), forms.completionPolicy.intro);
       var policyItems = document.getElementById('forms-policy-items');
       if (policyItems && forms.completionPolicy.items) {
         policyItems.innerHTML = forms.completionPolicy.items.map(function (item) {
           return (
             '<div class="new-patient-policy-item">' +
             '<strong class="block text-sm font-bold text-elevate-900">' + item.label + '</strong>' +
-            '<p class="mt-1 text-sm leading-7 text-slate-600">' + item.text + '</p>' +
+            '<div class="mt-1 text-sm leading-7 text-slate-600 rich-content">' + formatRichContent(item.text) + '</div>' +
             '</div>'
           );
         }).join('');
@@ -1346,7 +1405,7 @@
     if (!section) return;
 
     setText(document.getElementById('policies-heading'), section.heading);
-    setText(document.getElementById('policies-intro'), section.intro);
+    setRichContent(document.getElementById('policies-intro'), section.intro);
 
     var list = document.getElementById('policies-list');
     if (!list || !section.items) return;
@@ -1355,7 +1414,7 @@
       return (
         '<article class="reveal new-patient-policy-card">' +
         '<h3 class="new-patient-policy-card__title">' + item.title + '</h3>' +
-        '<p class="new-patient-policy-card__text">' + item.text + '</p>' +
+        '<div class="new-patient-policy-card__text rich-content">' + formatRichContent(item.text) + '</div>' +
         '</article>'
       );
     }).join('');
@@ -1393,12 +1452,14 @@
 
   function getBlogTeaser(body, max) {
     if (!body) return '';
-    var text = body.split(/\n\n+/)[0] || body;
-    return truncateText(text.trim(), max || 140);
+    var text = looksLikeHtml(body)
+      ? stripHtml(body)
+      : (body.split(/\n\n+/)[0] || body).replace(/\s+/g, ' ').trim();
+    return truncateText(text, max || 140);
   }
 
   function formatBlogBody(body) {
-    return formatServiceDetail(body);
+    return formatRichContent(body);
   }
 
   function buildBlogGalleryHtml(gallery) {
@@ -1423,12 +1484,15 @@
   }
 
   function buildBlogDrawerHtml(post) {
-    return formatBlogBody(post.body) + buildBlogGalleryHtml(post.gallery);
+    return (
+      '<div class="rich-content">' + formatBlogBody(post.body) + '</div>' +
+      buildBlogGalleryHtml(post.gallery)
+    );
   }
 
   function renderBlogHero(pageHero) {
     setText(document.getElementById('blog-hero-heading'), pageHero.heading);
-    setText(document.getElementById('blog-hero-intro'), pageHero.intro);
+    setRichContent(document.getElementById('blog-hero-intro'), pageHero.intro);
   }
 
   function renderBlogGrid(blog) {
@@ -1631,7 +1695,7 @@
 
   function renderPaymentHero(pageHero) {
     setText(document.getElementById('payment-hero-heading'), pageHero.heading);
-    setText(document.getElementById('payment-hero-intro'), pageHero.intro);
+    setRichContent(document.getElementById('payment-hero-intro'), pageHero.intro);
   }
 
   function renderPaymentPage(data) {
