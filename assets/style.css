@@ -1789,6 +1789,124 @@ body.assets-ready .contact-hero .page-hero-animate--2 { animation-delay: 0.18s; 
   border: 1px solid rgba(125, 100, 168, 0.1);
 }
 
+.new-patient-step {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(125, 100, 168, 0.12);
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(45, 38, 64, 0.06);
+}
+@media (min-width: 640px) {
+  .new-patient-step {
+    grid-template-columns: auto 1fr;
+    gap: 1.25rem;
+    padding: 1.75rem;
+  }
+}
+.new-patient-step__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(145deg, #7d64a8, #6b5494);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.new-patient-step__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #33204f;
+}
+.new-patient-step__lead {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #64748b;
+}
+.new-patient-step__body p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #64748b;
+}
+.new-patient-step__body p + p {
+  margin-top: 0.75rem;
+}
+
+.new-patient-block {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(125, 100, 168, 0.1);
+  background: #fff;
+}
+.new-patient-block--callout {
+  background: linear-gradient(145deg, #faf8fd, #f3f0f8);
+  border-color: rgba(125, 100, 168, 0.18);
+}
+.new-patient-block__title {
+  font-size: 1.0625rem;
+  font-weight: 800;
+  color: #33204f;
+}
+.new-patient-block__body {
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #64748b;
+}
+.new-patient-block__body p + p {
+  margin-top: 0.75rem;
+}
+
+.new-patient-forms-list {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.new-patient-forms-list__item {
+  padding: 0.875rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+.new-patient-forms-list__item:last-child {
+  border-bottom: none;
+}
+.new-patient-forms-list__item strong {
+  display: block;
+  color: #33204f;
+}
+
+.new-patient-policy-item {
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.new-patient-policy-card {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(125, 100, 168, 0.12);
+  background: #faf8fd;
+}
+.new-patient-policy-card__title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #33204f;
+}
+.new-patient-policy-card__text {
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #64748b;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .payment-insurer {
     transition: none;

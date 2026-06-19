@@ -34,6 +34,10 @@
                 "href": "services.html"
             },
             {
+                "label": "New Patients",
+                "href": "service-detail.html"
+            },
+            {
                 "label": "Contact",
                 "href": "contact.html"
             },
@@ -160,6 +164,10 @@
             {
                 "label": "Services",
                 "href": "services.html"
+            },
+            {
+                "label": "New Patients",
+                "href": "service-detail.html"
             },
             {
                 "label": "Contact",

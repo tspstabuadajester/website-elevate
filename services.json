@@ -34,6 +34,10 @@
                 "href": "services.html"
             },
             {
+                "label": "New Patients",
+                "href": "service-detail.html"
+            },
+            {
                 "label": "Contact",
                 "href": "contact.html"
             },
@@ -757,6 +761,10 @@
                 "href": "services.html"
             },
             {
+                "label": "New Patients",
+                "href": "service-detail.html"
+            },
+            {
                 "label": "Contact",
                 "href": "contact.html"
             },
@@ -804,7 +812,7 @@
             {
                 "id": "genesight",
                 "icon": "genesight",
-                "title": "GeneSight\u00ae Genetic Testing",
+                "title": "GeneSight® Genetic Testing",
                 "paragraphs": [
                     "As part of our commitment to personalized medicine, we offer optional GeneSight genetic testing to help guide clinical decisions. This simple test analyzes how your specific genes may influence your body response to certain psychiatric medications.",
                     "This testing may be highly beneficial if you have experienced:"

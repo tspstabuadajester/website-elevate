@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CMS_SEO_START -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+  <!-- CMS_SEO_END -->
+
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Lato', 'sans-serif'],
+            hero: ['"El Messiri"', 'sans-serif']
+          },
+          colors: {
+            elevate: {
+              50: '#f8f5fc',
+              100: '#f3f0f8',
+              200: '#e8dff5',
+              300: '#d4b5fb',
+              400: '#b989ee',
+              500: '#9b67d5',
+              600: '#7d64a8',
+              700: '#6b5494',
+              800: '#4a3a6e',
+              900: '#33204f'
+            },
+            ink: '#2d2640'
+          },
+          boxShadow: {
+            card: '0 8px 30px rgba(45, 38, 64, .08)',
+            soft: '0 20px 60px rgba(125, 100, 168, .14)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+</head>
+
+<body class="overflow-x-hidden antialiased" data-page="service-detail">
+
+  <!-- NAV -->
+  <header class="nav-blur fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5 lg:px-8">
+      <a href="index.html" class="flex shrink-0 items-center" aria-label="Elevate home">
+        <img data-logo src="assets/logo.png" alt="" class="brand-logo" width="240" height="60" decoding="async" />
+      </a>
+      <nav id="nav-links" class="hidden items-center gap-7 text-sm font-semibold text-slate-600 lg:flex"></nav>
+      <a id="nav-cta" href="index.html#appointment" class="hidden shrink-0 rounded-full bg-elevate-600 px-5 py-2.5 text-sm font-bold text-white shadow-md transition hover:bg-elevate-700 sm:inline-flex"></a>
+      <button
+        id="nav-toggle"
+        type="button"
+        class="nav-toggle rounded-xl border border-elevate-100 bg-white p-2 text-elevate-800 lg:hidden"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="nav-mobile"
+      >
+        <svg class="nav-toggle__icon nav-toggle__icon--open h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg class="nav-toggle__icon nav-toggle__icon--close h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12M18 6L6 18"/>
+        </svg>
+      </button>
+    </div>
+    <div id="nav-mobile" class="nav-mobile lg:hidden" aria-hidden="true">
+      <nav id="nav-mobile-links" class="nav-mobile__links"></nav>
+      <a id="nav-mobile-cta" class="nav-mobile__cta" href="index.html#appointment"></a>
+    </div>
+  </header>
+
+  <main class="pt-[72px]">
+
+    <!-- HERO -->
+    <section class="contact-hero">
+      <div class="hero-rings hero-rings--tr" aria-hidden="true">
+        <span class="hero-ring hero-ring--1"></span>
+        <span class="hero-ring hero-ring--2"></span>
+        <span class="hero-ring hero-ring--3"></span>
+      </div>
+      <div class="hero-rings hero-rings--bl" aria-hidden="true">
+        <span class="hero-ring hero-ring--1"></span>
+        <span class="hero-ring hero-ring--2"></span>
+        <span class="hero-ring hero-ring--3"></span>
+      </div>
+
+      <div class="contact-hero__content mx-auto max-w-3xl px-5 py-14 text-center lg:px-8 lg:py-20">
+        <h1 id="page-hero-heading" class="page-hero-animate page-hero-animate--1 serif text-4xl font-bold text-elevate-900 sm:text-5xl lg:text-6xl"></h1>
+        <p id="page-hero-intro" class="page-hero-animate page-hero-animate--2 mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base"></p>
+      </div>
+    </section>
+
+    <!-- WHAT TO EXPECT -->
+    <section class="bg-white py-16 lg:py-24">
+      <div class="mx-auto max-w-4xl px-5 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <h2 id="expect-heading" class="serif text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
+          <p id="expect-intro" class="mx-auto mt-4 text-sm leading-7 text-slate-600 sm:text-base"></p>
+        </div>
+        <div id="expect-steps" class="reveal-stagger mt-12 space-y-6"></div>
+        <p id="expect-privacy" class="reveal mt-8 rounded-2xl bg-elevate-50 p-5 text-sm leading-7 text-slate-600 sm:text-base"></p>
+      </div>
+    </section>
+
+    <!-- PATIENT FORMS -->
+    <section class="bg-elevate-50/60 py-16 lg:py-24">
+      <div class="mx-auto max-w-4xl px-5 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <h2 id="forms-heading" class="serif text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
+          <p id="forms-intro" class="mx-auto mt-4 text-sm leading-7 text-slate-600 sm:text-base"></p>
+        </div>
+
+        <div class="reveal mt-10 space-y-8">
+          <article class="new-patient-block">
+            <h3 id="forms-ehr-heading" class="new-patient-block__title"></h3>
+            <div id="forms-ehr-body" class="new-patient-block__body"></div>
+          </article>
+
+          <article class="new-patient-block">
+            <h3 id="forms-getting-heading" class="new-patient-block__title"></h3>
+            <p id="forms-getting-text" class="new-patient-block__body"></p>
+          </article>
+
+          <article class="new-patient-block">
+            <h3 id="forms-list-heading" class="new-patient-block__title"></h3>
+            <ul id="forms-list" class="new-patient-forms-list"></ul>
+          </article>
+
+          <article class="new-patient-block">
+            <h3 id="forms-coordination-heading" class="new-patient-block__title"></h3>
+            <p id="forms-coordination-intro" class="new-patient-block__body"></p>
+            <a id="forms-roi-link" href="#" class="new-patient-download mt-4 inline-flex items-center gap-2 rounded-full bg-elevate-600 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-elevate-700">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm4 18H6V4h7v5h5v11Z"/></svg>
+              <span id="forms-roi-label"></span>
+            </a>
+          </article>
+
+          <article class="new-patient-block new-patient-block--callout">
+            <h3 id="forms-policy-heading" class="new-patient-block__title"></h3>
+            <p id="forms-policy-intro" class="new-patient-block__body"></p>
+            <div id="forms-policy-items" class="mt-5 space-y-4"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE POLICIES -->
+    <section class="bg-white py-16 lg:py-24">
+      <div class="mx-auto max-w-4xl px-5 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <h2 id="policies-heading" class="serif text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
+          <p id="policies-intro" class="mx-auto mt-4 text-sm leading-7 text-slate-600 sm:text-base"></p>
+        </div>
+        <div id="policies-list" class="reveal-stagger mt-10 space-y-4"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-elevate-800 text-white">
+    <div class="reveal mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-[1.1fr_1.4fr_.9fr] lg:gap-12 lg:px-8">
+      <div>
+        <a href="index.html" aria-label="Elevate home">
+          <img data-logo src="assets/logo.png" alt="" class="brand-logo brand-logo--footer" width="220" height="72" decoding="async"/>
+        </a>
+        <p id="footer-description" class="mt-5 max-w-xs text-sm leading-7 text-white/75"></p>
+      </div>
+      <div class="grid gap-8 sm:grid-cols-2">
+        <div>
+          <h4 id="footer-address1-title" class="text-xs font-extrabold uppercase tracking-widest"></h4>
+          <ul id="footer-address1-list" class="mt-4 space-y-4 text-sm leading-6 text-white/80"></ul>
+        </div>
+        <div>
+          <h4 id="footer-address2-title" class="text-xs font-extrabold uppercase tracking-widest"></h4>
+          <ul id="footer-address2-list" class="mt-4 space-y-4 text-sm leading-6 text-white/80"></ul>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-xs font-extrabold uppercase tracking-widest">Quick Links</h4>
+        <nav id="footer-quick-links" class="mt-4 space-y-2.5 text-sm font-medium text-white/80"></nav>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-5 text-center text-xs text-white/60">
+      <span id="footer-copyright"></span>
+    </div>
+  </footer>
+
+  <script src="assets/render-content.js"></script>
+  <script src="assets/animations.js"></script>
+
+</body>
+</html>

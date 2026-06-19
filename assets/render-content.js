@@ -1243,6 +1243,142 @@
     document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
   }
 
+  function renderServiceDetailHero(pageHero) {
+    setText(document.getElementById('page-hero-heading'), pageHero.heading);
+    setText(document.getElementById('page-hero-intro'), pageHero.intro);
+  }
+
+  function renderWhatToExpect(section) {
+    if (!section) return;
+
+    setText(document.getElementById('expect-heading'), section.heading);
+    setText(document.getElementById('expect-intro'), section.intro);
+    setText(document.getElementById('expect-privacy'), section.privacyNote);
+
+    var steps = document.getElementById('expect-steps');
+    if (!steps || !section.steps) return;
+
+    steps.innerHTML = section.steps.map(function (step) {
+      var html =
+        '<article class="reveal new-patient-step">' +
+        '<span class="new-patient-step__number">' + step.number + '</span>' +
+        '<div class="new-patient-step__body">' +
+        '<h3 class="new-patient-step__title">' + step.title + '</h3>' +
+        '<p class="new-patient-step__lead">' + step.lead + '</p>' +
+        '<p><strong class="text-elevate-900">What we do:</strong> ' + step.whatWeDo + '</p>';
+
+      if (step.outcome) {
+        html += '<p><strong class="text-elevate-900">The outcome:</strong> ' + step.outcome + '</p>';
+      }
+      if (step.frequency) {
+        html += '<p><strong class="text-elevate-900">Frequency:</strong> ' + step.frequency + '</p>';
+      }
+
+      html += '</div></article>';
+      return html;
+    }).join('');
+  }
+
+  function renderPatientForms(forms) {
+    if (!forms) return;
+
+    setText(document.getElementById('forms-heading'), forms.heading);
+    setText(document.getElementById('forms-intro'), forms.intro);
+
+    if (forms.ehr) {
+      setText(document.getElementById('forms-ehr-heading'), forms.ehr.heading);
+      var ehrBody = document.getElementById('forms-ehr-body');
+      if (ehrBody && forms.ehr.paragraphs) {
+        ehrBody.innerHTML = forms.ehr.paragraphs.map(function (p) {
+          return '<p>' + p + '</p>';
+        }).join('');
+      }
+    }
+
+    if (forms.gettingForms) {
+      setText(document.getElementById('forms-getting-heading'), forms.gettingForms.heading);
+      setText(document.getElementById('forms-getting-text'), forms.gettingForms.text);
+    }
+
+    if (forms.formsList) {
+      setText(document.getElementById('forms-list-heading'), forms.formsList.heading);
+      var list = document.getElementById('forms-list');
+      if (list && forms.formsList.items) {
+        list.innerHTML = forms.formsList.items.map(function (item) {
+          return (
+            '<li class="new-patient-forms-list__item">' +
+            '<strong>' + item.label + '</strong>' +
+            '<span>' + item.detail + '</span>' +
+            '</li>'
+          );
+        }).join('');
+      }
+    }
+
+    if (forms.coordination) {
+      setText(document.getElementById('forms-coordination-heading'), forms.coordination.heading);
+      setText(document.getElementById('forms-coordination-intro'), forms.coordination.intro);
+      var roiLink = document.getElementById('forms-roi-link');
+      if (roiLink && forms.coordination.roiForm) {
+        roiLink.href = forms.coordination.roiForm.href || '#';
+        setText(document.getElementById('forms-roi-label'), forms.coordination.roiForm.label);
+      }
+    }
+
+    if (forms.completionPolicy) {
+      setText(document.getElementById('forms-policy-heading'), forms.completionPolicy.heading);
+      setText(document.getElementById('forms-policy-intro'), forms.completionPolicy.intro);
+      var policyItems = document.getElementById('forms-policy-items');
+      if (policyItems && forms.completionPolicy.items) {
+        policyItems.innerHTML = forms.completionPolicy.items.map(function (item) {
+          return (
+            '<div class="new-patient-policy-item">' +
+            '<strong class="block text-sm font-bold text-elevate-900">' + item.label + '</strong>' +
+            '<p class="mt-1 text-sm leading-7 text-slate-600">' + item.text + '</p>' +
+            '</div>'
+          );
+        }).join('');
+      }
+    }
+  }
+
+  function renderPracticePolicies(section) {
+    if (!section) return;
+
+    setText(document.getElementById('policies-heading'), section.heading);
+    setText(document.getElementById('policies-intro'), section.intro);
+
+    var list = document.getElementById('policies-list');
+    if (!list || !section.items) return;
+
+    list.innerHTML = section.items.map(function (item) {
+      return (
+        '<article class="reveal new-patient-policy-card">' +
+        '<h3 class="new-patient-policy-card__title">' + item.title + '</h3>' +
+        '<p class="new-patient-policy-card__text">' + item.text + '</p>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  function renderServiceDetailPage(data) {
+    if (!data.pageHero) {
+      console.error('[Elevate] Service detail page content not found in page JSON');
+      return;
+    }
+
+    renderSeo(data.seo, data.site);
+    renderLogos(data.site);
+    renderNav(data.nav);
+    renderServiceDetailHero(data.pageHero);
+    renderWhatToExpect(data.whatToExpect);
+    renderPatientForms(data.patientForms);
+    renderPracticePolicies(data.practicePolicies);
+    renderFooter(data.footer, data.site);
+
+    document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
+  }
+
   function renderPaymentHero(pageHero) {
     setText(document.getElementById('payment-hero-heading'), pageHero.heading);
     setText(document.getElementById('payment-hero-intro'), pageHero.intro);
@@ -1280,6 +1416,10 @@
     }
     if (pageId === 'payment') {
       renderPaymentPage(data);
+      return;
+    }
+    if (pageId === 'service-detail') {
+      renderServiceDetailPage(data);
       return;
     }
     renderIndexPage(data);
