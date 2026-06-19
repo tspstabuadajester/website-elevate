@@ -1,14 +1,14 @@
 {
     "seo": {
-        "title": "Payment Information | Elevate Mental Health and Wellness",
-        "description": "Insurance and payment information for Elevate Mental Health and Wellness. We accept Optum, Anthem, Medicare, Aetna, Magellan, and Cigna.",
+        "title": "Insurance & Fees | Elevate Mental Health and Wellness",
+        "description": "Insurance plans, self-pay rates, and billing information for psychiatric care at Elevate Mental Health and Wellness in California and Nevada.",
         "canonicalUrl": "https://elevatemhw.com/payment.html",
         "robots": "index,follow",
-        "ogTitle": "Payment & Insurance | Elevate",
-        "ogDescription": "Learn which insurance plans Elevate accepts and find answers to common billing questions.",
+        "ogTitle": "Insurance & Fees | Elevate",
+        "ogDescription": "Learn which insurance plans Elevate accepts and view our self-pay fee schedule.",
         "ogImage": "assets/og-image.jpg",
-        "twitterTitle": "Payment & Insurance | Elevate",
-        "twitterDescription": "Insurance and payment information for psychiatric care at Elevate.",
+        "twitterTitle": "Insurance & Fees | Elevate",
+        "twitterDescription": "Insurance and billing information for psychiatric care at Elevate.",
         "twitterImage": "assets/og-image.jpg"
     },
     "site": {
@@ -44,13 +44,26 @@
         ]
     },
     "pageHero": {
-        "heading": "Our Clinic accepts the following Insurance Company",
-        "intro": "We work with several major insurance providers. Please contact the clinic to confirm your coverage before scheduling an appointment."
+        "heading": "Insurance & Fees",
+        "intro": "We believe that clear financial expectations are essential for a stress-free care experience. Below is an overview of how we handle insurance and billing at Elevate Mental Health and Wellness."
     },
     "payment": {
-        "kicker": "Insurance & payment",
-        "heading": "Accepted insurance plans",
-        "intro": "Coverage can vary by plan and location. Reach out if you have questions about your benefits or billing.",
+        "insuranceInfo": {
+            "heading": "Insurance Information",
+            "intro": "We partner with a variety of commercial insurance plans to help keep your care accessible.",
+            "inNetwork": {
+                "label": "In-Network Plans",
+                "text": "We currently accept Anthem, Aetna, Cigna, UnitedHealthcare/Optum, Magellan, and Medicare."
+            },
+            "comingSoon": {
+                "label": "Other Major Insurances Coming Soon",
+                "text": "We are actively in the process of credentialing with additional major insurance panels. If you do not see your provider listed yet, please check back frequently or reach out to our office to see where we are in the approval process."
+            },
+            "responsibility": {
+                "label": "Your Responsibility",
+                "text": "Copays, deductibles, and co-insurance are due at the time of service. Because health insurance policies vary widely, we highly recommend calling the number on the back of your insurance card before your first visit to confirm your specific behavioral health benefits."
+            }
+        },
         "insurers": [
             {
                 "name": "Optum",
@@ -77,51 +90,87 @@
                 "src": "assets/insurance_cigna.jpg"
             }
         ],
+        "outOfNetwork": {
+            "heading": "Out-of-Network & Self-Pay Options",
+            "paragraphs": [
+                "If we are not in-network with your insurance provider, or if you prefer not to use insurance, we offer standard self-pay rates.",
+                "We can provide you with a Superbill (an itemized medical receipt) that you can submit to your insurance company for potential out-of-network reimbursement."
+            ],
+            "note": "Please note: We do not guarantee reimbursement, as this depends entirely on your specific insurance plan."
+        },
+        "feeSchedule": {
+            "heading": "Fee Schedule (Self-Pay Rates)",
+            "columns": [
+                "Service Type",
+                "Estimated Duration",
+                "Fee"
+            ],
+            "rows": [
+                {
+                    "service": "Initial Comprehensive Psychiatric Evaluation",
+                    "duration": "60-90 Minutes",
+                    "fee": "$375.00"
+                },
+                {
+                    "service": "Extended Follow-up/Medication Management",
+                    "duration": "45-50 Minutes",
+                    "fee": "$210.00"
+                },
+                {
+                    "service": "Follow-Up / Medication Management",
+                    "duration": "25-30 Minutes",
+                    "fee": "$180.00"
+                },
+                {
+                    "service": "Prescription Request Outside of Appt",
+                    "duration": "",
+                    "fee": "$35.00"
+                },
+                {
+                    "service": "No-show/Cancellation fee",
+                    "duration": "",
+                    "fee": "$75.00"
+                },
+                {
+                    "service": "Form Completion (FMLA, School, Work, etc.)",
+                    "duration": "Complexity varies",
+                    "fee": "Starts at $50.00"
+                },
+                {
+                    "service": "GeneSight\u00ae Testing Coordination",
+                    "duration": "Process time varies",
+                    "fee": "Varies by lab"
+                }
+            ]
+        },
         "billPay": {
             "label": "Bill Pay",
             "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
         }
     },
-    "faq": {
-        "heading": "Frequently asked questions",
-        "items": [
-            {
-                "question": "Do you accept insurance?",
-                "answer": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment.",
-                "open": true
-            },
-            {
-                "question": "What are your fees?",
-                "answer": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
-            },
-            {
-                "question": "What forms of payment do you accept?",
-                "answer": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
-            },
-            {
-                "question": "Do you offer virtual appointments?",
-                "answer": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
-            }
-        ]
-    },
     "footer": {
         "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
         "locations": {
             "address1": {
-                "title": "Address 1",
+                "title": "California Offices",
                 "addresses": [
                     "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-                    "1302 Madera Rd<br>Simi Valley, CA 93065"
+                    "1302 Madera Rd<br>Simi Valley, CA 93065",
+                    "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
                 ]
             },
             "address2": {
-                "title": "Address 2",
+                "title": "Nevada Office",
                 "addresses": [
                     "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
                 ],
                 "email": {
                     "label": "elevatepatientcare@gmail.com",
                     "href": "mailto:elevatepatientcare@gmail.com"
+                },
+                "phone": {
+                    "label": "818-805-4290",
+                    "href": "tel:+18188054290"
                 }
             }
         },

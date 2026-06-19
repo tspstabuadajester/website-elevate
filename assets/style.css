@@ -1752,6 +1752,43 @@ body.assets-ready .contact-hero .page-hero-animate--2 { animation-delay: 0.18s; 
   object-fit: contain;
 }
 
+.payment-fee-table {
+  border-collapse: collapse;
+}
+.payment-fee-table thead {
+  background: #f8f5fc;
+}
+.payment-fee-table th,
+.payment-fee-table td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+}
+.payment-fee-table th {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b5494;
+}
+.payment-fee-table td {
+  color: #64748b;
+}
+.payment-fee-table td:first-child {
+  font-weight: 600;
+  color: #33204f;
+}
+.payment-fee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.crisis-resource {
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  background: #faf8fd;
+  border: 1px solid rgba(125, 100, 168, 0.1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .payment-insurer {
     transition: none;

@@ -613,33 +613,67 @@
   }
 
   function renderPayment(payment) {
-    setText(document.getElementById('payment-kicker'), payment.kicker);
-    setText(document.getElementById('payment-heading'), payment.heading);
-    setText(document.getElementById('payment-intro'), payment.intro);
+    var insuranceInfo = document.getElementById('payment-insurance-info');
+    if (insuranceInfo && payment.insuranceInfo) {
+      var info = payment.insuranceInfo;
+      insuranceInfo.innerHTML =
+        '<h2 class="serif text-center text-3xl font-bold text-elevate-900 sm:text-4xl">' + info.heading + '</h2>' +
+        '<p class="mx-auto mt-4 text-center text-sm leading-7 text-slate-600 sm:text-base">' + info.intro + '</p>' +
+        '<div class="mt-8 space-y-5 text-sm leading-7 text-slate-600 sm:text-base">' +
+        '<p><strong class="text-elevate-900">' + info.inNetwork.label + ':</strong> ' + info.inNetwork.text + '</p>' +
+        '<p><strong class="text-elevate-900">' + info.comingSoon.label + ':</strong> ' + info.comingSoon.text + '</p>' +
+        '<p><strong class="text-elevate-900">' + info.responsibility.label + ':</strong> ' + info.responsibility.text + '</p>' +
+        '</div>';
+    }
 
     var insurers = document.getElementById('payment-insurers');
     if (insurers && payment.insurers) {
-      var useImageGrid = payment.insurers.some(function (item) {
-        return item.src;
-      });
+      insurers.className = 'payment-insurers';
+      insurers.innerHTML = payment.insurers.map(function (insurer) {
+        return (
+          '<div class="payment-insurer">' +
+          '<img src="' + insurer.src + '" alt="' + insurer.name + '" class="payment-insurer__logo" loading="lazy" decoding="async" />' +
+          '</div>'
+        );
+      }).join('');
+    }
 
-      if (useImageGrid) {
-        insurers.className = 'payment-insurers';
-        insurers.innerHTML = payment.insurers.map(function (insurer) {
-          return (
-            '<div class="payment-insurer">' +
-            '<img src="' + insurer.src + '" alt="' + insurer.name + '" class="payment-insurer__logo" loading="lazy" decoding="async" />' +
-            '</div>'
-          );
-        }).join('');
-      } else {
-        insurers.className = 'flex flex-wrap items-center justify-center gap-8 sm:gap-10';
-        insurers.innerHTML = payment.insurers.map(function (insurer) {
-          if (insurer.html) {
-            return '<span class="' + insurer.className + '">' + insurer.html + '</span>';
-          }
-          return '<span class="' + insurer.className + '">' + insurer.name + '</span>';
-        }).join('');
+    var outOfNetwork = document.getElementById('payment-out-of-network');
+    if (outOfNetwork && payment.outOfNetwork) {
+      var section = payment.outOfNetwork;
+      var html =
+        '<h2 class="serif text-2xl font-bold text-elevate-900 sm:text-3xl">' + section.heading + '</h2>' +
+        '<div class="mt-4 space-y-4 text-sm leading-7 text-slate-600 sm:text-base">';
+      section.paragraphs.forEach(function (paragraph) {
+        html += '<p>' + paragraph + '</p>';
+      });
+      html += '</div>';
+      if (section.note) {
+        html += '<p class="mt-4 rounded-xl bg-elevate-50 p-4 text-sm leading-7 text-slate-600">' + section.note + '</p>';
+      }
+      outOfNetwork.innerHTML = html;
+    }
+
+    if (payment.feeSchedule) {
+      setText(document.getElementById('payment-fee-heading'), payment.feeSchedule.heading);
+      var table = document.getElementById('payment-fee-table');
+      if (table && payment.feeSchedule.rows) {
+        var columns = payment.feeSchedule.columns || ['Service Type', 'Estimated Duration', 'Fee'];
+        var tableHtml = '<thead><tr>';
+        columns.forEach(function (col) {
+          tableHtml += '<th scope="col">' + col + '</th>';
+        });
+        tableHtml += '</tr></thead><tbody>';
+        payment.feeSchedule.rows.forEach(function (row) {
+          tableHtml +=
+            '<tr>' +
+            '<td>' + row.service + '</td>' +
+            '<td>' + (row.duration || '—') + '</td>' +
+            '<td>' + row.fee + '</td>' +
+            '</tr>';
+        });
+        tableHtml += '</tbody>';
+        table.innerHTML = tableHtml;
       }
     }
 
@@ -722,6 +756,12 @@
           '<li class="flex gap-2">' +
           '<svg class="mt-0.5 h-4 w-4 shrink-0 text-elevate-300" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.01L12 13l8-6.99V6H4Zm0 12h16V9.25l-7.4 6.45a1 1 0 0 1-1.2 0L4 9.25V18Z"/></svg>' +
           '<a href="' + location.email.href + '" class="hover:text-white">' + location.email.label + '</a></li>';
+      }
+      if (location.phone) {
+        html +=
+          '<li class="flex gap-2">' +
+          '<svg class="mt-0.5 h-4 w-4 shrink-0 text-elevate-300" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2Z"/></svg>' +
+          '<a href="' + location.phone.href + '" class="hover:text-white">' + location.phone.label + '</a></li>';
       }
       listEl.innerHTML = html;
     }
@@ -1131,6 +1171,15 @@
       setText(emailLabel, info.email.label);
     }
 
+    var phoneLink = document.getElementById('contact-phone');
+    var phoneLabel = document.getElementById('contact-phone-label');
+    if (phoneLink && info.phone) {
+      phoneLink.href = info.phone.href;
+      setText(phoneLabel, info.phone.label);
+    } else if (phoneLink) {
+      phoneLink.hidden = true;
+    }
+
     var locations = document.getElementById('contact-locations');
     if (!locations || !info.locations) return;
 
@@ -1149,6 +1198,33 @@
     }).join('');
   }
 
+  function renderCrisisPolicy(crisisPolicy) {
+    if (!crisisPolicy) return;
+
+    setText(document.getElementById('crisis-heading'), crisisPolicy.heading);
+    setText(document.getElementById('crisis-resources-heading'), crisisPolicy.resourcesHeading);
+    setText(document.getElementById('crisis-patients-note'), crisisPolicy.patientsNote);
+
+    var intro = document.getElementById('crisis-intro');
+    if (intro && crisisPolicy.paragraphs) {
+      intro.innerHTML = crisisPolicy.paragraphs.map(function (text) {
+        return '<p>' + text + '</p>';
+      }).join('');
+    }
+
+    var resources = document.getElementById('crisis-resources');
+    if (resources && crisisPolicy.resources) {
+      resources.innerHTML = crisisPolicy.resources.map(function (item) {
+        return (
+          '<li class="reveal crisis-resource">' +
+          '<strong class="block text-sm font-bold text-elevate-900">' + item.label + '</strong>' +
+          '<span class="mt-1 block text-sm leading-7 text-slate-600">' + item.detail + '</span>' +
+          '</li>'
+        );
+      }).join('');
+    }
+  }
+
   function renderContactPage(data) {
     if (!data.pageHero) {
       console.error('[Elevate] Contact page content not found in page JSON');
@@ -1160,6 +1236,7 @@
     renderNav(data.nav);
     renderContactHero(data.pageHero);
     renderContactInfo(data.contactInfo);
+    renderCrisisPolicy(data.crisisPolicy);
     renderCtaPanel(data.ctaPanel);
     renderFooter(data.footer, data.site);
 
@@ -1182,7 +1259,6 @@
     renderNav(data.nav);
     renderPaymentHero(data.pageHero);
     renderPayment(data.payment);
-    renderFaq(data.faq);
     renderFooter(data.footer, data.site);
 
     document.dispatchEvent(new CustomEvent('elevate:content-rendered'));
