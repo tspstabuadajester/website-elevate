@@ -1,7 +1,7 @@
 {
     "seo": {
         "title": "Services | Elevate Mental Health and Wellness",
-        "description": "Psychiatric care for ADHD, anxiety, depression, bipolar disorder, PTSD, OCD, panic disorder, and psychosis in California and Nevada.",
+        "description": "Psychiatric care for ADHD, depression, bipolar disorder, PTSD, and schizophrenia in California and Nevada.",
         "canonicalUrl": "https://elevatemhw.com/services.html",
         "robots": "index,follow",
         "ogTitle": "Mental Health Services | Elevate",
@@ -68,6 +68,11 @@
     "services": {
         "kicker": "Our services",
         "intro": "We treat a wide range of mental health conditions with thoughtful evaluation, medication management when appropriate, and brief psychotherapy tailored to your goals.",
+        "viewDetailsLabel": "Learn more",
+        "modalCta": {
+            "label": "Schedule an appointment",
+            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
         "cta": {
             "label": "Schedule a visit",
             "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
@@ -76,56 +81,644 @@
             {
                 "id": "adhd",
                 "title": "ADHD",
-                "description": "Support for focus, impulsivity, and daily functioning with treatment plans designed for school, work, and home life.",
-                "icon": "star"
-            },
-            {
-                "id": "panic",
-                "title": "Panic Disorder",
-                "description": "Help reducing sudden panic symptoms and building practical tools to feel safer in everyday situations.",
-                "icon": "panic"
-            },
-            {
-                "id": "anxiety",
-                "title": "Anxiety Disorders",
-                "description": "Care for persistent worry, tension, and avoidance so you can regain confidence in daily activities.",
-                "icon": "anxiety"
+                "summary": "Support for focus, impulsivity, and daily functioning with treatment plans designed for school, work, and home life.",
+                "icon": "star",
+                "lastUpdated": "06/2025",
+                "overview": {
+                    "heading": "What is it?",
+                    "items": [
+                        "ADHD affects how the brain works; it can make it hard to focus and stop yourself from acting on urges.",
+                        "It can make it tough to pay attention and stay organized.",
+                        "It can also affect how you feel and how you get along with others.",
+                        "ADHD is not caused by a person's choices or behavior; it's a condition that starts in childhood.",
+                        "ADHD is common; many adults have it, so you're not alone."
+                    ]
+                },
+                "causes": {
+                    "heading": "What can cause it?",
+                    "items": [
+                        "Having someone in your family with ADHD",
+                        "Differences in how the brain looks or works",
+                        "Exposure to smoking, alcohol, or drugs before birth",
+                        "Being born too early (premature) or too small",
+                        "Early exposure to lead",
+                        "Growing up or living in a stressful home",
+                        "Having other mental health conditions like anxiety or depression"
+                    ],
+                    "note": "Many things can work together to cause ADHD. Having these things doesn't mean you'll get ADHD for sure."
+                },
+                "signs": {
+                    "heading": "What are common signs?",
+                    "items": [
+                        "Getting distracted easily and forgetting things",
+                        "Losing things or struggling to keep track of tasks",
+                        "Feeling restless or having trouble sitting still",
+                        "Interrupting others or making quick decisions",
+                        "Starting things but not finishing them",
+                        "Having trouble planning your day or meeting deadlines",
+                        "Feeling frustrated or upset often"
+                    ]
+                },
+                "brain": {
+                    "heading": "How does it affect the brain?",
+                    "description": "In ADHD, these parts of the brain don't work well together. This can make it harder to focus, stay organized, control impulses, and manage emotions.",
+                    "image": {
+                        "src": "assets/disorders/adhd-brain.png",
+                        "alt": "Brain regions affected by ADHD"
+                    },
+                    "regions": [
+                        {
+                            "name": "Cerebellum",
+                            "description": "Helps you move smoothly and manage time"
+                        },
+                        {
+                            "name": "Basal ganglia",
+                            "description": "Controls movement and helps you stick to routines"
+                        },
+                        {
+                            "name": "Dorsolateral prefrontal cortex",
+                            "description": "Helps you focus, plan, and control impulses"
+                        },
+                        {
+                            "name": "Anterior cingulate cortex",
+                            "description": "Helps you switch between tasks and manage emotions"
+                        },
+                        {
+                            "name": "Striatum",
+                            "description": "Helps you form routines and stay motivated"
+                        }
+                    ]
+                },
+                "seekHelp": {
+                    "heading": "When should I seek help?",
+                    "routine": [
+                        "If ADHD is making it hard to keep a job, stay safe, or manage your mood",
+                        "If staying organized or focused is consistently difficult",
+                        "If work or relationships are being affected because of ADHD symptoms"
+                    ],
+                    "urgentHeading": "Get help right away if you:",
+                    "urgent": [
+                        "If impulsive decisions are causing ongoing problems"
+                    ]
+                },
+                "treatment": {
+                    "heading": "How can it be treated?",
+                    "description": "Your health professional can help you choose the best treatment or combinations of treatments for you. Sometimes, people need to try a few different things before they find what works best.",
+                    "types": [
+                        "Talk therapies",
+                        "Medicines",
+                        "Exercise as part of treatment"
+                    ]
+                },
+                "resources": {
+                    "heading": "Where can I get more help?",
+                    "items": [
+                        {
+                            "label": "Suicide & Crisis Lifeline",
+                            "detail": "Call or text 988",
+                            "href": "tel:988"
+                        },
+                        {
+                            "label": "National Alliance on Mental Illness (NAMI)",
+                            "detail": "nami.org",
+                            "href": "https://nami.org"
+                        },
+                        {
+                            "label": "CHADD",
+                            "detail": "chadd.org",
+                            "href": "https://chadd.org"
+                        }
+                    ]
+                },
+                "keyFacts": {
+                    "heading": "What you need to know",
+                    "items": [
+                        "ADHD is a medical condition caused by differences in brain function, not laziness or lack of willpower.",
+                        "Many adults were not diagnosed as children, but symptoms continue into adulthood.",
+                        "Medicine, therapy, and healthy habits can help you focus and feel more in control.",
+                        "Many adults have ADHD, and support is available to help manage it."
+                    ]
+                },
+                "description": "Support for focus, impulsivity, and daily functioning with treatment plans designed for school, work, and home life."
             },
             {
                 "id": "bipolar",
                 "title": "Bipolar Disorders",
-                "description": "Stabilizing mood shifts with close monitoring, clear communication, and a plan that fits your routine.",
-                "icon": "bipolar"
+                "summary": "Stabilizing mood shifts with close monitoring, clear communication, and a plan that fits your routine.",
+                "icon": "bipolar",
+                "lastUpdated": "05/2025",
+                "overview": {
+                    "heading": "What is it?",
+                    "items": [
+                        "A brain condition that causes severe mood changes",
+                        "People with bipolar disorder have very high ups (mania) and very low downs (depression)",
+                        "These mood changes can last for days or weeks",
+                        "Bipolar disorder can make it hard to work, take care of yourself, or do daily tasks",
+                        "Health professionals can treat bipolar disorder with medicine and talk therapy"
+                    ]
+                },
+                "causes": {
+                    "heading": "What can cause it?",
+                    "items": [
+                        "It can run in families (passed down from parents)",
+                        "Changes in the brain play a role",
+                        "Stressful or hard life events can trigger it",
+                        "It may start after a big life change",
+                        "Most people get it between ages 6 and 30",
+                        "Other mental health problems may increase the chance of bipolar disorder"
+                    ],
+                    "note": "Health professionals are still learning about what causes bipolar disorder. It's usually not just one thing, but a mix of different reasons."
+                },
+                "signs": {
+                    "heading": "What are common signs?",
+                    "items": [
+                        "Feeling super happy and full of energy (or very grouchy) for days (mania)",
+                        "Feeling very sad and tired for long periods (depression)",
+                        "Not needing much sleep or sleeping too much",
+                        "Thinking and talking very fast",
+                        "Doing risky things without thinking first",
+                        "Having severe mood swings that last for days or weeks"
+                    ]
+                },
+                "brain": {
+                    "heading": "How does it affect the brain?",
+                    "description": "In bipolar disorder, some of these areas might work differently than usual. This can affect how a person feels, thinks, or acts.",
+                    "image": {
+                        "src": "assets/disorders/bipolar-brain.png",
+                        "alt": "Brain regions affected by bipolar disorder"
+                    },
+                    "regions": [
+                        {
+                            "name": "Prefrontal cortex",
+                            "description": "Helps control your actions and emotions"
+                        },
+                        {
+                            "name": "Thalamus",
+                            "description": "Passes messages in the brain"
+                        },
+                        {
+                            "name": "Amygdala",
+                            "description": "Handles fear and worry"
+                        },
+                        {
+                            "name": "Hippocampus",
+                            "description": "Helps with memory"
+                        },
+                        {
+                            "name": "Striatum",
+                            "description": "Helps you move, feel good, and stay motivated"
+                        },
+                        {
+                            "name": "Hypothalamus",
+                            "description": "Controls sleep, stress, and other body functions"
+                        }
+                    ]
+                },
+                "seekHelp": {
+                    "heading": "When should I seek help?",
+                    "routine": [
+                        "You have very high energy and can't sleep for days",
+                        "You feel very sad and don't want to do anything",
+                        "You have severe mood swings that make life hard",
+                        "You do risky things you wouldn't usually do",
+                        "You feel worried, angry, or scared for no reason",
+                        "You have trouble at work, school, or with family",
+                        "You feel like hurting yourself",
+                        "You hear or see things that aren't real"
+                    ],
+                    "urgentHeading": "Get help right away if you:",
+                    "urgent": [
+                        "Your thoughts don't make sense",
+                        "You feel out of control or very confused"
+                    ]
+                },
+                "treatment": {
+                    "heading": "How can it be treated?",
+                    "description": "Your treatment may change depending on your mood: high (mania), low (depression), or steady (stable). Health professionals use these treatments together to help people with bipolar disorder feel better and live well.",
+                    "types": [
+                        "Medicine",
+                        "Talk therapy",
+                        "Family education",
+                        "Support groups",
+                        "Brain treatments",
+                        "Lifestyle changes"
+                    ]
+                },
+                "resources": {
+                    "heading": "Where can I get more help?",
+                    "items": [
+                        {
+                            "label": "Suicide & Crisis Lifeline",
+                            "detail": "Call or text 988",
+                            "href": "tel:988"
+                        },
+                        {
+                            "label": "National Alliance on Mental Illness (NAMI)",
+                            "detail": "nami.org",
+                            "href": "https://nami.org"
+                        },
+                        {
+                            "label": "Depression and Bipolar Support Alliance (DBSA)",
+                            "detail": "dbsalliance.org",
+                            "href": "https://www.dbsalliance.org"
+                        }
+                    ]
+                },
+                "keyFacts": {
+                    "heading": "What you need to know",
+                    "items": [
+                        "Bipolar disorder is a brain condition that causes severe mood changes. These changes can make daily life hard.",
+                        "It is a lifelong condition, but medicine, therapy, and healthy habits can help you manage it.",
+                        "You are not alone. Many people have bipolar disorder. Health professionals, family, and friends can help."
+                    ]
+                },
+                "description": "Stabilizing mood shifts with close monitoring, clear communication, and a plan that fits your routine."
             },
             {
                 "id": "depression",
                 "title": "Depression",
-                "description": "Treatment for low mood, low energy, and loss of interest with a focus on helping you feel like yourself again.",
-                "icon": "depression"
-            },
-            {
-                "id": "ocd",
-                "title": "OCD",
-                "description": "Support for intrusive thoughts and repetitive behaviors through structured, evidence-based psychiatric care.",
-                "icon": "ocd"
+                "summary": "Treatment for low mood, low energy, and loss of interest with a focus on helping you feel like yourself again.",
+                "icon": "depression",
+                "lastUpdated": "05/2025",
+                "overview": {
+                    "heading": "What is it?",
+                    "items": [
+                        "A common mental health problem",
+                        "Feeling very sad for a long time and not enjoying things you used to like",
+                        "Lasts for at least 2 weeks and makes it hard to do everyday activities",
+                        "It's more than just feeling down for a short time. It's a serious condition that affects how a person lives their life"
+                    ]
+                },
+                "causes": {
+                    "heading": "What can cause it?",
+                    "items": [
+                        "Sad or stressful things happening in your life",
+                        "Having family members who've had depression",
+                        "Being someone who often feels sad or worries a lot",
+                        "Having a big health problem that lasts a long time",
+                        "Using drugs or drinking too much alcohol",
+                        "Not having friends or family to help you"
+                    ],
+                    "note": "Depression usually happens because of a mix of these things, not just one. Everyone's experience is different."
+                },
+                "signs": {
+                    "heading": "What are common signs?",
+                    "items": [
+                        "Feeling very sad most of the time",
+                        "Not liking things you used to enjoy",
+                        "Eating or sleeping more or less than usual",
+                        "Feeling very tired all the time",
+                        "Finding it hard to think clearly",
+                        "Feeling like you're not important",
+                        "Thinking about dying"
+                    ]
+                },
+                "brain": {
+                    "heading": "How does it affect the brain?",
+                    "description": "In depression, some of these areas might work differently or look smaller than usual. This can affect how a person feels, thinks, or acts.",
+                    "image": {
+                        "src": "assets/disorders/mdd-brain.png",
+                        "alt": "Brain regions affected by depression"
+                    },
+                    "regions": [
+                        {
+                            "name": "Prefrontal cortex",
+                            "description": "Helps control emotion"
+                        },
+                        {
+                            "name": "Thalamus",
+                            "description": "Passes messages in the brain"
+                        },
+                        {
+                            "name": "Amygdala",
+                            "description": "Handles fear and worry"
+                        },
+                        {
+                            "name": "Hippocampus",
+                            "description": "Helps with memory"
+                        },
+                        {
+                            "name": "Striatum",
+                            "description": "Helps you move, feel good, and stay motivated"
+                        }
+                    ]
+                },
+                "seekHelp": {
+                    "heading": "When should I seek help?",
+                    "routine": [
+                        "You feel very sad for more than 2 weeks",
+                        "You have trouble doing everyday things",
+                        "You don't feel better on your own",
+                        "You think about hurting yourself",
+                        "You feel like life isn't worth living"
+                    ],
+                    "urgentHeading": "Get help right away if you:",
+                    "urgent": [
+                        "Stay away from friends and family",
+                        "Use drugs or alcohol to feel better"
+                    ]
+                },
+                "treatment": {
+                    "heading": "How can it be treated?",
+                    "description": "Your health professional can help you choose the best treatment or combinations of treatments for you. Sometimes, people need to try a few different things before they find what works best.",
+                    "types": [
+                        "Talk therapy",
+                        "Medicine",
+                        "Lifestyle changes",
+                        "Brain treatments",
+                        "Computer programs"
+                    ]
+                },
+                "resources": {
+                    "heading": "Where can I get more help?",
+                    "items": [
+                        {
+                            "label": "Suicide & Crisis Lifeline",
+                            "detail": "Call or text 988",
+                            "href": "tel:988"
+                        },
+                        {
+                            "label": "National Alliance on Mental Illness (NAMI)",
+                            "detail": "nami.org",
+                            "href": "https://nami.org"
+                        },
+                        {
+                            "label": "Depression and Bipolar Support Alliance (DBSA)",
+                            "detail": "dbsalliance.org",
+                            "href": "https://www.dbsalliance.org"
+                        }
+                    ]
+                },
+                "keyFacts": {
+                    "heading": "What you need to know",
+                    "items": [
+                        "Depression is a serious health problem",
+                        "Depression is not your fault",
+                        "Anyone can get depression",
+                        "Depression doesn't just go away on its own",
+                        "Health professionals can help treat depression"
+                    ]
+                },
+                "description": "Treatment for low mood, low energy, and loss of interest with a focus on helping you feel like yourself again."
             },
             {
                 "id": "ptsd",
                 "title": "PTSD",
-                "description": "Trauma-informed care for flashbacks, hypervigilance, and emotional distress after difficult life experiences.",
-                "icon": "ptsd"
+                "summary": "Trauma-informed care for flashbacks, hypervigilance, and emotional distress after difficult life experiences.",
+                "icon": "ptsd",
+                "lastUpdated": "05/2025",
+                "overview": {
+                    "heading": "What is it?",
+                    "items": [
+                        "PTSD means past trauma still affects you. It can happen after scary or dangerous events, like accidents, war, or abuse.",
+                        "It can make you feel upset or afraid even when you're safe. Loud noises, certain places, or memories can bring back bad feelings.",
+                        "You may have trouble sleeping or feel on edge. Nightmares, bad dreams, or feeling jumpy are common.",
+                        "PTSD can cause strong emotions. You might feel sad, angry, or alone, and sometimes it's hard to enjoy things you used to like."
+                    ]
+                },
+                "causes": {
+                    "heading": "What can cause it?",
+                    "items": [
+                        "Going through or seeing something very scary or dangerous (trauma)",
+                        "Seeing someone else get hurt or killed (trauma)",
+                        "Having a history of trauma or stress",
+                        "Not having support after a trauma",
+                        "Having anxiety, depression, or other mental health issues",
+                        "Using drugs or alcohol to cope"
+                    ],
+                    "note": "Not everyone who goes through a trauma gets PTSD. Our brains and bodies deal with stress in different ways. Having support and good ways to cope can help protect you from PTSD."
+                },
+                "signs": {
+                    "heading": "What are common signs?",
+                    "items": [
+                        "You may keep thinking about the scary event or have bad dreams",
+                        "Feeling scared or nervous all the time",
+                        "Avoiding people or places that remind you of the event",
+                        "Feeling angry, sad, or numb",
+                        "Trouble sleeping or focusing",
+                        "You may blame yourself for what happened, even if it wasn't your fault"
+                    ]
+                },
+                "brain": {
+                    "heading": "How does it affect the brain?",
+                    "description": "In PTSD, some of these areas might work differently or look smaller than usual. This can affect how a person feels, thinks, or acts.",
+                    "image": {
+                        "src": "assets/disorders/ptsd-brain.png",
+                        "alt": "Brain regions affected by PTSD"
+                    },
+                    "regions": [
+                        {
+                            "name": "Prefrontal cortex",
+                            "description": "Helps you make choices and control your feelings"
+                        },
+                        {
+                            "name": "Thalamus",
+                            "description": "Sorts information from your senses"
+                        },
+                        {
+                            "name": "Amygdala",
+                            "description": "Spots danger and creates feelings"
+                        },
+                        {
+                            "name": "Hippocampus",
+                            "description": "Stores memories and links them to feelings"
+                        },
+                        {
+                            "name": "Brainstem",
+                            "description": "Manages breathing, heartbeat, and sleep"
+                        }
+                    ]
+                },
+                "seekHelp": {
+                    "heading": "When should I seek help?",
+                    "routine": [
+                        "You have nightmares or scary thoughts about a past trauma",
+                        "You feel more angry, scared, or sad than usual",
+                        "You are avoiding things that remind you of a past trauma",
+                        "You have trouble sleeping or focusing",
+                        "You feel alone or don't want to be with others",
+                        "Have thoughts of hurting yourself or others"
+                    ],
+                    "urgentHeading": "Get help right away if you:",
+                    "urgent": [
+                        "Feel so upset you can't do daily tasks",
+                        "Use drugs or alcohol to cope with your feelings"
+                    ]
+                },
+                "treatment": {
+                    "heading": "How can it be treated?",
+                    "description": "Your health professional can help you choose the best treatment or combinations of treatments. Sometimes, people need to try different treatments before they find what works best.",
+                    "types": [
+                        "Trauma-focused talk therapies",
+                        "Medicines",
+                        "Mindfulness or relaxation practice",
+                        "Support groups"
+                    ]
+                },
+                "resources": {
+                    "heading": "Where can I get more help?",
+                    "items": [
+                        {
+                            "label": "Suicide & Crisis Lifeline",
+                            "detail": "Call or text 988",
+                            "href": "tel:988"
+                        },
+                        {
+                            "label": "National Alliance on Mental Illness (NAMI)",
+                            "detail": "nami.org",
+                            "href": "https://nami.org"
+                        },
+                        {
+                            "label": "National Center for PTSD",
+                            "detail": "ptsd.va.gov",
+                            "href": "https://www.ptsd.va.gov"
+                        },
+                        {
+                            "label": "PTSD Alliance",
+                            "detail": "ptsdalliance.org",
+                            "href": "https://www.ptsdalliance.org"
+                        }
+                    ]
+                },
+                "keyFacts": {
+                    "heading": "What you need to know",
+                    "items": [
+                        "PTSD can happen after very scary events or trauma",
+                        "It causes nightmares and scary feelings",
+                        "You might avoid things that remind you of what happened",
+                        "It's not your fault",
+                        "Health professionals can help you feel better"
+                    ]
+                },
+                "description": "Trauma-informed care for flashbacks, hypervigilance, and emotional distress after difficult life experiences."
             },
             {
-                "id": "psychosis",
-                "title": "Psychosis",
-                "description": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability.",
-                "icon": "psychosis"
-            },
-            {
-                "id": "item-mqjnv9h9-1",
+                "id": "schizophrenia",
                 "title": "Schizophrenia",
-                "description": "Schizophrenia should be handled with patience, respect, and professional care. The person should not be judged, blamed, or forced to “snap out of it.” Support may include medication, talk therapy, family education, support groups, life skills training, and regular follow-up with mental health professionals.",
-                "icon": "star"
+                "summary": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability.",
+                "icon": "star",
+                "lastUpdated": "05/2025",
+                "overview": {
+                    "heading": "What is it?",
+                    "items": [
+                        "A serious brain problem that changes how people think and act",
+                        "People with schizophrenia might see or hear things that aren't really there",
+                        "They might think things are true even when others tell them it's not real",
+                        "It can make it hard for people to do everyday things like work or take care of themselves"
+                    ]
+                },
+                "causes": {
+                    "heading": "What can cause it?",
+                    "items": [
+                        "It often runs in families, so you might get it if your parents or siblings have it",
+                        "Problems during pregnancy or birth, like being born too early or at a low weight",
+                        "Very stressful life events, like losing a loved one or being abused as a child",
+                        "Using drugs like marijuana, especially when you're young",
+                        "Living in a city",
+                        "Having a hard time in school or with making friends"
+                    ],
+                    "note": "Remember, having these things doesn't mean you'll definitely get schizophrenia. Health professionals are still learning about what causes it."
+                },
+                "signs": {
+                    "heading": "What are common signs?",
+                    "items": [
+                        "Seeing or hearing things that aren't really there, like voices or people",
+                        "Believing things that aren't true, even when others say they're not real",
+                        "Having trouble thinking clearly or speaking in a way that makes sense",
+                        "Feeling less interested in doing things and showing less emotion",
+                        "Moving in unusual ways, like being very still or moving a lot for no reason"
+                    ]
+                },
+                "brain": {
+                    "heading": "How does it affect the brain?",
+                    "description": "In schizophrenia, some of these areas might work or look smaller than usual. This can affect how a person feels, thinks, or acts.",
+                    "image": {
+                        "src": "assets/disorders/schizophrenia-brain.png",
+                        "alt": "Brain regions affected by schizophrenia"
+                    },
+                    "regions": [
+                        {
+                            "name": "Prefrontal cortex",
+                            "description": "Controls how we think and behave"
+                        },
+                        {
+                            "name": "Basal ganglia",
+                            "description": "Helps control how we move and think"
+                        },
+                        {
+                            "name": "Thalamus",
+                            "description": "Passes information in the brain"
+                        },
+                        {
+                            "name": "Amygdala",
+                            "description": "Handles emotion and fear"
+                        },
+                        {
+                            "name": "Hippocampus",
+                            "description": "Controls memory and learning"
+                        }
+                    ]
+                },
+                "seekHelp": {
+                    "heading": "When should I seek help?",
+                    "routine": [
+                        "You think about hurting yourself or others",
+                        "You act very strange all of a sudden",
+                        "You can't eat or clean yourself",
+                        "You feel strange for more than 2 weeks",
+                        "You have trouble doing normal things",
+                        "You see or hear things others don't",
+                        "You believe things that aren't true"
+                    ],
+                    "urgentHeading": "Get help right away if you:",
+                    "urgent": [
+                        "You act very different suddenly",
+                        "You stay away from friends and family",
+                        "You can't think or talk clearly"
+                    ]
+                },
+                "treatment": {
+                    "heading": "How can it be treated?",
+                    "description": "Health professionals often use these treatments together to help people with schizophrenia feel better and live their lives.",
+                    "types": [
+                        "Medicine",
+                        "Talk therapy",
+                        "Family support",
+                        "Support groups",
+                        "Brain treatments",
+                        "Learning new skills"
+                    ]
+                },
+                "resources": {
+                    "heading": "Where can I get more help?",
+                    "items": [
+                        {
+                            "label": "Suicide & Crisis Lifeline",
+                            "detail": "Call or text 988",
+                            "href": "tel:988"
+                        },
+                        {
+                            "label": "National Alliance on Mental Illness (NAMI)",
+                            "detail": "nami.org",
+                            "href": "https://nami.org"
+                        },
+                        {
+                            "label": "Schizophrenia & Psychosis Action Alliance",
+                            "detail": "sczaction.org",
+                            "href": "https://sczaction.org"
+                        }
+                    ]
+                },
+                "keyFacts": {
+                    "heading": "What you need to know",
+                    "items": [
+                        "Schizophrenia is a serious health problem",
+                        "Schizophrenia usually starts when people are young adults",
+                        "Health professionals can help treat it with medicine and other treatments",
+                        "With treatment, many people with schizophrenia can live good lives"
+                    ]
+                },
+                "description": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability."
             }
         ]
     },

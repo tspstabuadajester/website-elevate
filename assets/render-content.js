@@ -10,6 +10,65 @@
     psychosis: '<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM8 8l2 2-2 2-1.4-1.4L7.2 10l-.6-.6L8 8Zm8 0 1.4 1.4-.6.6.6.6L16 12l-2-2 2-2Zm-6 8h4v2h-4v-2Z"/></svg>'
   };
 
+  var DRAWER_SECTION_ICONS = {
+    overview:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<circle cx="12" cy="12" r="9"/>' +
+      '<path d="M12 10v6M12 7h.01"/>' +
+      '</svg>',
+    causes:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>' +
+      '<circle cx="12" cy="12" r="3"/>' +
+      '</svg>',
+    signs:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M9 11l3 3L22 4"/>' +
+      '<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>' +
+      '</svg>',
+    brain:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M9.5 4A5.5 5.5 0 0 0 4 9.5c0 .9.2 1.8.6 2.6A5.5 5.5 0 0 0 9.5 20 5 5 0 0 0 14 18.5a5 5 0 0 0 5.5-5.5 5.5 5.5 0 0 0-5.5-5.5 5.5 5.5 0 0 0-4.5-3.5Z"/>' +
+      '<path d="M12 4v16M9 8h6M9 12h6M9 16h4"/>' +
+      '</svg>',
+    seekHelp:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<circle cx="12" cy="12" r="9"/>' +
+      '<path d="M12 8v4M12 16h.01"/>' +
+      '</svg>',
+    treatment:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7 7-7Z"/>' +
+      '</svg>',
+    resources:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/>' +
+      '</svg>',
+    keyFacts:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 12 2a6 6 0 0 0-6 6c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/>' +
+      '<path d="M9 18h6M10 22h4"/>' +
+      '</svg>'
+  };
+
+  function getDrawerSectionIcon(key) {
+    return DRAWER_SECTION_ICONS[key] || DRAWER_SECTION_ICONS.overview;
+  }
+
+  function renderDrawerSectionHeading(heading, iconKey, modifierClass) {
+    if (!heading) return '';
+    var headingClass = 'service-drawer__section-heading';
+    if (modifierClass) headingClass += ' ' + modifierClass;
+    return (
+      '<div class="' + headingClass + '">' +
+      '<span class="service-drawer__section-icon" aria-hidden="true">' +
+      getDrawerSectionIcon(iconKey) +
+      '</span>' +
+      '<h4 class="service-drawer__section-title">' + escapeHtml(heading) + '</h4>' +
+      '</div>'
+    );
+  }
+
   function getIconMarkup(key) {
     return SERVICE_ICONS[key] || SERVICE_ICONS.star;
   }
@@ -85,11 +144,39 @@
 
     var video = document.getElementById('hero-video');
     var img = document.getElementById('hero-image');
+    var loader = document.getElementById('hero-video-loader');
     var posterSrc = (hero.video && hero.video.poster) || (hero.image && hero.image.src) || '';
     var altText =
       (hero.video && hero.video.alt) ||
       (hero.image && hero.image.alt) ||
       '';
+
+    function showHeroLoader() {
+      if (loader) {
+        loader.classList.add('hero-video-loader--visible');
+        loader.setAttribute('aria-hidden', 'false');
+      }
+    }
+
+    function hideHeroLoader() {
+      if (loader) {
+        loader.classList.remove('hero-video-loader--visible');
+        loader.setAttribute('aria-hidden', 'true');
+      }
+    }
+
+    function showHeroPoster() {
+      if (img) {
+        img.hidden = false;
+        img.classList.add('hero-poster--visible');
+      }
+    }
+
+    function hideHeroPoster() {
+      if (img) {
+        img.classList.remove('hero-poster--visible');
+      }
+    }
 
     if (img) {
       if (posterSrc) img.src = posterSrc;
@@ -108,30 +195,42 @@
 
       var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (prefersReduced) {
+        hideHeroLoader();
         video.removeAttribute('autoplay');
         video.pause();
         video.classList.add('hero-video--static');
-        if (img) img.classList.add('hero-poster--visible');
+        showHeroPoster();
       } else {
+        showHeroLoader();
+        hideHeroPoster();
         video.classList.remove('hero-video--static');
-        if (img) img.classList.add('hero-poster--visible');
 
-        function hidePosterWhenPlaying() {
-          if (img) img.classList.remove('hero-poster--visible');
+        function onHeroVideoReady() {
+          hideHeroLoader();
+          hideHeroPoster();
         }
 
-        video.addEventListener('playing', hidePosterWhenPlaying, { once: true });
+        function onHeroVideoFallback() {
+          hideHeroLoader();
+          showHeroPoster();
+        }
+
+        video.addEventListener('playing', onHeroVideoReady, { once: true });
         video.play().catch(function () {
-          video.removeEventListener('playing', hidePosterWhenPlaying);
-          if (img) img.classList.add('hero-poster--visible');
+          video.removeEventListener('playing', onHeroVideoReady);
+          onHeroVideoFallback();
         });
       }
     } else if (video) {
+      hideHeroLoader();
       video.classList.add('hero-video--static');
-      if (img) img.classList.add('hero-poster--visible');
+      showHeroPoster();
     } else if (img && hero.image) {
+      hideHeroLoader();
       img.src = hero.image.src;
       img.alt = hero.image.alt;
+      img.hidden = false;
+      img.classList.add('hero-poster--visible');
     }
   }
 
@@ -140,6 +239,192 @@
   function truncateText(text, max) {
     if (!text || text.length <= max) return text;
     return text.slice(0, max).replace(/\s+\S*$/, '') + '…';
+  }
+
+  function escapeHtml(text) {
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function formatServiceDetail(text) {
+    if (!text) return '';
+    return text
+      .split(/\n\n+/)
+      .map(function (paragraph) {
+        return paragraph.trim();
+      })
+      .filter(Boolean)
+      .map(function (paragraph) {
+        return '<p>' + escapeHtml(paragraph) + '</p>';
+      })
+      .join('');
+  }
+
+  function getServiceTeaser(item) {
+    if (item.summary) return item.summary;
+    if (item.description) return item.description;
+    if (item.overview && item.overview.items && item.overview.items[0]) {
+      return item.overview.items[0];
+    }
+    return truncateText(item.detail || '', 100);
+  }
+
+  function hasStructuredService(item) {
+    return !!(item && (item.overview || item.causes || item.signs || item.brain));
+  }
+
+  function renderBulletBlock(section, iconKey) {
+    if (!section) return '';
+    var html = '<section class="service-drawer__section">';
+    html += renderDrawerSectionHeading(section.heading, iconKey);
+    if (section.items && section.items.length) {
+      html += '<ul class="service-drawer__list">';
+      section.items.forEach(function (item) {
+        html += '<li>' + escapeHtml(item) + '</li>';
+      });
+      html += '</ul>';
+    }
+    if (section.note) {
+      html += '<p class="service-drawer__note">' + escapeHtml(section.note) + '</p>';
+    }
+    html += '</section>';
+    return html;
+  }
+
+  function renderBrainBlock(brain) {
+    if (!brain) return '';
+    var html = '<section class="service-drawer__section service-drawer__section--brain">';
+    html += renderDrawerSectionHeading(brain.heading, 'brain');
+    if (brain.description) {
+      html += '<p class="service-drawer__lead">' + escapeHtml(brain.description) + '</p>';
+    }
+    if (brain.image && brain.image.src) {
+      html +=
+        '<figure class="service-drawer__brain-figure">' +
+        '<img src="' + escapeHtml(brain.image.src) + '" alt="' + escapeHtml(brain.image.alt || '') + '" class="service-drawer__brain-image" loading="lazy" decoding="async" onerror="this.closest(\'figure\').classList.add(\'is-hidden\')" />' +
+        '</figure>';
+    }
+    if (brain.regions && brain.regions.length) {
+      html += '<div class="service-drawer__regions">';
+      brain.regions.forEach(function (region) {
+        html +=
+          '<article class="service-drawer__region">' +
+          '<h5 class="service-drawer__region-name">' + escapeHtml(region.name) + '</h5>' +
+          '<p class="service-drawer__region-text">' + escapeHtml(region.description) + '</p>' +
+          '</article>';
+      });
+      html += '</div>';
+    }
+    html += '</section>';
+    return html;
+  }
+
+  function renderSeekHelpBlock(seekHelp) {
+    if (!seekHelp) return '';
+    var html = '<section class="service-drawer__section">';
+    html += renderDrawerSectionHeading(seekHelp.heading, 'seekHelp');
+    if (seekHelp.routine && seekHelp.routine.length) {
+      html += '<ul class="service-drawer__list">';
+      seekHelp.routine.forEach(function (item) {
+        html += '<li>' + escapeHtml(item) + '</li>';
+      });
+      html += '</ul>';
+    }
+    if (seekHelp.urgentHeading) {
+      html += '<p class="service-drawer__subheading">' + escapeHtml(seekHelp.urgentHeading) + '</p>';
+    }
+    if (seekHelp.urgent && seekHelp.urgent.length) {
+      html += '<ul class="service-drawer__list service-drawer__list--urgent">';
+      seekHelp.urgent.forEach(function (item) {
+        html += '<li>' + escapeHtml(item) + '</li>';
+      });
+      html += '</ul>';
+    }
+    html += '</section>';
+    return html;
+  }
+
+  function renderTreatmentBlock(treatment) {
+    if (!treatment) return '';
+    var html = '<section class="service-drawer__section">';
+    html += renderDrawerSectionHeading(treatment.heading, 'treatment');
+    if (treatment.description) {
+      html += '<p class="service-drawer__lead">' + escapeHtml(treatment.description) + '</p>';
+    }
+    if (treatment.types && treatment.types.length) {
+      html += '<div class="service-drawer__chips">';
+      treatment.types.forEach(function (type) {
+        html += '<span class="service-drawer__chip">' + escapeHtml(type) + '</span>';
+      });
+      html += '</div>';
+    }
+    html += '</section>';
+    return html;
+  }
+
+  function renderResourcesBlock(resources) {
+    if (!resources || !resources.items || !resources.items.length) return '';
+    var html = '<section class="service-drawer__section">';
+    html += renderDrawerSectionHeading(resources.heading, 'resources');
+    html += '<ul class="service-drawer__resources">';
+    resources.items.forEach(function (resource) {
+      var href = resource.href ? ' href="' + escapeHtml(resource.href) + '"' : '';
+      var tag = resource.href ? 'a' : 'span';
+      html +=
+        '<li class="service-drawer__resource">' +
+        '<' + tag + ' class="service-drawer__resource-link"' + href + '>' +
+        '<strong>' + escapeHtml(resource.label) + '</strong>' +
+        (resource.detail ? '<span>' + escapeHtml(resource.detail) + '</span>' : '') +
+        '</' + tag + '>' +
+        '</li>';
+    });
+    html += '</ul></section>';
+    return html;
+  }
+
+  function renderKeyFactsBlock(keyFacts) {
+    if (!keyFacts || !keyFacts.items || !keyFacts.items.length) return '';
+    var html = '<section class="service-drawer__callout">';
+    html += renderDrawerSectionHeading(keyFacts.heading, 'keyFacts', 'service-drawer__section-heading--callout');
+    html += '<ul class="service-drawer__callout-list">';
+    keyFacts.items.forEach(function (item) {
+      html += '<li>' + escapeHtml(item) + '</li>';
+    });
+    html += '</ul></section>';
+    return html;
+  }
+
+  function buildServiceDrawerHtml(service) {
+    if (!hasStructuredService(service)) {
+      return '<div class="service-drawer__legacy">' + formatServiceDetail(service.detail || service.description || '') + '</div>';
+    }
+
+    var html = '';
+    html += renderBulletBlock(service.overview, 'overview');
+    html += renderBulletBlock(service.causes, 'causes');
+    html += renderBulletBlock(service.signs, 'signs');
+    html += renderBrainBlock(service.brain);
+
+    if (service.seekHelp || service.treatment) {
+      html += '<div class="service-drawer__split">';
+      html += renderSeekHelpBlock(service.seekHelp);
+      html += renderTreatmentBlock(service.treatment);
+      html += '</div>';
+    }
+
+    html += renderResourcesBlock(service.resources);
+    html += renderKeyFactsBlock(service.keyFacts);
+    return html;
+  }
+
+  function getServiceModalConfig(services) {
+    return {
+      cta: services.modalCta || services.cta,
+      viewLabel: services.viewDetailsLabel || 'Learn more'
+    };
   }
 
   function renderServices(services) {
@@ -152,15 +437,15 @@
     if (!list || !services.items) return;
 
     serviceItems = services.items;
-    var viewLabel = services.viewDetailsLabel || 'View details';
+    var viewLabel = services.viewDetailsLabel || 'Learn more';
 
     list.innerHTML = services.items.map(function (item) {
-      var teaser = truncateText(item.detail, 100);
+      var teaser = truncateText(getServiceTeaser(item), 100);
       return (
         '<button type="button" class="reveal service-card" role="listitem"' +
         ' data-service-id="' + item.id + '"' +
         ' aria-haspopup="dialog"' +
-        ' aria-controls="service-modal">' +
+        ' aria-controls="service-drawer">' +
         '<div class="service-card__rings" aria-hidden="true">' +
         '<span class="service-card__ring service-card__ring--1"></span>' +
         '<span class="service-card__ring service-card__ring--2"></span>' +
@@ -179,50 +464,68 @@
       );
     }).join('');
 
-    initServiceModal(services);
+    initServiceDrawer(services, '.service-card[data-service-id]');
   }
 
-  function initServiceModal(services) {
-    var modal = document.getElementById('service-modal');
-    var iconTarget = document.getElementById('service-modal-icon');
-    var titleTarget = document.getElementById('service-modal-title');
-    var textTarget = document.getElementById('service-modal-text');
-    var cta = document.getElementById('service-modal-cta');
-    var cards = document.querySelectorAll('.service-card[data-service-id]');
+  function initServiceDrawer(services, cardSelector) {
+    var drawer = document.getElementById('service-drawer');
+    var iconTarget = document.getElementById('service-drawer-icon');
+    var titleTarget = document.getElementById('service-drawer-title');
+    var updatedTarget = document.getElementById('service-drawer-updated');
+    var textTarget = document.getElementById('service-drawer-text');
+    var bodyTarget = document.getElementById('service-drawer-body');
+    var cta = document.getElementById('service-drawer-cta');
+    var selector = cardSelector || '.service-card[data-service-id], .service-page-card[data-service-id]';
+    var cards = document.querySelectorAll(selector);
+    var drawerConfig = getServiceModalConfig(services);
     var lastFocused = null;
 
-    if (!modal || !cards.length) return;
+    if (!drawer || !cards.length) return;
 
-    if (cta && services.modalCta) {
-      cta.href = services.modalCta.href || '#appointment';
+    if (cta && drawerConfig.cta) {
+      cta.href = drawerConfig.cta.href || '#appointment';
       var ctaLabel = cta.querySelector('[data-cta-label]');
-      if (ctaLabel) ctaLabel.textContent = services.modalCta.label;
+      if (ctaLabel) ctaLabel.textContent = drawerConfig.cta.label;
     }
 
-    function openModal(serviceId) {
+    function openDrawer(serviceId, iconMarkup) {
       var service = serviceItems.find(function (item) {
         return item.id === serviceId;
       });
       if (!service) return;
 
-      var card = document.querySelector('.service-card[data-service-id="' + serviceId + '"]');
-      var iconSource = card && card.querySelector('.service-card__icon');
+      if (iconMarkup) {
+        iconTarget.innerHTML = iconMarkup;
+      } else {
+        iconTarget.innerHTML = getIconMarkup(service.icon);
+      }
 
-      if (iconSource) iconTarget.innerHTML = iconSource.innerHTML;
       titleTarget.textContent = service.title;
-      textTarget.textContent = service.detail;
+
+      if (updatedTarget) {
+        if (service.lastUpdated) {
+          updatedTarget.textContent = 'Last updated ' + service.lastUpdated;
+          updatedTarget.hidden = false;
+        } else {
+          updatedTarget.textContent = '';
+          updatedTarget.hidden = true;
+        }
+      }
+
+      setHtml(textTarget, buildServiceDrawerHtml(service));
+      if (bodyTarget) bodyTarget.scrollTop = 0;
 
       lastFocused = document.activeElement;
-      modal.classList.add('is-open');
-      modal.setAttribute('aria-hidden', 'false');
-      document.body.classList.add('service-modal-open');
-      modal.querySelector('.service-modal__close').focus();
+      drawer.classList.add('is-open');
+      drawer.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('service-drawer-open');
+      drawer.querySelector('.service-drawer__close').focus();
     }
 
-    function closeModal() {
-      modal.classList.remove('is-open');
-      modal.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('service-modal-open');
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      drawer.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('service-drawer-open');
       if (lastFocused && typeof lastFocused.focus === 'function') {
         lastFocused.focus();
       }
@@ -230,19 +533,23 @@
 
     cards.forEach(function (card) {
       card.addEventListener('click', function () {
-        openModal(card.dataset.serviceId);
+        var iconSource = card.querySelector('.service-card__icon, .service-page-card__icon');
+        openDrawer(
+          card.dataset.serviceId,
+          iconSource ? iconSource.innerHTML : null
+        );
       });
     });
 
-    modal.querySelectorAll('[data-modal-close]').forEach(function (el) {
-      el.addEventListener('click', closeModal);
+    drawer.querySelectorAll('[data-drawer-close]').forEach(function (el) {
+      el.addEventListener('click', closeDrawer);
     });
 
     document.addEventListener('keydown', function (e) {
-      if (!modal.classList.contains('is-open')) return;
+      if (!drawer.classList.contains('is-open')) return;
       if (e.key === 'Escape') {
         e.preventDefault();
-        closeModal();
+        closeDrawer();
       }
     });
   }
@@ -626,15 +933,24 @@
     var grid = document.getElementById('services-grid');
     if (!grid || !services.items) return;
 
+    serviceItems = services.items;
+    var viewLabel = getServiceModalConfig(services).viewLabel;
+
     grid.innerHTML = services.items.map(function (item) {
       return (
-        '<article class="reveal service-page-card">' +
+        '<button type="button" class="reveal service-page-card" data-service-id="' + item.id + '" aria-haspopup="dialog" aria-controls="service-drawer">' +
         '<div class="service-page-card__icon" aria-hidden="true">' + getIconMarkup(item.icon) + '</div>' +
         '<h3 class="service-page-card__title">' + item.title + '</h3>' +
-        '<p class="service-page-card__text">' + item.description + '</p>' +
-        '</article>'
+        '<p class="service-page-card__text">' + getServiceTeaser(item) + '</p>' +
+        '<span class="service-page-card__action">' + viewLabel +
+        '<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">' +
+        '<path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>' +
+        '</svg></span>' +
+        '</button>'
       );
     }).join('');
+
+    initServiceDrawer(services, '.service-page-card[data-service-id]');
   }
 
   function renderServiceBenefits(benefits) {
