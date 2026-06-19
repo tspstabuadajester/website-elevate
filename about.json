@@ -1,220 +1,673 @@
 {
     "seo": {
-        "title": "About Us | Elevate Mental Health and Wellness",
-        "description": "Learn about Elevate Mental Health and Wellness, our mission, core values, and compassionate psychiatric care in California and Nevada.",
-        "canonicalUrl": "https://elevate-staging.pages.dev/about.html",
-        "robots": "index,follow",
-        "ogTitle": "About Elevate Mental Health and Wellness",
-        "ogDescription": "Get to know Elevate Mental Health and Wellness and the care we provide.",
-        "ogImage": "assets/og-image.jpg",
-        "twitterTitle": "About Elevate Mental Health and Wellness",
-        "twitterDescription": "Compassionate psychiatric care serving California and Nevada.",
-        "twitterImage": "assets/og-image.jpg"
+        "title": {
+            "type": "string",
+            "value": "About Us | Elevate Mental Health and Wellness"
+        },
+        "description": {
+            "type": "string",
+            "value": "Learn about Elevate Mental Health and Wellness, our mission, core values, and compassionate psychiatric care in California and Nevada."
+        },
+        "canonicalUrl": {
+            "type": "string",
+            "value": "https://elevate-staging.pages.dev/about.html"
+        },
+        "robots": {
+            "type": "string",
+            "value": "index,follow"
+        },
+        "ogTitle": {
+            "type": "string",
+            "value": "About Elevate Mental Health and Wellness"
+        },
+        "ogDescription": {
+            "type": "string",
+            "value": "Get to know Elevate Mental Health and Wellness and the care we provide."
+        },
+        "ogImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        },
+        "twitterTitle": {
+            "type": "string",
+            "value": "About Elevate Mental Health and Wellness"
+        },
+        "twitterDescription": {
+            "type": "string",
+            "value": "Compassionate psychiatric care serving California and Nevada."
+        },
+        "twitterImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        }
     },
     "site": {
-        "title": "Elevate Mental Health and Wellness",
-        "brandName": "Elevate Mental Health and Wellness",
-        "logo": "assets/logo.png",
-        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        "title": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "brandName": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "logo": {
+            "type": "string",
+            "value": "assets/logo.png"
+        },
+        "copyright": {
+            "type": "string",
+            "value": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        }
     },
     "nav": {
-        "ctaLabel": "Request Appointment",
-        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
-        "links": [
-            {
-                "label": "Home",
-                "href": "index.html"
-            },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
-            }
-        ]
+        "ctaLabel": {
+            "type": "string",
+            "value": "Request Appointment"
+        },
+        "ctaHref": {
+            "type": "string",
+            "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "links": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "index.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     },
     "pageHero": {
-        "heading": "About Us",
-        "intro": "Welcome to Elevate Mental Health and Wellness. We provide compassionate, evidence-based psychiatric care for children, adolescents, adults, and families.",
-        "paragraphs": [
-            "We understand that your mental health is a deeply personal, integral part of your overall well-being. Elevate was born out of a simple promise: to provide psychiatric care that is highly personalized, deeply collaborative, culturally sensitive, and entirely free of judgment. We honor your unique background, identity, and lived experiences. By combining clinical excellence with active behavioral management and tailored support, we walk alongside you to navigate life's challenges, unearth your innate resilience, and help your entire family truly thrive."
-        ],
-        "gallery": []
+        "heading": {
+            "type": "string",
+            "value": "About Us"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": "Welcome to Elevate Mental Health and Wellness. We provide compassionate, evidence-based psychiatric care for children, adolescents, adults, and families."
+        },
+        "paragraphs": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "richtext",
+                    "value": "We understand that your mental health is a deeply personal, integral part of your overall well-being. Elevate was born out of a simple promise: to provide psychiatric care that is highly personalized, deeply collaborative, culturally sensitive, and entirely free of judgment. We honor your unique background, identity, and lived experiences. By combining clinical excellence with active behavioral management and tailored support, we walk alongside you to navigate life's challenges, unearth your innate resilience, and help your entire family truly thrive."
+                }
+            ]
+        },
+        "gallery": {
+            "type": "array",
+            "value": []
+        }
     },
     "mission": {
-        "heading": "Our Mission",
-        "columns": [
-            "Our mission is to provide comprehensive, high-quality, and evidence-based psychiatric care that empowers individuals and families on their journey toward mental wellness. While we safely and skillfully manage symptoms through thoughtful medication management, we are fierce advocates of behavioral therapy and hands-on guidance.",
-            "We believe that the best outcomes are achieved together. True, lasting success relies on a strong team approach, whether that means partnering with adults to take charge of their wellness, collaborating with loved ones and care systems for older adults, or equipping parents with the practical tools and guidance needed to support their child's growth."
-        ]
+        "heading": {
+            "type": "string",
+            "value": "Our Mission"
+        },
+        "columns": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "richtext",
+                    "value": "Our mission is to provide comprehensive, high-quality, and evidence-based psychiatric care that empowers individuals and families on their journey toward mental wellness. While we safely and skillfully manage symptoms through thoughtful medication management, we are fierce advocates of behavioral therapy and hands-on guidance."
+                },
+                {
+                    "type": "richtext",
+                    "value": "We believe that the best outcomes are achieved together. True, lasting success relies on a strong team approach, whether that means partnering with adults to take charge of their wellness, collaborating with loved ones and care systems for older adults, or equipping parents with the practical tools and guidance needed to support their child's growth."
+                }
+            ]
+        }
     },
     "founder": {
         "image": {
-            "src": "assets/about-main.png",
-            "alt": "Rohzan G. Altre, PMHNP",
-            "width": 767,
-            "height": 1024
-        },
-        "quoteCard": {
-            "text": "Making an impact, together",
-            "attribution": "Rohzan G. Altre, PMHNP"
-        },
-        "heading": "Care that meets you where you are.",
-        "paragraph": "Rohzan G. Altre is a board-certified psychiatric nurse practitioner licensed in California and Nevada. She works with children, teens, and adults facing ADHD, anxiety, depression, bipolar disorder, PTSD, and autism-related behavioral challenges.",
-        "blockquote": "I believe people do best when they feel safe enough to be honest about what they are going through. My job is to listen closely, explain your options clearly, and help you find a path that actually works for your life."
-    },
-    "features": {
-        "heading": "Our Core Values",
-        "intro": "",
-        "items": [
-            {
-                "icon": "collaboration",
-                "title": "Compassionate Collaboration",
-                "description": "We view you and your loved ones as active, respected partners in the treatment process. Your goals always shape your care plan."
-            },
-            {
-                "icon": "culture",
-                "title": "Culturally Sensitive Care",
-                "description": "We approach your care with cultural humility, ensuring our treatment plans honor and respect your unique background and values."
-            },
-            {
-                "icon": "balance",
-                "title": "Balanced Treatment",
-                "description": "Medication is a powerful tool to stabilize the mind, but we pair it with behavioral management to ensure therapeutic skills truly take root."
-            },
-            {
-                "icon": "coaching",
-                "title": "Behavioral Management and Parent Teaching",
-                "description": "We provide actionable behavioral strategies supporting parents to navigate childhood challenges and helping adults manage stress and life transitions."
-            },
-            {
-                "icon": "privacy",
-                "title": "Absolute Integrity and Privacy",
-                "description": "We maintain the highest ethical standards, utilizing a fully secure, HIPAA-compliant electronic medical records portal to protect your privacy."
-            },
-            {
-                "icon": "growth",
-                "title": "Empowerment and Growth",
-                "description": "Our ultimate goal is to give you the practical tools and clinical insights needed to navigate life with confidence and long-term resilience."
-            }
-        ]
-    },
-    "partner": {
-        "heading": "Partner With Us",
-        "text": "A compassionate space to heal, grow, and elevate your life."
-    },
-    "testimonials": {
-        "heading": "What patients are saying about Elevate",
-        "items": [
-            {
-                "quote": "Any psychiatrist can write a prescription and you're done. Rohzan goes the extra mile. That is how she has been helping me, and she has saved my life with proper diagnoses, treatment, and advice.",
-                "author": "Alfred"
-            },
-            {
-                "quote": "I can't say enough about my great experience with Rohzan. She helped me through the hardest time in my life. I highly recommend her to anyone facing a challenging situation. Just take one day at a time.",
-                "author": "Denise"
-            },
-            {
-                "quote": "She's a psych NP who shows genuine empathy and professionalism, which helped me open up to her comfortably. She's awesome!",
-                "author": "Calvin"
-            },
-            {
-                "quote": "Rohzan listens without judgment and explains every step of treatment clearly. I finally feel understood and supported in my mental health journey.",
-                "author": "Darren",
-                "detail": "Age 40"
-            },
-            {
-                "quote": "Virtual appointments made it easy to stay consistent with care. The whole experience felt personal, professional, and genuinely caring.",
-                "author": "Maria",
-                "detail": "Age 34"
-            },
-            {
-                "quote": "After years of struggling, I found a provider who took time to understand my full story. Elevate has been life-changing for our family.",
-                "author": "James"
-            },
-            {
-                "quote": "Compassionate, knowledgeable, and responsive. Rohzan helped me build a plan that actually works for my day to day life.",
-                "author": "Priya"
-            },
-            {
-                "quote": "I appreciate how thorough and patient she is. Every session leaves me feeling heard and hopeful about the path forward.",
-                "author": "Michael",
-                "detail": "Age 52"
-            },
-            {
-                "quote": "Elevate Mental Health and Wellness truly lives up to its name. The care is thoughtful, warm, and effective.",
-                "author": "Sandra"
-            }
-        ]
-    },
-    "footer": {
-        "description": "Individualized psychiatric care and brief psychotherapy for patients in California and Nevada.",
-        "locations": {
-            "address1": {
-                "title": "Address 1",
-                "addresses": [
-                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-                    "1302 Madera Rd<br>Simi Valley, CA 93065"
-                ]
-            },
-            "address2": {
-                "title": "Address 2",
-                "addresses": [
-                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-                ],
-                "email": {
-                    "label": "elevatepatientcare@gmail.com",
-                    "href": "mailto:elevatepatientcare@gmail.com"
+            "type": "image",
+            "value": {
+                "src": {
+                    "type": "string",
+                    "value": "assets/about-main.png"
+                },
+                "alt": {
+                    "type": "string",
+                    "value": "Rohzan G. Altre, PMHNP"
+                },
+                "width": {
+                    "type": "number",
+                    "value": 767
+                },
+                "height": {
+                    "type": "number",
+                    "value": 1024
                 }
             }
         },
-        "quickLinks": [
-            {
-                "label": "Home",
-                "href": "index.html"
+        "quoteCard": {
+            "text": {
+                "type": "richtext",
+                "value": "Making an impact, together"
             },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
+            "attribution": {
+                "type": "string",
+                "value": "Rohzan G. Altre, PMHNP"
             }
-        ]
+        },
+        "heading": {
+            "type": "string",
+            "value": "Care that meets you where you are."
+        },
+        "paragraph": {
+            "type": "richtext",
+            "value": "Rohzan G. Altre is a board-certified psychiatric nurse practitioner licensed in California and Nevada. She works with children, teens, and adults facing ADHD, anxiety, depression, bipolar disorder, PTSD, and autism-related behavioral challenges."
+        },
+        "blockquote": {
+            "type": "richtext",
+            "value": "I believe people do best when they feel safe enough to be honest about what they are going through. My job is to listen closely, explain your options clearly, and help you find a path that actually works for your life."
+        }
+    },
+    "features": {
+        "heading": {
+            "type": "string",
+            "value": "Our Core Values"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": ""
+        },
+        "items": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "icon": {
+                            "type": "string",
+                            "value": "collaboration"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Compassionate Collaboration"
+                        },
+                        "description": {
+                            "type": "richtext",
+                            "value": "We view you and your loved ones as active, respected partners in the treatment process. Your goals always shape your care plan."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "icon": {
+                            "type": "string",
+                            "value": "culture"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Culturally Sensitive Care"
+                        },
+                        "description": {
+                            "type": "richtext",
+                            "value": "We approach your care with cultural humility, ensuring our treatment plans honor and respect your unique background and values."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "icon": {
+                            "type": "string",
+                            "value": "balance"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Balanced Treatment"
+                        },
+                        "description": {
+                            "type": "richtext",
+                            "value": "Medication is a powerful tool to stabilize the mind, but we pair it with behavioral management to ensure therapeutic skills truly take root."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "icon": {
+                            "type": "string",
+                            "value": "coaching"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Behavioral Management and Parent Teaching"
+                        },
+                        "description": {
+                            "type": "richtext",
+                            "value": "We provide actionable behavioral strategies supporting parents to navigate childhood challenges and helping adults manage stress and life transitions."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "icon": {
+                            "type": "string",
+                            "value": "privacy"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Absolute Integrity and Privacy"
+                        },
+                        "description": {
+                            "type": "richtext",
+                            "value": "We maintain the highest ethical standards, utilizing a fully secure, HIPAA-compliant electronic medical records portal to protect your privacy."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "icon": {
+                            "type": "string",
+                            "value": "growth"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Empowerment and Growth"
+                        },
+                        "description": {
+                            "type": "richtext",
+                            "value": "Our ultimate goal is to give you the practical tools and clinical insights needed to navigate life with confidence and long-term resilience."
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "partner": {
+        "heading": {
+            "type": "string",
+            "value": "Partner With Us"
+        },
+        "text": {
+            "type": "richtext",
+            "value": "A compassionate space to heal, grow, and elevate your life."
+        }
+    },
+    "testimonials": {
+        "heading": {
+            "type": "string",
+            "value": "What patients are saying about Elevate"
+        },
+        "items": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "Any psychiatrist can write a prescription and you're done. Rohzan goes the extra mile. That is how she has been helping me, and she has saved my life with proper diagnoses, treatment, and advice."
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "Alfred"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "I can't say enough about my great experience with Rohzan. She helped me through the hardest time in my life. I highly recommend her to anyone facing a challenging situation. Just take one day at a time."
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "Denise"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "She's a psych NP who shows genuine empathy and professionalism, which helped me open up to her comfortably. She's awesome!"
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "Calvin"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "Rohzan listens without judgment and explains every step of treatment clearly. I finally feel understood and supported in my mental health journey."
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "Darren"
+                        },
+                        "detail": {
+                            "type": "richtext",
+                            "value": "Age 40"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "Virtual appointments made it easy to stay consistent with care. The whole experience felt personal, professional, and genuinely caring."
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "Maria"
+                        },
+                        "detail": {
+                            "type": "richtext",
+                            "value": "Age 34"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "After years of struggling, I found a provider who took time to understand my full story. Elevate has been life-changing for our family."
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "James"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "Compassionate, knowledgeable, and responsive. Rohzan helped me build a plan that actually works for my day to day life."
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "Priya"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "I appreciate how thorough and patient she is. Every session leaves me feeling heard and hopeful about the path forward."
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "Michael"
+                        },
+                        "detail": {
+                            "type": "richtext",
+                            "value": "Age 52"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "quote": {
+                            "type": "richtext",
+                            "value": "Elevate Mental Health and Wellness truly lives up to its name. The care is thoughtful, warm, and effective."
+                        },
+                        "author": {
+                            "type": "string",
+                            "value": "Sandra"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "footer": {
+        "description": {
+            "type": "richtext",
+            "value": "Individualized psychiatric care and brief psychotherapy for patients in California and Nevada."
+        },
+        "locations": {
+            "address1": {
+                "title": {
+                    "type": "string",
+                    "value": "Address 1"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
+                        },
+                        {
+                            "type": "richtext",
+                            "value": "1302 Madera Rd<br>Simi Valley, CA 93065"
+                        }
+                    ]
+                }
+            },
+            "address2": {
+                "title": {
+                    "type": "string",
+                    "value": "Address 2"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                        }
+                    ]
+                },
+                "email": {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "elevatepatientcare@gmail.com"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "mailto:elevatepatientcare@gmail.com"
+                        }
+                    }
+                }
+            }
+        },
+        "quickLinks": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "index.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     }
 }

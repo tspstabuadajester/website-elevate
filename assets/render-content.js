@@ -1,4 +1,56 @@
 (function () {
+  function isTypedCmsField(obj) {
+    return (
+      obj &&
+      typeof obj === 'object' &&
+      !Array.isArray(obj) &&
+      typeof obj.type === 'string' &&
+      Object.prototype.hasOwnProperty.call(obj, 'value')
+    );
+  }
+
+  function unwrapCmsData(node) {
+    if (node == null) return node;
+
+    if (isTypedCmsField(node)) {
+      var type = node.type;
+      var value = node.value;
+
+      if (type === 'array') {
+        return (value || []).map(function (item) {
+          return unwrapCmsData(item);
+        });
+      }
+
+      if (type === 'object' || type === 'link' || type === 'image' || type === 'video') {
+        if (!value || typeof value !== 'object' || Array.isArray(value)) return value;
+        var obj = {};
+        Object.keys(value).forEach(function (key) {
+          obj[key] = unwrapCmsData(value[key]);
+        });
+        return obj;
+      }
+
+      return value;
+    }
+
+    if (Array.isArray(node)) {
+      return node.map(function (item) {
+        return unwrapCmsData(item);
+      });
+    }
+
+    if (typeof node === 'object') {
+      var result = {};
+      Object.keys(node).forEach(function (key) {
+        result[key] = unwrapCmsData(node[key]);
+      });
+      return result;
+    }
+
+    return node;
+  }
+
   var SERVICE_ICONS = {
     star: '<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6 6.6.9-4.8 4.7 1.1 6.6L12 17.2l-5.8 3 1.1-6.6-4.8-4.7 6.6-.9L12 2Z"/></svg>',
     panic: '<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm3.7 6.3-2.3 3.7 2.3 3.7h-2.4L12 13.6l-1.3 2.1H8.3l2.3-3.7-2.3-3.7h2.4l1.3 2.1 1.3-2.1h2.4Z"/></svg>',
@@ -1752,7 +1804,9 @@
         if (!res.ok) throw new Error('Failed to load ' + contentUrl);
         return res.json();
       })
-      .then(renderPage)
+      .then(function (data) {
+        return renderPage(unwrapCmsData(data));
+      })
       .catch(function (err) {
         console.error('[Elevate] Could not load ' + contentUrl + ':', err);
       });

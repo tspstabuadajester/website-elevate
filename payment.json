@@ -1,216 +1,654 @@
 {
     "seo": {
-        "title": "Insurance & Fees | Elevate Mental Health and Wellness",
-        "description": "Insurance plans, self-pay rates, and billing information for psychiatric care at Elevate Mental Health and Wellness in California and Nevada.",
-        "canonicalUrl": "https://elevatemhw.com/payment.html",
-        "robots": "index,follow",
-        "ogTitle": "Insurance & Fees | Elevate",
-        "ogDescription": "Learn which insurance plans Elevate accepts and view our self-pay fee schedule.",
-        "ogImage": "assets/og-image.jpg",
-        "twitterTitle": "Insurance & Fees | Elevate",
-        "twitterDescription": "Insurance and billing information for psychiatric care at Elevate.",
-        "twitterImage": "assets/og-image.jpg"
+        "title": {
+            "type": "string",
+            "value": "Insurance & Fees | Elevate Mental Health and Wellness"
+        },
+        "description": {
+            "type": "string",
+            "value": "Insurance plans, self-pay rates, and billing information for psychiatric care at Elevate Mental Health and Wellness in California and Nevada."
+        },
+        "canonicalUrl": {
+            "type": "string",
+            "value": "https://elevatemhw.com/payment.html"
+        },
+        "robots": {
+            "type": "string",
+            "value": "index,follow"
+        },
+        "ogTitle": {
+            "type": "string",
+            "value": "Insurance & Fees | Elevate"
+        },
+        "ogDescription": {
+            "type": "string",
+            "value": "Learn which insurance plans Elevate accepts and view our self-pay fee schedule."
+        },
+        "ogImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        },
+        "twitterTitle": {
+            "type": "string",
+            "value": "Insurance & Fees | Elevate"
+        },
+        "twitterDescription": {
+            "type": "string",
+            "value": "Insurance and billing information for psychiatric care at Elevate."
+        },
+        "twitterImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        }
     },
     "site": {
-        "title": "Elevate Mental Health and Wellness",
-        "brandName": "Elevate Mental Health and Wellness",
-        "logo": "assets/logo.png",
-        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        "title": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "brandName": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "logo": {
+            "type": "string",
+            "value": "assets/logo.png"
+        },
+        "copyright": {
+            "type": "string",
+            "value": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        }
     },
     "nav": {
-        "ctaLabel": "Request Appointment",
-        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
-        "links": [
-            {
-                "label": "Home",
-                "href": "index.html"
-            },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
-            }
-        ]
+        "ctaLabel": {
+            "type": "string",
+            "value": "Request Appointment"
+        },
+        "ctaHref": {
+            "type": "string",
+            "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "links": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "index.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     },
     "pageHero": {
-        "heading": "Insurance & Fees",
-        "intro": "We believe that clear financial expectations are essential for a stress-free care experience. Below is an overview of how we handle insurance and billing at Elevate Mental Health and Wellness."
+        "heading": {
+            "type": "string",
+            "value": "Insurance & Fees"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": "We believe that clear financial expectations are essential for a stress-free care experience. Below is an overview of how we handle insurance and billing at Elevate Mental Health and Wellness."
+        }
     },
     "payment": {
         "insuranceInfo": {
-            "heading": "Insurance Information",
-            "intro": "We partner with a variety of commercial insurance plans to help keep your care accessible.",
+            "heading": {
+                "type": "string",
+                "value": "Insurance Information"
+            },
+            "intro": {
+                "type": "richtext",
+                "value": "We partner with a variety of commercial insurance plans to help keep your care accessible."
+            },
             "inNetwork": {
-                "label": "In-Network Plans",
-                "text": "We currently accept Anthem, Aetna, Cigna, UnitedHealthcare/Optum, Magellan, and Medicare."
+                "label": {
+                    "type": "string",
+                    "value": "In-Network Plans"
+                },
+                "text": {
+                    "type": "richtext",
+                    "value": "We currently accept Anthem, Aetna, Cigna, UnitedHealthcare/Optum, Magellan, and Medicare."
+                }
             },
             "comingSoon": {
-                "label": "Other Major Insurances Coming Soon",
-                "text": "We are actively in the process of credentialing with additional major insurance panels. If you do not see your provider listed yet, please check back frequently or reach out to our office to see where we are in the approval process."
+                "label": {
+                    "type": "string",
+                    "value": "Other Major Insurances Coming Soon"
+                },
+                "text": {
+                    "type": "richtext",
+                    "value": "We are actively in the process of credentialing with additional major insurance panels. If you do not see your provider listed yet, please check back frequently or reach out to our office to see where we are in the approval process."
+                }
             },
             "responsibility": {
-                "label": "Your Responsibility",
-                "text": "Copays, deductibles, and co-insurance are due at the time of service. Because health insurance policies vary widely, we highly recommend calling the number on the back of your insurance card before your first visit to confirm your specific behavioral health benefits."
+                "label": {
+                    "type": "string",
+                    "value": "Your Responsibility"
+                },
+                "text": {
+                    "type": "richtext",
+                    "value": "Copays, deductibles, and co-insurance are due at the time of service. Because health insurance policies vary widely, we highly recommend calling the number on the back of your insurance card before your first visit to confirm your specific behavioral health benefits."
+                }
             }
         },
-        "insurers": [
-            {
-                "name": "Optum",
-                "src": "assets/insurance_optum.jpg"
-            },
-            {
-                "name": "Anthem",
-                "src": "assets/insurance_anthem.png"
-            },
-            {
-                "name": "Medicare",
-                "src": "assets/insurance_medicare.png"
-            },
-            {
-                "name": "Aetna",
-                "src": "assets/insurance_aetna.jpg"
-            },
-            {
-                "name": "Magellan Health",
-                "src": "assets/insurance_magellan.png"
-            },
-            {
-                "name": "Cigna",
-                "src": "assets/insurance_cigna.jpg"
-            }
-        ],
-        "outOfNetwork": {
-            "heading": "Out-of-Network & Self-Pay Options",
-            "paragraphs": [
-                "If we are not in-network with your insurance provider, or if you prefer not to use insurance, we offer standard self-pay rates.",
-                "We can provide you with a Superbill (an itemized medical receipt) that you can submit to your insurance company for potential out-of-network reimbursement."
-            ],
-            "note": "Please note: We do not guarantee reimbursement, as this depends entirely on your specific insurance plan."
-        },
-        "feeSchedule": {
-            "heading": "Fee Schedule (Self-Pay Rates)",
-            "columns": [
-                "Service Type",
-                "Estimated Duration",
-                "Fee"
-            ],
-            "rows": [
+        "insurers": {
+            "type": "array",
+            "value": [
                 {
-                    "service": "Initial Comprehensive Psychiatric Evaluation",
-                    "duration": "60-90 Minutes",
-                    "fee": "$375.00"
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Optum"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_optum.jpg"
+                        }
+                    }
                 },
                 {
-                    "service": "Extended Follow-up/Medication Management",
-                    "duration": "45-50 Minutes",
-                    "fee": "$210.00"
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Anthem"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_anthem.png"
+                        }
+                    }
                 },
                 {
-                    "service": "Follow-Up / Medication Management",
-                    "duration": "25-30 Minutes",
-                    "fee": "$180.00"
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Medicare"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_medicare.png"
+                        }
+                    }
                 },
                 {
-                    "service": "Prescription Request Outside of Appt",
-                    "duration": "",
-                    "fee": "$35.00"
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Aetna"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_aetna.jpg"
+                        }
+                    }
                 },
                 {
-                    "service": "No-show/Cancellation fee",
-                    "duration": "",
-                    "fee": "$75.00"
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Magellan Health"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_magellan.png"
+                        }
+                    }
                 },
                 {
-                    "service": "Form Completion (FMLA, School, Work, etc.)",
-                    "duration": "Complexity varies",
-                    "fee": "Starts at $50.00"
-                },
-                {
-                    "service": "GeneSight® Testing Coordination",
-                    "duration": "Process time varies",
-                    "fee": "Varies by lab"
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Cigna"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_cigna.jpg"
+                        }
+                    }
                 }
             ]
         },
+        "outOfNetwork": {
+            "heading": {
+                "type": "string",
+                "value": "Out-of-Network & Self-Pay Options"
+            },
+            "paragraphs": {
+                "type": "array",
+                "value": [
+                    {
+                        "type": "richtext",
+                        "value": "If we are not in-network with your insurance provider, or if you prefer not to use insurance, we offer standard self-pay rates."
+                    },
+                    {
+                        "type": "richtext",
+                        "value": "We can provide you with a Superbill (an itemized medical receipt) that you can submit to your insurance company for potential out-of-network reimbursement."
+                    }
+                ]
+            },
+            "note": {
+                "type": "richtext",
+                "value": "Please note: We do not guarantee reimbursement, as this depends entirely on your specific insurance plan."
+            }
+        },
+        "feeSchedule": {
+            "heading": {
+                "type": "string",
+                "value": "Fee Schedule (Self-Pay Rates)"
+            },
+            "columns": {
+                "type": "array",
+                "value": [
+                    {
+                        "type": "richtext",
+                        "value": "Service Type"
+                    },
+                    {
+                        "type": "richtext",
+                        "value": "Estimated Duration"
+                    },
+                    {
+                        "type": "richtext",
+                        "value": "Fee"
+                    }
+                ]
+            },
+            "rows": {
+                "type": "array",
+                "value": [
+                    {
+                        "type": "object",
+                        "value": {
+                            "service": {
+                                "type": "string",
+                                "value": "Initial Comprehensive Psychiatric Evaluation"
+                            },
+                            "duration": {
+                                "type": "string",
+                                "value": "60-90 Minutes"
+                            },
+                            "fee": {
+                                "type": "string",
+                                "value": "$375.00"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "service": {
+                                "type": "string",
+                                "value": "Extended Follow-up/Medication Management"
+                            },
+                            "duration": {
+                                "type": "string",
+                                "value": "45-50 Minutes"
+                            },
+                            "fee": {
+                                "type": "string",
+                                "value": "$210.00"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "service": {
+                                "type": "string",
+                                "value": "Follow-Up / Medication Management"
+                            },
+                            "duration": {
+                                "type": "string",
+                                "value": "25-30 Minutes"
+                            },
+                            "fee": {
+                                "type": "string",
+                                "value": "$180.00"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "service": {
+                                "type": "string",
+                                "value": "Prescription Request Outside of Appt"
+                            },
+                            "duration": {
+                                "type": "string",
+                                "value": ""
+                            },
+                            "fee": {
+                                "type": "string",
+                                "value": "$35.00"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "service": {
+                                "type": "string",
+                                "value": "No-show/Cancellation fee"
+                            },
+                            "duration": {
+                                "type": "string",
+                                "value": ""
+                            },
+                            "fee": {
+                                "type": "string",
+                                "value": "$75.00"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "service": {
+                                "type": "string",
+                                "value": "Form Completion (FMLA, School, Work, etc.)"
+                            },
+                            "duration": {
+                                "type": "string",
+                                "value": "Complexity varies"
+                            },
+                            "fee": {
+                                "type": "string",
+                                "value": "Starts at $50.00"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "service": {
+                                "type": "string",
+                                "value": "GeneSight® Testing Coordination"
+                            },
+                            "duration": {
+                                "type": "string",
+                                "value": "Process time varies"
+                            },
+                            "fee": {
+                                "type": "string",
+                                "value": "Varies by lab"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
         "billPay": {
-            "label": "Bill Pay",
-            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "Bill Pay"
+                },
+                "href": {
+                    "type": "string",
+                    "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+                }
+            }
         }
     },
     "footer": {
-        "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
+        "description": {
+            "type": "richtext",
+            "value": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better."
+        },
         "locations": {
             "address1": {
-                "title": "California Offices",
-                "addresses": [
-                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-                    "1302 Madera Rd<br>Simi Valley, CA 93065",
-                    "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
-                ]
+                "title": {
+                    "type": "string",
+                    "value": "California Offices"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
+                        },
+                        {
+                            "type": "richtext",
+                            "value": "1302 Madera Rd<br>Simi Valley, CA 93065"
+                        },
+                        {
+                            "type": "richtext",
+                            "value": "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
+                        }
+                    ]
+                }
             },
             "address2": {
-                "title": "Nevada Office",
-                "addresses": [
-                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-                ],
+                "title": {
+                    "type": "string",
+                    "value": "Nevada Office"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                        }
+                    ]
+                },
                 "email": {
-                    "label": "elevatepatientcare@gmail.com",
-                    "href": "mailto:elevatepatientcare@gmail.com"
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "elevatepatientcare@gmail.com"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "mailto:elevatepatientcare@gmail.com"
+                        }
+                    }
                 },
                 "phone": {
-                    "label": "818-805-4290",
-                    "href": "tel:+18188054290"
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "818-805-4290"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "tel:+18188054290"
+                        }
+                    }
                 }
             }
         },
-        "quickLinks": [
-            {
-                "label": "Home",
-                "href": "index.html"
-            },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
-            }
-        ]
+        "quickLinks": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "index.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     }
 }

@@ -1,227 +1,683 @@
 {
     "seo": {
-        "title": "New Patients | Elevate Mental Health and Wellness",
-        "description": "What to expect at your first psychiatric visit, patient intake forms, TherapyNotes portal setup, and practice policies at Elevate Mental Health and Wellness.",
-        "canonicalUrl": "https://elevatemhw.com/service-detail.html",
-        "robots": "index,follow",
-        "ogTitle": "New Patients | Elevate Mental Health and Wellness",
-        "ogDescription": "Learn what to expect, complete intake forms, and review practice policies before your first visit.",
-        "ogImage": "assets/og-image.jpg",
-        "twitterTitle": "New Patients | Elevate",
-        "twitterDescription": "New patient guide for psychiatric care at Elevate Mental Health and Wellness.",
-        "twitterImage": "assets/og-image.jpg"
+        "title": {
+            "type": "string",
+            "value": "New Patients | Elevate Mental Health and Wellness"
+        },
+        "description": {
+            "type": "string",
+            "value": "What to expect at your first psychiatric visit, patient intake forms, TherapyNotes portal setup, and practice policies at Elevate Mental Health and Wellness."
+        },
+        "canonicalUrl": {
+            "type": "string",
+            "value": "https://elevatemhw.com/service-detail.html"
+        },
+        "robots": {
+            "type": "string",
+            "value": "index,follow"
+        },
+        "ogTitle": {
+            "type": "string",
+            "value": "New Patients | Elevate Mental Health and Wellness"
+        },
+        "ogDescription": {
+            "type": "string",
+            "value": "Learn what to expect, complete intake forms, and review practice policies before your first visit."
+        },
+        "ogImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        },
+        "twitterTitle": {
+            "type": "string",
+            "value": "New Patients | Elevate"
+        },
+        "twitterDescription": {
+            "type": "string",
+            "value": "New patient guide for psychiatric care at Elevate Mental Health and Wellness."
+        },
+        "twitterImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        }
     },
     "site": {
-        "title": "Elevate Mental Health and Wellness",
-        "brandName": "Elevate Mental Health and Wellness",
-        "logo": "assets/logo.png",
-        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        "title": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "brandName": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "logo": {
+            "type": "string",
+            "value": "assets/logo.png"
+        },
+        "copyright": {
+            "type": "string",
+            "value": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        }
     },
     "nav": {
-        "ctaLabel": "Request Appointment",
-        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
-        "links": [
-            {
-                "label": "Home",
-                "href": "index.html"
-            },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
-            }
-        ]
-    },
-    "pageHero": {
-        "heading": "New Patients",
-        "intro": "Everything you need to know before your first visit, from what to expect in care to completing your intake forms."
-    },
-    "whatToExpect": {
-        "heading": "What to Expect",
-        "intro": "Starting psychiatric care can feel like a major step, and it is completely normal to have questions about what your experience will look like. At Elevate Mental Health and Wellness, we aim to make your journey as transparent, comfortable, and predictable as possible.",
-        "steps": [
-            {
-                "number": "1",
-                "title": "Your Initial Psychiatric Evaluation",
-                "lead": "Your first appointment is a dedicated time for us to get to know you or your child. This comprehensive session typically lasts 60 to 90 minutes.",
-                "whatWeDo": "We will discuss your current concerns, medical history, lifestyle, and past treatment experiences. For children and adolescents, this process heavily involves parents or guardians to ensure a complete picture.",
-                "outcome": "We don't just hand you a prescription. By the end of this visit, we will share our clinical impressions, discuss potential diagnoses, and collaboratively build a personalized treatment plan that aligns with your goals."
-            },
-            {
-                "number": "2",
-                "title": "Follow-Up Appointments & Medication Management",
-                "lead": "If your treatment plan includes medication or integrated supportive therapy, we will schedule regular follow-up visits. These appointments are usually 25 to 50 minutes depending on your specific needs.",
-                "whatWeDo": "We monitor how well the medication is working, manage any side effects, and adjust dosages as needed. We also use this time to practice coping strategies, provide psychoeducation, and check in on your overall well-being.",
-                "frequency": "Initially, follow-up appointments are scheduled every 4 weeks to closely monitor your progress. Once your symptoms are stable and you are feeling well, appointments are typically spaced out to every 8 to 12 weeks."
-            }
-        ],
-        "privacyNote": "A Note on Privacy & Comfort: All sessions are entirely confidential and conducted in a warm, non-judgmental space whether you are seeing us in person or via our secure telehealth platform."
-    },
-    "patientForms": {
-        "heading": "Patient Forms",
-        "intro": "To maximize your time with your clinician during your first visit, we request that all new patients complete their intake paperwork prior to the scheduled appointment.",
-        "ehr": {
-            "heading": "Our Secure Electronic Health Record (EHR) Partner",
-            "paragraphs": [
-                "At Elevate Mental Health and Wellness, your privacy and data security are our top priorities. We partner with TherapyNotes, a leading, fully HIPAA-compliant electronic medical records platform. This ensures that your personal information, medical history, and clinical notes are encrypted and securely stored using the highest industry standards."
-            ]
+        "ctaLabel": {
+            "type": "string",
+            "value": "Request Appointment"
         },
-        "gettingForms": {
-            "heading": "Getting Your Forms",
-            "text": "Once your initial appointment is booked, you will receive an automated email invitation to activate your secure account on our TherapyNotes Patient Portal. All required intake forms can be filled out, signed, and submitted electronically right from your computer, tablet, or smartphone."
+        "ctaHref": {
+            "type": "string",
+            "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
         },
-        "formsList": {
-            "heading": "Forms you will complete in the portal include:",
-            "items": [
+        "links": {
+            "type": "array",
+            "value": [
                 {
-                    "label": "New Patient Intake Questionnaire",
-                    "detail": "Helps us understand your medical, developmental, and psychiatric history."
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "index.html"
+                        }
+                    }
                 },
                 {
-                    "label": "Practice Policies & Consent to Treatment",
-                    "detail": "Outlines our scheduling, cancellation, and communication policies."
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
                 },
                 {
-                    "label": "HIPAA Privacy Notice",
-                    "detail": "Details how we protect your confidential medical information."
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
                 },
                 {
-                    "label": "Billing & Insurance Authorization",
-                    "detail": "Securely stores your payment method for copays or self-pay fees."
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
                 },
                 {
-                    "label": "Student Observation & Participation Disclosure",
-                    "detail": "Allows you to indicate your preference regarding having closely supervised psychiatric students or residents observe or participate in your care."
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
                 },
                 {
-                    "label": "AI Scribe Documentation Consent",
-                    "detail": "Allows you to opt in or out of our secure, HIPAA-compliant AI audio transcription tool used to assist your clinician with session note-taking."
-                }
-            ]
-        },
-        "coordination": {
-            "heading": "Coordination of Care (Optional)",
-            "intro": "If you would like us to collaborate or share updates with your primary care doctor, pediatrician, therapist, or your child's school team, please complete the form below:",
-            "roiForm": {
-                "label": "Download Release of Information (ROI) Form (PDF)",
-                "href": "assets/forms/release-of-information.pdf"
-            }
-        },
-        "completionPolicy": {
-            "heading": "Important: Form Completion Policy & Associated Fees",
-            "intro": "To ensure you receive the highest quality care, all new patient intake forms must be completed through your TherapyNotes Patient Portal at least 24 hours prior to your scheduled appointment.",
-            "items": [
-                {
-                    "label": "Why this matters",
-                    "text": "Your clinician thoroughly reviews your history, symptoms, and medical background before your session starts, allowing us to spend every minute of your appointment focusing entirely on you or your child."
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
                 },
                 {
-                    "label": "Delayed Start Time",
-                    "text": "If your paperwork is not completed 24 hours in advance, we may need to use a portion of your scheduled session time to complete it, reducing your face-to-face time with the clinician."
-                },
-                {
-                    "label": "Rescheduling & Cancellation Fees",
-                    "text": "If forms are incomplete by the time of your appointment, we reserve the right to reschedule your visit to a later date. Please note that our standard late cancellation/no-show fee of $75.00 will apply, as that time slot was reserved exclusively for you."
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
                 }
             ]
         }
     },
-    "practicePolicies": {
-        "heading": "Practice Policies",
-        "intro": "At Elevate Mental Health and Wellness, our focus is on providing evidence-based psychiatric evaluation, medication management, and supportive psychotherapy. To ensure safe and effective care, please review the following practice policies:",
-        "items": [
-            {
-                "title": "Disability Documentation",
-                "text": "Elevate Mental Health and Wellness does not certify disability or determine eligibility for disability benefits. Our role is to provide psychiatric evaluation and treatment. Requests for disability-related paperwork are reviewed on a case-by-case basis and are not guaranteed."
-            },
-            {
-                "title": "Benzodiazepine Prescribing",
-                "text": "Elevate Mental Health and Wellness follows current evidence-based guidelines regarding benzodiazepine medications (such as Xanax®, Ativan®, Klonopin®, and Valium®). Due to the risks of dependence, tolerance, cognitive impairment, and withdrawal, benzodiazepines are generally prescribed only for short-term or limited use when clinically appropriate. Long-term benzodiazepine therapy is not routinely provided by this practice. Patients already on chronic benzodiazepines from another provider must agree to a formal tapering plan under our care."
-            },
-            {
-                "title": "Stimulant Prescribing",
-                "text": "Stimulant medications used to treat ADHD (such as Adderall®, Vyvanse®, Concerta®, and Ritalin®) are prescribed only when clinically appropriate following a comprehensive evaluation. As controlled substances, they require strict monitoring, including regular follow-ups, vital sign checks, and possible random or scheduled urine drug screenings. Early refills, replacements for lost medications, or dose changes without an appointment may be declined. Our goal is to ensure the safe, effective, and responsible use of stimulant medications while providing individualized ADHD treatment."
-            },
-            {
-                "title": "A Teaching and Learning Environment",
-                "text": "Elevate Mental Health and Wellness is proud to support the education and training of future healthcare professionals. As a teaching clinic, healthcare trainees may participate in your care under the supervision of a licensed provider. Students are bound by strict confidentiality rules. You will be informed of their involvement and may decline participation at any time without affecting your care."
-            }
-        ]
+    "pageHero": {
+        "heading": {
+            "type": "string",
+            "value": "New Patients"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": "Everything you need to know before your first visit, from what to expect in care to completing your intake forms."
+        }
     },
-    "footer": {
-        "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
-        "locations": {
-            "address1": {
-                "title": "California Offices",
-                "addresses": [
-                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-                    "1302 Madera Rd<br>Simi Valley, CA 93065",
-                    "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
-                ]
-            },
-            "address2": {
-                "title": "Nevada Office",
-                "addresses": [
-                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-                ],
-                "email": {
-                    "label": "elevatepatientcare@gmail.com",
-                    "href": "mailto:elevatepatientcare@gmail.com"
+    "whatToExpect": {
+        "heading": {
+            "type": "string",
+            "value": "What to Expect"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": "Starting psychiatric care can feel like a major step, and it is completely normal to have questions about what your experience will look like. At Elevate Mental Health and Wellness, we aim to make your journey as transparent, comfortable, and predictable as possible."
+        },
+        "steps": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "number": {
+                            "type": "string",
+                            "value": "1"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Your Initial Psychiatric Evaluation"
+                        },
+                        "lead": {
+                            "type": "richtext",
+                            "value": "Your first appointment is a dedicated time for us to get to know you or your child. This comprehensive session typically lasts 60 to 90 minutes."
+                        },
+                        "whatWeDo": {
+                            "type": "richtext",
+                            "value": "We will discuss your current concerns, medical history, lifestyle, and past treatment experiences. For children and adolescents, this process heavily involves parents or guardians to ensure a complete picture."
+                        },
+                        "outcome": {
+                            "type": "richtext",
+                            "value": "We don't just hand you a prescription. By the end of this visit, we will share our clinical impressions, discuss potential diagnoses, and collaboratively build a personalized treatment plan that aligns with your goals."
+                        }
+                    }
                 },
-                "phone": {
-                    "label": "818-805-4290",
-                    "href": "tel:+18188054290"
+                {
+                    "type": "object",
+                    "value": {
+                        "number": {
+                            "type": "string",
+                            "value": "2"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Follow-Up Appointments & Medication Management"
+                        },
+                        "lead": {
+                            "type": "richtext",
+                            "value": "If your treatment plan includes medication or integrated supportive therapy, we will schedule regular follow-up visits. These appointments are usually 25 to 50 minutes depending on your specific needs."
+                        },
+                        "whatWeDo": {
+                            "type": "richtext",
+                            "value": "We monitor how well the medication is working, manage any side effects, and adjust dosages as needed. We also use this time to practice coping strategies, provide psychoeducation, and check in on your overall well-being."
+                        },
+                        "frequency": {
+                            "type": "richtext",
+                            "value": "Initially, follow-up appointments are scheduled every 4 weeks to closely monitor your progress. Once your symptoms are stable and you are feeling well, appointments are typically spaced out to every 8 to 12 weeks."
+                        }
+                    }
+                }
+            ]
+        },
+        "privacyNote": {
+            "type": "richtext",
+            "value": "A Note on Privacy & Comfort: All sessions are entirely confidential and conducted in a warm, non-judgmental space whether you are seeing us in person or via our secure telehealth platform."
+        }
+    },
+    "patientForms": {
+        "heading": {
+            "type": "string",
+            "value": "Patient Forms"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": "To maximize your time with your clinician during your first visit, we request that all new patients complete their intake paperwork prior to the scheduled appointment."
+        },
+        "ehr": {
+            "heading": {
+                "type": "string",
+                "value": "Our Secure Electronic Health Record (EHR) Partner"
+            },
+            "paragraphs": {
+                "type": "array",
+                "value": [
+                    {
+                        "type": "richtext",
+                        "value": "At Elevate Mental Health and Wellness, your privacy and data security are our top priorities. We partner with TherapyNotes, a leading, fully HIPAA-compliant electronic medical records platform. This ensures that your personal information, medical history, and clinical notes are encrypted and securely stored using the highest industry standards."
+                    }
+                ]
+            }
+        },
+        "gettingForms": {
+            "heading": {
+                "type": "string",
+                "value": "Getting Your Forms"
+            },
+            "text": {
+                "type": "richtext",
+                "value": "Once your initial appointment is booked, you will receive an automated email invitation to activate your secure account on our TherapyNotes Patient Portal. All required intake forms can be filled out, signed, and submitted electronically right from your computer, tablet, or smartphone."
+            }
+        },
+        "formsList": {
+            "heading": {
+                "type": "string",
+                "value": "Forms you will complete in the portal include:"
+            },
+            "items": {
+                "type": "array",
+                "value": [
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "New Patient Intake Questionnaire"
+                            },
+                            "detail": {
+                                "type": "richtext",
+                                "value": "Helps us understand your medical, developmental, and psychiatric history."
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "Practice Policies & Consent to Treatment"
+                            },
+                            "detail": {
+                                "type": "richtext",
+                                "value": "Outlines our scheduling, cancellation, and communication policies."
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "HIPAA Privacy Notice"
+                            },
+                            "detail": {
+                                "type": "richtext",
+                                "value": "Details how we protect your confidential medical information."
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "Billing & Insurance Authorization"
+                            },
+                            "detail": {
+                                "type": "richtext",
+                                "value": "Securely stores your payment method for copays or self-pay fees."
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "Student Observation & Participation Disclosure"
+                            },
+                            "detail": {
+                                "type": "richtext",
+                                "value": "Allows you to indicate your preference regarding having closely supervised psychiatric students or residents observe or participate in your care."
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "AI Scribe Documentation Consent"
+                            },
+                            "detail": {
+                                "type": "richtext",
+                                "value": "Allows you to opt in or out of our secure, HIPAA-compliant AI audio transcription tool used to assist your clinician with session note-taking."
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "coordination": {
+            "heading": {
+                "type": "string",
+                "value": "Coordination of Care (Optional)"
+            },
+            "intro": {
+                "type": "richtext",
+                "value": "If you would like us to collaborate or share updates with your primary care doctor, pediatrician, therapist, or your child's school team, please complete the form below:"
+            },
+            "roiForm": {
+                "type": "link",
+                "value": {
+                    "label": {
+                        "type": "string",
+                        "value": "Download Release of Information (ROI) Form (PDF)"
+                    },
+                    "href": {
+                        "type": "string",
+                        "value": "assets/forms/release-of-information.pdf"
+                    }
                 }
             }
         },
-        "quickLinks": [
-            {
-                "label": "Home",
-                "href": "index.html"
+        "completionPolicy": {
+            "heading": {
+                "type": "string",
+                "value": "Important: Form Completion Policy & Associated Fees"
             },
-            {
-                "label": "About Us",
-                "href": "about.html"
+            "intro": {
+                "type": "richtext",
+                "value": "To ensure you receive the highest quality care, all new patient intake forms must be completed through your TherapyNotes Patient Portal at least 24 hours prior to your scheduled appointment."
             },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
+            "items": {
+                "type": "array",
+                "value": [
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "Why this matters"
+                            },
+                            "text": {
+                                "type": "richtext",
+                                "value": "Your clinician thoroughly reviews your history, symptoms, and medical background before your session starts, allowing us to spend every minute of your appointment focusing entirely on you or your child."
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "Delayed Start Time"
+                            },
+                            "text": {
+                                "type": "richtext",
+                                "value": "If your paperwork is not completed 24 hours in advance, we may need to use a portion of your scheduled session time to complete it, reducing your face-to-face time with the clinician."
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "value": {
+                            "label": {
+                                "type": "string",
+                                "value": "Rescheduling & Cancellation Fees"
+                            },
+                            "text": {
+                                "type": "richtext",
+                                "value": "If forms are incomplete by the time of your appointment, we reserve the right to reschedule your visit to a later date. Please note that our standard late cancellation/no-show fee of $75.00 will apply, as that time slot was reserved exclusively for you."
+                            }
+                        }
+                    }
+                ]
             }
-        ]
+        }
+    },
+    "practicePolicies": {
+        "heading": {
+            "type": "string",
+            "value": "Practice Policies"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": "At Elevate Mental Health and Wellness, our focus is on providing evidence-based psychiatric evaluation, medication management, and supportive psychotherapy. To ensure safe and effective care, please review the following practice policies:"
+        },
+        "items": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "title": {
+                            "type": "string",
+                            "value": "Disability Documentation"
+                        },
+                        "text": {
+                            "type": "richtext",
+                            "value": "Elevate Mental Health and Wellness does not certify disability or determine eligibility for disability benefits. Our role is to provide psychiatric evaluation and treatment. Requests for disability-related paperwork are reviewed on a case-by-case basis and are not guaranteed."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "title": {
+                            "type": "string",
+                            "value": "Benzodiazepine Prescribing"
+                        },
+                        "text": {
+                            "type": "richtext",
+                            "value": "Elevate Mental Health and Wellness follows current evidence-based guidelines regarding benzodiazepine medications (such as Xanax®, Ativan®, Klonopin®, and Valium®). Due to the risks of dependence, tolerance, cognitive impairment, and withdrawal, benzodiazepines are generally prescribed only for short-term or limited use when clinically appropriate. Long-term benzodiazepine therapy is not routinely provided by this practice. Patients already on chronic benzodiazepines from another provider must agree to a formal tapering plan under our care."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "title": {
+                            "type": "string",
+                            "value": "Stimulant Prescribing"
+                        },
+                        "text": {
+                            "type": "richtext",
+                            "value": "Stimulant medications used to treat ADHD (such as Adderall®, Vyvanse®, Concerta®, and Ritalin®) are prescribed only when clinically appropriate following a comprehensive evaluation. As controlled substances, they require strict monitoring, including regular follow-ups, vital sign checks, and possible random or scheduled urine drug screenings. Early refills, replacements for lost medications, or dose changes without an appointment may be declined. Our goal is to ensure the safe, effective, and responsible use of stimulant medications while providing individualized ADHD treatment."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "title": {
+                            "type": "string",
+                            "value": "A Teaching and Learning Environment"
+                        },
+                        "text": {
+                            "type": "richtext",
+                            "value": "Elevate Mental Health and Wellness is proud to support the education and training of future healthcare professionals. As a teaching clinic, healthcare trainees may participate in your care under the supervision of a licensed provider. Students are bound by strict confidentiality rules. You will be informed of their involvement and may decline participation at any time without affecting your care."
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "footer": {
+        "description": {
+            "type": "richtext",
+            "value": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better."
+        },
+        "locations": {
+            "address1": {
+                "title": {
+                    "type": "string",
+                    "value": "California Offices"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
+                        },
+                        {
+                            "type": "richtext",
+                            "value": "1302 Madera Rd<br>Simi Valley, CA 93065"
+                        },
+                        {
+                            "type": "richtext",
+                            "value": "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
+                        }
+                    ]
+                }
+            },
+            "address2": {
+                "title": {
+                    "type": "string",
+                    "value": "Nevada Office"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                        }
+                    ]
+                },
+                "email": {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "elevatepatientcare@gmail.com"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "mailto:elevatepatientcare@gmail.com"
+                        }
+                    }
+                },
+                "phone": {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "818-805-4290"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "tel:+18188054290"
+                        }
+                    }
+                }
+            }
+        },
+        "quickLinks": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "index.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     }
 }

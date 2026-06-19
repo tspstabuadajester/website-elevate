@@ -1,190 +1,580 @@
 {
     "seo": {
-        "title": "Contact | Elevate Mental Health and Wellness",
-        "description": "Contact Elevate Mental Health and Wellness by phone or email. Office locations in California and Nevada.",
-        "canonicalUrl": "https://elevatemhw.com/contact.html",
-        "robots": "index,follow",
-        "ogTitle": "Contact Elevate Mental Health and Wellness",
-        "ogDescription": "Get in touch with Elevate for psychiatric care in California and Nevada.",
-        "ogImage": "assets/og-image.jpg",
-        "twitterTitle": "Contact Elevate Mental Health and Wellness",
-        "twitterDescription": "Call, email, or visit our office locations in California and Nevada.",
-        "twitterImage": "assets/og-image.jpg"
+        "title": {
+            "type": "string",
+            "value": "Contact | Elevate Mental Health and Wellness"
+        },
+        "description": {
+            "type": "string",
+            "value": "Contact Elevate Mental Health and Wellness by phone or email. Office locations in California and Nevada."
+        },
+        "canonicalUrl": {
+            "type": "string",
+            "value": "https://elevatemhw.com/contact.html"
+        },
+        "robots": {
+            "type": "string",
+            "value": "index,follow"
+        },
+        "ogTitle": {
+            "type": "string",
+            "value": "Contact Elevate Mental Health and Wellness"
+        },
+        "ogDescription": {
+            "type": "string",
+            "value": "Get in touch with Elevate for psychiatric care in California and Nevada."
+        },
+        "ogImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        },
+        "twitterTitle": {
+            "type": "string",
+            "value": "Contact Elevate Mental Health and Wellness"
+        },
+        "twitterDescription": {
+            "type": "string",
+            "value": "Call, email, or visit our office locations in California and Nevada."
+        },
+        "twitterImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        }
     },
     "site": {
-        "title": "Elevate Mental Health and Wellness",
-        "brandName": "Elevate Mental Health and Wellness",
-        "logo": "assets/logo.png",
-        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        "title": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "brandName": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "logo": {
+            "type": "string",
+            "value": "assets/logo.png"
+        },
+        "copyright": {
+            "type": "string",
+            "value": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        }
     },
     "nav": {
-        "ctaLabel": "Request Appointment",
-        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
-        "links": [
-            {
-                "label": "Home",
-                "href": "index.html"
-            },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
-            }
-        ]
+        "ctaLabel": {
+            "type": "string",
+            "value": "Request Appointment"
+        },
+        "ctaHref": {
+            "type": "string",
+            "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "links": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "index.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     },
     "pageHero": {
-        "heading": "Contact us",
-        "intro": "Have a question about care, insurance, or scheduling? Reach out by phone or email. We respond as soon as we can during business hours."
+        "heading": {
+            "type": "string",
+            "value": "Contact us"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": "Have a question about care, insurance, or scheduling? Reach out by phone or email. We respond as soon as we can during business hours."
+        }
     },
     "contactInfo": {
-        "kicker": "Get in touch",
-        "heading": "We are here to help",
-        "intro": "Elevate serves patients in California and Nevada. Virtual appointments are available through a secure telehealth platform.",
+        "kicker": {
+            "type": "string",
+            "value": "Get in touch"
+        },
+        "heading": {
+            "type": "string",
+            "value": "We are here to help"
+        },
+        "intro": {
+            "type": "richtext",
+            "value": "Elevate serves patients in California and Nevada. Virtual appointments are available through a secure telehealth platform."
+        },
         "phone": {
-            "label": "818-805-4290",
-            "href": "tel:+18188054290"
-        },
-        "email": {
-            "label": "elevatepatientcare@gmail.com",
-            "href": "mailto:elevatepatientcare@gmail.com"
-        },
-        "locations": [
-            {
-                "title": "Woodland Hills, CA",
-                "address": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
-            },
-            {
-                "title": "Simi Valley, CA",
-                "address": "1302 Madera Rd<br>Simi Valley, CA 93065"
-            },
-            {
-                "title": "Sacramento, CA",
-                "address": "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
-            },
-            {
-                "title": "Henderson, NV",
-                "address": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-            }
-        ]
-    },
-    "crisisPolicy": {
-        "heading": "Crisis Policy & Immediate Support",
-        "paragraphs": [
-            "Elevate Mental Health and Wellness provides scheduled psychiatric care and outpatient treatment. We do not provide 24/7 crisis management, immediate emergency services, or walk-in psychiatric care.",
-            "If you or a loved one is experiencing a life-threatening medical emergency, a severe mental health crisis, or is in imminent danger of hurting themselves or others, please do not wait for an office reply. Seek help immediately."
-        ],
-        "resourcesHeading": "Where to Get Immediate Help (Available 24/7)",
-        "resources": [
-            {
-                "label": "Call or Text 988",
-                "detail": "The 988 Suicide & Crisis Lifeline provides free, confidential, 24/7 support for anyone experiencing mental health-related distress or a suicidal crisis."
-            },
-            {
-                "label": "Text HOME to 741741",
-                "detail": "Connect with the Crisis Text Line to chat text-based with a trained crisis counselor 24/7."
-            },
-            {
-                "label": "Call 911",
-                "detail": "For immediate physical safety emergencies, call 911 or go to your nearest Hospital Emergency Room."
-            },
-            {
-                "label": "Veterans Crisis Line",
-                "detail": "Dial 988, then press 1, or text 838255 for dedicated veteran support."
-            },
-            {
-                "label": "The Trevor Project (for LGBTQ+ youth)",
-                "detail": "Call 1-866-488-7386 or text START to 678-678."
-            }
-        ],
-        "patientsNote": "For Existing Patients: If you are experiencing a non-emergency clinical issue or a medication side effect outside of office hours, please leave a secure message through your TherapyNotes Patient Portal or call our office line. We will review your message during normal business hours on our next operational day."
-    },
-    "ctaPanel": {
-        "heading": "Ready to schedule?",
-        "description": "Request an appointment to start care with Elevate. Virtual visits are available for your convenience.",
-        "button": {
-            "label": "Request an Appointment",
-            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
-        },
-        "features": [
-            "Virtual Consultations Available",
-            "Confidential & Compassionate Care",
-            "Serving California & Nevada"
-        ]
-    },
-    "footer": {
-        "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
-        "locations": {
-            "address1": {
-                "title": "California Offices",
-                "addresses": [
-                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-                    "1302 Madera Rd<br>Simi Valley, CA 93065",
-                    "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
-                ]
-            },
-            "address2": {
-                "title": "Nevada Office",
-                "addresses": [
-                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-                ],
-                "email": {
-                    "label": "elevatepatientcare@gmail.com",
-                    "href": "mailto:elevatepatientcare@gmail.com"
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "818-805-4290"
                 },
-                "phone": {
-                    "label": "818-805-4290",
-                    "href": "tel:+18188054290"
+                "href": {
+                    "type": "string",
+                    "value": "tel:+18188054290"
                 }
             }
         },
-        "quickLinks": [
-            {
-                "label": "Home",
-                "href": "index.html"
-            },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
+        "email": {
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "elevatepatientcare@gmail.com"
+                },
+                "href": {
+                    "type": "string",
+                    "value": "mailto:elevatepatientcare@gmail.com"
+                }
             }
-        ]
+        },
+        "locations": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "title": {
+                            "type": "string",
+                            "value": "Woodland Hills, CA"
+                        },
+                        "address": {
+                            "type": "string",
+                            "value": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "title": {
+                            "type": "string",
+                            "value": "Simi Valley, CA"
+                        },
+                        "address": {
+                            "type": "string",
+                            "value": "1302 Madera Rd<br>Simi Valley, CA 93065"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "title": {
+                            "type": "string",
+                            "value": "Sacramento, CA"
+                        },
+                        "address": {
+                            "type": "string",
+                            "value": "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "title": {
+                            "type": "string",
+                            "value": "Henderson, NV"
+                        },
+                        "address": {
+                            "type": "string",
+                            "value": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "crisisPolicy": {
+        "heading": {
+            "type": "string",
+            "value": "Crisis Policy & Immediate Support"
+        },
+        "paragraphs": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "richtext",
+                    "value": "Elevate Mental Health and Wellness provides scheduled psychiatric care and outpatient treatment. We do not provide 24/7 crisis management, immediate emergency services, or walk-in psychiatric care."
+                },
+                {
+                    "type": "richtext",
+                    "value": "If you or a loved one is experiencing a life-threatening medical emergency, a severe mental health crisis, or is in imminent danger of hurting themselves or others, please do not wait for an office reply. Seek help immediately."
+                }
+            ]
+        },
+        "resourcesHeading": {
+            "type": "string",
+            "value": "Where to Get Immediate Help (Available 24/7)"
+        },
+        "resources": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Call or Text 988"
+                        },
+                        "detail": {
+                            "type": "richtext",
+                            "value": "The 988 Suicide & Crisis Lifeline provides free, confidential, 24/7 support for anyone experiencing mental health-related distress or a suicidal crisis."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Text HOME to 741741"
+                        },
+                        "detail": {
+                            "type": "richtext",
+                            "value": "Connect with the Crisis Text Line to chat text-based with a trained crisis counselor 24/7."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Call 911"
+                        },
+                        "detail": {
+                            "type": "richtext",
+                            "value": "For immediate physical safety emergencies, call 911 or go to your nearest Hospital Emergency Room."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Veterans Crisis Line"
+                        },
+                        "detail": {
+                            "type": "richtext",
+                            "value": "Dial 988, then press 1, or text 838255 for dedicated veteran support."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "The Trevor Project (for LGBTQ+ youth)"
+                        },
+                        "detail": {
+                            "type": "richtext",
+                            "value": "Call 1-866-488-7386 or text START to 678-678."
+                        }
+                    }
+                }
+            ]
+        },
+        "patientsNote": {
+            "type": "richtext",
+            "value": "For Existing Patients: If you are experiencing a non-emergency clinical issue or a medication side effect outside of office hours, please leave a secure message through your TherapyNotes Patient Portal or call our office line. We will review your message during normal business hours on our next operational day."
+        }
+    },
+    "ctaPanel": {
+        "heading": {
+            "type": "string",
+            "value": "Ready to schedule?"
+        },
+        "description": {
+            "type": "richtext",
+            "value": "Request an appointment to start care with Elevate. Virtual visits are available for your convenience."
+        },
+        "button": {
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "Request an Appointment"
+                },
+                "href": {
+                    "type": "string",
+                    "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+                }
+            }
+        },
+        "features": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "string",
+                    "value": "Virtual Consultations Available"
+                },
+                {
+                    "type": "string",
+                    "value": "Confidential & Compassionate Care"
+                },
+                {
+                    "type": "string",
+                    "value": "Serving California & Nevada"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "description": {
+            "type": "richtext",
+            "value": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better."
+        },
+        "locations": {
+            "address1": {
+                "title": {
+                    "type": "string",
+                    "value": "California Offices"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
+                        },
+                        {
+                            "type": "richtext",
+                            "value": "1302 Madera Rd<br>Simi Valley, CA 93065"
+                        },
+                        {
+                            "type": "richtext",
+                            "value": "2740 Fulton Ave 100C<br>Sacramento, CA 95821"
+                        }
+                    ]
+                }
+            },
+            "address2": {
+                "title": {
+                    "type": "string",
+                    "value": "Nevada Office"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                        }
+                    ]
+                },
+                "email": {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "elevatepatientcare@gmail.com"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "mailto:elevatepatientcare@gmail.com"
+                        }
+                    }
+                },
+                "phone": {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "818-805-4290"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "tel:+18188054290"
+                        }
+                    }
+                }
+            }
+        },
+        "quickLinks": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "index.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     }
 }

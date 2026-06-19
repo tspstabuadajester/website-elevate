@@ -1,867 +1,2724 @@
 {
     "seo": {
-        "title": "Elevate Mental Wellness | Psychiatric Care",
-        "description": "Compassionate psychiatric care serving California and Nevada.",
-        "canonicalUrl": "https://elevatemhw.com/",
-        "robots": "index,follow",
-        "ogTitle": "Elevate Mental Wellness",
-        "ogDescription": "Compassionate psychiatric care and brief psychotherapy support.",
-        "ogImage": "assets/og-image.jpg",
-        "twitterTitle": "Elevate Mental Wellness",
-        "twitterDescription": "Compassionate psychiatric care serving California and Nevada.",
-        "twitterImage": "assets/og-image.jpg"
+        "title": {
+            "type": "string",
+            "value": "Elevate Mental Wellness | Psychiatric Care"
+        },
+        "description": {
+            "type": "string",
+            "value": "Compassionate psychiatric care serving California and Nevada."
+        },
+        "canonicalUrl": {
+            "type": "string",
+            "value": "https://elevatemhw.com/"
+        },
+        "robots": {
+            "type": "string",
+            "value": "index,follow"
+        },
+        "ogTitle": {
+            "type": "string",
+            "value": "Elevate Mental Wellness"
+        },
+        "ogDescription": {
+            "type": "string",
+            "value": "Compassionate psychiatric care and brief psychotherapy support."
+        },
+        "ogImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        },
+        "twitterTitle": {
+            "type": "string",
+            "value": "Elevate Mental Wellness"
+        },
+        "twitterDescription": {
+            "type": "string",
+            "value": "Compassionate psychiatric care serving California and Nevada."
+        },
+        "twitterImage": {
+            "type": "string",
+            "value": "assets/og-image.jpg"
+        }
     },
     "site": {
-        "title": "Elevate Mental Health and Wellness",
-        "brandName": "Elevate Mental Health and Wellness",
-        "logo": "assets/logo.png",
-        "copyright": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        "title": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "brandName": {
+            "type": "string",
+            "value": "Elevate Mental Health and Wellness"
+        },
+        "logo": {
+            "type": "string",
+            "value": "assets/logo.png"
+        },
+        "copyright": {
+            "type": "string",
+            "value": "© 2026 Elevate Mental Health and Wellness. All rights reserved."
+        }
     },
     "nav": {
-        "ctaLabel": "Request Appointment",
-        "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform",
-        "links": [
-            {
-                "label": "Home",
-                "href": "#home"
-            },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
-            }
-        ]
+        "ctaLabel": {
+            "type": "string",
+            "value": "Request Appointment"
+        },
+        "ctaHref": {
+            "type": "string",
+            "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        },
+        "links": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "#home"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     },
     "hero": {
-        "badge": "Psychiatric care serving California and Nevada",
-        "headline": "Elevate your mental wellness with compassionate psychiatric care",
-        "description": "We offer personalized psychiatric care and short-term psychotherapy to support your mental well-being and help improve your daily life. For your convenience, virtual consultations are also available.",
+        "badge": {
+            "type": "string",
+            "value": "Psychiatric care serving California and Nevada"
+        },
+        "headline": {
+            "type": "string",
+            "value": "Elevate your mental wellness with compassionate psychiatric care"
+        },
+        "description": {
+            "type": "richtext",
+            "value": "We offer personalized psychiatric care and short-term psychotherapy to support your mental well-being and help improve your daily life. For your convenience, virtual consultations are also available."
+        },
         "primaryCta": {
-            "label": "Request an Appointment",
-            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "Request an Appointment"
+                },
+                "href": {
+                    "type": "string",
+                    "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+                }
+            }
         },
         "secondaryCta": {
-            "label": "Learn More",
-            "href": "services.html"
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "Learn More"
+                },
+                "href": {
+                    "type": "string",
+                    "value": "services.html"
+                }
+            }
         },
         "video": {
-            "src": "assets/hero-vid.mp4",
-            "poster": "assets/logo-apnt1sbm.png",
-            "alt": "Calming moments of connection and wellness"
+            "type": "video",
+            "value": {
+                "src": {
+                    "type": "string",
+                    "value": "assets/hero-vid.mp4"
+                },
+                "poster": {
+                    "type": "string",
+                    "value": "assets/logo-apnt1sbm.png"
+                },
+                "alt": {
+                    "type": "string",
+                    "value": "Calming moments of connection and wellness"
+                }
+            }
         }
     },
     "services": {
-        "kicker": "Our services",
-        "heading": "Compassionate care for a wide range of mental health needs",
-        "detailPlaceholder": "Tap any service below to read more about how we can support you.",
-        "viewDetailsLabel": "Learn more",
-        "modalCta": {
-            "label": "Schedule an appointment",
-            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+        "kicker": {
+            "type": "string",
+            "value": "Our services"
         },
-        "footnote": "At Elevate, we individualize your psychiatric care and prioritize your privacy.<br />We use a HIPAA compliant telehealth platform to ensure your utmost confidentiality.",
-        "items": [
-            {
-                "id": "adhd",
-                "title": "ADHD",
-                "summary": "Support for focus, impulsivity, and daily functioning with treatment plans designed for school, work, and home life.",
-                "icon": "star",
-                "lastUpdated": "06/2025",
-                "overview": {
-                    "heading": "What is it?",
-                    "items": [
-                        "ADHD affects how the brain works; it can make it hard to focus and stop yourself from acting on urges.",
-                        "It can make it tough to pay attention and stay organized.",
-                        "It can also affect how you feel and how you get along with others.",
-                        "ADHD is not caused by a person's choices or behavior; it's a condition that starts in childhood.",
-                        "ADHD is common; many adults have it, so you're not alone."
-                    ]
+        "heading": {
+            "type": "string",
+            "value": "Compassionate care for a wide range of mental health needs"
+        },
+        "detailPlaceholder": {
+            "type": "richtext",
+            "value": "Tap any service below to read more about how we can support you."
+        },
+        "viewDetailsLabel": {
+            "type": "string",
+            "value": "Learn more"
+        },
+        "modalCta": {
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "Schedule an appointment"
                 },
-                "causes": {
-                    "heading": "What can cause it?",
-                    "items": [
-                        "Having someone in your family with ADHD",
-                        "Differences in how the brain looks or works",
-                        "Exposure to smoking, alcohol, or drugs before birth",
-                        "Being born too early (premature) or too small",
-                        "Early exposure to lead",
-                        "Growing up or living in a stressful home",
-                        "Having other mental health conditions like anxiety or depression"
-                    ],
-                    "note": "Many things can work together to cause ADHD. Having these things doesn't mean you'll get ADHD for sure."
-                },
-                "signs": {
-                    "heading": "What are common signs?",
-                    "items": [
-                        "Getting distracted easily and forgetting things",
-                        "Losing things or struggling to keep track of tasks",
-                        "Feeling restless or having trouble sitting still",
-                        "Interrupting others or making quick decisions",
-                        "Starting things but not finishing them",
-                        "Having trouble planning your day or meeting deadlines",
-                        "Feeling frustrated or upset often"
-                    ]
-                },
-                "brain": {
-                    "heading": "How does it affect the brain?",
-                    "description": "In ADHD, these parts of the brain don't work well together. This can make it harder to focus, stay organized, control impulses, and manage emotions.",
-                    "image": {
-                        "src": "assets/disorders/adhd-brain.png",
-                        "alt": "Brain regions affected by ADHD"
-                    },
-                    "regions": [
-                        {
-                            "name": "Cerebellum",
-                            "description": "Helps you move smoothly and manage time"
-                        },
-                        {
-                            "name": "Basal ganglia",
-                            "description": "Controls movement and helps you stick to routines"
-                        },
-                        {
-                            "name": "Dorsolateral prefrontal cortex",
-                            "description": "Helps you focus, plan, and control impulses"
-                        },
-                        {
-                            "name": "Anterior cingulate cortex",
-                            "description": "Helps you switch between tasks and manage emotions"
-                        },
-                        {
-                            "name": "Striatum",
-                            "description": "Helps you form routines and stay motivated"
-                        }
-                    ]
-                },
-                "seekHelp": {
-                    "heading": "When should I seek help?",
-                    "routine": [
-                        "If ADHD is making it hard to keep a job, stay safe, or manage your mood",
-                        "If staying organized or focused is consistently difficult",
-                        "If work or relationships are being affected because of ADHD symptoms"
-                    ],
-                    "urgentHeading": "Get help right away if you:",
-                    "urgent": [
-                        "If impulsive decisions are causing ongoing problems"
-                    ]
-                },
-                "treatment": {
-                    "heading": "How can it be treated?",
-                    "description": "Your health professional can help you choose the best treatment or combinations of treatments for you. Sometimes, people need to try a few different things before they find what works best.",
-                    "types": [
-                        "Talk therapies",
-                        "Medicines",
-                        "Exercise as part of treatment"
-                    ]
-                },
-                "resources": {
-                    "heading": "Where can I get more help?",
-                    "items": [
-                        {
-                            "label": "Suicide & Crisis Lifeline",
-                            "detail": "Call or text 988",
-                            "href": "tel:988"
-                        },
-                        {
-                            "label": "National Alliance on Mental Illness (NAMI)",
-                            "detail": "nami.org",
-                            "href": "https://nami.org"
-                        },
-                        {
-                            "label": "CHADD",
-                            "detail": "chadd.org",
-                            "href": "https://chadd.org"
-                        }
-                    ]
-                },
-                "keyFacts": {
-                    "heading": "What you need to know",
-                    "items": [
-                        "ADHD is a medical condition caused by differences in brain function, not laziness or lack of willpower.",
-                        "Many adults were not diagnosed as children, but symptoms continue into adulthood.",
-                        "Medicine, therapy, and healthy habits can help you focus and feel more in control.",
-                        "Many adults have ADHD, and support is available to help manage it."
-                    ]
-                }
-            },
-            {
-                "id": "bipolar",
-                "title": "Bipolar Disorders",
-                "summary": "Stabilizing mood shifts with close monitoring, clear communication, and a plan that fits your routine.",
-                "icon": "bipolar",
-                "lastUpdated": "05/2025",
-                "overview": {
-                    "heading": "What is it?",
-                    "items": [
-                        "A brain condition that causes severe mood changes",
-                        "People with bipolar disorder have very high ups (mania) and very low downs (depression)",
-                        "These mood changes can last for days or weeks",
-                        "Bipolar disorder can make it hard to work, take care of yourself, or do daily tasks",
-                        "Health professionals can treat bipolar disorder with medicine and talk therapy"
-                    ]
-                },
-                "causes": {
-                    "heading": "What can cause it?",
-                    "items": [
-                        "It can run in families (passed down from parents)",
-                        "Changes in the brain play a role",
-                        "Stressful or hard life events can trigger it",
-                        "It may start after a big life change",
-                        "Most people get it between ages 6 and 30",
-                        "Other mental health problems may increase the chance of bipolar disorder"
-                    ],
-                    "note": "Health professionals are still learning about what causes bipolar disorder. It's usually not just one thing, but a mix of different reasons."
-                },
-                "signs": {
-                    "heading": "What are common signs?",
-                    "items": [
-                        "Feeling super happy and full of energy (or very grouchy) for days (mania)",
-                        "Feeling very sad and tired for long periods (depression)",
-                        "Not needing much sleep or sleeping too much",
-                        "Thinking and talking very fast",
-                        "Doing risky things without thinking first",
-                        "Having severe mood swings that last for days or weeks"
-                    ]
-                },
-                "brain": {
-                    "heading": "How does it affect the brain?",
-                    "description": "In bipolar disorder, some of these areas might work differently than usual. This can affect how a person feels, thinks, or acts.",
-                    "image": {
-                        "src": "assets/disorders/bipolar-brain.png",
-                        "alt": "Brain regions affected by bipolar disorder"
-                    },
-                    "regions": [
-                        {
-                            "name": "Prefrontal cortex",
-                            "description": "Helps control your actions and emotions"
-                        },
-                        {
-                            "name": "Thalamus",
-                            "description": "Passes messages in the brain"
-                        },
-                        {
-                            "name": "Amygdala",
-                            "description": "Handles fear and worry"
-                        },
-                        {
-                            "name": "Hippocampus",
-                            "description": "Helps with memory"
-                        },
-                        {
-                            "name": "Striatum",
-                            "description": "Helps you move, feel good, and stay motivated"
-                        },
-                        {
-                            "name": "Hypothalamus",
-                            "description": "Controls sleep, stress, and other body functions"
-                        }
-                    ]
-                },
-                "seekHelp": {
-                    "heading": "When should I seek help?",
-                    "routine": [
-                        "You have very high energy and can't sleep for days",
-                        "You feel very sad and don't want to do anything",
-                        "You have severe mood swings that make life hard",
-                        "You do risky things you wouldn't usually do",
-                        "You feel worried, angry, or scared for no reason",
-                        "You have trouble at work, school, or with family",
-                        "You feel like hurting yourself",
-                        "You hear or see things that aren't real"
-                    ],
-                    "urgentHeading": "Get help right away if you:",
-                    "urgent": [
-                        "Your thoughts don't make sense",
-                        "You feel out of control or very confused"
-                    ]
-                },
-                "treatment": {
-                    "heading": "How can it be treated?",
-                    "description": "Your treatment may change depending on your mood: high (mania), low (depression), or steady (stable). Health professionals use these treatments together to help people with bipolar disorder feel better and live well.",
-                    "types": [
-                        "Medicine",
-                        "Talk therapy",
-                        "Family education",
-                        "Support groups",
-                        "Brain treatments",
-                        "Lifestyle changes"
-                    ]
-                },
-                "resources": {
-                    "heading": "Where can I get more help?",
-                    "items": [
-                        {
-                            "label": "Suicide & Crisis Lifeline",
-                            "detail": "Call or text 988",
-                            "href": "tel:988"
-                        },
-                        {
-                            "label": "National Alliance on Mental Illness (NAMI)",
-                            "detail": "nami.org",
-                            "href": "https://nami.org"
-                        },
-                        {
-                            "label": "Depression and Bipolar Support Alliance (DBSA)",
-                            "detail": "dbsalliance.org",
-                            "href": "https://www.dbsalliance.org"
-                        }
-                    ]
-                },
-                "keyFacts": {
-                    "heading": "What you need to know",
-                    "items": [
-                        "Bipolar disorder is a brain condition that causes severe mood changes. These changes can make daily life hard.",
-                        "It is a lifelong condition, but medicine, therapy, and healthy habits can help you manage it.",
-                        "You are not alone. Many people have bipolar disorder. Health professionals, family, and friends can help."
-                    ]
-                }
-            },
-            {
-                "id": "depression",
-                "title": "Depression",
-                "summary": "Treatment for low mood, low energy, and loss of interest with a focus on helping you feel like yourself again.",
-                "icon": "depression",
-                "lastUpdated": "05/2025",
-                "overview": {
-                    "heading": "What is it?",
-                    "items": [
-                        "A common mental health problem",
-                        "Feeling very sad for a long time and not enjoying things you used to like",
-                        "Lasts for at least 2 weeks and makes it hard to do everyday activities",
-                        "It's more than just feeling down for a short time. It's a serious condition that affects how a person lives their life"
-                    ]
-                },
-                "causes": {
-                    "heading": "What can cause it?",
-                    "items": [
-                        "Sad or stressful things happening in your life",
-                        "Having family members who've had depression",
-                        "Being someone who often feels sad or worries a lot",
-                        "Having a big health problem that lasts a long time",
-                        "Using drugs or drinking too much alcohol",
-                        "Not having friends or family to help you"
-                    ],
-                    "note": "Depression usually happens because of a mix of these things, not just one. Everyone's experience is different."
-                },
-                "signs": {
-                    "heading": "What are common signs?",
-                    "items": [
-                        "Feeling very sad most of the time",
-                        "Not liking things you used to enjoy",
-                        "Eating or sleeping more or less than usual",
-                        "Feeling very tired all the time",
-                        "Finding it hard to think clearly",
-                        "Feeling like you're not important",
-                        "Thinking about dying"
-                    ]
-                },
-                "brain": {
-                    "heading": "How does it affect the brain?",
-                    "description": "In depression, some of these areas might work differently or look smaller than usual. This can affect how a person feels, thinks, or acts.",
-                    "image": {
-                        "src": "assets/disorders/mdd-brain.png",
-                        "alt": "Brain regions affected by depression"
-                    },
-                    "regions": [
-                        {
-                            "name": "Prefrontal cortex",
-                            "description": "Helps control emotion"
-                        },
-                        {
-                            "name": "Thalamus",
-                            "description": "Passes messages in the brain"
-                        },
-                        {
-                            "name": "Amygdala",
-                            "description": "Handles fear and worry"
-                        },
-                        {
-                            "name": "Hippocampus",
-                            "description": "Helps with memory"
-                        },
-                        {
-                            "name": "Striatum",
-                            "description": "Helps you move, feel good, and stay motivated"
-                        }
-                    ]
-                },
-                "seekHelp": {
-                    "heading": "When should I seek help?",
-                    "routine": [
-                        "You feel very sad for more than 2 weeks",
-                        "You have trouble doing everyday things",
-                        "You don't feel better on your own",
-                        "You think about hurting yourself",
-                        "You feel like life isn't worth living"
-                    ],
-                    "urgentHeading": "Get help right away if you:",
-                    "urgent": [
-                        "Stay away from friends and family",
-                        "Use drugs or alcohol to feel better"
-                    ]
-                },
-                "treatment": {
-                    "heading": "How can it be treated?",
-                    "description": "Your health professional can help you choose the best treatment or combinations of treatments for you. Sometimes, people need to try a few different things before they find what works best.",
-                    "types": [
-                        "Talk therapy",
-                        "Medicine",
-                        "Lifestyle changes",
-                        "Brain treatments",
-                        "Computer programs"
-                    ]
-                },
-                "resources": {
-                    "heading": "Where can I get more help?",
-                    "items": [
-                        {
-                            "label": "Suicide & Crisis Lifeline",
-                            "detail": "Call or text 988",
-                            "href": "tel:988"
-                        },
-                        {
-                            "label": "National Alliance on Mental Illness (NAMI)",
-                            "detail": "nami.org",
-                            "href": "https://nami.org"
-                        },
-                        {
-                            "label": "Depression and Bipolar Support Alliance (DBSA)",
-                            "detail": "dbsalliance.org",
-                            "href": "https://www.dbsalliance.org"
-                        }
-                    ]
-                },
-                "keyFacts": {
-                    "heading": "What you need to know",
-                    "items": [
-                        "Depression is a serious health problem",
-                        "Depression is not your fault",
-                        "Anyone can get depression",
-                        "Depression doesn't just go away on its own",
-                        "Health professionals can help treat depression"
-                    ]
-                }
-            },
-            {
-                "id": "ptsd",
-                "title": "PTSD",
-                "summary": "Trauma-informed care for flashbacks, hypervigilance, and emotional distress after difficult life experiences.",
-                "icon": "ptsd",
-                "lastUpdated": "05/2025",
-                "overview": {
-                    "heading": "What is it?",
-                    "items": [
-                        "PTSD means past trauma still affects you. It can happen after scary or dangerous events, like accidents, war, or abuse.",
-                        "It can make you feel upset or afraid even when you're safe. Loud noises, certain places, or memories can bring back bad feelings.",
-                        "You may have trouble sleeping or feel on edge. Nightmares, bad dreams, or feeling jumpy are common.",
-                        "PTSD can cause strong emotions. You might feel sad, angry, or alone, and sometimes it's hard to enjoy things you used to like."
-                    ]
-                },
-                "causes": {
-                    "heading": "What can cause it?",
-                    "items": [
-                        "Going through or seeing something very scary or dangerous (trauma)",
-                        "Seeing someone else get hurt or killed (trauma)",
-                        "Having a history of trauma or stress",
-                        "Not having support after a trauma",
-                        "Having anxiety, depression, or other mental health issues",
-                        "Using drugs or alcohol to cope"
-                    ],
-                    "note": "Not everyone who goes through a trauma gets PTSD. Our brains and bodies deal with stress in different ways. Having support and good ways to cope can help protect you from PTSD."
-                },
-                "signs": {
-                    "heading": "What are common signs?",
-                    "items": [
-                        "You may keep thinking about the scary event or have bad dreams",
-                        "Feeling scared or nervous all the time",
-                        "Avoiding people or places that remind you of the event",
-                        "Feeling angry, sad, or numb",
-                        "Trouble sleeping or focusing",
-                        "You may blame yourself for what happened, even if it wasn't your fault"
-                    ]
-                },
-                "brain": {
-                    "heading": "How does it affect the brain?",
-                    "description": "In PTSD, some of these areas might work differently or look smaller than usual. This can affect how a person feels, thinks, or acts.",
-                    "image": {
-                        "src": "assets/disorders/ptsd-brain.png",
-                        "alt": "Brain regions affected by PTSD"
-                    },
-                    "regions": [
-                        {
-                            "name": "Prefrontal cortex",
-                            "description": "Helps you make choices and control your feelings"
-                        },
-                        {
-                            "name": "Thalamus",
-                            "description": "Sorts information from your senses"
-                        },
-                        {
-                            "name": "Amygdala",
-                            "description": "Spots danger and creates feelings"
-                        },
-                        {
-                            "name": "Hippocampus",
-                            "description": "Stores memories and links them to feelings"
-                        },
-                        {
-                            "name": "Brainstem",
-                            "description": "Manages breathing, heartbeat, and sleep"
-                        }
-                    ]
-                },
-                "seekHelp": {
-                    "heading": "When should I seek help?",
-                    "routine": [
-                        "You have nightmares or scary thoughts about a past trauma",
-                        "You feel more angry, scared, or sad than usual",
-                        "You are avoiding things that remind you of a past trauma",
-                        "You have trouble sleeping or focusing",
-                        "You feel alone or don't want to be with others",
-                        "Have thoughts of hurting yourself or others"
-                    ],
-                    "urgentHeading": "Get help right away if you:",
-                    "urgent": [
-                        "Feel so upset you can't do daily tasks",
-                        "Use drugs or alcohol to cope with your feelings"
-                    ]
-                },
-                "treatment": {
-                    "heading": "How can it be treated?",
-                    "description": "Your health professional can help you choose the best treatment or combinations of treatments. Sometimes, people need to try different treatments before they find what works best.",
-                    "types": [
-                        "Trauma-focused talk therapies",
-                        "Medicines",
-                        "Mindfulness or relaxation practice",
-                        "Support groups"
-                    ]
-                },
-                "resources": {
-                    "heading": "Where can I get more help?",
-                    "items": [
-                        {
-                            "label": "Suicide & Crisis Lifeline",
-                            "detail": "Call or text 988",
-                            "href": "tel:988"
-                        },
-                        {
-                            "label": "National Alliance on Mental Illness (NAMI)",
-                            "detail": "nami.org",
-                            "href": "https://nami.org"
-                        },
-                        {
-                            "label": "National Center for PTSD",
-                            "detail": "ptsd.va.gov",
-                            "href": "https://www.ptsd.va.gov"
-                        },
-                        {
-                            "label": "PTSD Alliance",
-                            "detail": "ptsdalliance.org",
-                            "href": "https://www.ptsdalliance.org"
-                        }
-                    ]
-                },
-                "keyFacts": {
-                    "heading": "What you need to know",
-                    "items": [
-                        "PTSD can happen after very scary events or trauma",
-                        "It causes nightmares and scary feelings",
-                        "You might avoid things that remind you of what happened",
-                        "It's not your fault",
-                        "Health professionals can help you feel better"
-                    ]
-                }
-            },
-            {
-                "id": "schizophrenia",
-                "title": "Schizophrenia",
-                "summary": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability.",
-                "icon": "star",
-                "lastUpdated": "05/2025",
-                "overview": {
-                    "heading": "What is it?",
-                    "items": [
-                        "A serious brain problem that changes how people think and act",
-                        "People with schizophrenia might see or hear things that aren't really there",
-                        "They might think things are true even when others tell them it's not real",
-                        "It can make it hard for people to do everyday things like work or take care of themselves"
-                    ]
-                },
-                "causes": {
-                    "heading": "What can cause it?",
-                    "items": [
-                        "It often runs in families, so you might get it if your parents or siblings have it",
-                        "Problems during pregnancy or birth, like being born too early or at a low weight",
-                        "Very stressful life events, like losing a loved one or being abused as a child",
-                        "Using drugs like marijuana, especially when you're young",
-                        "Living in a city",
-                        "Having a hard time in school or with making friends"
-                    ],
-                    "note": "Remember, having these things doesn't mean you'll definitely get schizophrenia. Health professionals are still learning about what causes it."
-                },
-                "signs": {
-                    "heading": "What are common signs?",
-                    "items": [
-                        "Seeing or hearing things that aren't really there, like voices or people",
-                        "Believing things that aren't true, even when others say they're not real",
-                        "Having trouble thinking clearly or speaking in a way that makes sense",
-                        "Feeling less interested in doing things and showing less emotion",
-                        "Moving in unusual ways, like being very still or moving a lot for no reason"
-                    ]
-                },
-                "brain": {
-                    "heading": "How does it affect the brain?",
-                    "description": "In schizophrenia, some of these areas might work or look smaller than usual. This can affect how a person feels, thinks, or acts.",
-                    "image": {
-                        "src": "assets/disorders/schizophrenia-brain.png",
-                        "alt": "Brain regions affected by schizophrenia"
-                    },
-                    "regions": [
-                        {
-                            "name": "Prefrontal cortex",
-                            "description": "Controls how we think and behave"
-                        },
-                        {
-                            "name": "Basal ganglia",
-                            "description": "Helps control how we move and think"
-                        },
-                        {
-                            "name": "Thalamus",
-                            "description": "Passes information in the brain"
-                        },
-                        {
-                            "name": "Amygdala",
-                            "description": "Handles emotion and fear"
-                        },
-                        {
-                            "name": "Hippocampus",
-                            "description": "Controls memory and learning"
-                        }
-                    ]
-                },
-                "seekHelp": {
-                    "heading": "When should I seek help?",
-                    "routine": [
-                        "You think about hurting yourself or others",
-                        "You act very strange all of a sudden",
-                        "You can't eat or clean yourself",
-                        "You feel strange for more than 2 weeks",
-                        "You have trouble doing normal things",
-                        "You see or hear things others don't",
-                        "You believe things that aren't true"
-                    ],
-                    "urgentHeading": "Get help right away if you:",
-                    "urgent": [
-                        "You act very different suddenly",
-                        "You stay away from friends and family",
-                        "You can't think or talk clearly"
-                    ]
-                },
-                "treatment": {
-                    "heading": "How can it be treated?",
-                    "description": "Health professionals often use these treatments together to help people with schizophrenia feel better and live their lives.",
-                    "types": [
-                        "Medicine",
-                        "Talk therapy",
-                        "Family support",
-                        "Support groups",
-                        "Brain treatments",
-                        "Learning new skills"
-                    ]
-                },
-                "resources": {
-                    "heading": "Where can I get more help?",
-                    "items": [
-                        {
-                            "label": "Suicide & Crisis Lifeline",
-                            "detail": "Call or text 988",
-                            "href": "tel:988"
-                        },
-                        {
-                            "label": "National Alliance on Mental Illness (NAMI)",
-                            "detail": "nami.org",
-                            "href": "https://nami.org"
-                        },
-                        {
-                            "label": "Schizophrenia & Psychosis Action Alliance",
-                            "detail": "sczaction.org",
-                            "href": "https://sczaction.org"
-                        }
-                    ]
-                },
-                "keyFacts": {
-                    "heading": "What you need to know",
-                    "items": [
-                        "Schizophrenia is a serious health problem",
-                        "Schizophrenia usually starts when people are young adults",
-                        "Health professionals can help treat it with medicine and other treatments",
-                        "With treatment, many people with schizophrenia can live good lives"
-                    ]
+                "href": {
+                    "type": "string",
+                    "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
                 }
             }
-        ]
+        },
+        "footnote": {
+            "type": "richtext",
+            "value": "At Elevate, we individualize your psychiatric care and prioritize your privacy.<br />We use a HIPAA compliant telehealth platform to ensure your utmost confidentiality."
+        },
+        "items": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "id": {
+                            "type": "string",
+                            "value": "adhd"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "ADHD"
+                        },
+                        "summary": {
+                            "type": "richtext",
+                            "value": "Support for focus, impulsivity, and daily functioning with treatment plans designed for school, work, and home life."
+                        },
+                        "icon": {
+                            "type": "string",
+                            "value": "star"
+                        },
+                        "lastUpdated": {
+                            "type": "string",
+                            "value": "06/2025"
+                        },
+                        "overview": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What is it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "richtext",
+                                        "value": "ADHD affects how the brain works; it can make it hard to focus and stop yourself from acting on urges."
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "It can make it tough to pay attention and stay organized."
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "It can also affect how you feel and how you get along with others."
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "ADHD is not caused by a person's choices or behavior; it's a condition that starts in childhood."
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "ADHD is common; many adults have it, so you're not alone."
+                                    }
+                                ]
+                            }
+                        },
+                        "causes": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What can cause it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Having someone in your family with ADHD"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Differences in how the brain looks or works"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Exposure to smoking, alcohol, or drugs before birth"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Being born too early (premature) or too small"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Early exposure to lead"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Growing up or living in a stressful home"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having other mental health conditions like anxiety or depression"
+                                    }
+                                ]
+                            },
+                            "note": {
+                                "type": "richtext",
+                                "value": "Many things can work together to cause ADHD. Having these things doesn't mean you'll get ADHD for sure."
+                            }
+                        },
+                        "signs": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What are common signs?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Getting distracted easily and forgetting things"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Losing things or struggling to keep track of tasks"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling restless or having trouble sitting still"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Interrupting others or making quick decisions"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Starting things but not finishing them"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having trouble planning your day or meeting deadlines"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling frustrated or upset often"
+                                    }
+                                ]
+                            }
+                        },
+                        "brain": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How does it affect the brain?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "In ADHD, these parts of the brain don't work well together. This can make it harder to focus, stay organized, control impulses, and manage emotions."
+                            },
+                            "image": {
+                                "type": "image",
+                                "value": {
+                                    "src": {
+                                        "type": "string",
+                                        "value": "assets/disorders/adhd-brain.png"
+                                    },
+                                    "alt": {
+                                        "type": "string",
+                                        "value": "Brain regions affected by ADHD"
+                                    }
+                                }
+                            },
+                            "regions": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Cerebellum"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps you move smoothly and manage time"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Basal ganglia"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Controls movement and helps you stick to routines"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Dorsolateral prefrontal cortex"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps you focus, plan, and control impulses"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Anterior cingulate cortex"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps you switch between tasks and manage emotions"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Striatum"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps you form routines and stay motivated"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "seekHelp": {
+                            "heading": {
+                                "type": "string",
+                                "value": "When should I seek help?"
+                            },
+                            "routine": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "If ADHD is making it hard to keep a job, stay safe, or manage your mood"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "If staying organized or focused is consistently difficult"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "If work or relationships are being affected because of ADHD symptoms"
+                                    }
+                                ]
+                            },
+                            "urgentHeading": {
+                                "type": "string",
+                                "value": "Get help right away if you:"
+                            },
+                            "urgent": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "If impulsive decisions are causing ongoing problems"
+                                    }
+                                ]
+                            }
+                        },
+                        "treatment": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How can it be treated?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "Your health professional can help you choose the best treatment or combinations of treatments for you. Sometimes, people need to try a few different things before they find what works best."
+                            },
+                            "types": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Talk therapies"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Medicines"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Exercise as part of treatment"
+                                    }
+                                ]
+                            }
+                        },
+                        "resources": {
+                            "heading": {
+                                "type": "string",
+                                "value": "Where can I get more help?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "Suicide & Crisis Lifeline"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "Call or text 988"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "tel:988"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "National Alliance on Mental Illness (NAMI)"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "nami.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://nami.org"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "CHADD"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "chadd.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://chadd.org"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "keyFacts": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What you need to know"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "richtext",
+                                        "value": "ADHD is a medical condition caused by differences in brain function, not laziness or lack of willpower."
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "Many adults were not diagnosed as children, but symptoms continue into adulthood."
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "Medicine, therapy, and healthy habits can help you focus and feel more in control."
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Many adults have ADHD, and support is available to help manage it."
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "id": {
+                            "type": "string",
+                            "value": "bipolar"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Bipolar Disorders"
+                        },
+                        "summary": {
+                            "type": "richtext",
+                            "value": "Stabilizing mood shifts with close monitoring, clear communication, and a plan that fits your routine."
+                        },
+                        "icon": {
+                            "type": "string",
+                            "value": "bipolar"
+                        },
+                        "lastUpdated": {
+                            "type": "string",
+                            "value": "05/2025"
+                        },
+                        "overview": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What is it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "A brain condition that causes severe mood changes"
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "People with bipolar disorder have very high ups (mania) and very low downs (depression)"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "These mood changes can last for days or weeks"
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "Bipolar disorder can make it hard to work, take care of yourself, or do daily tasks"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Health professionals can treat bipolar disorder with medicine and talk therapy"
+                                    }
+                                ]
+                            }
+                        },
+                        "causes": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What can cause it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "It can run in families (passed down from parents)"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Changes in the brain play a role"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Stressful or hard life events can trigger it"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "It may start after a big life change"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Most people get it between ages 6 and 30"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Other mental health problems may increase the chance of bipolar disorder"
+                                    }
+                                ]
+                            },
+                            "note": {
+                                "type": "richtext",
+                                "value": "Health professionals are still learning about what causes bipolar disorder. It's usually not just one thing, but a mix of different reasons."
+                            }
+                        },
+                        "signs": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What are common signs?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling super happy and full of energy (or very grouchy) for days (mania)"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling very sad and tired for long periods (depression)"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Not needing much sleep or sleeping too much"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Thinking and talking very fast"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Doing risky things without thinking first"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having severe mood swings that last for days or weeks"
+                                    }
+                                ]
+                            }
+                        },
+                        "brain": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How does it affect the brain?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "In bipolar disorder, some of these areas might work differently than usual. This can affect how a person feels, thinks, or acts."
+                            },
+                            "image": {
+                                "type": "image",
+                                "value": {
+                                    "src": {
+                                        "type": "string",
+                                        "value": "assets/disorders/bipolar-brain.png"
+                                    },
+                                    "alt": {
+                                        "type": "string",
+                                        "value": "Brain regions affected by bipolar disorder"
+                                    }
+                                }
+                            },
+                            "regions": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Prefrontal cortex"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps control your actions and emotions"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Thalamus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Passes messages in the brain"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Amygdala"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Handles fear and worry"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Hippocampus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps with memory"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Striatum"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps you move, feel good, and stay motivated"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Hypothalamus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Controls sleep, stress, and other body functions"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "seekHelp": {
+                            "heading": {
+                                "type": "string",
+                                "value": "When should I seek help?"
+                            },
+                            "routine": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "You have very high energy and can't sleep for days"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You feel very sad and don't want to do anything"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You have severe mood swings that make life hard"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You do risky things you wouldn't usually do"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You feel worried, angry, or scared for no reason"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You have trouble at work, school, or with family"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You feel like hurting yourself"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You hear or see things that aren't real"
+                                    }
+                                ]
+                            },
+                            "urgentHeading": {
+                                "type": "string",
+                                "value": "Get help right away if you:"
+                            },
+                            "urgent": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Your thoughts don't make sense"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You feel out of control or very confused"
+                                    }
+                                ]
+                            }
+                        },
+                        "treatment": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How can it be treated?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "Your treatment may change depending on your mood: high (mania), low (depression), or steady (stable). Health professionals use these treatments together to help people with bipolar disorder feel better and live well."
+                            },
+                            "types": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Medicine"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Talk therapy"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Family education"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Support groups"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Brain treatments"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Lifestyle changes"
+                                    }
+                                ]
+                            }
+                        },
+                        "resources": {
+                            "heading": {
+                                "type": "string",
+                                "value": "Where can I get more help?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "Suicide & Crisis Lifeline"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "Call or text 988"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "tel:988"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "National Alliance on Mental Illness (NAMI)"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "nami.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://nami.org"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "Depression and Bipolar Support Alliance (DBSA)"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "dbsalliance.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://www.dbsalliance.org"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "keyFacts": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What you need to know"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "richtext",
+                                        "value": "Bipolar disorder is a brain condition that causes severe mood changes. These changes can make daily life hard."
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "It is a lifelong condition, but medicine, therapy, and healthy habits can help you manage it."
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "You are not alone. Many people have bipolar disorder. Health professionals, family, and friends can help."
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "id": {
+                            "type": "string",
+                            "value": "depression"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Depression"
+                        },
+                        "summary": {
+                            "type": "richtext",
+                            "value": "Treatment for low mood, low energy, and loss of interest with a focus on helping you feel like yourself again."
+                        },
+                        "icon": {
+                            "type": "string",
+                            "value": "depression"
+                        },
+                        "lastUpdated": {
+                            "type": "string",
+                            "value": "05/2025"
+                        },
+                        "overview": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What is it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "A common mental health problem"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling very sad for a long time and not enjoying things you used to like"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Lasts for at least 2 weeks and makes it hard to do everyday activities"
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "It's more than just feeling down for a short time. It's a serious condition that affects how a person lives their life"
+                                    }
+                                ]
+                            }
+                        },
+                        "causes": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What can cause it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Sad or stressful things happening in your life"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having family members who've had depression"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Being someone who often feels sad or worries a lot"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having a big health problem that lasts a long time"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Using drugs or drinking too much alcohol"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Not having friends or family to help you"
+                                    }
+                                ]
+                            },
+                            "note": {
+                                "type": "richtext",
+                                "value": "Depression usually happens because of a mix of these things, not just one. Everyone's experience is different."
+                            }
+                        },
+                        "signs": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What are common signs?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling very sad most of the time"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Not liking things you used to enjoy"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Eating or sleeping more or less than usual"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling very tired all the time"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Finding it hard to think clearly"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling like you're not important"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Thinking about dying"
+                                    }
+                                ]
+                            }
+                        },
+                        "brain": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How does it affect the brain?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "In depression, some of these areas might work differently or look smaller than usual. This can affect how a person feels, thinks, or acts."
+                            },
+                            "image": {
+                                "type": "image",
+                                "value": {
+                                    "src": {
+                                        "type": "string",
+                                        "value": "assets/disorders/mdd-brain.png"
+                                    },
+                                    "alt": {
+                                        "type": "string",
+                                        "value": "Brain regions affected by depression"
+                                    }
+                                }
+                            },
+                            "regions": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Prefrontal cortex"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps control emotion"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Thalamus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Passes messages in the brain"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Amygdala"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Handles fear and worry"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Hippocampus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps with memory"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Striatum"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps you move, feel good, and stay motivated"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "seekHelp": {
+                            "heading": {
+                                "type": "string",
+                                "value": "When should I seek help?"
+                            },
+                            "routine": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "You feel very sad for more than 2 weeks"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You have trouble doing everyday things"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You don't feel better on your own"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You think about hurting yourself"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You feel like life isn't worth living"
+                                    }
+                                ]
+                            },
+                            "urgentHeading": {
+                                "type": "string",
+                                "value": "Get help right away if you:"
+                            },
+                            "urgent": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Stay away from friends and family"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Use drugs or alcohol to feel better"
+                                    }
+                                ]
+                            }
+                        },
+                        "treatment": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How can it be treated?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "Your health professional can help you choose the best treatment or combinations of treatments for you. Sometimes, people need to try a few different things before they find what works best."
+                            },
+                            "types": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Talk therapy"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Medicine"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Lifestyle changes"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Brain treatments"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Computer programs"
+                                    }
+                                ]
+                            }
+                        },
+                        "resources": {
+                            "heading": {
+                                "type": "string",
+                                "value": "Where can I get more help?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "Suicide & Crisis Lifeline"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "Call or text 988"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "tel:988"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "National Alliance on Mental Illness (NAMI)"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "nami.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://nami.org"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "Depression and Bipolar Support Alliance (DBSA)"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "dbsalliance.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://www.dbsalliance.org"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "keyFacts": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What you need to know"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Depression is a serious health problem"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Depression is not your fault"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Anyone can get depression"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Depression doesn't just go away on its own"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Health professionals can help treat depression"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "id": {
+                            "type": "string",
+                            "value": "ptsd"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "PTSD"
+                        },
+                        "summary": {
+                            "type": "richtext",
+                            "value": "Trauma-informed care for flashbacks, hypervigilance, and emotional distress after difficult life experiences."
+                        },
+                        "icon": {
+                            "type": "string",
+                            "value": "ptsd"
+                        },
+                        "lastUpdated": {
+                            "type": "string",
+                            "value": "05/2025"
+                        },
+                        "overview": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What is it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "richtext",
+                                        "value": "PTSD means past trauma still affects you. It can happen after scary or dangerous events, like accidents, war, or abuse."
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "It can make you feel upset or afraid even when you're safe. Loud noises, certain places, or memories can bring back bad feelings."
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "You may have trouble sleeping or feel on edge. Nightmares, bad dreams, or feeling jumpy are common."
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "PTSD can cause strong emotions. You might feel sad, angry, or alone, and sometimes it's hard to enjoy things you used to like."
+                                    }
+                                ]
+                            }
+                        },
+                        "causes": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What can cause it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Going through or seeing something very scary or dangerous (trauma)"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Seeing someone else get hurt or killed (trauma)"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having a history of trauma or stress"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Not having support after a trauma"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having anxiety, depression, or other mental health issues"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Using drugs or alcohol to cope"
+                                    }
+                                ]
+                            },
+                            "note": {
+                                "type": "richtext",
+                                "value": "Not everyone who goes through a trauma gets PTSD. Our brains and bodies deal with stress in different ways. Having support and good ways to cope can help protect you from PTSD."
+                            }
+                        },
+                        "signs": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What are common signs?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "You may keep thinking about the scary event or have bad dreams"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling scared or nervous all the time"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Avoiding people or places that remind you of the event"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling angry, sad, or numb"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Trouble sleeping or focusing"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You may blame yourself for what happened, even if it wasn't your fault"
+                                    }
+                                ]
+                            }
+                        },
+                        "brain": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How does it affect the brain?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "In PTSD, some of these areas might work differently or look smaller than usual. This can affect how a person feels, thinks, or acts."
+                            },
+                            "image": {
+                                "type": "image",
+                                "value": {
+                                    "src": {
+                                        "type": "string",
+                                        "value": "assets/disorders/ptsd-brain.png"
+                                    },
+                                    "alt": {
+                                        "type": "string",
+                                        "value": "Brain regions affected by PTSD"
+                                    }
+                                }
+                            },
+                            "regions": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Prefrontal cortex"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps you make choices and control your feelings"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Thalamus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Sorts information from your senses"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Amygdala"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Spots danger and creates feelings"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Hippocampus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Stores memories and links them to feelings"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Brainstem"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Manages breathing, heartbeat, and sleep"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "seekHelp": {
+                            "heading": {
+                                "type": "string",
+                                "value": "When should I seek help?"
+                            },
+                            "routine": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "You have nightmares or scary thoughts about a past trauma"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You feel more angry, scared, or sad than usual"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You are avoiding things that remind you of a past trauma"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You have trouble sleeping or focusing"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You feel alone or don't want to be with others"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Have thoughts of hurting yourself or others"
+                                    }
+                                ]
+                            },
+                            "urgentHeading": {
+                                "type": "string",
+                                "value": "Get help right away if you:"
+                            },
+                            "urgent": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Feel so upset you can't do daily tasks"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Use drugs or alcohol to cope with your feelings"
+                                    }
+                                ]
+                            }
+                        },
+                        "treatment": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How can it be treated?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "Your health professional can help you choose the best treatment or combinations of treatments. Sometimes, people need to try different treatments before they find what works best."
+                            },
+                            "types": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Trauma-focused talk therapies"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Medicines"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Mindfulness or relaxation practice"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Support groups"
+                                    }
+                                ]
+                            }
+                        },
+                        "resources": {
+                            "heading": {
+                                "type": "string",
+                                "value": "Where can I get more help?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "Suicide & Crisis Lifeline"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "Call or text 988"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "tel:988"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "National Alliance on Mental Illness (NAMI)"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "nami.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://nami.org"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "National Center for PTSD"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "ptsd.va.gov"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://www.ptsd.va.gov"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "PTSD Alliance"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "ptsdalliance.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://www.ptsdalliance.org"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "keyFacts": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What you need to know"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "PTSD can happen after very scary events or trauma"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "It causes nightmares and scary feelings"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You might avoid things that remind you of what happened"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "It's not your fault"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Health professionals can help you feel better"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "id": {
+                            "type": "string",
+                            "value": "schizophrenia"
+                        },
+                        "title": {
+                            "type": "string",
+                            "value": "Schizophrenia"
+                        },
+                        "summary": {
+                            "type": "richtext",
+                            "value": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability."
+                        },
+                        "icon": {
+                            "type": "string",
+                            "value": "star"
+                        },
+                        "lastUpdated": {
+                            "type": "string",
+                            "value": "05/2025"
+                        },
+                        "overview": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What is it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "A serious brain problem that changes how people think and act"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "People with schizophrenia might see or hear things that aren't really there"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "They might think things are true even when others tell them it's not real"
+                                    },
+                                    {
+                                        "type": "richtext",
+                                        "value": "It can make it hard for people to do everyday things like work or take care of themselves"
+                                    }
+                                ]
+                            }
+                        },
+                        "causes": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What can cause it?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "richtext",
+                                        "value": "It often runs in families, so you might get it if your parents or siblings have it"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Problems during pregnancy or birth, like being born too early or at a low weight"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Very stressful life events, like losing a loved one or being abused as a child"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Using drugs like marijuana, especially when you're young"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Living in a city"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having a hard time in school or with making friends"
+                                    }
+                                ]
+                            },
+                            "note": {
+                                "type": "richtext",
+                                "value": "Remember, having these things doesn't mean you'll definitely get schizophrenia. Health professionals are still learning about what causes it."
+                            }
+                        },
+                        "signs": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What are common signs?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Seeing or hearing things that aren't really there, like voices or people"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Believing things that aren't true, even when others say they're not real"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Having trouble thinking clearly or speaking in a way that makes sense"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Feeling less interested in doing things and showing less emotion"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Moving in unusual ways, like being very still or moving a lot for no reason"
+                                    }
+                                ]
+                            }
+                        },
+                        "brain": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How does it affect the brain?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "In schizophrenia, some of these areas might work or look smaller than usual. This can affect how a person feels, thinks, or acts."
+                            },
+                            "image": {
+                                "type": "image",
+                                "value": {
+                                    "src": {
+                                        "type": "string",
+                                        "value": "assets/disorders/schizophrenia-brain.png"
+                                    },
+                                    "alt": {
+                                        "type": "string",
+                                        "value": "Brain regions affected by schizophrenia"
+                                    }
+                                }
+                            },
+                            "regions": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Prefrontal cortex"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Controls how we think and behave"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Basal ganglia"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Helps control how we move and think"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Thalamus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Passes information in the brain"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Amygdala"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Handles emotion and fear"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "name": {
+                                                "type": "string",
+                                                "value": "Hippocampus"
+                                            },
+                                            "description": {
+                                                "type": "richtext",
+                                                "value": "Controls memory and learning"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "seekHelp": {
+                            "heading": {
+                                "type": "string",
+                                "value": "When should I seek help?"
+                            },
+                            "routine": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "You think about hurting yourself or others"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You act very strange all of a sudden"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You can't eat or clean yourself"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You feel strange for more than 2 weeks"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You have trouble doing normal things"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You see or hear things others don't"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You believe things that aren't true"
+                                    }
+                                ]
+                            },
+                            "urgentHeading": {
+                                "type": "string",
+                                "value": "Get help right away if you:"
+                            },
+                            "urgent": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "You act very different suddenly"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You stay away from friends and family"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "You can't think or talk clearly"
+                                    }
+                                ]
+                            }
+                        },
+                        "treatment": {
+                            "heading": {
+                                "type": "string",
+                                "value": "How can it be treated?"
+                            },
+                            "description": {
+                                "type": "richtext",
+                                "value": "Health professionals often use these treatments together to help people with schizophrenia feel better and live their lives."
+                            },
+                            "types": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Medicine"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Talk therapy"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Family support"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Support groups"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Brain treatments"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Learning new skills"
+                                    }
+                                ]
+                            }
+                        },
+                        "resources": {
+                            "heading": {
+                                "type": "string",
+                                "value": "Where can I get more help?"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "Suicide & Crisis Lifeline"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "Call or text 988"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "tel:988"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "National Alliance on Mental Illness (NAMI)"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "nami.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://nami.org"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "object",
+                                        "value": {
+                                            "label": {
+                                                "type": "string",
+                                                "value": "Schizophrenia & Psychosis Action Alliance"
+                                            },
+                                            "detail": {
+                                                "type": "richtext",
+                                                "value": "sczaction.org"
+                                            },
+                                            "href": {
+                                                "type": "string",
+                                                "value": "https://sczaction.org"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "keyFacts": {
+                            "heading": {
+                                "type": "string",
+                                "value": "What you need to know"
+                            },
+                            "items": {
+                                "type": "array",
+                                "value": [
+                                    {
+                                        "type": "string",
+                                        "value": "Schizophrenia is a serious health problem"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Schizophrenia usually starts when people are young adults"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "Health professionals can help treat it with medicine and other treatments"
+                                    },
+                                    {
+                                        "type": "string",
+                                        "value": "With treatment, many people with schizophrenia can live good lives"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        }
     },
     "about": {
         "image": {
-            "src": "assets/about-main.png",
-            "alt": "Rohzan G. Altre, PMHNP",
-            "width": 767,
-            "height": 1024
-        },
-        "kicker": "About the provider",
-        "heading": "Rohzan G. Altre, PMHNP",
-        "paragraphs": [
-            "Rohzan is a Board-Certified Psychiatric Nurse Practitioner specializing in ages across the life span. She is licensed to practice in the state of California and Nevada. She specializes in ADHD, autism related behavioral problems, Anxiety Disorder, Depression, Bipolar Disorder, and PTSD.",
-            "Rohzan utilizes her extensive experience as a psychiatric nurse to provide individualized care to every patient. She understands that mental health care requires careful examination of all aspects in every patient's life to support healing and stability."
-        ],
-        "highlights": [
-            "Certified Company",
-            "Satisfied Guaranteed",
-            "Happy Clients",
-            "Excellent Employees"
-        ],
-        "cta": {
-            "label": "Learn More About Rohzan",
-            "href": "about.html"
-        }
-    },
-    "payment": {
-        "kicker": "Insurance & payment",
-        "heading": "We accept most major insurance plans",
-        "insurers": [
-            {
-                "name": "Optum",
-                "src": "assets/insurance_optum.jpg"
-            },
-            {
-                "name": "Anthem",
-                "src": "assets/insurance_anthem.png"
-            },
-            {
-                "name": "Medicare",
-                "src": "assets/insurance_medicare.png"
-            },
-            {
-                "name": "Aetna",
-                "src": "assets/insurance_aetna.jpg"
-            },
-            {
-                "name": "Magellan Health",
-                "src": "assets/insurance_magellan.png"
-            },
-            {
-                "name": "Cigna",
-                "src": "assets/insurance_cigna.jpg"
-            }
-        ],
-        "billPay": {
-            "label": "Bill Pay",
-            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
-        }
-    },
-    "faq": {
-        "heading": "Frequently asked questions",
-        "items": [
-            {
-                "question": "Do you accept insurance?",
-                "answer": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment.",
-                "open": true
-            },
-            {
-                "question": "What are your fees?",
-                "answer": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
-            },
-            {
-                "question": "What forms of payment do you accept?",
-                "answer": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
-            },
-            {
-                "question": "Do you offer virtual appointments?",
-                "answer": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
-            }
-        ]
-    },
-    "ctaPanel": {
-        "heading": "Ready to take the next step?",
-        "description": "We're here to support you on your path to better mental health.",
-        "button": {
-            "label": "Request an Appointment",
-            "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
-        },
-        "features": [
-            "Virtual Consultations Available",
-            "Confidential & Compassionate Care",
-            "Serving California & Nevada"
-        ]
-    },
-    "footer": {
-        "description": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better.",
-        "locations": {
-            "address1": {
-                "title": "Address 1",
-                "addresses": [
-                    "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367",
-                    "1302 Madera Rd<br>Simi Valley, CA 93065"
-                ]
-            },
-            "address2": {
-                "title": "Address 2",
-                "addresses": [
-                    "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
-                ],
-                "email": {
-                    "label": "elevatepatientcare@gmail.com",
-                    "href": "mailto:elevatepatientcare@gmail.com"
+            "type": "image",
+            "value": {
+                "src": {
+                    "type": "string",
+                    "value": "assets/about-main.png"
+                },
+                "alt": {
+                    "type": "string",
+                    "value": "Rohzan G. Altre, PMHNP"
+                },
+                "width": {
+                    "type": "number",
+                    "value": 767
+                },
+                "height": {
+                    "type": "number",
+                    "value": 1024
                 }
             }
         },
-        "quickLinks": [
-            {
-                "label": "Home",
-                "href": "#home"
-            },
-            {
-                "label": "About Us",
-                "href": "about.html"
-            },
-            {
-                "label": "Services",
-                "href": "services.html"
-            },
-            {
-                "label": "New Patients",
-                "href": "service-detail.html"
-            },
-            {
-                "label": "Blog",
-                "href": "blog.html"
-            },
-            {
-                "label": "Contact",
-                "href": "contact.html"
-            },
-            {
-                "label": "Payment Information",
-                "href": "payment.html"
+        "kicker": {
+            "type": "string",
+            "value": "About the provider"
+        },
+        "heading": {
+            "type": "string",
+            "value": "Rohzan G. Altre, PMHNP"
+        },
+        "paragraphs": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "richtext",
+                    "value": "Rohzan is a Board-Certified Psychiatric Nurse Practitioner specializing in ages across the life span. She is licensed to practice in the state of California and Nevada. She specializes in ADHD, autism related behavioral problems, Anxiety Disorder, Depression, Bipolar Disorder, and PTSD."
+                },
+                {
+                    "type": "richtext",
+                    "value": "Rohzan utilizes her extensive experience as a psychiatric nurse to provide individualized care to every patient. She understands that mental health care requires careful examination of all aspects in every patient's life to support healing and stability."
+                }
+            ]
+        },
+        "highlights": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "string",
+                    "value": "Certified Company"
+                },
+                {
+                    "type": "string",
+                    "value": "Satisfied Guaranteed"
+                },
+                {
+                    "type": "string",
+                    "value": "Happy Clients"
+                },
+                {
+                    "type": "string",
+                    "value": "Excellent Employees"
+                }
+            ]
+        },
+        "cta": {
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "Learn More About Rohzan"
+                },
+                "href": {
+                    "type": "string",
+                    "value": "about.html"
+                }
             }
-        ]
+        }
+    },
+    "payment": {
+        "kicker": {
+            "type": "string",
+            "value": "Insurance & payment"
+        },
+        "heading": {
+            "type": "string",
+            "value": "We accept most major insurance plans"
+        },
+        "insurers": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Optum"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_optum.jpg"
+                        }
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Anthem"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_anthem.png"
+                        }
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Medicare"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_medicare.png"
+                        }
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Aetna"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_aetna.jpg"
+                        }
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Magellan Health"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_magellan.png"
+                        }
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "name": {
+                            "type": "string",
+                            "value": "Cigna"
+                        },
+                        "src": {
+                            "type": "string",
+                            "value": "assets/insurance_cigna.jpg"
+                        }
+                    }
+                }
+            ]
+        },
+        "billPay": {
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "Bill Pay"
+                },
+                "href": {
+                    "type": "string",
+                    "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+                }
+            }
+        }
+    },
+    "faq": {
+        "heading": {
+            "type": "string",
+            "value": "Frequently asked questions"
+        },
+        "items": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "question": {
+                            "type": "string",
+                            "value": "Do you accept insurance?"
+                        },
+                        "answer": {
+                            "type": "richtext",
+                            "value": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment."
+                        },
+                        "open": {
+                            "type": "boolean",
+                            "value": true
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "question": {
+                            "type": "string",
+                            "value": "What are your fees?"
+                        },
+                        "answer": {
+                            "type": "richtext",
+                            "value": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "question": {
+                            "type": "string",
+                            "value": "What forms of payment do you accept?"
+                        },
+                        "answer": {
+                            "type": "richtext",
+                            "value": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "question": {
+                            "type": "string",
+                            "value": "Do you offer virtual appointments?"
+                        },
+                        "answer": {
+                            "type": "richtext",
+                            "value": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "ctaPanel": {
+        "heading": {
+            "type": "string",
+            "value": "Ready to take the next step?"
+        },
+        "description": {
+            "type": "richtext",
+            "value": "We're here to support you on your path to better mental health."
+        },
+        "button": {
+            "type": "link",
+            "value": {
+                "label": {
+                    "type": "string",
+                    "value": "Request an Appointment"
+                },
+                "href": {
+                    "type": "string",
+                    "value": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
+                }
+            }
+        },
+        "features": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "string",
+                    "value": "Virtual Consultations Available"
+                },
+                {
+                    "type": "string",
+                    "value": "Confidential & Compassionate Care"
+                },
+                {
+                    "type": "string",
+                    "value": "Serving California & Nevada"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "description": {
+            "type": "richtext",
+            "value": "Providing individualized psychiatric care and brief psychotherapy designed to help you feel better and live better."
+        },
+        "locations": {
+            "address1": {
+                "title": {
+                    "type": "string",
+                    "value": "Address 1"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "6200 Canoga Ave Ste 210<br>Woodland Hills, CA 91367"
+                        },
+                        {
+                            "type": "richtext",
+                            "value": "1302 Madera Rd<br>Simi Valley, CA 93065"
+                        }
+                    ]
+                }
+            },
+            "address2": {
+                "title": {
+                    "type": "string",
+                    "value": "Address 2"
+                },
+                "addresses": {
+                    "type": "array",
+                    "value": [
+                        {
+                            "type": "richtext",
+                            "value": "871 Coronado Parkway Ste 200<br>Henderson, NV 89052"
+                        }
+                    ]
+                },
+                "email": {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "elevatepatientcare@gmail.com"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "mailto:elevatepatientcare@gmail.com"
+                        }
+                    }
+                }
+            }
+        },
+        "quickLinks": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Home"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "#home"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "About Us"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "about.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Services"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "services.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "New Patients"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "service-detail.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Blog"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "blog.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Contact"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "contact.html"
+                        }
+                    }
+                },
+                {
+                    "type": "link",
+                    "value": {
+                        "label": {
+                            "type": "string",
+                            "value": "Payment Information"
+                        },
+                        "href": {
+                            "type": "string",
+                            "value": "payment.html"
+                        }
+                    }
+                }
+            ]
+        }
     }
 }
