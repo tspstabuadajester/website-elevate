@@ -46,24 +46,7 @@
     "pageHero": {
         "heading": "About Us",
         "intro": "Elevate is a psychiatric practice focused on real support, not rushed appointments. We offer individualized care and brief psychotherapy for patients in California and Nevada who want to feel better and stay steady in their daily lives.",
-        "gallery": [
-            {
-                "src": "assets/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation-lutguyc3.jpg",
-                "alt": "Family connecting outdoors"
-            },
-            {
-                "src": "assets/about-main.png",
-                "alt": "Rohzan G. Altre, PMHNP"
-            },
-            {
-                "src": "assets/portrait-happy-asian-woman-smiling-posing-confident-cross-arms-chest-standing-against-studio-background-sqim5icd.jpg",
-                "alt": "Compassionate mental health support"
-            },
-            {
-                "src": "assets/portrait-laughing-young-man-jqhyg71p.jpg",
-                "alt": "Wellness and connection"
-            }
-        ]
+        "gallery": []
     },
     "mission": {
         "heading": "Your care should feel clear, respectful, and truly personal.",

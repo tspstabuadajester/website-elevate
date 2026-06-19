@@ -2,7 +2,7 @@
     "seo": {
         "title": "Elevate Mental Wellness | Psychiatric Care",
         "description": "Compassionate psychiatric care serving California and Nevada.",
-        "canonicalUrl": "https://elevate-staging.pages.dev/",
+        "canonicalUrl": "https://elevatemhw.com/",
         "robots": "index,follow",
         "ogTitle": "Elevate Mental Wellness",
         "ogDescription": "Compassionate psychiatric care and brief psychotherapy support.",
@@ -46,7 +46,7 @@
     "hero": {
         "badge": "Psychiatric care serving California and Nevada",
         "headline": "Elevate your mental wellness with compassionate psychiatric care",
-        "description": "We provide individualized psychiatric care and brief psychotherapy designed to help you feel better and live better. Virtual consultation is available for your convenience.",
+        "description": "We offer personalized psychiatric care and short-term psychotherapy to support your mental well-being and help improve your daily life. For your convenience, virtual consultations are also available.",
         "primaryCta": {
             "label": "Request an Appointment",
             "href": "https://docs.google.com/forms/d/e/1FAIpQLSel4fmi3rG0DxcREuANkbTyxEb1Sk0wKD5IzppP0j7m1oOMmQ/viewform"
@@ -57,7 +57,7 @@
         },
         "video": {
             "src": "assets/hero-vid.mp4",
-            "poster": "assets/hero.png",
+            "poster": "assets/logo-apnt1sbm.png",
             "alt": "Calming moments of connection and wellness"
         }
     },
@@ -75,50 +75,32 @@
             {
                 "id": "adhd",
                 "title": "ADHD",
-                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "detail": "ADHD is a condition that affects how the brain works, especially in areas related to focus, self-control, organization, emotions, and decision-making. It usually starts in childhood and is not caused by a person’s choices or behavior. People with ADHD may find it hard to pay attention, stay organized, finish tasks, control impulses, or manage frustration.\n\nADHD can be influenced by different factors such as family history, brain development, premature birth, exposure to smoking, alcohol, drugs, or lead, stressful environments, and other mental health conditions like anxiety or depression. In ADHD, parts of the brain that help with routines, movement, timing, attention, and impulse control may not work smoothly together, making daily tasks and relationships more challenging.",
                 "icon": "star"
-            },
-            {
-                "id": "panic",
-                "title": "Panic Disorder",
-                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "icon": "panic"
-            },
-            {
-                "id": "anxiety",
-                "title": "Anxiety Disorders",
-                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "icon": "anxiety"
             },
             {
                 "id": "bipolar",
                 "title": "Bipolar Disorders",
-                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "detail": "Bipolar disorder is a brain condition that causes strong mood changes, including very high “ups” called mania and very low “downs” called depression. These mood changes can last for days or weeks and may affect a person’s energy, sleep, thinking, behavior, work, self-care, and daily tasks. It can be treated by health professionals through medicine and talk therapy.\n\nBipolar disorder is usually caused by a mix of different factors, such as family history, changes in the brain, stressful life events, major life changes, and other mental health conditions. It may affect brain areas like the thalamus, amygdala, and hippocampus, which help with messages in the brain, emotions, fear, worry, and memory. When these areas work differently, a person may experience severe mood swings, fast thoughts, risky decisions, sleep changes, and long periods of sadness or high energy.",
                 "icon": "bipolar"
             },
             {
                 "id": "depression",
                 "title": "Depression",
-                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "detail": "Major Depressive Disorder, or depression, is a common but serious mental health condition where a person feels very sad for a long time and may stop enjoying things they used to like. It lasts for at least two weeks and can make everyday activities harder, such as working, studying, sleeping, eating, thinking clearly, or spending time with others. Depression is more than just feeling down for a short time, and it is not a person’s fault.\n\nDepression can happen because of a mix of factors, such as stressful life events, family history, long-term health problems, alcohol or drug use, lack of support, or often feeling sad or worried. It can affect brain areas that control emotions, memory, motivation, fear, and decision-making, such as the amygdala, hippocampus, prefrontal cortex, thalamus, and striatum. Treatment may include talk therapy, medicine, lifestyle changes, brain treatments, or computer-based programs, and a person should seek help if sadness lasts more than two weeks, daily life becomes difficult, or they have thoughts of hurting themselves.",
                 "icon": "depression"
-            },
-            {
-                "id": "ocd",
-                "title": "OCD",
-                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "icon": "ocd"
             },
             {
                 "id": "ptsd",
                 "title": "PTSD",
-                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "detail": "Posttraumatic Stress Disorder, or PTSD, is a mental health condition that can happen after a person experiences or witnesses a scary, dangerous, or traumatic event such as an accident, abuse, violence, or war. PTSD can make a person feel afraid, upset, or on edge even when they are already safe. Common signs include nightmares, scary memories, trouble sleeping, feeling jumpy, avoiding people or places that remind them of the trauma, and feeling sad, angry, numb, or alone.\n\nPTSD can be influenced by trauma, past stress, lack of support, other mental health conditions, or using drugs or alcohol to cope. It can affect brain areas that handle danger, memory, emotions, decision-making, breathing, heartbeat, and sleep, such as the amygdala, hippocampus, thalamus, brainstem, and prefrontal cortex. Treatment may include trauma-focused talk therapy, medicine, relaxation practices, support groups, or helpful medical tools, and a person should seek help right away if they feel unable to do daily tasks or have thoughts of hurting themselves or others.",
                 "icon": "ptsd"
             },
             {
-                "id": "psychosis",
-                "title": "Psychosis",
-                "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "icon": "psychosis"
+                "id": "item-mqjnnxpo-1",
+                "title": "Schizophrenia",
+                "detail": "Schizophrenia is a serious brain condition that affects how a person thinks, feels, behaves, and understands reality. A person with schizophrenia may hear or see things that are not really there, believe things that are not true, have trouble thinking clearly, or speak in a way that is hard to understand. It can also make daily activities difficult, such as working, studying, taking care of oneself, or connecting with other people.\n\nSchizophrenia can be influenced by different factors, such as family history, problems during pregnancy or birth, stressful life events, drug use at a young age, living in a city, or having difficulties in school and relationships. It can affect brain areas involved in thinking, emotions, memory, learning, movement, and behavior, such as the prefrontal cortex, thalamus, amygdala, hippocampus, and basal ganglia. With proper treatment, including medicine, talk therapy, family support, support groups, brain treatments, and life skills training, many people with schizophrenia can manage their symptoms and live meaningful lives.",
+                "icon": "star"
             }
         ]
     },

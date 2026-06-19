@@ -2,7 +2,7 @@
     "seo": {
         "title": "Services | Elevate Mental Health and Wellness",
         "description": "Psychiatric care for ADHD, anxiety, depression, bipolar disorder, PTSD, OCD, panic disorder, and psychosis in California and Nevada.",
-        "canonicalUrl": "https://elevate-staging.pages.dev/services.html",
+        "canonicalUrl": "https://elevatemhw.com/services.html",
         "robots": "index,follow",
         "ogTitle": "Mental Health Services | Elevate",
         "ogDescription": "Explore the psychiatric services offered at Elevate Mental Health and Wellness.",
@@ -120,6 +120,12 @@
                 "title": "Psychosis",
                 "description": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability.",
                 "icon": "psychosis"
+            },
+            {
+                "id": "item-mqjnv9h9-1",
+                "title": "Schizophrenia",
+                "description": "Schizophrenia should be handled with patience, respect, and professional care. The person should not be judged, blamed, or forced to “snap out of it.” Support may include medication, talk therapy, family education, support groups, life skills training, and regular follow-up with mental health professionals.",
+                "icon": "star"
             }
         ]
     },
