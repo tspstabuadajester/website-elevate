@@ -2032,6 +2032,163 @@ body.assets-ready .contact-hero .page-hero-animate--2 { animation-delay: 0.18s; 
   color: #64748b;
 }
 
+/* New Patients page — compressed layout */
+.new-patient-page .new-patient-section {
+  padding: 2.5rem 0;
+}
+@media (min-width: 1024px) {
+  .new-patient-page .new-patient-section {
+    padding: 3rem 0;
+  }
+}
+.new-patient-page .new-patient-section--hero {
+  padding: 0;
+}
+.new-patient-page .new-patient-section--alt {
+  background: rgba(248, 245, 252, 0.65);
+}
+.new-patient-page .new-patient-section__title {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #33204f;
+}
+@media (min-width: 640px) {
+  .new-patient-page .new-patient-section__title {
+    font-size: 1.875rem;
+  }
+}
+.new-patient-page .new-patient-section__intro {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+.new-patient-page .new-patient-section__kicker {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #33204f;
+}
+
+.new-patient-page .new-patient-steps {
+  display: grid;
+  gap: 0.875rem;
+}
+.new-patient-page .new-patient-step {
+  padding: 1.125rem 1.25rem;
+  border-radius: 1rem;
+}
+@media (min-width: 640px) {
+  .new-patient-page .new-patient-step {
+    padding: 1.25rem 1.375rem;
+  }
+}
+.new-patient-page .new-patient-step__number {
+  width: 2.125rem;
+  height: 2.125rem;
+  font-size: 0.9375rem;
+}
+.new-patient-page .new-patient-step__title {
+  font-size: 1rem;
+}
+.new-patient-page .new-patient-step__lead,
+.new-patient-page .new-patient-step__body p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.new-patient-page .new-patient-privacy {
+  padding: 0.875rem 1rem;
+  border-radius: 1rem;
+  background: #faf8fd;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+
+.new-patient-page .new-patient-forms-grid {
+  display: grid;
+  gap: 0.875rem;
+}
+@media (min-width: 768px) {
+  .new-patient-page .new-patient-forms-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .new-patient-page .new-patient-block--wide {
+    grid-column: 1 / -1;
+  }
+}
+.new-patient-page .new-patient-block {
+  padding: 1.125rem 1.25rem;
+  border-radius: 1rem;
+}
+.new-patient-page .new-patient-block__title {
+  font-size: 1rem;
+}
+.new-patient-page .new-patient-block__body {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.new-patient-page .new-patient-forms-list__item {
+  padding: 0.625rem 0;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+.new-patient-page .new-patient-policy-items {
+  display: grid;
+  gap: 0.625rem;
+}
+@media (min-width: 640px) {
+  .new-patient-page .new-patient-policy-items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.new-patient-page .new-patient-policy-item {
+  padding: 0.625rem 0.75rem;
+}
+
+.new-patient-page .new-patient-policies {
+  display: grid;
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .new-patient-page .new-patient-policies {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.new-patient-page .new-patient-policy-card {
+  padding: 1.125rem 1.25rem;
+  border-radius: 1rem;
+}
+.new-patient-page .new-patient-policy-card__title {
+  font-size: 1rem;
+}
+.new-patient-page .new-patient-policy-card__text {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.new-patient-page .new-patient-faq {
+  display: grid;
+  gap: 0.5rem;
+}
+.new-patient-page .new-patient-faq details {
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+}
+.new-patient-page .new-patient-faq summary {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+.new-patient-page .new-patient-faq details > div {
+  padding: 0 1rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
 .blog-grid {
   display: grid;
   gap: 1.5rem;

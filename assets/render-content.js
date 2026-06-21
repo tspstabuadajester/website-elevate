@@ -1540,6 +1540,7 @@
     renderWhatToExpect(data.whatToExpect);
     renderPatientForms(data.patientForms);
     renderPracticePolicies(data.practicePolicies);
+    if (data.faq) renderFaq(data.faq);
     renderFooter(data.footer, data.site);
 
     document.dispatchEvent(new CustomEvent('elevate:content-rendered'));

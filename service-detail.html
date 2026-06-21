@@ -97,10 +97,10 @@
     </div>
   </header>
 
-  <main class="pt-[72px]">
+  <main class="new-patient-page pt-[72px]">
 
     <!-- HERO -->
-    <section class="contact-hero">
+    <section class="contact-hero new-patient-section new-patient-section--hero">
       <div class="hero-rings hero-rings--tr" aria-hidden="true">
         <span class="hero-ring hero-ring--1"></span>
         <span class="hero-ring hero-ring--2"></span>
@@ -112,33 +112,33 @@
         <span class="hero-ring hero-ring--3"></span>
       </div>
 
-      <div class="contact-hero__content mx-auto max-w-3xl px-5 py-14 text-center lg:px-8 lg:py-20">
-        <h1 id="page-hero-heading" class="page-hero-animate page-hero-animate--1 serif text-4xl font-bold text-elevate-900 sm:text-5xl lg:text-6xl"></h1>
-        <div id="page-hero-intro" class="page-hero-animate page-hero-animate--2 mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base"></div>
+      <div class="contact-hero__content mx-auto max-w-3xl px-5 py-10 text-center lg:px-8 lg:py-14">
+        <h1 id="page-hero-heading" class="page-hero-animate page-hero-animate--1 serif text-3xl font-bold text-elevate-900 sm:text-4xl lg:text-5xl"></h1>
+        <div id="page-hero-intro" class="page-hero-animate page-hero-animate--2 mx-auto mt-4 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base"></div>
       </div>
     </section>
 
     <!-- WHAT TO EXPECT -->
-    <section class="bg-white py-16 lg:py-24">
+    <section class="new-patient-section bg-white">
       <div class="mx-auto max-w-4xl px-5 lg:px-8">
         <div class="reveal mx-auto max-w-3xl text-center">
-          <h2 id="expect-heading" class="serif text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
-          <div id="expect-intro" class="mx-auto mt-4 text-sm leading-7 text-slate-600 sm:text-base"></div>
+          <h2 id="expect-heading" class="new-patient-section__title serif"></h2>
+          <div id="expect-intro" class="new-patient-section__intro mx-auto"></div>
         </div>
-        <div id="expect-steps" class="reveal-stagger mt-12 space-y-6"></div>
-        <div id="expect-privacy" class="reveal mt-8 rounded-2xl bg-elevate-50 p-5 text-sm leading-7 text-slate-600 sm:text-base"></div>
+        <div id="expect-steps" class="reveal-stagger new-patient-steps mt-8"></div>
+        <div id="expect-privacy" class="reveal new-patient-privacy mt-6"></div>
       </div>
     </section>
 
     <!-- PATIENT FORMS -->
-    <section class="bg-elevate-50/60 py-16 lg:py-24">
+    <section class="new-patient-section new-patient-section--alt">
       <div class="mx-auto max-w-4xl px-5 lg:px-8">
         <div class="reveal mx-auto max-w-3xl text-center">
-          <h2 id="forms-heading" class="serif text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
-          <div id="forms-intro" class="mx-auto mt-4 text-sm leading-7 text-slate-600 sm:text-base"></div>
+          <h2 id="forms-heading" class="new-patient-section__title serif"></h2>
+          <div id="forms-intro" class="new-patient-section__intro mx-auto"></div>
         </div>
 
-        <div class="reveal mt-10 space-y-8">
+        <div class="reveal new-patient-forms-grid mt-8">
           <article class="new-patient-block">
             <h3 id="forms-ehr-heading" class="new-patient-block__title"></h3>
             <div id="forms-ehr-body" class="new-patient-block__body"></div>
@@ -149,7 +149,7 @@
             <div id="forms-getting-text" class="new-patient-block__body"></div>
           </article>
 
-          <article class="new-patient-block">
+          <article class="new-patient-block new-patient-block--wide">
             <h3 id="forms-list-heading" class="new-patient-block__title"></h3>
             <ul id="forms-list" class="new-patient-forms-list"></ul>
           </article>
@@ -157,29 +157,39 @@
           <article class="new-patient-block">
             <h3 id="forms-coordination-heading" class="new-patient-block__title"></h3>
             <div id="forms-coordination-intro" class="new-patient-block__body"></div>
-            <a id="forms-roi-link" href="#" class="new-patient-download mt-4 inline-flex items-center gap-2 rounded-full bg-elevate-600 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-elevate-700">
+            <a id="forms-roi-link" href="#" class="new-patient-download mt-3 inline-flex items-center gap-2 rounded-full bg-elevate-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-elevate-700">
               <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm4 18H6V4h7v5h5v11Z"/></svg>
               <span id="forms-roi-label"></span>
             </a>
           </article>
 
-          <article class="new-patient-block new-patient-block--callout">
+          <article class="new-patient-block new-patient-block--callout new-patient-block--wide">
             <h3 id="forms-policy-heading" class="new-patient-block__title"></h3>
             <div id="forms-policy-intro" class="new-patient-block__body"></div>
-            <div id="forms-policy-items" class="mt-5 space-y-4"></div>
+            <div id="forms-policy-items" class="new-patient-policy-items mt-4"></div>
           </article>
         </div>
       </div>
     </section>
 
     <!-- PRACTICE POLICIES -->
-    <section class="bg-white py-16 lg:py-24">
+    <section class="new-patient-section bg-white">
       <div class="mx-auto max-w-4xl px-5 lg:px-8">
         <div class="reveal mx-auto max-w-3xl text-center">
-          <h2 id="policies-heading" class="serif text-3xl font-bold text-elevate-900 sm:text-4xl"></h2>
-          <div id="policies-intro" class="mx-auto mt-4 text-sm leading-7 text-slate-600 sm:text-base"></div>
+          <h2 id="policies-heading" class="new-patient-section__title serif"></h2>
+          <div id="policies-intro" class="new-patient-section__intro mx-auto"></div>
         </div>
-        <div id="policies-list" class="reveal-stagger mt-10 space-y-4"></div>
+        <div id="policies-list" class="reveal-stagger new-patient-policies mt-8"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="new-patient-section new-patient-section--alt">
+      <div class="mx-auto max-w-3xl px-5 lg:px-8">
+        <div class="reveal text-center">
+          <h2 id="faq-heading" class="new-patient-section__kicker"></h2>
+        </div>
+        <div id="faq-list" class="reveal-stagger new-patient-faq mt-5"></div>
       </div>
     </section>
 

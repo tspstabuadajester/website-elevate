@@ -679,5 +679,72 @@
                 }
             ]
         }
+    },
+    "faq": {
+        "heading": {
+            "type": "string",
+            "value": "Frequently asked questions"
+        },
+        "items": {
+            "type": "array",
+            "value": [
+                {
+                    "type": "object",
+                    "value": {
+                        "question": {
+                            "type": "string",
+                            "value": "Do you accept insurance?"
+                        },
+                        "answer": {
+                            "type": "richtext",
+                            "value": "I am currently in network with some insurance companies. Please contact the clinic to confirm your coverage before scheduling an appointment."
+                        },
+                        "open": {
+                            "type": "boolean",
+                            "value": true
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "question": {
+                            "type": "string",
+                            "value": "What are your fees?"
+                        },
+                        "answer": {
+                            "type": "richtext",
+                            "value": "Fee details may vary depending on service type and insurance coverage. Contact the clinic for current pricing and billing codes."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "question": {
+                            "type": "string",
+                            "value": "What forms of payment do you accept?"
+                        },
+                        "answer": {
+                            "type": "richtext",
+                            "value": "Payment information can be confirmed before your appointment. Use the Bill Pay option for billing convenience."
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "value": {
+                        "question": {
+                            "type": "string",
+                            "value": "Do you offer virtual appointments?"
+                        },
+                        "answer": {
+                            "type": "richtext",
+                            "value": "Yes. Virtual consultation is available for convenience through a HIPAA compliant telehealth platform."
+                        }
+                    }
+                }
+            ]
+        }
     }
 }
