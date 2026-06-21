@@ -370,7 +370,7 @@
         "coordination": {
             "heading": {
                 "type": "string",
-                "value": "Coordination of Care (Optional)"
+                "value": "Coordination of Care"
             },
             "intro": {
                 "type": "richtext",

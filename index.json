@@ -176,7 +176,7 @@
         },
         "description": {
             "type": "richtext",
-            "value": "We offer personalized psychiatric care and short-term psychotherapy to support your mental well-being and help improve your daily life. For your convenience, virtual consultations are also available."
+            "value": "<p><span style=\"color: rgb(147, 51, 234);\">We offer personalized psychiatric care and short-term psychotherapy to support your mental well-being and help improve your daily life. For your convenience, virtual consultations are also available.</span></p>"
         },
         "primaryCta": {
             "type": "link",
@@ -409,7 +409,7 @@
                                 "value": {
                                     "src": {
                                         "type": "string",
-                                        "value": "assets/disorders/adhd-brain.png"
+                                        "value": "assets/adhd-brain-zefkf2ie.png"
                                     },
                                     "alt": {
                                         "type": "string",
@@ -784,7 +784,7 @@
                                 "value": {
                                     "src": {
                                         "type": "string",
-                                        "value": "assets/disorders/bipolar-brain.png"
+                                        "value": "assets/bipolar-brain-r2tv0kf1.png"
                                     },
                                     "alt": {
                                         "type": "string",
@@ -1204,7 +1204,7 @@
                                 "value": {
                                     "src": {
                                         "type": "string",
-                                        "value": "assets/disorders/mdd-brain.png"
+                                        "value": "assets/depression-brain-dqbubfpo.png"
                                     },
                                     "alt": {
                                         "type": "string",
@@ -1599,7 +1599,7 @@
                                 "value": {
                                     "src": {
                                         "type": "string",
-                                        "value": "assets/disorders/ptsd-brain.png"
+                                        "value": "assets/ptsd-brain-umqveaok.png"
                                     },
                                     "alt": {
                                         "type": "string",
@@ -2007,7 +2007,7 @@
                                 "value": {
                                     "src": {
                                         "type": "string",
-                                        "value": "assets/disorders/schizophrenia-brain.png"
+                                        "value": "assets/schizo-brain-or0uf0t1.png"
                                     },
                                     "alt": {
                                         "type": "string",
