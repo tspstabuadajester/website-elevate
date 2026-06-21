@@ -313,49 +313,6 @@
                                 ]
                             }
                         },
-                        "causes": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What can cause it?"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Having someone in your family with ADHD"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Differences in how the brain looks or works"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Exposure to smoking, alcohol, or drugs before birth"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Being born too early (premature) or too small"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Early exposure to lead"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Growing up or living in a stressful home"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Having other mental health conditions like anxiety or depression"
-                                    }
-                                ]
-                            },
-                            "note": {
-                                "type": "richtext",
-                                "value": "Many things can work together to cause ADHD. Having these things doesn't mean you'll get ADHD for sure."
-                            }
-                        },
                         "signs": {
                             "heading": {
                                 "type": "string",
@@ -395,99 +352,6 @@
                                 ]
                             }
                         },
-                        "brain": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How does it affect the brain?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "In ADHD, these parts of the brain don't work well together. This can make it harder to focus, stay organized, control impulses, and manage emotions."
-                            },
-                            "image": {
-                                "type": "image",
-                                "value": {
-                                    "src": {
-                                        "type": "string",
-                                        "value": "assets/adhd-brain-zefkf2ie.png"
-                                    },
-                                    "alt": {
-                                        "type": "string",
-                                        "value": "Brain regions affected by ADHD"
-                                    }
-                                }
-                            },
-                            "regions": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Cerebellum"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps you move smoothly and manage time"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Basal ganglia"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Controls movement and helps you stick to routines"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Dorsolateral prefrontal cortex"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps you focus, plan, and control impulses"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Anterior cingulate cortex"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps you switch between tasks and manage emotions"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Striatum"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps you form routines and stay motivated"
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        },
                         "seekHelp": {
                             "heading": {
                                 "type": "string",
@@ -520,33 +384,6 @@
                                     {
                                         "type": "string",
                                         "value": "If impulsive decisions are causing ongoing problems"
-                                    }
-                                ]
-                            }
-                        },
-                        "treatment": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How can it be treated?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "Your health professional can help you choose the best treatment or combinations of treatments for you. Sometimes, people need to try a few different things before they find what works best."
-                            },
-                            "types": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Talk therapies"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Medicines"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Exercise as part of treatment"
                                     }
                                 ]
                             }
@@ -613,31 +450,17 @@
                                 ]
                             }
                         },
-                        "keyFacts": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What you need to know"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "richtext",
-                                        "value": "ADHD is a medical condition caused by differences in brain function, not laziness or lack of willpower."
-                                    },
-                                    {
-                                        "type": "richtext",
-                                        "value": "Many adults were not diagnosed as children, but symptoms continue into adulthood."
-                                    },
-                                    {
-                                        "type": "richtext",
-                                        "value": "Medicine, therapy, and healthy habits can help you focus and feel more in control."
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Many adults have ADHD, and support is available to help manage it."
-                                    }
-                                ]
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
                             }
                         }
                     }
@@ -696,45 +519,6 @@
                                 ]
                             }
                         },
-                        "causes": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What can cause it?"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "It can run in families (passed down from parents)"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Changes in the brain play a role"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Stressful or hard life events can trigger it"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "It may start after a big life change"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Most people get it between ages 6 and 30"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Other mental health problems may increase the chance of bipolar disorder"
-                                    }
-                                ]
-                            },
-                            "note": {
-                                "type": "richtext",
-                                "value": "Health professionals are still learning about what causes bipolar disorder. It's usually not just one thing, but a mix of different reasons."
-                            }
-                        },
                         "signs": {
                             "heading": {
                                 "type": "string",
@@ -766,112 +550,6 @@
                                     {
                                         "type": "string",
                                         "value": "Having severe mood swings that last for days or weeks"
-                                    }
-                                ]
-                            }
-                        },
-                        "brain": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How does it affect the brain?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "In bipolar disorder, some of these areas might work differently than usual. This can affect how a person feels, thinks, or acts."
-                            },
-                            "image": {
-                                "type": "image",
-                                "value": {
-                                    "src": {
-                                        "type": "string",
-                                        "value": "assets/bipolar-brain-r2tv0kf1.png"
-                                    },
-                                    "alt": {
-                                        "type": "string",
-                                        "value": "Brain regions affected by bipolar disorder"
-                                    }
-                                }
-                            },
-                            "regions": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Prefrontal cortex"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps control your actions and emotions"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Thalamus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Passes messages in the brain"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Amygdala"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Handles fear and worry"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Hippocampus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps with memory"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Striatum"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps you move, feel good, and stay motivated"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Hypothalamus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Controls sleep, stress, and other body functions"
-                                            }
-                                        }
                                     }
                                 ]
                             }
@@ -936,45 +614,6 @@
                                 ]
                             }
                         },
-                        "treatment": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How can it be treated?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "Your treatment may change depending on your mood: high (mania), low (depression), or steady (stable). Health professionals use these treatments together to help people with bipolar disorder feel better and live well."
-                            },
-                            "types": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Medicine"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Talk therapy"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Family education"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Support groups"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Brain treatments"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Lifestyle changes"
-                                    }
-                                ]
-                            }
-                        },
                         "resources": {
                             "heading": {
                                 "type": "string",
@@ -1037,27 +676,17 @@
                                 ]
                             }
                         },
-                        "keyFacts": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What you need to know"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "richtext",
-                                        "value": "Bipolar disorder is a brain condition that causes severe mood changes. These changes can make daily life hard."
-                                    },
-                                    {
-                                        "type": "richtext",
-                                        "value": "It is a lifelong condition, but medicine, therapy, and healthy habits can help you manage it."
-                                    },
-                                    {
-                                        "type": "richtext",
-                                        "value": "You are not alone. Many people have bipolar disorder. Health professionals, family, and friends can help."
-                                    }
-                                ]
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
                             }
                         }
                     }
@@ -1112,45 +741,6 @@
                                 ]
                             }
                         },
-                        "causes": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What can cause it?"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Sad or stressful things happening in your life"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Having family members who've had depression"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Being someone who often feels sad or worries a lot"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Having a big health problem that lasts a long time"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Using drugs or drinking too much alcohol"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Not having friends or family to help you"
-                                    }
-                                ]
-                            },
-                            "note": {
-                                "type": "richtext",
-                                "value": "Depression usually happens because of a mix of these things, not just one. Everyone's experience is different."
-                            }
-                        },
                         "signs": {
                             "heading": {
                                 "type": "string",
@@ -1186,99 +776,6 @@
                                     {
                                         "type": "string",
                                         "value": "Thinking about dying"
-                                    }
-                                ]
-                            }
-                        },
-                        "brain": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How does it affect the brain?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "In depression, some of these areas might work differently or look smaller than usual. This can affect how a person feels, thinks, or acts."
-                            },
-                            "image": {
-                                "type": "image",
-                                "value": {
-                                    "src": {
-                                        "type": "string",
-                                        "value": "assets/depression-brain-dqbubfpo.png"
-                                    },
-                                    "alt": {
-                                        "type": "string",
-                                        "value": "Brain regions affected by depression"
-                                    }
-                                }
-                            },
-                            "regions": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Prefrontal cortex"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps control emotion"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Thalamus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Passes messages in the brain"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Amygdala"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Handles fear and worry"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Hippocampus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps with memory"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Striatum"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps you move, feel good, and stay motivated"
-                                            }
-                                        }
                                     }
                                 ]
                             }
@@ -1327,41 +824,6 @@
                                     {
                                         "type": "string",
                                         "value": "Use drugs or alcohol to feel better"
-                                    }
-                                ]
-                            }
-                        },
-                        "treatment": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How can it be treated?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "Your health professional can help you choose the best treatment or combinations of treatments for you. Sometimes, people need to try a few different things before they find what works best."
-                            },
-                            "types": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Talk therapy"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Medicine"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Lifestyle changes"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Brain treatments"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Computer programs"
                                     }
                                 ]
                             }
@@ -1428,35 +890,17 @@
                                 ]
                             }
                         },
-                        "keyFacts": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What you need to know"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Depression is a serious health problem"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Depression is not your fault"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Anyone can get depression"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Depression doesn't just go away on its own"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Health professionals can help treat depression"
-                                    }
-                                ]
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
                             }
                         }
                     }
@@ -1511,45 +955,6 @@
                                 ]
                             }
                         },
-                        "causes": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What can cause it?"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Going through or seeing something very scary or dangerous (trauma)"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Seeing someone else get hurt or killed (trauma)"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Having a history of trauma or stress"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Not having support after a trauma"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Having anxiety, depression, or other mental health issues"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Using drugs or alcohol to cope"
-                                    }
-                                ]
-                            },
-                            "note": {
-                                "type": "richtext",
-                                "value": "Not everyone who goes through a trauma gets PTSD. Our brains and bodies deal with stress in different ways. Having support and good ways to cope can help protect you from PTSD."
-                            }
-                        },
                         "signs": {
                             "heading": {
                                 "type": "string",
@@ -1581,99 +986,6 @@
                                     {
                                         "type": "string",
                                         "value": "You may blame yourself for what happened, even if it wasn't your fault"
-                                    }
-                                ]
-                            }
-                        },
-                        "brain": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How does it affect the brain?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "In PTSD, some of these areas might work differently or look smaller than usual. This can affect how a person feels, thinks, or acts."
-                            },
-                            "image": {
-                                "type": "image",
-                                "value": {
-                                    "src": {
-                                        "type": "string",
-                                        "value": "assets/ptsd-brain-umqveaok.png"
-                                    },
-                                    "alt": {
-                                        "type": "string",
-                                        "value": "Brain regions affected by PTSD"
-                                    }
-                                }
-                            },
-                            "regions": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Prefrontal cortex"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps you make choices and control your feelings"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Thalamus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Sorts information from your senses"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Amygdala"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Spots danger and creates feelings"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Hippocampus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Stores memories and links them to feelings"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Brainstem"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Manages breathing, heartbeat, and sleep"
-                                            }
-                                        }
                                     }
                                 ]
                             }
@@ -1726,37 +1038,6 @@
                                     {
                                         "type": "string",
                                         "value": "Use drugs or alcohol to cope with your feelings"
-                                    }
-                                ]
-                            }
-                        },
-                        "treatment": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How can it be treated?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "Your health professional can help you choose the best treatment or combinations of treatments. Sometimes, people need to try different treatments before they find what works best."
-                            },
-                            "types": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Trauma-focused talk therapies"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Medicines"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Mindfulness or relaxation practice"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Support groups"
                                     }
                                 ]
                             }
@@ -1840,35 +1121,17 @@
                                 ]
                             }
                         },
-                        "keyFacts": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What you need to know"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "PTSD can happen after very scary events or trauma"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "It causes nightmares and scary feelings"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "You might avoid things that remind you of what happened"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "It's not your fault"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Health professionals can help you feel better"
-                                    }
-                                ]
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
                             }
                         }
                     }
@@ -1923,45 +1186,6 @@
                                 ]
                             }
                         },
-                        "causes": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What can cause it?"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "richtext",
-                                        "value": "It often runs in families, so you might get it if your parents or siblings have it"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Problems during pregnancy or birth, like being born too early or at a low weight"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Very stressful life events, like losing a loved one or being abused as a child"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Using drugs like marijuana, especially when you're young"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Living in a city"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Having a hard time in school or with making friends"
-                                    }
-                                ]
-                            },
-                            "note": {
-                                "type": "richtext",
-                                "value": "Remember, having these things doesn't mean you'll definitely get schizophrenia. Health professionals are still learning about what causes it."
-                            }
-                        },
                         "signs": {
                             "heading": {
                                 "type": "string",
@@ -1989,99 +1213,6 @@
                                     {
                                         "type": "string",
                                         "value": "Moving in unusual ways, like being very still or moving a lot for no reason"
-                                    }
-                                ]
-                            }
-                        },
-                        "brain": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How does it affect the brain?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "In schizophrenia, some of these areas might work or look smaller than usual. This can affect how a person feels, thinks, or acts."
-                            },
-                            "image": {
-                                "type": "image",
-                                "value": {
-                                    "src": {
-                                        "type": "string",
-                                        "value": "assets/schizo-brain-or0uf0t1.png"
-                                    },
-                                    "alt": {
-                                        "type": "string",
-                                        "value": "Brain regions affected by schizophrenia"
-                                    }
-                                }
-                            },
-                            "regions": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Prefrontal cortex"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Controls how we think and behave"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Basal ganglia"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Helps control how we move and think"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Thalamus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Passes information in the brain"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Amygdala"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Handles emotion and fear"
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "object",
-                                        "value": {
-                                            "name": {
-                                                "type": "string",
-                                                "value": "Hippocampus"
-                                            },
-                                            "description": {
-                                                "type": "richtext",
-                                                "value": "Controls memory and learning"
-                                            }
-                                        }
                                     }
                                 ]
                             }
@@ -2142,45 +1273,6 @@
                                     {
                                         "type": "string",
                                         "value": "You can't think or talk clearly"
-                                    }
-                                ]
-                            }
-                        },
-                        "treatment": {
-                            "heading": {
-                                "type": "string",
-                                "value": "How can it be treated?"
-                            },
-                            "description": {
-                                "type": "richtext",
-                                "value": "Health professionals often use these treatments together to help people with schizophrenia feel better and live their lives."
-                            },
-                            "types": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Medicine"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Talk therapy"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Family support"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Support groups"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Brain treatments"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Learning new skills"
                                     }
                                 ]
                             }
@@ -2247,31 +1339,17 @@
                                 ]
                             }
                         },
-                        "keyFacts": {
-                            "heading": {
-                                "type": "string",
-                                "value": "What you need to know"
-                            },
-                            "items": {
-                                "type": "array",
-                                "value": [
-                                    {
-                                        "type": "string",
-                                        "value": "Schizophrenia is a serious health problem"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Schizophrenia usually starts when people are young adults"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "Health professionals can help treat it with medicine and other treatments"
-                                    },
-                                    {
-                                        "type": "string",
-                                        "value": "With treatment, many people with schizophrenia can live good lives"
-                                    }
-                                ]
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
                             }
                         }
                     }

@@ -1098,6 +1098,68 @@ a.service-drawer__resource-link:hover {
   color: #64748b;
 }
 
+.service-drawer__section--seek-help .service-drawer__help-resources {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(125, 100, 168, 0.14);
+}
+.service-drawer__section--seek-help .service-drawer__help-resources--solo {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+.service-drawer__help-resources-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7d64a8;
+}
+.service-drawer__help-resources-label::before {
+  content: "";
+  display: block;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 9999px;
+  background: #9b67d5;
+  flex-shrink: 0;
+}
+.service-drawer__section--seek-help .service-drawer__resources {
+  margin-top: 0;
+}
+
+.service-drawer__adapted-from {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f1f5f9;
+}
+.service-drawer__adapted-from-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #7d64a8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.service-drawer__adapted-from-link:hover,
+.service-drawer__adapted-from-link:focus-visible {
+  color: #6b5494;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.service-drawer__adapted-from-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
 .service-drawer__legacy p + p {
   margin-top: 1rem;
 }

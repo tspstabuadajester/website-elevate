@@ -436,26 +436,61 @@
     return html;
   }
 
-  function renderSeekHelpBlock(seekHelp) {
-    if (!seekHelp) return '';
-    var html = '<section class="service-drawer__section">';
-    html += renderDrawerSectionHeading(seekHelp.heading, 'seekHelp');
-    if (seekHelp.routine && seekHelp.routine.length) {
+  function renderResourcesList(resources) {
+    if (!resources || !resources.items || !resources.items.length) return '';
+    var html = '<ul class="service-drawer__resources">';
+    resources.items.forEach(function (resource) {
+      var href = resource.href ? ' href="' + escapeHtml(resource.href) + '"' : '';
+      var tag = resource.href ? 'a' : 'span';
+      var external = resource.href && /^https?:\/\//i.test(resource.href) ? ' target="_blank" rel="noopener noreferrer"' : '';
+      html +=
+        '<li class="service-drawer__resource">' +
+        '<' + tag + ' class="service-drawer__resource-link"' + href + external + '>' +
+        '<strong>' + escapeHtml(resource.label) + '</strong>' +
+        (resource.detail ? '<span class="rich-content">' + formatRichContent(resource.detail) + '</span>' : '') +
+        '</' + tag + '>' +
+        '</li>';
+    });
+    html += '</ul>';
+    return html;
+  }
+
+  function renderSeekHelpBlock(seekHelp, resources) {
+    var hasSeekHelpContent =
+      seekHelp &&
+      ((seekHelp.routine && seekHelp.routine.length) ||
+        (seekHelp.urgent && seekHelp.urgent.length) ||
+        seekHelp.urgentHeading);
+    var hasResources = resources && resources.items && resources.items.length;
+    if (!seekHelp && !hasResources) return '';
+
+    var html = '<section class="service-drawer__section service-drawer__section--seek-help">';
+    if (seekHelp) {
+      html += renderDrawerSectionHeading(seekHelp.heading, 'seekHelp');
+    }
+    if (seekHelp && seekHelp.routine && seekHelp.routine.length) {
       html += '<ul class="service-drawer__list">';
       seekHelp.routine.forEach(function (item) {
         html += '<li class="rich-content">' + formatRichContent(item) + '</li>';
       });
       html += '</ul>';
     }
-    if (seekHelp.urgentHeading) {
+    if (seekHelp && seekHelp.urgentHeading) {
       html += '<p class="service-drawer__subheading">' + escapeHtml(seekHelp.urgentHeading) + '</p>';
     }
-    if (seekHelp.urgent && seekHelp.urgent.length) {
+    if (seekHelp && seekHelp.urgent && seekHelp.urgent.length) {
       html += '<ul class="service-drawer__list service-drawer__list--urgent">';
       seekHelp.urgent.forEach(function (item) {
         html += '<li class="rich-content">' + formatRichContent(item) + '</li>';
       });
       html += '</ul>';
+    }
+    if (hasResources) {
+      html +=
+        '<div class="service-drawer__help-resources' + (hasSeekHelpContent ? '' : ' service-drawer__help-resources--solo') + '">' +
+        '<p class="service-drawer__help-resources-label">' + escapeHtml(resources.heading || 'Where can I get more help?') + '</p>' +
+        renderResourcesList(resources) +
+        '</div>';
     }
     html += '</section>';
     return html;
@@ -483,19 +518,8 @@
     if (!resources || !resources.items || !resources.items.length) return '';
     var html = '<section class="service-drawer__section">';
     html += renderDrawerSectionHeading(resources.heading, 'resources');
-    html += '<ul class="service-drawer__resources">';
-    resources.items.forEach(function (resource) {
-      var href = resource.href ? ' href="' + escapeHtml(resource.href) + '"' : '';
-      var tag = resource.href ? 'a' : 'span';
-      html +=
-        '<li class="service-drawer__resource">' +
-        '<' + tag + ' class="service-drawer__resource-link"' + href + '>' +
-        '<strong>' + escapeHtml(resource.label) + '</strong>' +
-        (resource.detail ? '<span class="rich-content">' + formatRichContent(resource.detail) + '</span>' : '') +
-        '</' + tag + '>' +
-        '</li>';
-    });
-    html += '</ul></section>';
+    html += renderResourcesList(resources);
+    html += '</section>';
     return html;
   }
 
@@ -511,9 +535,38 @@
     return html;
   }
 
-  function buildServiceDrawerHtml(service) {
+  function renderAdaptedFromBlock(adaptedFrom) {
+    if (!adaptedFrom) return '';
+    var href = String(adaptedFrom.href || '').trim();
+    var label = String(adaptedFrom.label || '').trim();
+    if (!href) return '';
+
+    return (
+      '<div class="service-drawer__adapted-from">' +
+      '<a href="' + escapeHtml(href) + '" class="service-drawer__adapted-from-link" target="_blank" rel="noopener noreferrer">' +
+      '<svg class="service-drawer__adapted-from-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">' +
+      '<path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-7.5 7.5a2.5 2.5 0 0 1-3.536-3.536l7.5-7.5Z"/>' +
+      '<path d="M4.5 9.5h3a1 1 0 1 0 0-2h-3A2.5 2.5 0 0 0 2 10v5.5A2.5 2.5 0 0 0 4.5 18h5.5a2.5 2.5 0 0 0 2.5-2.5v-3a1 1 0 1 0-2 0v3a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .5-.5Z"/>' +
+      '</svg>' +
+      '<span>' + escapeHtml(label || 'Adapted from') + '</span>' +
+      '</a>' +
+      '</div>'
+    );
+  }
+
+  function buildServiceDrawerHtml(service, options) {
+    options = options || {};
     if (!hasStructuredService(service)) {
       return '<div class="service-drawer__legacy rich-content">' + formatRichContent(service.detail || service.description || '') + '</div>';
+    }
+
+    if (options.simplified) {
+      var html = '';
+      html += renderBulletBlock(service.overview, 'overview');
+      html += renderBulletBlock(service.signs, 'signs');
+      html += renderSeekHelpBlock(service.seekHelp, service.resources);
+      html += renderAdaptedFromBlock(service.adaptedFrom);
+      return html;
     }
 
     var html = '';
@@ -531,6 +584,7 @@
 
     html += renderResourcesBlock(service.resources);
     html += renderKeyFactsBlock(service.keyFacts);
+    html += renderAdaptedFromBlock(service.adaptedFrom);
     return html;
   }
 
@@ -582,10 +636,10 @@
       );
     }).join('');
 
-    initServiceDrawer(services, '.service-card[data-service-id]');
+    initServiceDrawer(services, '.service-card[data-service-id]', { simplified: true });
   }
 
-  function initServiceDrawer(services, cardSelector) {
+  function initServiceDrawer(services, cardSelector, drawerOptions) {
     var drawer = document.getElementById('service-drawer');
     var iconTarget = document.getElementById('service-drawer-icon');
     var titleTarget = document.getElementById('service-drawer-title');
@@ -596,6 +650,7 @@
     var selector = cardSelector || '.service-card[data-service-id], .service-page-card[data-service-id]';
     var cards = document.querySelectorAll(selector);
     var drawerConfig = getServiceModalConfig(services);
+    var drawerOpts = drawerOptions || {};
     var lastFocused = null;
 
     if (!drawer || !cards.length) return;
@@ -630,7 +685,7 @@
         }
       }
 
-      setHtml(textTarget, buildServiceDrawerHtml(service));
+      setHtml(textTarget, buildServiceDrawerHtml(service, drawerOpts));
       if (bodyTarget) bodyTarget.scrollTop = 0;
 
       lastFocused = document.activeElement;

@@ -658,6 +658,19 @@
                         "description": {
                             "type": "richtext",
                             "value": "Support for focus, impulsivity, and daily functioning with treatment plans designed for school, work, and home life."
+                        },
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
+                            }
                         }
                     }
                 },
@@ -1082,6 +1095,19 @@
                         "description": {
                             "type": "richtext",
                             "value": "Stabilizing mood shifts with close monitoring, clear communication, and a plan that fits your routine."
+                        },
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
+                            }
                         }
                     }
                 },
@@ -1485,6 +1511,19 @@
                         "description": {
                             "type": "richtext",
                             "value": "Treatment for low mood, low energy, and loss of interest with a focus on helping you feel like yourself again."
+                        },
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
+                            }
                         }
                     }
                 },
@@ -1901,6 +1940,19 @@
                         "description": {
                             "type": "richtext",
                             "value": "Trauma-informed care for flashbacks, hypervigilance, and emotional distress after difficult life experiences."
+                        },
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
+                            }
                         }
                     }
                 },
@@ -2308,6 +2360,19 @@
                         "description": {
                             "type": "richtext",
                             "value": "Careful evaluation and ongoing support for symptoms that affect perception, thinking, and daily stability."
+                        },
+                        "adaptedFrom": {
+                            "type": "link",
+                            "value": {
+                                "label": {
+                                    "type": "string",
+                                    "value": ""
+                                },
+                                "href": {
+                                    "type": "string",
+                                    "value": ""
+                                }
+                            }
                         }
                     }
                 }
