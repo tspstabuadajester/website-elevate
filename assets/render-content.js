@@ -125,6 +125,73 @@
     return SERVICE_ICONS[key] || SERVICE_ICONS.star;
   }
 
+  function getServiceThumbnail(item) {
+    return item && item.thumbnail ? item.thumbnail : null;
+  }
+
+  function renderServiceThumbMarkup(item, prefix) {
+    var block = prefix || 'service-card';
+    var thumb = getServiceThumbnail(item);
+
+    if (thumb && thumb.src) {
+      return (
+        '<div class="' + block + '__thumb">' +
+        '<img src="' + escapeHtml(thumb.src) + '"' +
+        ' alt="' + escapeHtml(thumb.alt || item.title || '') + '"' +
+        ' class="' + block + '__thumb-img" loading="lazy" decoding="async" />' +
+        '</div>'
+      );
+    }
+
+    return (
+      '<div class="' + block + '__thumb ' + block + '__thumb--icon" aria-hidden="true">' +
+      '<span class="' + block + '__icon">' + getIconMarkup(item.icon) + '</span>' +
+      '</div>'
+    );
+  }
+
+  function setServiceDrawerIcon(iconTarget, service) {
+    if (!iconTarget || !service) return;
+
+    var thumb = getServiceThumbnail(service);
+    if (thumb && thumb.src) {
+      iconTarget.classList.add('service-drawer__icon--photo');
+      iconTarget.innerHTML =
+        '<img src="' + escapeHtml(thumb.src) + '" alt="" class="service-drawer__thumb-img" />';
+      return;
+    }
+
+    iconTarget.classList.remove('service-drawer__icon--photo');
+    iconTarget.innerHTML = getIconMarkup(service.icon);
+  }
+
+  function renderServiceCardButton(item, options) {
+    options = options || {};
+    var cardClass = options.cardClass || 'service-card';
+    var viewLabel = options.viewLabel || 'Learn more';
+    var titleTag = options.titleTag || 'span';
+    var teaser = options.teaser != null ? options.teaser : getServiceTeaser(item);
+    var textClass = cardClass === 'service-page-card' ? cardClass + '__text' : cardClass + '__teaser';
+
+    return (
+      '<button type="button" class="reveal ' + cardClass + '"' +
+      (options.listItem ? ' role="listitem"' : '') +
+      ' data-service-id="' + escapeHtml(item.id) + '"' +
+      ' aria-haspopup="dialog"' +
+      ' aria-controls="service-drawer">' +
+      renderServiceThumbMarkup(item, cardClass) +
+      '<div class="' + cardClass + '__body">' +
+      '<' + titleTag + ' class="' + cardClass + '__title">' + escapeHtml(item.title) + '</' + titleTag + '>' +
+      '<p class="' + textClass + '">' + escapeHtml(teaser) + '</p>' +
+      '</div>' +
+      '<span class="' + cardClass + '__action">' + escapeHtml(viewLabel) +
+      '<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">' +
+      '<path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>' +
+      '</svg></span>' +
+      '</button>'
+    );
+  }
+
   function setText(el, value) {
     if (el && value != null) el.textContent = value;
   }
@@ -612,28 +679,12 @@
     var viewLabel = services.viewDetailsLabel || 'Learn more';
 
     list.innerHTML = services.items.map(function (item) {
-      var teaser = truncateText(getServiceTeaser(item), 100);
-      return (
-        '<button type="button" class="reveal service-card" role="listitem"' +
-        ' data-service-id="' + item.id + '"' +
-        ' aria-haspopup="dialog"' +
-        ' aria-controls="service-drawer">' +
-        '<div class="service-card__rings" aria-hidden="true">' +
-        '<span class="service-card__ring service-card__ring--1"></span>' +
-        '<span class="service-card__ring service-card__ring--2"></span>' +
-        '<span class="service-card__ring service-card__ring--3"></span>' +
-        '</div>' +
-        '<div class="service-card__icon" aria-hidden="true">' + getIconMarkup(item.icon) + '</div>' +
-        '<div class="service-card__body">' +
-        '<span class="service-card__title">' + item.title + '</span>' +
-        '<p class="service-card__teaser">' + teaser + '</p>' +
-        '</div>' +
-        '<span class="service-card__action">' + viewLabel +
-        '<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">' +
-        '<path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>' +
-        '</svg></span>' +
-        '</button>'
-      );
+      return renderServiceCardButton(item, {
+        cardClass: 'service-card',
+        viewLabel: viewLabel,
+        teaser: truncateText(getServiceTeaser(item), 140),
+        listItem: true
+      });
     }).join('');
 
     initServiceDrawer(services, '.service-card[data-service-id]', { simplified: true });
@@ -661,17 +712,13 @@
       if (ctaLabel) ctaLabel.textContent = drawerConfig.cta.label;
     }
 
-    function openDrawer(serviceId, iconMarkup) {
+    function openDrawer(serviceId) {
       var service = serviceItems.find(function (item) {
         return item.id === serviceId;
       });
       if (!service) return;
 
-      if (iconMarkup) {
-        iconTarget.innerHTML = iconMarkup;
-      } else {
-        iconTarget.innerHTML = getIconMarkup(service.icon);
-      }
+      setServiceDrawerIcon(iconTarget, service);
 
       titleTarget.textContent = service.title;
 
@@ -706,11 +753,7 @@
 
     cards.forEach(function (card) {
       card.addEventListener('click', function () {
-        var iconSource = card.querySelector('.service-card__icon, .service-page-card__icon');
-        openDrawer(
-          card.dataset.serviceId,
-          iconSource ? iconSource.innerHTML : null
-        );
+        openDrawer(card.dataset.serviceId);
       });
     });
 
@@ -1178,17 +1221,11 @@
     var viewLabel = getServiceModalConfig(services).viewLabel;
 
     grid.innerHTML = services.items.map(function (item) {
-      return (
-        '<button type="button" class="reveal service-page-card" data-service-id="' + item.id + '" aria-haspopup="dialog" aria-controls="service-drawer">' +
-        '<div class="service-page-card__icon" aria-hidden="true">' + getIconMarkup(item.icon) + '</div>' +
-        '<h3 class="service-page-card__title">' + item.title + '</h3>' +
-        '<p class="service-page-card__text">' + getServiceTeaser(item) + '</p>' +
-        '<span class="service-page-card__action">' + viewLabel +
-        '<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">' +
-        '<path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h9.69l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>' +
-        '</svg></span>' +
-        '</button>'
-      );
+      return renderServiceCardButton(item, {
+        cardClass: 'service-page-card',
+        viewLabel: viewLabel,
+        titleTag: 'h3'
+      });
     }).join('');
 
     initServiceDrawer(services, '.service-page-card[data-service-id]');

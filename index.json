@@ -278,6 +278,19 @@
                             "type": "string",
                             "value": "star"
                         },
+                        "thumbnail": {
+                            "type": "image",
+                            "value": {
+                                "src": {
+                                    "type": "string",
+                                    "value": "assets/thumbnail-adhd.jpg"
+                                },
+                                "alt": {
+                                    "type": "string",
+                                    "value": "Person experiencing ADHD-related overwhelm"
+                                }
+                            }
+                        },
                         "lastUpdated": {
                             "type": "string",
                             "value": "06/2025"
@@ -483,6 +496,19 @@
                         "icon": {
                             "type": "string",
                             "value": "bipolar"
+                        },
+                        "thumbnail": {
+                            "type": "image",
+                            "value": {
+                                "src": {
+                                    "type": "string",
+                                    "value": "assets/thumbnail-bipolar.jpg"
+                                },
+                                "alt": {
+                                    "type": "string",
+                                    "value": "Person navigating bipolar disorder mood shifts"
+                                }
+                            }
                         },
                         "lastUpdated": {
                             "type": "string",
@@ -710,6 +736,19 @@
                             "type": "string",
                             "value": "depression"
                         },
+                        "thumbnail": {
+                            "type": "image",
+                            "value": {
+                                "src": {
+                                    "type": "string",
+                                    "value": "assets/thumbnail-depression.jpg"
+                                },
+                                "alt": {
+                                    "type": "string",
+                                    "value": "Person experiencing depression"
+                                }
+                            }
+                        },
                         "lastUpdated": {
                             "type": "string",
                             "value": "05/2025"
@@ -923,6 +962,19 @@
                         "icon": {
                             "type": "string",
                             "value": "ptsd"
+                        },
+                        "thumbnail": {
+                            "type": "image",
+                            "value": {
+                                "src": {
+                                    "type": "string",
+                                    "value": "assets/thumbnail-ptsd.jpg"
+                                },
+                                "alt": {
+                                    "type": "string",
+                                    "value": "Veteran receiving PTSD support in therapy"
+                                }
+                            }
                         },
                         "lastUpdated": {
                             "type": "string",
@@ -1154,6 +1206,19 @@
                         "icon": {
                             "type": "string",
                             "value": "star"
+                        },
+                        "thumbnail": {
+                            "type": "image",
+                            "value": {
+                                "src": {
+                                    "type": "string",
+                                    "value": "assets/thumbnail-schizo.jpg"
+                                },
+                                "alt": {
+                                    "type": "string",
+                                    "value": "Person receiving schizophrenia care"
+                                }
+                            }
                         },
                         "lastUpdated": {
                             "type": "string",
